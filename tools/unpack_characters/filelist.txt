@@ -1,0 +1,3 @@
+data/characters/barb_archer_dacia_Arabic_lod0.cas
+data/characters/roman_peasant_romans_brutii_Caucasian_lod0.cas
+data/characters/roman_velite_Arabic_no_variation_lod3.cas

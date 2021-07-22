@@ -1,0 +1,1564 @@
+Triggers, conditions and events
+===============================
+
+Triggers are data objects consisting of an event on which to test, a number of
+conditions, and a list of effects.  These effects can be upon character traits
+or upon advice, although this could easily be extended to other domains of
+activity such as the world, the empire, diplomacy &c.
+
+The triggers themselves are not encoded in the project - they are read in from
+an external file and instantiations of triggers are stored in an array indexed
+by their event.
+
+If you wish to add new triggers, consult the list of extant triggers and see if
+you are merely redefining a trigger that already exists.  You can do this by
+examining the advice and VnV spreadsheets.  If you are satisfied that this is
+indeed a new trigger, ask yourself when the trigger should be tested, and under
+what conditions the trigger should fire.  If either the condition or the event
+is unavailable, request from Guy that they be added to the set.
+
+The conditions are in conditions.txt.  This document contains the current set of
+events.  They are:
+
+---------------------------------------------------
+Identifier:         PreBattle
+Event:              When a battle is about to start
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_PRE_BATTLE
+Author:             Lee
+---------------------------------------------------
+Identifier:         PreBattleWithdrawal
+Event:              When a battle is about to start but one of the armies withdraws
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_PRE_BATTLE_WITHDRAWAL
+Author:             Lee
+---------------------------------------------------
+Identifier:         BattleAiCommenced
+Event:              The battle AI has begun processing
+Exports:            faction
+Class:              ET_BATTLE_AI_COMMENCED
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleDelayPhaseCommenced
+Event:              The delay phase has begun
+Exports:            faction
+Class:              ET_BATTLE_DELAY_PHASE_COMMENCED
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleDeploymentPhaseCommenced
+Event:              The deployment phase has begun
+Exports:            faction
+Class:              ET_BATTLE_DEPLOYMENT_PHASE_COMMENCED
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleConflictPhaseCommenced
+Event:              The conflict phase has begun
+Exports:            faction
+Class:              ET_BATTLE_CONFLICT_PHASE_COMMENCED
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattlePlayerUnitAttacksEnemyUnit
+Event:              A player unit has attacked one of the enemies units
+Exports:            infer_attacking_unit, infer_defending_unit, player_unit, enemy_unit
+Class:              ET_BATTLE_PLAYER_UNIT_ATTACKS_ENEMY_UNIT
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleEnemyUnitAttacksPlayerUnit
+Event:              An enemy unit has attacked one of the players units
+Exports:            infer_attacking_unit, infer_defending_unit, player_unit, enemy_unit
+Class:              ET_BATTLE_ENEMY_UNIT_ATTACKS_PLAYER_UNIT
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattlePlayerAttacksSettlementBuilding
+Event:              A player unit has attacked a building in the settlement
+Exports:            infer_attacking_unit, player_unit, building_battle
+Class:              ET_BATTLE_PLAYER_ATTACKS_SETTLEMENT_BUILDING
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleEnemyAttacksSettlementBuilding
+Event:              An enemy unit has attacked a building in the settlement
+Exports:            infer_attacking_unit, enemy_unit, building_battle
+Class:              ET_BATTLE_ENEMY_ATTACKS_SETTLEMENT_BUILDING
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleUnitGoesBerserk
+Event:              A unit has gone berserk
+Exports:            unit
+Class:              ET_BATTLE_UNIT_GOES_BERSERK
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattlePlayerUnitGoesBerserk
+Event:              One of the player's units has gone berserk
+Exports:            player_unit
+Class:              ET_BATTLE_PLAYER_GOES_BERSERK
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleEnemyUnitGoesBerserk
+Event:              One of the enemies' units has routed
+Exports:            enemy_unit
+Class:              ET_BATTLE_ENEMY_UNIT_GOES_BERSERK
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleUnitRouts
+Event:              A unit has routed
+Exports:            unit
+Class:              ET_BATTLE_UNIT_ROUTS
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattlePlayerUnitRouts
+Event:              One of the player's units has routed
+Exports:            player_unit
+Class:              ET_BATTLE_PLAYER_UNIT_ROUTS
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleEnemyUnitRouts
+Event:              One of the enemies' units has routed
+Exports:            enemy_unit
+Class:              ET_BATTLE_ENEMY_UNIT_ROUTS
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattlePlayerSiegeEngineDestroyed
+Event:              A siege engine belonging to the player has been destroyed
+Exports:            player_unit
+Class:              ET_BATTLE_PLAYER_SIEGE_ENGINE_DESTROYED
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleEnemySiegeEngineDestroyed
+Event:              A siege engine belonging to the enemy has been destroyed
+Exports:            enemy_unit
+Class:              ET_BATTLE_ENEMY_SIEGE_ENGINE_DESTROYED
+Author:             Scott
+---------------------------------------------------
+Identifier:         PostBattle
+Event:              When a battle has finished
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_POST_BATTLE
+Author:             Lee
+---------------------------------------------------
+Identifier:         BattleArmyRouted
+Event:              An army has been entrirely routed
+Exports:            army
+Class:              ET_BATTLE_ARMY_ROUTED
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleGeneralKilled
+Event:              A general has been killed
+Exports:            character
+Class:              ET_BATTLE_GENERAL_KILLED
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleGeneralRouted
+Event:              A general has been routed
+Exports:            character
+Class:              ET_BATTLE_GENERAL_ROUTED
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleReinforcementsArrive
+Event:              A reinforcing army has arrived on the battlefield
+Exports:            army
+Class:              ET_BATTLE_REINFORCEMENTS_ARRIVE
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleSiegeEngineDestroyed
+Event:              A siege engine has been destroyed
+Exports:            unit
+Class:              ET_BATTLE_SIEGE_ENGINE_DESTROYED
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleSiegeEngineDocksWall
+Event:              A siege engine has docked with a wall
+Exports:            unit
+Class:              ET_BATTLE_SIEGE_ENGINE_DOCKS_WALL
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleGatesAttackedByEngine
+Event:              An engine has started attacking a gate
+Exports:            unit
+Class:              ET_BATTLE_GATES_ATTACKED_BY_ENGINE
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleGatesAttackedByPlayerEngine
+Event:              A player's engine has started attacking a gate
+Exports:            player_unit
+Class:              ET_BATTLE_GATES_ATTACKED_BY_PLAYER_ENGINE
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleGatesAttackedByEnemyEngine
+Event:              An enemy's engine has started attacking a gate
+Exports:            enemy_unit
+Class:              ET_BATTLE_GATES_ATTACKED_BY_ENEMY_ENGINE
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleBattleGatesDestroyedByEngine
+Event:              An engine has destroyed a gate
+Exports:            unit
+Class:              ET_BATTLE_GATES_DESTROYED_BY_ENGINE
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleWallsBreachedByEngine
+Event:              A siege engine has knocked down a wall
+Exports:            unit
+Class:              ET_BATTLE_WALLS_BREACHED_BY_ENGINE
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleWallsCaptured
+Event:              A siege engine has knocked down a wall
+Exports:            unit
+Class:              ET_BATTLE_WALLS_CAPTURED
+Author:             Scott
+---------------------------------------------------
+Identifier:         BattleFinished
+Event:              The battle has finished
+Exports:            unit
+Class:              ET_BATTLE_FINISHED
+Author:             Scott
+---------------------------------------------------
+Identifier:         EnteredCityView
+Event:              City View battle entered
+Exports:            
+Class:              ET_CITY_VIEW_ENTERED
+Author:             Alex A
+---------------------------------------------------
+Identifier:         BattleMinimapAction
+Event:              Clicked or hid/shown the battle minimap
+Exports:            
+Class:              ET_BATTLE_MINIMAP_ACTION
+Author:             STB
+---------------------------------------------------
+Identifier:         BattlePlayerUnitSelected
+Event:              player selected a unit of their army
+Exports:            
+Class:              ET_BATTLE_PLAYER_UNIT_SELECTED
+Author:             STB
+---------------------------------------------------
+Identifier:         EnterTacticalMode
+Event:              Entering tactical mode
+Exports:            
+Class:              ET_ENTER_TACTICAL_MODE
+Author:             STB
+---------------------------------------------------
+Identifier:         BattleReinforcementsHack
+Event:              Early Update in battle menu to notify for possible reinforcements
+Exports:            
+Class:              ET_BATTLE_REINFORCEMENTS_HACK
+Author:             STB
+---------------------------------------------------
+Identifier:         FactionTurnStart
+Event:              A Faction has started its turn
+Exports:            faction
+Class:              ET_FACTION_TURN_START
+Author:             Guy
+---------------------------------------------------
+Identifier:         FactionWarDeclared
+Event:              War has been declared by faction on target_faction
+Exports:            faction, target_faction
+Class:              ET_FACTION_WAR_DECLARED
+Author:             Guy
+---------------------------------------------------
+Identifier:         HordeFormed
+Event:              A Faction has formed a horde
+Exports:            faction
+Class:              ET_FACTION_HORDE_FORMED
+Author:             Guy
+---------------------------------------------------
+Identifier:         FactionTurnEnd
+Event:              A Faction has ended its turn
+Exports:            faction
+Class:              ET_FACTION_TURN_END
+Author:             Guy
+---------------------------------------------------
+Identifier:         HireMercenaries
+Event:              A General has hired some mercenaries
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_HIRE_MERCENARIES
+Author:             Guy
+---------------------------------------------------
+Identifier:         GeneralCaptureResidence
+Event:              A General has captured a residence (fort, watchtower)
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_GENERAL_CAPTURE_RESIDENCE
+Author:             Lee
+---------------------------------------------------
+Identifier:         GeneralCaptureWonder
+Event:              A General has captured a wonder
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_GENERAL_CAPTURE_WONDER
+Author:             Lee
+---------------------------------------------------
+Identifier:         GeneralCaptureSettlement
+Event:              A General has captured a settlement
+Exports:            nc_character_record, character_record, faction, region_id, character_type, target_settlement, settlement, rsam
+Class:              ET_GENERAL_CAPTURE_SETTLEMENT
+Author:             Guy
+---------------------------------------------------
+Identifier:         LeaderDestroyedFaction
+Event:              A faction has been destroyed
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_LEADER_DESTROYED_FACTION
+Author:             Lee
+---------------------------------------------------
+Identifier:         Disaster
+Event:              A disaster has happened
+Exports:            event_type
+Class:              ET_DISASTER
+Author:             Guy
+---------------------------------------------------
+Identifier:         CharacterDamagedByDisaster
+Event:              A character has been injured by a disaster
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_CHARACTER_DAMAGED_BY_DISASTER
+Author:             Lee
+---------------------------------------------------
+Identifier:         GeneralAssaultsResidence
+Event:              An assault has taken place
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_ASSAULT
+Author:             Lee
+---------------------------------------------------
+Identifier:         OfferedForAdoption
+Event:              An adoption has been proposed
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_OFFERED_FOR_ADOPTION
+Author:             Lee
+---------------------------------------------------
+Identifier:         LesserGeneralOfferedForAdoption
+Event:              An lesser general adoption has been proposed
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_LESSER_GENERAL_OFFERED_FOR_ADOPTION
+Author:             Lee
+---------------------------------------------------
+Identifier:         OfferedForMarriage
+Event:              An marriage offer has been proposed
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_OFFERED_FOR_MARRIAGE
+Author:             Lee
+---------------------------------------------------
+Identifier:         BrotherAdopted
+Event:              An brother has been adopted
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_BROTHER_ADOPTED
+Author:             Lee
+---------------------------------------------------
+Identifier:         BecomesFactionLeader
+Event:              The character has been made the faction leader
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_BECOMES_FACTION_LEADER
+Author:             Lee
+---------------------------------------------------
+Identifier:         BecomesFactionHeir
+Event:              The character has been made the faction heir
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_BECOMES_FACTION_HEIR
+Author:             Lee
+---------------------------------------------------
+Identifier:         BecomeQuaestor
+Event:              The character has been made Quaestor
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_BECOME_QUAESTOR
+Author:             Guy
+---------------------------------------------------
+Identifier:         BecomeAedile
+Event:              The character has been made Aedile
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_BECOME_AEDILE
+Author:             Guy
+---------------------------------------------------
+Identifier:         BecomePraetor
+Event:              The character has been made Praetor
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_BECOME_PRAETOR
+Author:             Guy
+---------------------------------------------------
+Identifier:         BecomeConsul
+Event:              The character has been made Consul
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_BECOME_CONSUL
+Author:             Guy
+---------------------------------------------------
+Identifier:         BecomeCensor
+Event:              The character has been made Censor
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_BECOME_CENSOR
+Author:             Guy
+---------------------------------------------------
+Identifier:         BecomePontifexMaximus
+Event:              The character has been made Pontifex Maximus
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_BECOME_PONTIFEX_MAXIMUS
+Author:             Guy
+---------------------------------------------------
+Identifier:         CeasedFactionLeader
+Event:              The character is no longer faction leader
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_CEASED_FACTION_LEADER
+Author:             Lee
+---------------------------------------------------
+Identifier:         CeasedFactionHeir
+Event:              The character is no longer faction heir
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_CEASED_FACTION_HEIR
+Author:             Lee
+---------------------------------------------------
+Identifier:         CeasedQuaestor
+Event:              The character is no longer Quaestor
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_CEASED_QUAESTOR
+Author:             Guy
+---------------------------------------------------
+Identifier:         CeasedAedile
+Event:              The character is no longer Aedile
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_CEASED_AEDILE
+Author:             Guy
+---------------------------------------------------
+Identifier:         CeasedPraetor
+Event:              The character is no longer Praetor
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_CEASED_PRAETOR
+Author:             Guy
+---------------------------------------------------
+Identifier:         CeasedConsul
+Event:              The character is no longer Consul
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_CEASED_CONSUL
+Author:             Guy
+---------------------------------------------------
+Identifier:         CeasedCensor
+Event:              The character is no longer Censor
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_CEASED_CENSOR
+Author:             Guy
+---------------------------------------------------
+Identifier:         CeasedPontifexMaximus
+Event:              The character is no longer Pontifex Maximus
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_CEASED_PONTIFEX_MAXIMUS
+Author:             Guy
+---------------------------------------------------
+Identifier:         UngarrisonedFort
+Event:              A fort is no longer garrisoned
+Exports:            faction, fort, region_id
+Class:              ET_UNGARRISONED_FORT
+Author:             Lee
+---------------------------------------------------
+Identifier:         LostLegionaryEagle
+Event:              When a roman general has lost a battle and one of your units was carrying a legionary eagle(first cohort)
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_LOST_LEGIONARY_EAGLE
+Author:             Lee
+---------------------------------------------------
+Identifier:         CapturedLegionaryEagle
+Event:              When you have defeated a roman general and one of his units was carrying a legionary eagle(first cohort), you capture it
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_CAPTURED_LEGIONARY_EAGLE
+Author:             Lee
+---------------------------------------------------
+Identifier:         RecapturedLegionaryEagle
+Event:              We recaptured the eagle by completing the senate mission by conquering the settlement which holds it
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_RECAPTURED_LEGIONARY_EAGLE
+Author:             Lee
+---------------------------------------------------
+Identifier:         SenateExposure
+Event:              The senate has leaked information about you as punishment for failing a mission
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_SENATE_EXPOSURE
+Author:             Guy
+---------------------------------------------------
+Identifier:         QuaestorInvestigationMinor
+Event:              The senate has punished you by launching an investigation by the quaestor, probably leading to a minor fine
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_QUAESTOR_INVESTIGATION_MINOR
+Author:             Guy
+---------------------------------------------------
+Identifier:         QuaestorInvestigation
+Event:              The senate has punished you by launching an investigation by the quaestor, probably leading to a fine
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_QUAESTOR_INVESTIGATION
+Author:             Guy
+---------------------------------------------------
+Identifier:         QuaestorInvestigationMajor
+Event:              The senate has punished you by launching an investigation by the quaestor, probably leading to a major fine
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_QUAESTOR_INVESTIGATION_MAJOR
+Author:             Guy
+---------------------------------------------------
+Identifier:         PopularSupportForOverthrow
+Event:              The people of Rome are prepared to support any action against the senate
+Exports:            faction
+Class:              ET_POPULAR_SUPPORT_FOR_OVERTHROW
+Author:             Guy
+---------------------------------------------------
+Identifier:         SenateReadyToOutlawFaction
+Event:              The senate has had enough of this faction's empire building and grandstanding
+Exports:            faction
+Class:              ET_SENATE_READY_TO_OUTLAW_FACTION
+Author:             Guy
+---------------------------------------------------
+Identifier:         SenateOutlawsFaction
+Event:              The senate has declared this faction outlaw
+Exports:            faction
+Class:              ET_SENATE_OUTLAWS_FACTION
+Author:             Guy
+---------------------------------------------------
+Identifier:         Birth
+Event:              A child is born to the faction leader
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_BIRTH
+Author:             Lee
+---------------------------------------------------
+Identifier:         CharacterComesOfAge
+Event:              A Character has come of age
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_COMING_OF_AGE
+Author:             Lee
+---------------------------------------------------
+Identifier:         CharacterMarries
+Event:              A Character has married
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_MARRIAGE
+Author:             Lee
+---------------------------------------------------
+Identifier:         CharacterBecomesAFather
+Event:              A Character has become a father
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_BECOMES_FATHER
+Author:             Lee
+---------------------------------------------------
+Identifier:         CharacterTurnStart
+Event:              A Character has started its turn
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_CHARACTER_TURN_START
+Author:             Guy
+---------------------------------------------------
+Identifier:         CharacterTurnEnd
+Event:              A Character has finished its turn
+Exports:            nc_character_record, character_record, faction, region_id, character_type, settlement
+Class:              ET_CHARACTER_TURN_END
+Author:             Guy
+---------------------------------------------------
+Identifier:         CharacterTurnEndInSettlement
+Event:              A Character has finished its turn
+Exports:            nc_character_record, character_record, faction, region_id, character_type, settlement
+Class:              ET_CHARACTER_TURN_END_IN_SETTLEMENT
+Author:             Guy
+---------------------------------------------------
+Identifier:         GeneralDevastatesTile
+Event:              A General and his army has devastated an enemy's fertile land
+Exports:            nc_character_record, character_record, faction, region_id, character_type, settlement
+Class:              ET_GENERAL_DEVASTATES_TILE
+Author:             Lee
+---------------------------------------------------
+Identifier:         SpyMission
+Event:              A spy mission has completed
+Exports:            nc_character_record, character_record, faction, region_id, character_type, target_faction, mission_success_level
+Class:              ET_SPY_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         ExecutesASpyOnAMission
+Event:              An spying mission has failed and the spy is executed by the target
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_EXECUTES_A_SPY_ON_A_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         LeaderOrderedSpyingMission
+Event:              A Faction leader has ordered a spying mission
+Exports:            nc_character_record, character_record, faction, region_id, character_type, target_faction, mission_success_level
+Class:              ET_LEADER_ORDERED_SPYING_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         AssassinationMission
+Event:              An assassination mission has completed
+Exports:            nc_character_record, character_record, faction, region_id, character_type, mission_success_level
+Class:              ET_ASSASSINATION_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         ExecutesAnAssassinOnAMission
+Event:              An assassination mission has failed and the assassin is executed by the target
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_EXECUTES_AN_ASSASSIN_ON_A_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         LeaderOrderedAssassination
+Event:              A Faction leader has ordered an assassination mission
+Exports:            nc_character_record, character_record, faction, region_id, character_type, target_faction, mission_success_level
+Class:              ET_LEADER_ORDERED_ASSASSINATION_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         SufferAssassinationAttempt
+Event:              Someone has had an attempt on their life
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_SUFFER_ASSASSINATION_ATTEMPT
+Author:             Lee
+---------------------------------------------------
+Identifier:         SabotageMission
+Event:              A sabotage mission has completed
+Exports:            nc_character_record, character_record, faction, region_id, character_type, mission_success_level
+Class:              ET_SABOTAGE_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         LeaderOrderedSabotage
+Event:              A Faction leader has ordered a sabotage mission
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_LEADER_ORDERED_SABOTAGE_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         BriberyMission
+Event:              A bribery mission has completed
+Exports:            nc_character_record, character_record, faction, region_id, character_type, target_faction, mission_success_level
+Class:              ET_BRIBERY_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         LeaderOrderedBribery
+Event:              A Faction leader has ordered a bribery mission
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_LEADER_ORDERED_BRIBERY_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         AcceptBribe
+Event:              Someone has been bribed
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_ACCEPT_BRIBE
+Author:             Guy
+---------------------------------------------------
+Identifier:         RefuseBribe
+Event:              Someone has refused a bribe
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_REFUSE_BRIBE
+Author:             Guy
+---------------------------------------------------
+Identifier:         Insurrection
+Event:              Insurgence has been provoked
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_INSURRECTION
+Author:             Guy
+---------------------------------------------------
+Identifier:         DiplomacyMission
+Event:              A diplomacy mission has completed
+Exports:            nc_character_record, character_record, faction, region_id, character_type, target_faction, mission_success_level
+Class:              ET_DIPLOMACY_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         LeaderOrderedDiplomacy
+Event:              A Faction leader has ordered a diplomacy mission
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_LEADER_ORDERED_DIPLOMACY_MISSION
+Author:             Lee
+---------------------------------------------------
+Identifier:         LeaderSenateMissionSuccess
+Event:              A Senate mission has been completed
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_LEADER_SENATE_MISSION_SUCCESS
+Author:             Lee
+---------------------------------------------------
+Identifier:         LeaderSenateMissionFailed
+Event:              A Senate mission has failed
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_LEADER_SENATE_MISSION_FAILED
+Author:             Lee
+---------------------------------------------------
+Identifier:         ConstructionItemClicked
+Event:              Called when a construction item is clicked
+Exports:            resource_description
+Class:              ET_CONSTRUCTION_ITEM_CLICKED
+Author:             Artis
+---------------------------------------------------
+Identifier:         RecruitmentItemClicked
+Event:              Called when a recruitment item is clicked
+Exports:            resource_description
+Class:              ET_RECRUITMENT_ITEM_CLICKED
+Author:             Artis
+---------------------------------------------------
+Identifier:         RecruitmentPopulated
+Event:              Called when recruitment options are added
+Exports:            
+Class:              ET_RECRUITMENT_POPULATED
+Author:             Artis
+---------------------------------------------------
+Identifier:         ConstructionPopulated
+Event:              Called when construction options are added
+Exports:            
+Class:              ET_CONSTRUCTION_POPULATED
+Author:             Artis
+---------------------------------------------------
+Identifier:         AgentListPopulated
+Event:              Called when agent list has been populated
+Exports:            
+Class:              ET_AGENT_LIST_POPULATED
+Author:             Artis
+---------------------------------------------------
+Identifier:         MoveRetinuePopulated
+Event:              Called when move retinue window gets populated
+Exports:            
+Class:              ET_MOVE_RETINUE_POPULATED
+Author:             Artis
+---------------------------------------------------
+Identifier:         MoveRetinuePressed
+Event:              Called when move retinue character gets pressed
+Exports:            
+Class:              ET_MOVE_RETINUE_PRESSED
+Author:             Artis
+---------------------------------------------------
+Identifier:         MoveRetinueAncillarySelected
+Event:              
+Exports:            
+Class:              ET_MOVE_RETINUE_ANCILLARY_SELECTED
+Author:             Artis
+---------------------------------------------------
+Identifier:         MoveRetinueAncillaryDeselected
+Event:              
+Exports:            
+Class:              ET_MOVE_RETINUE_ANCILLARY_DESELECTED
+Author:             Artis
+---------------------------------------------------
+Identifier:         MissionSelected
+Event:              Called when a mission on the agent hub has been selected
+Exports:            
+Class:              ET_MISSION_SELECTED
+Author:             Artis
+---------------------------------------------------
+Identifier:         AgentSelected
+Event:              Called when a agent has been selected
+Exports:            resource_description
+Class:              ET_AGENT_SELECTED
+Author:             Artis
+---------------------------------------------------
+Identifier:         ScrollDidOpen
+Event:              Called when a scroll is opened
+Exports:            resource_description
+Class:              ET_SCROLL_DID_OPEN
+Author:             Charlie
+---------------------------------------------------
+Identifier:         UnitHasRouted
+Event:              Called when a unit starts routing
+Exports:            resource_description
+Class:              ET_UNIT_HAS_ROUTED
+Author:             Charlie
+---------------------------------------------------
+Identifier:         BattleUnitActionStatus
+Event:              Called when a unit changes status
+Exports:            resource_description, resource_status
+Class:              ET_BATTLE_UNIT_ACTION_STATUS
+Author:             Charlie
+---------------------------------------------------
+Identifier:         DiplomacyScrollPopulated
+Event:              Called when diplomacy offers are added
+Exports:            
+Class:              ET_DIPLOMACY_SCROLL_POPULATED
+Author:             Charlie
+---------------------------------------------------
+Identifier:         ItemDeselected
+Event:              Called when an item on the campaign map is deselected
+Exports:            
+Class:              ET_ITEM_DESELECTED
+Author:             Charlie
+---------------------------------------------------
+Identifier:         UnitInfoOpened
+Event:              Called when a unit's info panel is opened in a battle.
+Exports:            
+Class:              ET_UNIT_INFO_OPENED
+Author:             Charlie
+---------------------------------------------------
+Identifier:         AdvisorAudioStopped
+Event:              Called when the advisor audio gets stopped.
+Exports:            
+Class:              ET_ADVISOR_AUDIO_STOPPED
+Author:             Charlie
+---------------------------------------------------
+Identifier:         SettlementTurnStart
+Event:              A Settlement is being processed for the start of its faction's turn
+Exports:            faction, settlement, region_id
+Class:              ET_SETTLEMENT_TURN_START
+Author:             Guy
+---------------------------------------------------
+Identifier:         SettlementTurnEnd
+Event:              A Settlement is being processed for the end of its faction's turn
+Exports:            faction, settlement, region_id
+Class:              ET_SETTLEMENT_TURN_END
+Author:             Guy
+---------------------------------------------------
+Identifier:         NewAdmiralCreated
+Event:              A new admiral has been created for a new ship
+Exports:            faction, settlement, character
+Class:              ET_NEW_ADMIRAL_CREATED
+Author:             Lee
+---------------------------------------------------
+Identifier:         UnitTrained
+Event:              A unit has been trained
+Exports:            faction, settlement, resource_description, unit_category
+Class:              ET_UNIT_TRAINED
+Author:             Lee
+---------------------------------------------------
+Identifier:         GovernorUnitTrained
+Event:              A unit has been trained
+Exports:            nc_character_record, character_record, faction, region_id, character_type, settlement, resource_description, unit_category
+Class:              ET_GOVERNOR_UNIT_TRAINED
+Author:             Lee
+---------------------------------------------------
+Identifier:         BuildingCompleted
+Event:              A building has been completed
+Exports:            faction, settlement, prior_build, advised_build
+Class:              ET_BUILDING_COMPLETED
+Author:             Lee
+---------------------------------------------------
+Identifier:         GovernorBuildingCompleted
+Event:              A building has been completed
+Exports:            nc_character_record, character_record, faction, region_id, character_type, settlement, prior_build, advised_build
+Class:              ET_GOVERNOR_BUILDING_COMPLETED
+Author:             Lee
+---------------------------------------------------
+Identifier:         PlugInCompleted
+Event:              A plugin has been completed
+Exports:            faction, settlement, region_id, prior_build, advised_build
+Class:              ET_PLUG_IN_COMPLETED
+Author:             Lee
+---------------------------------------------------
+Identifier:         GovernorPlugInCompleted
+Event:              A plugin has been completed
+Exports:            nc_character_record, character_record, faction, region_id, character_type, prior_build
+Class:              ET_GOVERNOR_PLUG_IN_COMPLETED
+Author:             Lee
+---------------------------------------------------
+Identifier:         AgentCreated
+Event:              An agent has been trained
+Exports:            character_record, character_type, settlement, faction
+Class:              ET_AGENT_CREATED
+Author:             Lee
+---------------------------------------------------
+Identifier:         GovernorAgentCreated
+Event:              An agent has been trained
+Exports:            nc_character_record, character_record, faction, region_id, character_type, settlement
+Class:              ET_GOVERNOR_AGENT_CREATED
+Author:             Lee
+---------------------------------------------------
+Identifier:         BuildingDestroyed
+Event:              A building has been destroyed
+Exports:            
+Class:              ET_BUILDING_DESTROYED
+Author:             Lee
+---------------------------------------------------
+Identifier:         GovernorBuildingDestroyed
+Event:              A building has been destroyed
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_GOVERNOR_BUILDING_DESTROYED
+Author:             Lee
+---------------------------------------------------
+Identifier:         CityRiots
+Event:              A settlement has rioted
+Exports:            faction, settlement, region_id, target_faction
+Class:              ET_SETTLEMENT_RIOTS
+Author:             Lee
+---------------------------------------------------
+Identifier:         GovernorCityRiots
+Event:              A settlement has rioted
+Exports:            nc_character_record, character_record, faction, region_id, character_type, settlement, target_faction
+Class:              ET_GOVERNOR_SETTLEMENT_RIOTS
+Author:             Lee
+---------------------------------------------------
+Identifier:         CityRebels
+Event:              A settlement has rebelled
+Exports:            faction, settlement, region_id, target_faction
+Class:              ET_SETTLEMENT_REBELS
+Author:             Lee
+---------------------------------------------------
+Identifier:         GovernorCityRebels
+Event:              A settlement has rebelled
+Exports:            nc_character_record, character_record, faction, region_id, character_type, settlement, target_faction
+Class:              ET_GOVERNOR_SETTLEMENT_REBELS
+Author:             Lee
+---------------------------------------------------
+Identifier:         GovernorThrowGames
+Event:              Games have been thrown
+Exports:            nc_character_record, character_record, faction, region_id, character_type, settlement
+Class:              ET_GOVERNOR_THROW_GAMES
+Author:             Lee
+---------------------------------------------------
+Identifier:         GovernorThrowRaces
+Event:              Races have been thrown
+Exports:            nc_character_record, character_record, faction, region_id, character_type, settlement
+Class:              ET_GOVERNOR_THROW_RACES
+Author:             Lee
+---------------------------------------------------
+Identifier:         UngarrisonedSettlement
+Event:              A settlement is no longer garrisoned
+Exports:            faction, settlement, region_id
+Class:              ET_UNGARRISONED_SETTLEMENT
+Author:             Lee
+---------------------------------------------------
+Identifier:         EnslavePopulation
+Event:              A settlement has been captured and some of its population has been enslaved
+Exports:            nc_character_record, character_record, faction, target_faction, region_id, character_type
+Class:              ET_ENSLAVE_POPULATION
+Author:             Lee
+---------------------------------------------------
+Identifier:         ExterminatePopulation
+Event:              A settlement has been captured and some of its population has been decimated
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_EXTERMINATE_POPULATION
+Author:             Lee
+---------------------------------------------------
+Identifier:         CitySacked
+Event:              A settlement has been sacked
+Exports:            faction, settlement, region_id, target_faction
+Class:              ET_SETTLEMENT_SACKED
+Author:             Guy
+---------------------------------------------------
+Identifier:         CharacterSelected
+Event:              The player has selected a character
+Exports:            nc_character_record, character_record, faction, region_id, character_type, character_action_advice, target_settlement
+Class:              ET_CHARACTER_SELECTED
+Author:             Guy
+---------------------------------------------------
+Identifier:         SettlementSelected
+Event:              The player has selected a settlement
+Exports:            faction, settlement, region_id
+Class:              ET_SETTLEMENT_SELECTED
+Author:             Guy
+---------------------------------------------------
+Identifier:         EnemySettlementSelected
+Event:              The player has selected a enemy settlement
+Exports:            faction, settlement, region_id
+Class:              ET_ENEMY_SETTLEMENT_SELECTED
+Author:             Artis
+---------------------------------------------------
+Identifier:         MultiTurnMove
+Event:              The player has selected a position beyond the character's extents
+Exports:            nc_character_record, character_record, faction, region_id, character_type
+Class:              ET_MULTI_TURN_MOVE
+Author:             Guy
+---------------------------------------------------
+Identifier:         CharacterPanelOpen
+Event:              The player has opened the panel for the selected character
+Exports:            character_record, faction, region_id, character_type
+Class:              ET_CHARACTER_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         SettlementPanelOpen
+Event:              The player has opened the panel for the selected settlement
+Exports:            faction, settlement, region_id
+Class:              ET_SETTLEMENT_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         FinancesPanelOpen
+Event:              The player has opened his finances panel
+Exports:            faction
+Class:              ET_FINANCES_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         FactionSummaryPanelOpen
+Event:              The player has opened the faction summary panel
+Exports:            faction
+Class:              ET_FACTION_SUMMARY_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         FamilyTreePanelOpen
+Event:              The player has opened the family tree panel
+Exports:            faction
+Class:              ET_FAMILY_TREE_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         DiplomaticStandingPanelOpen
+Event:              The player has opened the diplomatic standing panel
+Exports:            
+Class:              ET_DIPLOMATIC_STANDING_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         SenateMissionsPanelOpen
+Event:              The player has opened the senate missions panel
+Exports:            faction
+Class:              ET_SENATE_MISSIONS_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         SenateOfficesPanelOpen
+Event:              The player has opened the senate offices panel
+Exports:            
+Class:              ET_SENATE_OFFICES_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         DiplomacyPanelOpen
+Event:              The player has opened a diplomacy panel
+Exports:            faction
+Class:              ET_DIPLOMACY_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         PreBattlePanelOpen
+Event:              The player has attacked an army or settlement.  The decision panel is now open.
+Exports:            faction
+Class:              ET_PRE_BATTLE_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         RecruitmentPanelOpen
+Event:              The player has opened a recruitment panel
+Exports:            faction, settlement, region_id
+Class:              ET_RECRUITMENT_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         ConstructionPanelOpen
+Event:              The player has opened a construction panel
+Exports:            faction, settlement, region_id
+Class:              ET_CONSTRUCTION_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         TradePanelOpen
+Event:              The player has opened a trade panel
+Exports:            faction, settlement, region_id
+Class:              ET_TRADE_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         HireMercenariesPanelOpen
+Event:              The player has opened a hire mercenaries panel
+Exports:            
+Class:              ET_HIRE_MERCENARIES_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         NavalAutoResolvePanelOpen
+Event:              The naval auto resolve panel has opened
+Exports:            
+Class:              ET_NAVAL_AUTO_RESOLVE_PANEL_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         IncomingMessage
+Event:              A message has arrived for the player
+Exports:            event
+Class:              ET_INCOMING_MESSAGE
+Author:             Guy
+---------------------------------------------------
+Identifier:         MessageOpen
+Event:              The player has opened a message
+Exports:            event
+Class:              ET_MESSAGE_OPEN
+Author:             Guy
+---------------------------------------------------
+Identifier:         RequestBuildingAdvice
+Event:              The player has requested building advice
+Exports:            faction, settlement, region_id, advised_build
+Class:              ET_BUILDING_ADVICE
+Author:             Guy
+---------------------------------------------------
+Identifier:         RequestTrainingAdvice
+Event:              The player has requested training advice
+Exports:            faction, settlement, region_id, resource_description
+Class:              ET_TRAINING_ADVICE
+Author:             Guy
+---------------------------------------------------
+Identifier:         RequestMercenariesAdvice
+Event:              The player has requested mercenaries advice
+Exports:            army
+Class:              ET_MERCENARIES_ADVICE
+Author:             Guy
+---------------------------------------------------
+Identifier:         ButtonPressed
+Event:              The player has clicked on a button
+Exports:            resource_description
+Class:              ET_BUTTON_PRESSED
+Author:             Tom
+---------------------------------------------------
+Identifier:         ShortcutTriggered
+Event:              The player triggered a keyboard shortcut
+Exports:            resource_description
+Class:              ET_SHORTCUT_TRIGGERED
+Author:             Tom
+---------------------------------------------------
+Identifier:         ScrollOpened
+Event:              The player opened a scroll
+Exports:            resource_description
+Class:              ET_SCROLL_OPENED
+Author:             Tom
+---------------------------------------------------
+Identifier:         ScrollClosed
+Event:              The player closed a scroll
+Exports:            resource_description
+Class:              ET_SCROLL_CLOSED
+Author:             Tom
+---------------------------------------------------
+Identifier:         AdviceSupressed
+Event:              The player has suppressed a piece of advice
+Exports:            resource_description
+Class:              ET_ADVICE_SUPPRESSED
+Author:             Guy
+---------------------------------------------------
+Identifier:         ScrollAdviceRequested
+Event:              The player has requested advice on a scroll
+Exports:            resource_description
+Class:              ET_SCROLL_ADVICE_REQUESTED
+Author:             Guy
+---------------------------------------------------
+Identifier:         PreBattleScrollAdviceRequested
+Event:              The player has requested advice on the prebattle scroll
+Exports:            none
+Class:              ET_PREBATTLE_SCROLL_ADVICE_REQUESTED
+Author:             Tom
+---------------------------------------------------
+Identifier:         NavalPreBattleScrollAdviceRequested
+Event:              The player has requested advice on the naval prebattle scroll
+Exports:            none
+Class:              ET_NAVAL_PREBATTLE_SCROLL_ADVICE_REQUESTED
+Author:             Tom
+---------------------------------------------------
+Identifier:         SettlementScrollAdviceRequested
+Event:              The player has requested advice on the settlement scroll
+Exports:            faction, settlement, region_id
+Class:              ET_SETTLEMENT_SCROLL_ADVICE_REQUESTED
+Author:             Guy
+---------------------------------------------------
+Identifier:         Idle
+Event:              The player has remained idle for some time (Not implemented)
+Exports:            
+Class:              ET_IDLE
+Author:             Guy
+---------------------------------------------------
+Identifier:         AbandonShowMe
+Event:              The player has abandoned a show me scipt
+Exports:            
+Class:              ET_ABANDON_SHOW_ME
+Author:             Guy
+---------------------------------------------------
+Identifier:         ScriptedAdvice
+Event:              The player has been issued with advice by a script
+Exports:            none
+Class:              ET_SCRIPTED_ADVICE
+Author:             Guy
+---------------------------------------------------
+Identifier:         DeclineAutomatedSettlementManagement
+Event:              The player has declined automated settlement management
+Exports:            faction, settlement, best_finance_option
+Class:              ET_DECLINE_AUTOMATED_SETTLEMENT_MANAGEMENT
+Author:             Guy
+---------------------------------------------------
+Identifier:         EscPressed
+Event:              The escape key has been pressed.  This trigger will only fire if the command StealEscKey has been used
+Exports:            none
+Class:              ET_ESC_PRESSED
+Author:             Tom
+---------------------------------------------------
+Identifier:         GameReloaded
+Event:              A strat map game has been reloaded
+Exports:            none
+Class:              ET_GAME_RELOADED
+Author:             Guy
+---------------------------------------------------
+Identifier:         FirstStratUpdates
+Event:              First strategy map updates
+Exports:            none
+Class:              ET_FIRST_STRAT_UPDATES
+Author:             Stavros Bizelis
+---------------------------------------------------
+Identifier:         MovieStopped
+Event:              The player stopped the movie
+Exports:            
+Class:              ET_MOVIE_STOPPED
+Author:             Alex A
+---------------------------------------------------
+Identifier:         SelectionAssistPossible
+Event:              Selection assist could be useful
+Exports:            
+Class:              ET_SELECTION_ASSIST_COULD_FIRE
+Author:             Alex A
+---------------------------------------------------
+Identifier:         SettlementButtonPressed
+Event:              The player has clicked on a button associated with a settlement
+Exports:            resource_description, faction, settlement, region_id
+Class:              ET_SETTLEMENT_BUTTON_PRESSED
+Author:             Sam
+---------------------------------------------------
+Identifier:         WorldScriptTerminate
+Event:              A world script has finished
+Exports:            resource_description
+Class:              ET_WORLD_SCRIPT_TERMINATE
+Author:             Alex A
+---------------------------------------------------
+Identifier:         CampaignHudShown
+Event:              We are at the campaign hud with no screens visible
+Exports:            
+Class:              ET_CAMPAIGN_HUD_SHOWN
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         ContextPopupInteraction
+Event:              A context popup button has been tapped
+Exports:            
+Class:              ET_CONTEXT_POPUP_INTERACTION
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         DiplomacyConstructingOffer
+Event:              We are constructing an offer in the diplomacy scroll
+Exports:            
+Class:              ET_DIPLOMACY_CONSTRUCTING_OFFER
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         DiplomacyConstructingCounterOffer
+Event:              We are constructing a counter offer in the diplomacy scroll
+Exports:            
+Class:              ET_DIPLOMACY_CONSTRUCTING_COUNTER_OFFER
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         DiplomacyOpponentPresentsOffer
+Event:              We are presented an offer in the diplomacy scroll
+Exports:            
+Class:              ET_DIPLOMACY_OPPONENT_PRESENTS_OFFER
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         DiplomacyOpponentPresentsCounterOffer
+Event:              We are presented a counter offer in the diplomacy 
+Exports:            
+Class:              ET_DIPLOMACY_OPPONENT_PRESENTS_COUNTER_OFFER
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FactionSummary
+Event:              Faction Summary Screen Open (and we're not immediately opening another tab)
+Exports:            
+Class:              ET_FACTION_SUMMARY
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FactionSenate
+Event:              Faction Senate Screen Open
+Exports:            
+Class:              ET_FACTION_SENATE
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FactionSenatePolicy
+Event:              Faction Senate Policy Screen Open
+Exports:            
+Class:              ET_FACTION_SENATE_POLICY
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FactionSenateMissions
+Event:              Faction Senate Missions Screen Open
+Exports:            
+Class:              ET_FACTION_SENATE_MISSIONS
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FactionSenateOfficials
+Event:              Faction Senate Officials Screen Open
+Exports:            
+Class:              ET_FACTION_SENATE_OFFICIALS
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FactionSenateFloor
+Event:              Faction Senate Officials Screen Open
+Exports:            
+Class:              ET_FACTION_SENATE_FLOOR
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FactionFactions
+Event:              Faction Factions Screen Open - Overlaps with FactionSummaryPanelOpen
+Exports:            
+Class:              ET_FACTION_FACTIONS
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FactionDetails
+Event:              Faction Details Screen Open
+Exports:            
+Class:              ET_FACTION_DETAILS
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FactionFamilyTree
+Event:              Faction Family Tree Open
+Exports:            
+Class:              ET_FACTION_FAMILY_TREE
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FactionRankings
+Event:              Faction Rankings Screen Open
+Exports:            
+Class:              ET_FACTION_RANKINGS
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FactionLists
+Event:              Faction Lists Screen Open
+Exports:            
+Class:              ET_FACTION_LISTS
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         SettlementCharacter
+Event:              Settlement Character Panel is Opened
+Exports:            
+Class:              ET_SETTLEMENT_CHARACTER
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         SettlementTrade
+Event:              Settlement Trade Panel is Opened (Phone UI)
+Exports:            
+Class:              ET_SETTLEMENT_TRADE
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         SettlementOverview
+Event:              Settlement Panel is opened to the main screen(Phone UI)
+Exports:            
+Class:              ET_SETTLEMENT_OVERVIEW
+Author:             Alex A
+---------------------------------------------------
+Identifier:         SpySelected
+Event:              You have selected a spy
+Exports:            
+Class:              ET_SPY_SELECTED
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         DiplomatSelected
+Event:              You have selected a diplomat
+Exports:            
+Class:              ET_DIPLOMAT_SELECTED
+Author:             Oliver S
+---------------------------------------------------
+Identifier:         AssassinSelected
+Event:              You have selected an assassin
+Exports:            
+Class:              ET_ASSASSIN_SELECTED
+Author:             Oliver S
+---------------------------------------------------
+Identifier:         FleetSelected
+Event:              You have selected a fleet
+Exports:            
+Class:              ET_FLEET_SELECTED
+Author:             Oliver S
+---------------------------------------------------
+Identifier:         CampaignMapGesture
+Event:              You have performed gesture navigation on the campaign map
+Exports:            
+Class:              ET_CAMPAIGN_MAP_GESTURE
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         CampaignDoingBadly
+Event:              Campaign is not going well
+Exports:            
+Class:              ET_CAMPAIGN_DOING_BADLY
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         BattleMapGesture
+Event:              You have performed gesture navigation on the battle map
+Exports:            
+Class:              ET_BATTLE_MAP_GESTURE
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         HideBattleUI
+Event:              You have actively hidden the battle UI
+Exports:            
+Class:              ET_HIDE_BATTLE_UI
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         FeralNewsVisible
+Event:              The Feral News Dialog is visible to the user
+Exports:            
+Class:              ET_FERAL_NEWS_VISIBLE
+Author:             Andrew H
+---------------------------------------------------
+Identifier:         AgentHubOpened
+Event:              The Agent Hub tab in the faction overview is opened.
+Exports:            
+Class:              ET_FTH_AGENT_HUB_OPENED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         MoveRetinueOpened
+Event:              The Move Retinue tab in the faction overview is opened.
+Exports:            
+Class:              ET_FTH_MOVE_RETINUE_OPENED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         OwnFactionDetailsOpened
+Event:              The Faction Details tab in the faction overview is opened.
+Exports:            
+Class:              ET_FTH_OWN_FACTION_DETAILS_OPENED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         DiplomaticStandingShown
+Event:              The Diplomatic Standings are shown in the faction overview.
+Exports:            
+Class:              ET_FTH_DIPLOMATIC_STANDING_SHOWN
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         FactionFinancesShown
+Event:              The player's finances are shown in the faction overview.
+Exports:            
+Class:              ET_FTH_FACTION_FINANCES_SHOWN
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         FamilyTreeShown
+Event:              The Faction family tree is shown in fullscreen
+Exports:            
+Class:              ET_FTH_FAMILY_TREE_SHOWN
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         SendAgentPanel
+Event:              The 'Send Agent' button is pressed
+Exports:            
+Class:              ET_FTH_SEND_AGENT_PANEL
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         SettlementDetailsShown
+Event:              A settlement's details are displayed.
+Exports:            
+Class:              ET_FTH_SETTLEMENT_DETAILS_SHOWN
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         CharacterInfoScreen
+Event:              A character's detailed info is displayed.
+Exports:            
+Class:              ET_FTH_CHARACTER_INFO_SCREEN
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         FriendlyCharacterSelected
+Event:              A friendly character is selected on the Strat map.
+Exports:            
+Class:              ET_FTH_FRIENDLY_CHARACTER_SELECTED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         EnemyCharacterSelected
+Event:              An enemy character is selected on the Strat map.
+Exports:            
+Class:              ET_FTH_ENEMY_CHARACTER_SELECTED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         FriendlySettlementSelected
+Event:              A friendly Settlement is selected on the Strat map.
+Exports:            
+Class:              ET_FTH_FRIENDLY_SETTLEMENT_SELECTED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         EnemySettlementSelected
+Event:              An enemy Settlement is selected on the Strat map.
+Exports:            
+Class:              ET_FTH_ENEMY_SETTLEMENT_SELECTED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         MapOverlayOpened
+Event:              The map overlay screen is opened.
+Exports:            
+Class:              ET_FTH_MAP_OVERLAY_OPENED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         SiegeDetailsShown
+Event:              The siege overview scroll is open.
+Exports:            
+Class:              ET_FTH_SIEGE_DETAILS_SHOWN
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         PreBattleScreen
+Event:              The pre-battle scroll is open.
+Exports:            
+Class:              ET_FTH_PRE_BATTLE_SCREEN
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         TacticalMapShown
+Event:              The Tactical map is toggled on in a battle.
+Exports:            
+Class:              ET_FTH_TACTICAL_MAP_SHOWN
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         PostBattleScreen
+Event:              A battle ends and the post battle stats screen opens.
+Exports:            
+Class:              ET_FTH_POST_BATTLE_SCREEN
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         UnitsGrouped
+Event:              Units have been grouped in a battle.
+Exports:            
+Class:              ET_FTH_UNITS_GROUPED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         EnteredBattle
+Event:              Player has entered a battle.
+Exports:            
+Class:              ET_FTH_ENTERED_BATTLE
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         AdvisorOpened
+Event:              Player has opened the advisor panel.
+Exports:            
+Class:              ET_FTH_ADVISOR_OPENED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         FormationTypesShown
+Event:              Player has opened the tab that shows formation types in a battle.
+Exports:            
+Class:              ET_FTH_FORMATION_TYPES_SHOWN
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         MerchantSelected
+Event:              Player has selected a merchant on the campaign map.
+Exports:            
+Class:              ET_FTH_MERCHANT_SELECTED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         NavalCombatStarted
+Event:              Player has opened the tab that shows formation types in a battle.
+Exports:            
+Class:              ET_FTH_NAVAL_COMBAT_STARTED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         MergeArmiesOpened
+Event:              The Merge Army scroll has opened.
+Exports:            
+Class:              ET_FTH_MERGE_ARMIES_OPENED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         RoutesBlockaded
+Event:              The bloackaded routes or ports notification has appeared.
+Exports:            
+Class:              ET_FTH_ROUTES_BLOCKADED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         ElectionResults
+Event:              The senate election results notification has appeared.
+Exports:            
+Class:              ET_FTH_ELECTION_RESULTS
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         BattleToggleMenu
+Event:              The battle toggle menu was opened.
+Exports:            
+Class:              ET_FTH_BATTLE_TOGGLE_MENU
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         AmbushMode
+Event:              A unit has entered ambush mode
+Exports:            character record, faction, region, character type
+Class:              ET_FTH_AMBUSH_MODE
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         NewsTabClosed
+Event:              The News tab was closed using the Escape key.
+Exports:            
+Class:              ET_NEWS_TAB_CLOSED
+Author:             Charlie M (CVM)
+---------------------------------------------------
+Identifier:         NewsTabOpened
+Event:              The News tab was opened.
+Exports:            
+Class:              ET_NEWS_TAB_OPENED
+Author:             STB
+---------------------------------------------------
+Identifier:         BattleNewsTabOpened
+Event:              The News tab was opened.
+Exports:            
+Class:              ET_BATTLE_NEWS_TAB_OPENED
+Author:             STB
+---------------------------------------------------
+Identifier:         QuickListsOpened
+Event:              Quick lists opened.
+Exports:            
+Class:              ET_QUICK_LISTS_OPENED
+Author:             STB
+---------------------------------------------------
+Identifier:         EmbargoIsAvailable
+Event:              EmbargoIsAvailable.
+Exports:            
+Class:              ET_EMBARGO_IS_AVAILABLE
+Author:             STB
+---------------------------------------------------
+Identifier:         RebelCharacterSelected
+Event:              RebelCharacterSelected.
+Exports:            
+Class:              ET_FTH_REBEL_CHARACTER_SELECTED
+Author:             STB
+---------------------------------------------------
+Identifier:         HighTaxesCauseDisorder
+Event:              HighTaxesCauseDisorder.
+Exports:            
+Class:              ET_FTH_HIGH_TAXES_CAUSE_DISORDER
+Author:             STB
+---------------------------------------------------
+Identifier:         FailedToEndTurn
+Event:              FailedToEndTurn.
+Exports:            
+Class:              ET_FAILED_TO_END_TURN_TRIGGER
+Author:             STB
