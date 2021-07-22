@@ -10,7 +10,6 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
    * [Feature Guides](#feature-guides)
    * [Asset Creation Guides](#asset-creation-guides)
 * [Tool Guides](#tool-guides)
-* [Example Mod](#example-mod)
 * [Third Party Resources](#third-party-resources)
 * [Rules](#rules)
 
