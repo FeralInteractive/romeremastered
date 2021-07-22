@@ -42,6 +42,7 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * [Hording](/documentation/feature_guides/hording.md)
 * [Scripting](/documentation/feature_guides/scripts/Scripts.md)
 * [Movie_Cam](/documentation/feature_guides/movie_cam.md)
+* [Logging](/documentation/feature_guides/logging/logging.md)
 
 ## Asset Creation Guides
 * [Animations](/documentation/techart_guides/Animations.md)
