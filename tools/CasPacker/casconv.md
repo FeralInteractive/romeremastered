@@ -13,11 +13,12 @@
 * [05 Building models](#05-building-models)
 * [06 Unit animation](#06-unit-animation)
 * [07 Campaign models](#07-campaign-models)
+* [08 Batch files](#08-batch-files)
 * [Resources](#resources)
 
 ## Introduction
 
-This is the casconv tool. This tool will convert fbx files into cas files. The tool is a commandline tool that allows you to take an fbx file and export it into a cas file that can be loaded by the game.
+This is the casconv tool. This tool will convert fbx files into cas files & vice-versa. The tool is a commandline tool that allows you to take an fbx file and export it into a cas file that can be loaded by the game.
 
 It has an interactive help that provides more details on the format of the different commands.   
 
@@ -94,10 +95,21 @@ You'll find an in-game model provided, in.fbx format, trade_boat.fbx.
 
 Refer to this as a working example of a campaign map model. Note the use of an empty or a locator (name differs dependant on 3D software), titled Scene_Root, this is a requirement.
 
+## 08 batch files
+
+Below you can find 4 batch scripts for Windows that will allow you to bulk pack and unpack cas files.
+
+* [cas_to_fbx_all.bat](/tools/CasPacker/08_bat_examples/cas_to_fbx_all.bat)
+* [cas_to_fbx_single.bat](/tools/CasPacker/08_bat_examples/cas_to_fbx_single.bat)
+* [fbx_to_cas_all.bat](/tools/CasPacker/08_bat_examples/fbx_to_cas_all.bat)
+* [fbx_to_cas_single.bat](/tools/CasPacker/08_bat_examples/fbx_to_cas_single.bat)
+
+We'd like to thank the modder Dagovax for sharing these Windows bat scripts with the community.
+
 ## Resources
 
 Resources seen on the campaign map have been changed in Total War: Rome Remastered compared to the original title.
 
-In an effort to reduce the number of 3D models on the map, resources within close proximity on the map are grouped and replaced with a different model to signify a larger quanitity.
+In an effort to reduce the number of 3D models on the map, resources within close proximity on the map are grouped and replaced with a different model to signify a larger quantity.
 
-These entreies can be seen and edited within descr_sm_resources.txt
+These entries can be seen and edited within descr_sm_resources.txt
