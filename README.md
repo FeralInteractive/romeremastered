@@ -52,6 +52,7 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * [Physical Info Files](documentation/techart_guides/PhysicalInfoFiles.md)
 * [Vegetation](documentation/Vegetation.md)
 * [Importing Rome Total War units to Total War: ROME REMASTERED](documentation/techart_guides/Importing_RTW_units_to_Remastered.md)
+* [Settlement Overlay](documentation/techart_guides/Settlement_Overlay.md)
 
 # Tool Guides
 
