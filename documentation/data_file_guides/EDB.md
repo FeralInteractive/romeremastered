@@ -180,6 +180,9 @@ practice_field requires factions { barbarian, roman, } and resource iron and hid
 * `marian_reforms` - Checks if the marion reforms have triggered
 * `factions { x, }` - Checks for specific factions
 * `port` - This returns true in coastal areas with ports assigned (i.e. in map_regions.tga). It can be used as a condition for buildings and capabilities, including units.
+* `currency_fixed` is tied to the BI debased currency event can be disabled via a classic/remastered toggle
+* `remastered_only` is tied to the "settlement condition" classic/remastered toggle
+* `tavern_bonus` is tied to the "tavern changes" classic/remastered toggle
 * ```is_player``` - Allows you to use the ```requires``` function to state if a building is availble for only the player or only the AI factions. This will allow for the creation of special buildings that mods can use to assist the AI factions, or provide depth to the human player experience without overly complicating the AI build trees.
 
 **NOTE:**
