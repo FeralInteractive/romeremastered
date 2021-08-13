@@ -6,7 +6,7 @@
 ## Introduction
 Rome Remastered supports extended logging compared the original game with a number of new options allowing you to enable addional logs for various aspects of the game.
 
-## Enable detailed logging
+## Enable detailed logging
 
 To assist debugging mods we now have the option to save logging to a text file. THis text file not only contains errors and warnings but also also success/failure output to help modders track not only what went wrong but what the game was going prior to the issue.
 
@@ -60,7 +60,7 @@ Once enabled you will find an extra file in the following location:
 
 This option can be combined with other options like `enable_logging`. Please be aware the verbose script logging is **very** verbose. This is great for debugging issues line by line but the text file will start to get quite large if you play for an extended time and/or have complex scripts.
 
-## Enable original error dialog
+## Enable original error dialog
 
 The original game would display an error dialog when the game engine encountered certain error messages. You can use this original error dialog in ROME REMASTERED as well.
 
@@ -70,7 +70,7 @@ You need to add the string `-show_err` to the advanced options (see screenshot).
 
 **NOTE:** With the existence of the newer more detailed modding this function is no longer as useful to debugging modding so we reccomend using `enable_dialogs` if you wish to get pop-up dialogs. However for a more detailed debug option the logging to text file in `enable_logging` and `verbose_script_logging` will usually be your best option.
 
-## Enable Battle Mode Unit Info
+## Enable Battle Mode Unit Info
 
 We have added a debug dialog to allow you to click on any unit in a 3D battle and get information on what assets the unit is using. This can help debug visual issues when adding in new or modifying existing units.
 
@@ -98,3 +98,9 @@ Now when you are in a 3D battle if you `shift + click` on a unit you will get a 
 ![Dialog](/documentation/feature_guides/logging/model_info_dialog.jpg)  
 
 All this information is related to the offsets and definitions referenced in the [character guide](/documentation/techart_guides/Characters.md) and the  [DMB guide](documentation/data_file_guides/DMB.md).
+
+## Enable Battle Mode Building Info 
+
+We have added a debug dialog to allow you to hover over on any building in a 3D battle and get information on what assets the building is using. This can help debug visual issues when adding in new or modifying existing buildings. You need to add the string `-building_debug_info` to the advanced options (see screenshot).
+
+
