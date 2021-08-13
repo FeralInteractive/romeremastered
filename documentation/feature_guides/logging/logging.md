@@ -1,5 +1,5 @@
 ![Workshop_header_template](/Workshop_header_template.png)
-# logging
+# Logging
 
 # Table Of Contents
 
@@ -38,7 +38,7 @@ New Character - Faction(romans_julii) named character(Flavius Julius)
 Flavius Julius(7ff1ff0bc1d0) has gained a new trait(Factionleader)(level-Faction Leader)
 ```
 
-## Enable error dialog for detailed logging
+## Enable error dialog for detailed logging
 
 This mode is similar to the original games -show_err dialog but it displays the extended errors & warnings from the new `enable_logging` system. This enhanced mode should display more useful errors and warnings.
 
