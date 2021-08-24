@@ -190,8 +190,8 @@ Scripting has been extended in Rome Remastered with logging, modded background s
 
 | Limit Type | Original Rome Limit | Rome Remastered Limit Resolution | Status | Notes |
 |-|:-:|:-:|:-:|-|
-| Max Width | 500 | 500 | `2.0.0` | |
-| Max Height | 500 | 500 | `2.0.0` | |
+| Max Width | 510 | 510 | `2.0.0` | |
+| Max Height | 510 | 510 | `2.0.0` | |
 
 </br>
 
