@@ -102,7 +102,7 @@ no_variation model_flexi data/characters/test_triarii_high_lod0.cas, max ;RS2_un
 Five changes to note:
 
 1. There is no `indiv_range` line
-2. Each unit has to have a PBR (physically based rendering) texture otherwise the game will crash. However, to speed up the importing process you can use a mid grey (RGB 128, 128, 128) texture file. This smooths the shading on the model surfaces. You can use the grey pbr texture from the example mod [here](/My%20Mods/ExampleMod/data/characters/textures/generic_pbr.tga.dds).
+2. Each unit has to have a PBR (physically based rendering) texture otherwise the game will crash. However, to speed up the importing process you can use a mid grey (RGB 128, 128, 128) texture file. This smooths the shading on the model surfaces. You can use the grey pbr texture [here](/documentation/techart_guides/Images/triarii_allied.tga.dds).
 3. You will need a minimum of 4 model lines per unit. You need to define at least two levels of detail (even though the mesh model used can be the same for both levels of detail) for both the unit variation and no unit variation game settings.
 4. There are no sprite lines
 5. Models are now in the `characters` folder rather than `models` unit. Make sure that you put your models here, although this is not absolutely essential, as long as the code defines the right location for your models and textures
@@ -117,11 +117,11 @@ However this should work with cas models from any original game mod.
 
 You will need to update the textures, however this is also an easy process. You need to upscale the textures to 2048x2048 and then save them out as a dds texture (dds-lz4). You can do this using the free open source tool [GNU Image Manipulation Program](https://www.gimp.org/downloads/).
 
-You can use the Example Mod texture [here](/My%20Mods/ExampleMod/data/characters/textures/triarii_allied.tga.dds) as a reference.
+You can use the Example texture [here](/documentation/techart_guides/Images/triarii_allied.tga.dds) as a reference.
 
 **NOTE 1:** If you have higher resolution version of the assets from your original creation process you'll get a better results than upscaling. The example used on this page benefitted from higher quality assets that help teke advantage of ROME REMASTERED's improved renderer.
 
-**NOTE 2:** To speed up the importing process you can use a mid grey (RGB 128, 128, 128) texture file for the PBR file. This smooths the shading on the model surfaces when importing original game units. Feel free to use the texture from the Example Mod [here](/My%20Mods/ExampleMod/data/characters/textures/generic_pbr.tga.dds).
+**NOTE 2:** To speed up the importing process you can use a mid grey (RGB 128, 128, 128) texture file for the PBR file. This smooths the shading on the model surfaces when importing original game units. Feel free to use the texture [here](/documentation/techart_guides/Images/triarii_allied.tga.dds).
 
 ## Acknowledgements & Thanks
 
