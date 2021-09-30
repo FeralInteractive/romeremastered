@@ -28,7 +28,7 @@ In summary, you’ll need to:
 * Add a description (export_units.txt)
 * Add unit cards (through the UI folders)
 
-The good news is that you can very easily import a whole unit roster into Remastered with very few changes. The example mod available on this GitHub demonstates the instructions below using the Roman Triarii unit. See the image below for an example of the unit in game.
+The good news is that you can very easily import a whole unit roster into Remastered with very few changes. See the image below for an example of a converted unit in game.
 
 ![Workshop_header_template](images/Upsampled_Units_Imported_Into_RR_from_RTW_RS_Mod.jpg)
 
@@ -109,7 +109,7 @@ Five changes to note:
 
 ## CAS files
 
-You can use the same cas files from the original game without any edits. Just place them in the correct location. The Example Mod that on this GitHub has replaced the Remastered Triarii model with one from the Roma Surrectum 2 mod for the original game.
+You can use the same cas files from the original game without any edits. Just place them in the correct location.
 
 However this should work with cas models from any original game mod.
 
