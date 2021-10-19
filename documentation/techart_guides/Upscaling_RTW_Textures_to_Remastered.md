@@ -1,5 +1,5 @@
 ![Workshop_header_template](/Workshop_header_template.png)
-# Upscaling Rome Total War units to Total War: ROME REMASTERED
+# Upscaling Rome Total War textures to Total War: ROME REMASTERED
 
 ## Table Of Contents
 
