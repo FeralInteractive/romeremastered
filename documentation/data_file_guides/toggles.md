@@ -1,7 +1,7 @@
 ![Workshop_header_template](/Workshop_header_template.png)
 # toggles - Classic vs Remastered
 
-## Table Of Contents
+## Table Of Contents
 
 * [Introduction](#introduction)
    * [toggle button states.txt](#toggle-button-statestxt)
