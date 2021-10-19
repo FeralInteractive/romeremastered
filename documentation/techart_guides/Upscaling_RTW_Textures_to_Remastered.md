@@ -57,3 +57,9 @@ Once they are complete you can return to the main Importing RTW units guide for 
 
 This guide was created with the assistance of Swagger & Starkgate from the RIS modding team. They have used this tool to upscale many textures that are used in the RIS and Chivary mods for Rome Remastered. We have used their settings and experiences as a basis for this guide.
 
+## Extra Resources
+
+Here are a few useful addional resources that you might find useful.
+
+https://upscale.wiki/wiki/Model_Database -> Useful AI upscale models
+https://discord.gg/y7YEENJwbD -> Game Upscale Discord
