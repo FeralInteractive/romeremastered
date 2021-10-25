@@ -16,7 +16,9 @@ The art of upscaling textures using AI is a rapidly evolving field so this page 
 
 In summary, you’ll need to:
 
-* Install Cupscale (MIT license) https://github.com/n00mkrad/cupscale
+* Install Cupscale (MIT license) https://github.com/n00mkrad/cupscale (below are a few useful guides)
+  *  https://upscale.wiki/wiki/Cupscale_Installation - Guide on installing including help with dependencies on Windows.
+  *  https://upscale.wiki/wiki/Model_Database - Upscale Models 
 * Follow the guides to get it working and pick an AI model for the upscaling (this guide assumes ESRGAN - Pytorch)
 * Get all your textures ready for upscaling
 
