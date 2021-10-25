@@ -19,6 +19,7 @@ In summary, you’ll need to:
 * Install Cupscale (MIT license) https://github.com/n00mkrad/cupscale (below are a few useful guides)
   *  https://upscale.wiki/wiki/Cupscale_Installation - Guide on installing including help with dependencies on Windows.
   *  https://upscale.wiki/wiki/Model_Database - Upscale Models 
+  *  https://discord.gg/y7YEENJwbD - Game Asset Upscale Discord
 * Follow the guides to get it working and pick an AI model for the upscaling (this guide assumes ESRGAN - Pytorch)
 * Get all your textures ready for upscaling
 
@@ -63,5 +64,6 @@ This guide was created with the assistance of Swagger & Starkgate from the RIS m
 
 Here are a few useful addional resources that you might find useful.
 
-https://upscale.wiki/wiki/Model_Database -> Useful AI upscale models
-https://discord.gg/y7YEENJwbD -> Game Upscale Discord
+* https://upscale.wiki/wiki/Model_Database -> Useful AI upscale models
+* https://discord.gg/y7YEENJwbD -> Game Upscale Discord
+* https://upscale.wiki/wiki/Cupscale_Installation -> Guide on installing including help with dependencies on Windows.
