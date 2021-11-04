@@ -74,6 +74,7 @@ Below you will find links to third party resources that can help with modding Ro
   * Create RR Map Mesh & Textures (Beta Feature)
   * Covert from .dae to .cas
   * Bulk decompress Rome Remastered texture directory
+* [Dagovax's Rome Modding Tools & Features](https://github.com/Dagovax/Rome-Total-War-Tools-and-Features) - 3DS-Max scripts & more
 * [Settlement & Region Name Extractor](https://github.com/zkajo/RTW-Region-Extractor)
 * [TWC Wiki - Rome:Total War & Remastered - Modding Index](https://wiki.twcenter.net/index.php?title=Rome:Total_War_%26_Remastered_-_Modding_Index)
 * [Vercingetorix's xidx packer](https://github.com/AKAfreaky/XIDX) - Useful Packing Tool
