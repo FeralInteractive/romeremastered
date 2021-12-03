@@ -1,0 +1,250 @@
+{
+	"frames": [],
+	"list": [
+
+		{
+			"name": "description_toggle_button",
+			"x": -100000 ,
+			"y": 0,
+			"size": {
+				"width" : 45,
+				"height": 45
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"font":"verdana_sml"
+		},
+
+		{
+			"name": "title",
+			"x": 570 ,
+			"y": 60,
+			"size": {
+				"width" : 640,
+			},
+			"anchor": "TL",
+			"align": "BC",
+			"font":"cinzel_huge",
+			"font_colour": "dark_brown",
+			"text_justification": "C",
+		},
+
+		{
+			"name": "image",
+			"x": 100 ,
+			"y": 70,
+			"size": {
+				"width": 256,
+				"height": 360
+			},
+			"anchor": "TL",
+			"align": "TL",
+		},
+
+
+		{
+			"name": "sub_title",
+			"x": 100 ,
+			"y": 60,
+			"anchor": "TL",
+			"align": "BL",
+			"font_colour": "dark_brown",
+			"font": "verdana_med",
+		},
+		{
+			"name": "stats_icons_group",
+			"x": 560 ,
+			"y": 80,
+			"size": {
+				"width": 210 ,
+				"height": 50
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"font_colour":"dark_brown",
+			"font":"verdana_med",
+		},
+		{
+			"name": "upgrade_icons_group",
+			"x": 800 ,
+			"y": 85,
+			"size": {
+				"width": 250 ,
+				"height": 50
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"font_colour":"dark_brown",
+			"font":"verdana_med",
+		},
+
+		{
+			"name": "abilities_background",
+			"x": 460 ,
+			"y": 140,
+			"size": {
+				"width": 650 ,
+				"height": 200
+			},
+			"anchor": "TL",
+			"align": "TL",
+		},
+
+		{
+			"name": "abilities_list",
+			"x": 470 ,
+			"y": 155,
+			"size": {
+				"width": 605 ,
+				"height": 170
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"font_colour":"dark_brown",
+			"font":"verdana_med",
+			"max_text_width": 600,
+			"outside_slider": true,
+            "slider_gap": 5
+		},
+
+
+
+		{
+			"name": "description_title",
+			"x": 460 ,
+			"y": 350,
+			"anchor": "TL",
+			"align": "TL",
+			"priority":0,
+			"font_colour":"dark_brown",
+			"font":"verdana_bold",
+		},
+
+		{
+			"name": "description_list",
+			"x": 460,
+			"y": 390,
+			"size": {
+				"width": 630 ,
+				"height": 290
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"priority":0,
+			"font_colour":"dark_brown",
+			"font":"verdana_med",
+			"outside_slider": true,
+            "slider_gap": 5,
+		},
+
+		{
+			"name": "basic_bars_list",
+			"x": 32 ,
+			"y": 445,
+			"size": {
+				"width": 408 ,
+				"height": 54
+			},
+			"font":"verdana_sml_bold",
+			"anchor": "TL",
+			"align": "TL"
+		},
+
+		{
+			"name": "divider_0",
+			"x": 28 ,
+			"y": 500,
+			"size": {
+				"width": 420 ,
+				"height": 18
+			},
+			"anchor": "TL",
+			"align": "TL",
+		},
+
+		{
+			"name": "divider_1",
+			"x": 60 ,
+			"y": 60,
+			"size": {
+				"width": 1040 ,
+				"height": 15
+			},
+			"anchor": "TL",
+			"align": "TL",
+		},
+
+
+		{
+			"name": "detail_bars_list",
+			"x": 32 ,
+			"y": 520,
+			"size": {
+				"width": 408 ,
+				"height": 168
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"font":"verdana_sml_med",
+			"font_colour":"dark_brown",
+		},
+
+
+
+
+
+
+
+		{
+			"name": "legionary_name",
+			"x": 570 ,
+			"y": 105,
+			"size": {
+				"width": 400,
+			},
+			"max_lines": 1,
+			"anchor": "TL",
+			"align": "BC",
+			"font":"cinzel",
+			"font_colour": "dark_brown",
+			"text_justification": "C",
+		},
+
+		{
+			"name": "sub_title_compress",
+			"x": 100 ,
+			"y": 60,
+			"anchor": "TL",
+			"align": "BL",
+			"font_colour": "dark_brown",
+			"font": "verdana_med",
+		},
+		{
+			"name": "stats_icons_group_compress",
+			"x": 880 ,
+			"y": 85,
+			"size": {
+				"width": 100 ,
+				"height": 40
+			},
+			"anchor": "TL",
+			"align": "TR",
+			"font_colour":"dark_brown",
+			"font":"verdana_med",
+		},
+		{
+			"name": "upgrade_icons_group_compress",
+			"x": 1100,
+			"y": 85,
+			"size": {
+				"width": 190 ,
+				"height": 40
+			},
+			"anchor": "TL",
+			"align": "TR",
+			"font_colour":"dark_brown",
+			"font":"verdana_med",
+		},
+
+	]
+}

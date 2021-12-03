@@ -1,0 +1,678 @@
+{
+	"list": [
+
+{
+"_comment":" LEFT NEWS FRAME ANIMATION START "
+},
+
+	{
+		"name":"campaign_ui_news_tabs_list_frame_show",
+		"end_pos": {
+			"x": 384,
+			"y": 0
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+	{
+		"name":"campaign_ui_news_tabs_senate_mission_frame_show",
+		"end_pos": {
+			"x": 384,
+			"y": 0
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+	{
+		"name":"campaign_ui_news_tabs_message_frame_show",
+		"end_pos": {
+			"x": 765,
+			"y": 0
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+
+	{
+		"name":"battle_ui_news_tabs_list_frame_show",
+		"end_pos": {
+			"x": 384,
+			"y": 0
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+	{
+		"name":"battle_ui_news_tabs_message_frame_show",
+		"end_pos": {
+			"x": 730,
+			"y": 0
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+
+{
+"_comment":" LEFT NEWS FRAME ANIMATION END "
+},
+
+
+{
+"_comment":" LEFT ADVISOR FRAME ANIMATION START "
+},
+
+	{
+		"name":"advisor_frame_show",
+		"end_pos": {
+			"x": 250,
+			"y": 307
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+	
+	{
+		"name":"battle_advisor_frame_show",
+		"end_pos": {
+			"x": 150,
+			"y": 355
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+
+{
+"_comment":" LEFT ADVISOR FRAME ANIMATION END "
+},
+
+{
+"_comment":" CAMPAIGN GENERAL/AGENT DETAILS PANEL START "
+},
+	{
+		"name":"scroll_side_frame_hide_left",
+		"end_pos": {
+			"x": 460 ,
+			"y": 0
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+	{
+		"name":"scroll_side_frame_hide_right",
+		"end_pos": {
+			"x": -460 ,
+			"y": 0
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+{
+"_comment":" CAMPAIGN GENERAL/AGENT DETAILS PANEL END "
+},
+
+
+
+{
+"_comment":" RIGHT RADAR FRAME ANIMATION START "
+},
+
+	{
+		"name":"battle_radar_frame_hide",
+		"end_pos": {
+			"x": 0,
+			"y": -335
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+
+{
+"_comment":" RIGHT RADAR FRAME ANIMATION END "
+},
+
+
+
+{
+"_comment":" BATTLE LEFT SIDE FRAME ANIMATION START "
+},
+
+	{
+		"name":"battle_ui_unit_info_frame_show",
+		"end_pos": {
+			"x": 0,
+			"y": -920
+		},
+		"duration": 450,
+		"timeout": -1,
+		"relative":true,
+	},
+
+{
+"_comment":" BATTLE LEFT SIDE FRAME ANIMATION END "
+},
+
+
+
+
+{
+"_comment":"BATTLE RIGHT SIDE TOGGLE MENU ANIMATION START "
+},
+
+	{
+		"name":"battle_ui_toggle_menu_show",
+		"end_pos": {
+			"x": -368 ,
+			"y": 0
+		},
+		"duration": 450,
+		"timeout": -1,
+		"relative":true,
+	},
+
+{
+"_comment":"BATTLE RIGHT SIDE TOGGLE MENU ANIMATION END "
+},
+
+
+
+{
+"_comment":"BATTLE TOP SIDE TOGGLE TACTICAL MAP BAR ANIMATION START "
+},
+
+	{
+		"name":"battle_ui_toggle_tactical_map_bar_show_hidden_ui",
+		"end_pos": {
+			"x": 0 ,
+			"y": 60
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+	{
+		"name":"battle_ui_toggle_tactical_map_bar_show",
+		"end_pos": {
+			"x": 0 ,
+			"y": 120
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+	
+	{
+		"name":"battle_replay_ui_toggle_tactical_map_bar_show",
+		"end_pos": {
+			"x": 0 ,
+			"y": 92
+		},
+		"duration": 300,
+		"timeout": -1,
+		"relative":true,
+	},
+
+{
+"_comment":"BATTLE TOP SIDE TOGGLE TACTICAL MAP BAR ANIMATION END "
+},
+
+
+
+{
+"_comment":"BATTLE UI CARDS ANIMATION START "
+},
+
+	{
+		"name":"battle_ui_card_animate_out",
+		"end_pos": {
+			"x": 0 ,
+			"y": 115
+		},
+		"duration": 1000,
+		"timeout": -1,
+		"relative":true,
+	},
+
+	{
+		"name":"battle_ui_card_animate_in",
+		"end_pos": {
+			"x": 0 ,
+			"y": -115
+		},
+		"duration": 1000,
+		"timeout": -1,
+		"relative":true,
+	},
+
+
+{
+"_comment":"BATTLE UI CARDS ANIMATION END "
+},
+
+
+
+
+		{
+			"name": "battle_ui_slide_up",
+			"end_pos": {
+				"x": 0,
+				"y": -320
+			},
+			"duration": 500,
+			"timeout": -1,
+			"relative":true
+		},
+		{
+			"name": "battle_ui_slide_down",
+			"end_pos": {
+				"x": 0,
+				"y": 320
+			},
+			"duration": 500,
+			"timeout": -1,
+			"relative":true
+		},
+		{
+			"name": "battle_ui_slide_small_map",
+			"end_pos": {
+				"x": 0,
+				"y": -41
+			},
+			"duration": 500,
+			"timeout": -1,
+			"relative":true
+		},
+		{
+			"name": "battle_ui_slide_right",
+            "end_pos": {
+                "x": 320,
+                "y": 0
+            },
+            "duration": 500,
+            "timeout": -1,
+            "relative":true
+        },
+		{
+			"name": "battle_ui_slide_left",
+            "end_pos": {
+                "x": -320,
+                "y": 0
+            },
+            "duration": 500,
+            "timeout": -1,
+            "relative":true
+        },
+		{
+			"name": "tab_sidebar",
+			"end_pos": {
+				"x": 35,
+				"y": 0
+			},
+			"duration": 100,
+			"timeout": 1,
+			"relative":true
+		},
+		{
+			"name": "campaign_tooltip",
+			"end_pos": {
+				"x": 50,
+				"y": 150
+			},
+			"duration": 100,
+			"timeout": 1,
+			"anchor":"TC"
+		},
+		{
+			"name": "faction",
+			"end_pos": {
+				"x": 0,
+				"y": -141
+			},
+			"duration": 100,
+			"timeout": 5,
+			"anchor": "BL"
+		},
+		{
+			"name": "end_turn",
+			"end_pos": {
+				"x": -78,
+				"y": -78
+			},
+			"anchor": "BR",
+			"duration": 100,
+			"timeout": 5
+		},
+		{
+			"name": "campaign_radar",
+			"end_pos": {
+				"x": -30,
+				"y": 0
+			},
+			"size": {
+				"width": 64,
+				"height": 240
+			},
+			"duration": 0,
+			"timeout": -1,
+			"anchor": "C"
+		},
+		{
+			"name": "formation_1",
+			"end_pos": {
+				"x": 167,
+				"y": -134
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "formation_2",
+			"end_pos": {
+				"x": 167,
+				"y": -76
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "formation_3",
+			"end_pos": {
+				"x": 167,
+				"y": -18
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "formation_4",
+			"end_pos": {
+				"x": 167,
+				"y": 40
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "formation_5",
+			"end_pos": {
+				"x": 227,
+				"y": -134
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "formation_6",
+			"end_pos": {
+				"x": 227,
+				"y": -76
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "formation_7",
+			"end_pos": {
+				"x": 227,
+				"y": -18
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "formation_8",
+			"end_pos": {
+				"x": 227,
+				"y": 40
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "withdraw",
+			"end_pos": {
+				"x": 279,
+				"y": 40
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "unit_info",
+			"end_pos": {
+				"x": 279,
+				"y": -18
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "group",
+			"end_pos": {
+				"x": 279,
+				"y": -76
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "ai_link",
+			"end_pos": {
+				"x": 279,
+				"y": -134
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "general",
+			"end_pos": {
+				"x": 279,
+				"y": -194
+			},
+			"anchor": "C",
+			"align": "C",
+			"duration": 400,
+			"timeout": -1,
+			"priority": -10,
+			"start_actions": [
+				{
+					"name": "show"
+				}
+			],
+			"scale_x_pos":true,
+			"notch_left_move":true,
+			"notch_right_move":true
+		},
+		{
+			"name": "annotations_controls_frame",
+			"end_pos": {
+				"x": -218,
+				"y": -100
+			},
+			"duration": 300,
+			"timeout": 3,
+			"anchor": "BR"
+		},
+		{
+			"name": "annotations_prev_button",
+			"end_pos": {
+				"x": -360,
+				"y": -75
+			},
+			"duration": 300,
+			"timeout": 3,
+			"anchor": "BR"
+		},
+		{
+			"name": "annotations_next_button",
+			"end_pos": {
+				"x": -260,
+				"y": -75
+			},
+			"duration": 300,
+			"timeout": 3,
+			"anchor": "BR"
+		},
+		{
+			"name": "annotations_exit_button",
+			"end_pos": {
+				"x": -180,
+				"y": -75
+			},
+			"duration": 300,
+			"timeout": 3,
+			"anchor": "BR"
+		},
+		{
+			"name": "city_view_exit_button",
+			"end_pos": {
+				"x": -70,
+				"y": -500
+			},
+			"duration": 300,
+			"timeout": 3,
+			"anchor":"CR"
+		},
+		{
+			"name": "city_view_exit_frame",
+			"end_pos": {
+				"comment": "moved outside screen for HD",
+				"x": 1000,
+				"y": 0
+			},
+			"duration": 300,
+			"timeout": 3,
+			"anchor":"CR"
+		}
+	]
+}

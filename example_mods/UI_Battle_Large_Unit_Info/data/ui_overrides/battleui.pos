@@ -1,0 +1,859 @@
+{
+    "tooltip": {
+        "x": -2002 ,
+        "y": 4,
+        "width": 819 ,
+        "height": 150,
+        "font":"verdana_lrg"
+    },
+    "tooltip_ticker": {
+        "x": 176 ,
+        "y": -110,
+        "width": 830 ,
+        "height": 50,
+        "font":"verdana_lrg"
+    },
+    "frames": [
+
+
+
+        {
+            "position": {
+                "x": -2 ,
+                "y": -40
+            },
+            "size": {
+                "width": 320 ,
+                "height": 72
+            },
+            "priority": 2,
+            "anchor":"TC",
+            "align":"TC",
+            "fill": "black_curved"
+        },
+
+        {
+            "name":"map_frame",
+            "position": {
+                "x": -291 ,
+                "y": 55 ,
+            },
+            "size": {
+                "width": 291 ,
+                "height": 286 ,
+            },
+            "anchor":"TL",
+            "priority": 0,
+            "fill": "fill"
+        }
+    ],
+    "list": [
+        {
+            "name":"battle_button_background_frame",
+            "x": 5 ,
+            "y": 5 ,
+            "size": {
+                "width": 1308 ,
+                "height": 74 ,
+            },
+            "priority": 3,
+            "anchor":"BC",
+            "align":"BC"
+        },
+        {
+            "name":"advisor_back_frame_outoutoutoutoutout",
+            "x": -18 ,
+            "y": -12,
+            "size": {
+                "width": 318 ,
+                "height": 85
+            },
+            "priority": -1,
+            "anchor":"TL"
+        },
+        {
+            "name":"speed_frame_outoutoutoutoutout",
+            "x": 9 ,
+            "y": -12,
+            "size": {
+                "width": 365 ,
+                "height": 85
+            },
+            "priority": -1,
+            "anchor":"TR",
+            "align":"TR",
+        },
+
+
+        {
+            "comment": "Unit_Info Frame",
+            "name": "animated_frame",
+            "x": 0,
+            "y": 0,
+            "size" : {
+                "width": 1140 ,
+                "height" : 1020
+            },
+            "anchor": "BC",
+            "align": "TC",
+            "priority": 1
+        },
+
+        
+        {
+            "name": "small_radar_background_frame",
+            "x": 0,
+            "y": -300 ,
+            "size": {
+                "width": 320 ,
+                "height": 180 ,
+            },
+            "anchor": "TR",
+            "align": "TR",
+            "priority" : 1
+        },
+        
+        {
+            "name": "small_radar_subframe_tutorial",
+            "x": 0,
+            "y": -500 ,
+            "size": {
+                "width": 400 ,
+                "height": 455 ,
+            },
+            "anchor": "TR",
+            "align": "TR",
+            "priority" : 2
+        },
+        
+        {
+            "name": "small_radar_subframe",
+            "x": 0,
+            "y": -226 ,
+            "size": {
+                "width": 300 ,
+                "height": 543 ,
+            },
+            "anchor": "TR",
+            "align": "TR",
+            "priority" : 2
+        },
+        
+        {
+            "name": "fullscreen_radar_priority",
+            "priority" : 60
+        },
+        
+        {
+            "name": "fullscreen_radar_close_button",
+            "x": 0,
+            "y": 0,
+            "size": {
+                "width": 72,
+                "height": 72
+            },
+            "anchor": "TR",
+            "align":"TR",
+            "priority" : 61
+        },
+        
+
+        {
+            "name": "radar_globe",
+            "x": 6,
+            "y": -200,
+            "size": {
+                "width": 88,
+                "height": 88
+            },
+            "anchor": "TR",
+            "align":"TR",
+            "annotation_id": "Rome.Annotations.battle_hud_general-topr",
+            "priority" : 53
+        },
+
+        {
+            "name": "pause_button",
+			"x": 0,
+            "y": 0,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+            "anchor": "TR",
+            "align":"TR",
+            "priority" : 53
+        },
+
+        {
+            "name": "half_speed_button",
+            "x": -258 ,
+            "y": 30 ,
+            "size": {
+                "width": 48,
+                "height": 48
+            },
+            "anchor": "TR",
+            "align": "C",
+            "priority": 53,
+        },
+
+        {
+            "name": "play_button",
+            "x": -208 ,
+            "y": 30 ,
+            "size": {
+                "width": 48,
+                "height": 48
+            },
+            "anchor": "TR",
+            "align": "C",
+            "priority": 53,
+        },
+        {
+            "name": "ffwd_button",
+            "x": -158 ,
+            "y": 30 ,
+            "size": {
+                "width": 48,
+                "height": 48
+            },
+            "anchor": "TR",
+            "align": "C",
+            "priority": 53,
+        },
+        {
+            "name": "2x_ffwd_button",
+            "x": -109 ,
+            "y": 30 ,
+            "size": {
+                "width": 48,
+                "height": 48
+            },
+            "anchor": "TR",
+            "align": "C",
+            "priority": 53,
+        },
+        {
+            "name": "strength_bar",
+            "x": 0 ,
+            "y": 4,
+            "size" : {
+                "width": 280 ,
+                "height": 16 ,
+            },
+            "priority": 2,
+            "notch_override": {
+                "x": 8
+            },
+            "anchor":"TC",
+            "align":"TC",
+            "annotation_id": "Rome.Annotations.battle_hud_orders-1"
+        },
+        {
+            "name": "timer",
+            "x": -40 ,
+            "y": 45,
+            "anim_id":"battle_ui_slide_up",
+            "anim_children": [
+                "strength_bar",
+                "play_button",
+                "ffwd_button",
+                "2x_ffwd_button",
+                "radar_globe",
+                "time_slider",
+                "time_slider_title",
+                "advisor"
+            ],
+            "anchor":"TR",
+            "align":"TC",
+            "font":"verdana_sml",
+            "font_colour":"dark_brown",
+            "priority": 55,
+            "ignore_mouse" : true
+        },
+        {
+            "name": "cards",
+            "x": 4 ,
+            "y": -69,
+            "size" : {
+                "height" : 152,
+                "width": 1301 ,
+            },
+            "anchor":"BC",
+            "align":"BC",
+            "priority":3,
+            "annotation_id": "Rome.Annotations.battle_hud_general-row",
+            "anim_id":"battle_ui_slide_down",
+            "anim_children": [
+                "tightness",
+                "skirmish",
+                "autofire",
+                "ability",
+                "guard",
+                "run",
+                "halt",
+                "withdraw",
+                "ai_link",
+                "unit_info",
+                "group",
+                "formation_1_button",
+                "formation_2_button",
+                "formation_3_button",
+                "formation_4_button",
+                "formation_5_button",
+                "formation_6_button",
+                "formation_7_button",
+                "formation_8_button",
+                "general_2",
+                "select_all_units_button"
+            ]
+        },
+
+
+        {
+            "name": "melee_missile_formation_swap",
+            "x": -38,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_orders-9",
+        },
+
+        {
+            "name": "tightness",
+            "x": 47,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_orders-9",
+        },
+
+        {
+            "name": "special_0",
+            "x": 217,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_orders-6",
+        },
+
+        {
+            "name": "special_1",
+            "x": 302,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+                "anchor": "BC",
+                "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_orders-4",
+        },
+
+        {
+            "name": "special_2",
+            "x": 387,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_orders-7",
+        },
+
+        {
+            "name": "special_3",
+            "x": 472,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_orders-6",
+        },
+
+        {
+            "name": "force_melee",
+            "x": -208,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+        },
+
+
+        {
+            "name": "guard",
+            "x": -123,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_orders-5",
+        },
+        {
+            "name": "run",
+            "x": -463,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_orders-3",
+        },
+
+        {
+            "name": "halt",
+            "x": -378,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_orders-8",
+        },
+
+        {
+            "name": "withdraw",
+            "x": -293,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_command-surrender"
+        },
+
+
+        {
+            "comment": "this is a button to put a group under AI assistance, but it's part of the group frame on RHD",
+            "name": "ai_link",
+            "x": 217,
+            "y": 38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_command-ai",
+        },
+        {
+            "name": "unit_info",
+            "x": -4000,
+            "y": -4000,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 2,
+            "annotation_id": "Rome.Annotations.battle_hud_command-status",
+        },
+        
+        {
+            "name": "group",
+            "x": 132,
+            "y": -38,
+            "size": {
+                "width": 62,
+                "height": 62
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 4,
+            "annotation_id": "Rome.Annotations.battle_hud_command-group",
+        },
+        
+        {
+            "name": "formation_bar_start",
+            "x": 780,
+            "y": 800
+        },
+        
+        {
+            "name": "formation_bar_end",
+            "x": 780,
+            "y": 800
+        },
+        
+        {
+            "name": "general_2",
+            "x": 300,
+            "y": -40,
+            "size": {
+                "width": 56,
+                "height": 56
+            },
+            "priority": 2,
+            "align": "C",
+            "anchor": "BC",
+            "scale_x_pos":true,
+            "annotation_id": "Rome.Annotations.battle_hud_orders-11",
+        },
+        
+        {
+            "name": "time_slider",
+            "x": -236 ,
+            "y": -200,
+            "anchor":"TR",
+            "align":"C"
+        },
+        
+        {
+            "name": "time_slider_title",
+            "x": 776,
+            "y": -80,
+            "hidden": true
+        },
+
+        
+        {
+            "name": "advisor",
+            "x": 0 ,
+            "y": 0,
+            "size" : {
+                "height" : 80,
+                "width"  : 80
+            },
+            "priority":55,
+            "anchor": "TL",
+            "scale_x_pos":true
+        },
+        
+        {
+            "name": "advisor_manual",
+            "x": 109 ,
+            "y": 30 ,
+            "size" : {
+                "height" : 48,
+                "width"  : 48
+            },
+            "anchor": "TL",
+            "align":"C",
+            "priority": 55
+        },
+        
+        {
+            "name": "advisor_zoom_to",
+            "x": 160 ,
+            "y": 30 ,
+            "size" : {
+                "height" : 48,
+                "width"  : 48
+            },
+            "anchor": "TL",
+            "align":"C",
+            "priority": 55
+        },
+        {
+            "name": "pause_menu_button",
+            "x": 210 ,
+            "y": 30 ,
+            "size" : {
+                "height" : 48,
+                "width"  : 48
+            },
+            "anchor": "TL",
+            "align":"C",
+            "priority": 55
+        },
+
+        {
+			"_comment": "up and awaaay",
+            "name": "advisor_hide_bubble",
+            "x": 226 ,
+            "y": -10024 ,
+            "size" : {
+                "height" : 48,
+                "width"  : 48
+            },
+            "anchor": "TL",
+            "align":"C",
+            "priority": 55
+        },
+
+        {
+			"_comment": "up and awaaay",
+            "name": "advanced_options_button",
+            "x": 280 ,
+            "y": -10024 ,
+            "size" : {
+                "height" : 48,
+                "width"  : 48
+            },
+            "anchor": "TL",
+            "align":"C",
+            "priority": 55,
+            "hidden": true
+        },
+
+        {
+            "name": "advisor_animated_frame",
+            "x": -150,
+            "y": -335,
+            "size" : {
+                "width"  : 300,
+                "height" : 335
+            },
+            "anchor": "TL",
+            "priority": 50
+        },
+        {
+            "name": "advisor_animated_background_frame_priority",
+            "priority": 40,
+        },
+                
+        {
+            "name": "start_battle_button",
+            "x": 0,
+            "y": -380,
+            "size" : {
+                    "width": 240
+            },
+            "align": "C",
+            "priority": -1,
+            "anchor": "C",
+            "font":"cinzel_sml",
+            "ignore_scale":true
+        },
+        
+        {
+            "name": "start_deployment_button",
+            "x": 0,
+            "y": -290,
+            "size" : {
+                    "width": 325
+            },
+            "align": "C",
+            "priority": -1,
+            "anchor": "C",
+            "font":"cinzel_sml",
+            "ignore_scale":true
+        },
+        
+        {
+            "name": "pause_display",
+            "x": 0,
+            "y": -380,
+            "size" : {
+                    "width": 240
+            },
+            "align": "C",
+            "priority": -1,
+            "anchor": "C",
+            "font":"verdana_sml",
+            "ignore_scale":true
+        },
+        
+        {
+            "name": "wait_button",
+            "x": 0,
+            "y": -170,
+            "size" : {
+                    "width": 160,
+                    "height": 50
+            },
+            "align": "C",
+            "priority": -1,
+            "anchor": "C",
+            "font":"cinzel_sml",
+            "ignore_scale":true
+        },
+        
+        {
+            "name": "select_all_units_button",
+            "x": 555,
+            "y": -33,
+            "size": {
+                "width": 50,
+                "height": 50
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 8,
+            "annotation_id": "Rome.Annotations.battle_hud_general-toggle"
+        },
+        
+        {
+            "name": "show_unit_info_frame_button",
+            "x": -555,
+            "y": -30,
+            "size": {
+                "width": 54,
+                "height": 54
+            },
+            "align": "C",
+            "anchor": "BC",
+            "priority": 8,
+            "annotation_id": "Rome.Annotations.battle_hud_general-toggle"
+        },
+        
+        {
+            "name": "subtitle_bottom",
+            "x": 0,
+            "y": -1136
+        },
+
+        {
+            "name": "toggle_menu_animated_frame",
+            "x": 25 ,
+            "y": 48,
+            "size": {
+                "width": 450 ,
+                "height": 500
+            },
+            "align": "CL",
+            "anchor": "CR",
+            "priority": 1
+        },
+        {
+            "name": "toogle_menu_btn",
+            "x": -38,
+            "y": 0,
+            "size": {
+                "width": 60,
+                "height": 96
+            },
+            "align": "CL",
+            "anchor": "CR",
+            "priority": 1
+        },
+        {
+            "name": "toggle_menu_list",
+            "x": 43 ,
+            "y": 50,
+            "size": {
+                "width": 375 ,
+                "height": 460
+            },
+            "font":"verdana_sml",
+            "align": "CL",
+            "anchor": "CR",
+            "priority": 2
+        },
+
+
+        {
+            "name": "toggle_tactical_map_bar_animated_frame",
+            "x": 0 ,
+            "y": -85,
+            "size": {
+                "width": 430 ,
+                "height": 80
+            },
+            "align": "TC",
+            "anchor": "TC",
+            "priority": 0
+        },
+        {
+            "name": "toggle_tactical_map_bar",
+            "x": 0 ,
+            "y": -50,
+            "size": {
+                "width": 402 ,
+                "height": 10
+            },
+            "align": "TC",
+            "anchor": "TC",
+            "priority": 1
+        },
+        {
+            "name": "toggle_tactical_map_bat_string",
+            "x": 0 ,
+            "y": -40,
+            "align": "TC",
+            "anchor": "TC",
+            "priority": 1
+        },
+        {
+                "comment": "Countdown that appears when capturing a settlement",
+                    "name": "countdown_group",
+                    "x": 0 ,
+                    "y": 250,
+                    "size": {
+                        "width": 194 ,
+                        "height": 144
+                    },
+                    "anchor": "TC",
+                    "align": "C",
+                    "ignore_scale":false
+                },
+        
+         {
+            "name": "defeated_string",
+			"x": -70,
+            "y": 100,
+            "size": {
+                "width": 100,
+                "height": 100
+            },
+            "align": "C",
+            "anchor": "TC",
+            "priority": 55,
+            "font":"verdana_med",
+            "font_colour":"enemy_red"
+        },
+        {
+            "name": "spectator_string",
+            "x": -32,
+            "y": 135,
+            "size": {
+                "width": 100,
+                "height": 100
+            },
+            "align": "C",
+            "anchor": "TC",
+            "priority": 55,
+            "font":"cinzel",
+            "font_colour":"white"
+        },
+        
+        
+        
+        
+
+    ]
+}

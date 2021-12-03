@@ -1,0 +1,15 @@
+{
+	"Description": "This mod adds a large unit info panel into the 3D battles replacing the smaller quick look variant. This UI mod can be loaded a sub mod with mos other mods as long as they don't also have edits to the same UI elements.
+	
+The Mod Manager will warn players if the mods conflict.	This mod is meant to be a useful demonstration of the ability to alter the ingame UI panels.
+
+For more documentation on modding TOTAL WAR: Rome Remastered you can visit the [url=https://github.com/FeralInteractive/romeremastered]GitHub documentation[\/url].",
+	"Mod Name": "Large Unit Cards in Battles",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": true,
+	"Supports BI": true,
+	"Supports Rome": true,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
