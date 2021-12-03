@@ -1,0 +1,14 @@
+{
+	"Description": "Modifies EDB to prevent a faction building temples when one already exists in the faction. Allows for faction wide capabilities for buildings",
+	"Mod Name": "Faction wide building checks",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": false,
+	"Supports BI": false,
+	"Supports Rome": true,
+	"Tags": [
+		"Campaign",
+		"Gameplay Logic"
+	],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
