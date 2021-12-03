@@ -1,7 +1,7 @@
 ![Workshop_header_template](/Workshop_header_template.png)
 # string_overrides
 
-## Table Of Contents
+## Table Of Contents
 
    * [Introduction](#introduction)
 

@@ -1,5 +1,5 @@
 ![Workshop_header_template](/Workshop_header_template.png)
-# Upscaling Rome Total War units to Total War: ROME REMASTERED
+# Upscaling Rome Total War textures to Total War: ROME REMASTERED
 
 ## Table Of Contents
 
@@ -16,7 +16,10 @@ The art of upscaling textures using AI is a rapidly evolving field so this page 
 
 In summary, you’ll need to:
 
-* Install Cupscale (MIT license) https://github.com/n00mkrad/cupscale
+* Install Cupscale (MIT license) https://github.com/n00mkrad/cupscale (below are a few useful guides)
+  *  https://upscale.wiki/wiki/Cupscale_Installation - Guide on installing including help with dependencies on Windows.
+  *  https://upscale.wiki/wiki/Model_Database - Upscale Models 
+  *  https://discord.gg/y7YEENJwbD - Game Asset Upscale Discord
 * Follow the guides to get it working and pick an AI model for the upscaling (this guide assumes ESRGAN - Pytorch)
 * Get all your textures ready for upscaling
 
@@ -55,5 +58,12 @@ Once they are complete you can return to the main Importing RTW units guide for 
 
 ## Acknowledgements & Thanks
 
-This guide was created with the assistance of Swagger from the RIS modding team. He has used this tool to upscale many textures that are used in the RIS and Chivary mods for Rome Remastered. We have used his settings and experiences as a basis for this guide.
+This guide was created with the assistance of Swagger & Starkgate from the RIS modding team. They have used this tool to upscale many textures that are used in the RIS and Chivary mods for Rome Remastered. We have used their settings and experiences as a basis for this guide.
 
+## Extra Resources
+
+Here are a few useful addional resources that you might find useful.
+
+* https://upscale.wiki/wiki/Model_Database -> Useful AI upscale models
+* https://discord.gg/y7YEENJwbD -> Game Upscale Discord
+* https://upscale.wiki/wiki/Cupscale_Installation -> Guide on installing including help with dependencies on Windows.
