@@ -1,0 +1,11 @@
+{
+	"Description": "You can now specify multiple models that are then used at random by the game when rendering a unit on the battle field. You can also define the model grouping per upgrade level allowing for units to look different as they are upgraded as well. For more detail on the options review the files inside this mod.",
+	"Mod Name": "Unit Variation",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": false,
+	"Supports BI": false,
+	"Supports Rome": true,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
