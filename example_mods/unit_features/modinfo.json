@@ -1,0 +1,20 @@
+{
+	"Description": "This is a very simple mod that shows how you can modify unit attributes using 3 newly added attributes unique to Rome Remastered.
+	
+This mod will add for following attributes to some of the base units for the Julii faction:
+
+• extremely_hardy - An additional level of stamina above hardy. (Town Watch)
+• infinite_ammo - Allows a unit to have infinite ammo. (Roman Archers)
+• inexhaustible - Disables stamina for this unit (No UI). (Roman peasant)
+
+
+Load the mod using the Julii faction to see them in game.",
+	"Mod Name": "EDU Attribute Modding",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": true,
+	"Supports BI": true,
+	"Supports Rome": true,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
