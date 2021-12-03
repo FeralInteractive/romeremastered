@@ -1,0 +1,12 @@
+{
+	"Description": "This is a very simple mod that shows how you can make decorative resources. These resources don't have any functionality and can be used purely to make the campaign map more detailed. This mod demonstrates the feature by making all resources nonfunctional but still visible as decorative resources only.",
+	"Mod Name": "Decorative resources",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": false,
+	"Supports BI": false,
+	"Supports Rome": true,
+	"Tags": [
+	],
+	"Visibility": 0,
+	"Workshop ID": 0
+}

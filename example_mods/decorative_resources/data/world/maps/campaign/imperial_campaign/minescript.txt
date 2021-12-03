@@ -1,0 +1,42 @@
+script
+	;;still want to be able to add mines, so add the minable resources as hidden
+	add_hidden_resource Hyperboria gold
+	add_hidden_resource Tribus_Alanni silver
+	add_hidden_resource Tribus_Silurii gold
+	add_hidden_resource Locus_Gothi silver
+	add_hidden_resource Dacia gold
+	add_hidden_resource Colchis gold
+	add_hidden_resource Illyria gold
+	add_hidden_resource Illyria silver
+	add_hidden_resource Thrace gold
+	add_hidden_resource Gallaecia gold
+	add_hidden_resource Dalmatia gold
+	add_hidden_resource Narbonensis silver
+	add_hidden_resource Pontus silver
+	add_hidden_resource Taraconenis silver
+	add_hidden_resource Propontis gold
+	add_hidden_resource Macedonia gold
+	add_hidden_resource Hispania silver
+	add_hidden_resource Baetica gold
+	add_hidden_resource Phrygia silver
+	add_hidden_resource Cilicia silver
+	add_hidden_resource Bruttium silver
+	add_hidden_resource Ionia silver
+	add_hidden_resource Attica silver
+	add_hidden_resource Cyprus gold
+	add_hidden_resource Thebais gold
+
+
+	monitor_event BuildingDestroyed
+		if SettlementCapabilityLevel mine_resource <= 0
+			set_ao_visible "mine" hide ;;if a mining building was destroyed hide the mine
+		end_if
+	end_monitor
+	
+	;;can't use building complete because the capabilities haven't updated at that point
+	monitor_event SettlementTurnEnd
+		if SettlementCapabilityLevel mine_resource > 0 ;;if a mining building was constructed show the mine
+			set_ao_visible "mine" show
+		end_if
+	end_monitor
+end_script

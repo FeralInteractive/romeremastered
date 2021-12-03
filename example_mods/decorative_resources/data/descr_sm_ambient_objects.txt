@@ -1,0 +1,34 @@
+"ambient objects":
+[
+	"resources":
+	{
+		;;the models to be used for this object
+		"models":
+		[
+			"data/models_strat/resource_mine.CAS",
+			"data/models_strat/resource_gold.CAS",
+			"data/models_strat/resource_silver.CAS",
+			"data/models_strat/resource_amber.CAS",
+			"data/models_strat/resource_camels.CAS",
+			"data/models_strat/resource_copper.CAS",
+			"data/models_strat/resource_elephants.CAS",
+			"data/models_strat/resource_fur.CAS",
+			"data/models_strat/resource_glass.CAS",
+			"data/models_strat/resource_grain.CAS",
+			"data/models_strat/resource_hides.CAS",
+			"data/models_strat/resource_incense.CAS",
+			"data/models_strat/resource_iron.CAS",
+			"data/models_strat/resource_lead.CAS",
+			"data/models_strat/resource_marble.CAS",
+			"data/models_strat/resource_olive_oil.CAS",
+			"data/models_strat/resource_pottery.CAS",
+			"data/models_strat/resource_purple_dye.CAS",
+			"data/models_strat/resource_silk.CAS",
+			"data/models_strat/resource_textiles.CAS",
+			"data/models_strat/resource_timber.CAS",
+			"data/models_strat/resource_tin.CAS",
+			"data/models_strat/resource_wild_animals.CAS",
+			"data/models_strat/resource_wine.CAS",
+		],
+	},
+],
