@@ -1,0 +1,11 @@
+{
+	"Description": "This mod demonstrates localisation modding. In this mod I have renamed Segesta in all languages to Example_[Language Code]. This shows how you can localise your mod for all languages without needing to add sub mods, just add the extra files. If the localised language file is missing the game will default back to the EN version.",
+	"Mod Name": "Localisation Modding",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": true,
+	"Supports BI": true,
+	"Supports Rome": true,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
