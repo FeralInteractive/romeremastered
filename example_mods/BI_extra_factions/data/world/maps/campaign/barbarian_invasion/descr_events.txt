@@ -1,0 +1,106 @@
+
+; historical events and when they occur
+;
+; Events are followed by a category, and a label
+; labels are used as lookups into historic_events.txt for title and body strings,
+; and also as image names for the event picture
+; If the label matches the category, they will act as "normal" random events of their category.
+; 
+; Currently supported categories are:
+; historic         - Just generates a message
+; volcano          - triggers the volcano nearest to the position specified if there is one on the map
+; plague           - triggers a plague in settlements nearest the specified positions (accepts multiple positions)
+; earthquake       - triggers an earthquake in the region of specified position
+; storm            - triggers a storm over at the specified position
+; flood            - triggers a flood in the region of specified position
+; riot             - triggers a riot in settlement nearest the specified position
+; emergent_faction - triggers the emergence of the given faction.  This faction must be marked as
+;                    emergent in descr_strat.txt, occurs in the given region (position is not accepted).
+;
+; event descriptions are followed by a date (year as offset from starting date, and season, summer/winter)
+; and positions or regions.  Each position/region specification must appear on
+; a seperate line below the date. Most disasters require exactly 1 position
+; (and unlike descr_disasters, this will NOT accept a region, even for events that convert the given postion into a region, eg earthquakes).
+; The exceptions:
+;   plague will accept multiple positions.
+;   emergent_faction requires a single region, not a position (its the only event that uses `region`).
+;
+; `scale 3` Disaster events can have a scale after the position/region. The scale defaults to 1 if not provided (except emergent factions, which default to 160).
+; For some events the scale affects both the radius and the deadliness (eg volcanoes), but for others (earthquakes) the
+; event affects a whole region regardless, and the scale just affects the deadliness. Most disasters scale from 0 to 7.
+; For emergent factions the scale represents the force strength, 160 is the default because that was the original hard-coded value.
+;
+; Events can have explicit visibility, via `visibility [everyone|visible|harmed|hidden]`, if not, the default varies:
+; 1. `everyone` will always display a message to the player. This is default for `historic`-category events
+;               without a position. emergent_faction also displays to everyone by default.
+; 2. `visible`  will display to players who can see that position (or are harmed by the event).
+;               This is default for historical events with a position or labeled events.
+; 3. `harmed`   will display to players only if they are directly harmed by the event,
+;               even if it's visible. This matches how "random" events work.
+;               Note: plagues take a turn to get started, so if their visibility is `harmed` they'll never display
+;                     the historical message (you still get the generic damage reports in later turns though).
+; 3. `hidden`   will not display a message ever.
+;
+; `warning` Volcanos can give a warning, if warning is appended to the event. This warning is subtle,
+; just some smoke from the volcano the previous turn. Remember if you set this that the actual eruption will occur in the next turn.
+; You can always have a positioned historic event at the same time as the warning if you want a message alongside it.
+
+event	historic	new_testament_formulated
+date 4 summer
+
+event	historic	the_sassanid_martyrdom
+date 13 summer
+
+event	historic 	the_martyrdom_of_saint_eusebius
+date 16 summer
+
+event	historic	first_council_of_constantinople
+date 18 summer
+
+event	historic	the_serapeum_destroyed
+date 28 summer
+
+event	historic	final_olympic_games_held
+date 31 summer
+
+event	historic	council_of_carthage
+date 31 winter
+
+event	historic	the_notitia_dignitarum
+date 32 winter
+
+event	historic	the_vulgate
+date 42 summer
+
+event	emergent_faction	white_huns
+date	35 summer
+region  Tribus_Sakae ;;multiple regions gives multiple possible emergence points
+region  Media
+scale   80 ;;default is 160, be slightly smaller since we're waiting for the slavs to appear in a few years
+
+event	historic	heretical_british_monk_disapppears
+date 52 summer
+
+event	historic	patrick_introduces_christianity_to_ireland
+date 55 summer
+
+event	emergent_faction	slavs
+date	47 summer
+region  Locus_Barbaricum
+
+event	historic		council_of_ephesus
+date 67 summer
+
+event	historic		legal_code_revised
+date 68 summer
+
+event	historic		council_of_chalcedon
+date 75 summer
+
+event	historic		papal_primacy
+date 88 summer
+
+event	historic		pagan_philosopher_murdered
+date 104
+
+

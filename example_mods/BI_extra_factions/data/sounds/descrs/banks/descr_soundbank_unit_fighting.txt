@@ -1,0 +1,145 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 220,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 1.996,			;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 1.996,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 16.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.75,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_unit_fighting":
+{
+	"entries":
+	[
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ ],
+				"classes":
+					[ ],
+
+				"IDs":
+				[
+					"sarmatian virgin archers foot",
+					"sarmatian virgin archers horse",
+					"sarmatian virgin cavalry",
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+			"sounds":
+			[
+				;;no sounds assigned
+			],
+		},
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", "-non_combatant", "-ship", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+					"barb wardogs briton",
+					"barb wardogs dacian",
+					"barb wardogs gaul",
+					"barb wardogs german",
+					"barb wardogs scythian",
+					"carthaginian warhounds",
+					"greek incendiary pigs",
+					"roman pigs",
+					"roman wardogs",
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 3,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Melee/Melee_Roman_Fight_Small_c.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 40,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Melee/Melee_Roman_Fight_Med_c.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 18.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 80,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Melee/Melee_Roman_Fight_Large_c.wav",
+						{
+							"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 19.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+	],
+}, ;;soundbank_unit_fighting

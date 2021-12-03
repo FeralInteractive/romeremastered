@@ -1,0 +1,2029 @@
+;;Old style preserved, only difference is:
+
+; standard_index
+; logo_index
+; small_logo_index
+
+;;Needs to be replaced with:
+
+; standard_index
+; rebel_standard_index
+; logo_index
+; rebel_logo_index
+
+"factions":
+[
+	"huns":
+	{
+		;;name and description
+		"string":      "HUNS",
+		"description": "HUNS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "hun",
+		"ethnicity": "eastasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battleforge_temple", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "huns_men",
+			"women":    "huns_women",
+			"surnames": "blank_surnames",
+		},
+
+		;;horde information
+		"horde":
+		{
+			"horde units":
+			[
+				"hun horde spearmen",
+				"hun horde spearmen",
+				"hun horde horse",
+				"hun horde spearmen",
+				"hun horde spearmen",
+				"hun horde horse",
+				"hun horde horse",
+				"hun horde chosen warriors",
+			],
+
+			"min horde units": 60,
+			"max horde units": 100,
+
+			;;remove this amount of horde units from the max every time we re-horde
+			"horde unit reduction per horde": 20,
+
+			;;gain one random horde unit per this amount of population in this settlement, up to the cap
+			"population to horde units": 300,
+
+			;;minimum number of named characters we should have when we first go horde
+			"min named characters": 4,
+
+			;;maximum percentage of armies horde units can fill
+			"max horde unit army percent": 80,
+
+			;;the amount of horde units to disband every time we get a settlement
+			;;if amount of settlements exceeds the numbers in this array, 100% disband assumed
+			"horde unit disband per settlement": [ 33, 55, 100, ],
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/huns.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       4,
+			"rebel standard index": 25,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       0,
+			"rebel logo index": 25,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_huns.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_hun_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  70,  70,  70,  ],
+			"secondary": [  0,   0,   0,   ],
+
+			"family tree":
+			{
+				"background":      [  44,  43,  42,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/huns_win.wmv",
+			"defeat": "data/fmv/lose/huns_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"goths":
+	{
+		;;name and description
+		"string":      "GOTHS",
+		"description": "GOTHS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "nomad",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battleforge_temple", "fgroup_ultraviolence_temple", "fgroup_gothic", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "goth_men",
+			"women":    "barbarian_women",
+			"surnames": "blank_surnames",
+		},
+
+		;;shadow faction (NOTE: shadow factions now have to be explicitly circular,
+		;; if your shadow faction is not shadowing you the revolt order will be you->shadow->rebels instead of you->shadow->you)
+		"shadow faction": "ostrogoths",
+
+		;;should the shadow faction take revolts when it's already alive
+		"living shadow takes revolts": false,
+
+		;;horde information
+		"horde":
+		{
+			"horde units":
+			[
+				"steppe horde horse",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde chosen warriors",
+				"steppe horde chosen warriors",
+			],
+
+			"min horde units": 60,
+			"max horde units": 100,
+
+			;;remove this amount of horde units from the max every time we re-horde
+			"horde unit reduction per horde": 20,
+
+			;;gain one random horde unit per this amount of population in this settlement, up to the cap
+			"population to horde units": 300,
+
+			;;minimum number of named characters we should have when we first go horde
+			"min named characters": 4,
+
+			;;maximum percentage of armies horde units can fill
+			"max horde unit army percent": 80,
+
+			;;the amount of horde units to disband every time we get a settlement
+			;;if amount of settlements exceeds the numbers in this array, 100% disband assumed
+			"horde unit disband per settlement": [ 33, 55, 100, ],
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/goths.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       9,
+			"rebel standard index": 24,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       1,
+			"rebel logo index": 26,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_goths.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_nomad_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  247, 73,  2,   ],
+			"secondary": [  0,   0,   0,   ],
+
+			"family tree":
+			{
+				"background":      [  123, 43,  15,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/goths_win.wmv",
+			"defeat": "data/fmv/lose/goths_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"sarmatians":
+	{
+		;;name and description
+		"string":      "SARMATIANS",
+		"description": "SARMATIANS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "nomad",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battleforge_temple", "fgroup_healing_temple", "fgroup_horse_temple", "fgroup_sarmatian", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "nomad_men",
+			"women":    "sarmatians_women",
+			"surnames": "blank_surnames",
+		},
+
+		;;horde information
+		"horde":
+		{
+			"horde units":
+			[
+				"steppe horde horse",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde chosen warriors",
+				"steppe horde chosen warriors",
+			],
+
+			"min horde units": 60,
+			"max horde units": 100,
+
+			;;remove this amount of horde units from the max every time we re-horde
+			"horde unit reduction per horde": 20,
+
+			;;gain one random horde unit per this amount of population in this settlement, up to the cap
+			"population to horde units": 300,
+
+			;;minimum number of named characters we should have when we first go horde
+			"min named characters": 4,
+
+			;;maximum percentage of armies horde units can fill
+			"max horde unit army percent": 80,
+
+			;;the amount of horde units to disband every time we get a settlement
+			;;if amount of settlements exceeds the numbers in this array, 100% disband assumed
+			"horde unit disband per settlement": [ 33, 55, 100, ],
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/sarmatians.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       5,
+			"rebel standard index": 24,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       2,
+			"rebel logo index": 26,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_sarmatians.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_nomad_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  255, 255, 141, ],
+			"secondary": [  128, 128, 128, ],
+
+			"family tree":
+			{
+				"background":      [  158, 145, 69,  ],
+				"font":            [  0,   0,   0,   ],
+
+				"selected line":   [  0,   0,   0,   ],
+				"unselected line": [  17,  17,  17,  ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/sarmatians_win.wmv",
+			"defeat": "data/fmv/lose/sarmatians_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"vandals":
+	{
+		;;name and description
+		"string":      "VANDALS",
+		"description": "VANDALS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "nomad",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battleforge_temple", "fgroup_raiders", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "vandals_men",
+			"women":    "barbarian_women",
+			"surnames": "blank_surnames",
+		},
+
+		;;horde information
+		"horde":
+		{
+			"horde units":
+			[
+				"steppe horde horse",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde chosen warriors",
+				"steppe horde chosen warriors",
+			],
+
+			"min horde units": 60,
+			"max horde units": 100,
+
+			;;remove this amount of horde units from the max every time we re-horde
+			"horde unit reduction per horde": 20,
+
+			;;gain one random horde unit per this amount of population in this settlement, up to the cap
+			"population to horde units": 300,
+
+			;;minimum number of named characters we should have when we first go horde
+			"min named characters": 4,
+
+			;;maximum percentage of armies horde units can fill
+			"max horde unit army percent": 80,
+
+			;;the amount of horde units to disband every time we get a settlement
+			;;if amount of settlements exceeds the numbers in this array, 100% disband assumed
+			"horde unit disband per settlement": [ 33, 55, 100, ],
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/vandals.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       8,
+			"rebel standard index": 24,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       3,
+			"rebel logo index": 26,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_vandals.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_barb_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  115, 75,  40,  ],
+			"secondary": [  0,   0,   0,   ],
+
+			"family tree":
+			{
+				"background":      [  56,  27,  16,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/vandals_win.wmv",
+			"defeat": "data/fmv/lose/vandals_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"franks":
+	{
+		;;name and description
+		"string":      "FRANKS",
+		"description": "FRANKS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "barbarian",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battle_temple", "fgroup_viking_temple", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "franks_men",
+			"women":    "barbarian_women",
+			"surnames": "blank_surnames",
+		},
+
+		;;horde information
+		"horde":
+		{
+			"horde units":
+			[
+				"barb horde chosen swordsmen",
+				"barb horde spearman",
+				"barb horde spearman",
+				"barb horde spearman",
+				"barb horde hunter",
+				"barb horde raider",
+				"barb horde raider",
+				"barb horde chosen swordsmen",
+			],
+
+			"min horde units": 60,
+			"max horde units": 100,
+
+			;;remove this amount of horde units from the max every time we re-horde
+			"horde unit reduction per horde": 20,
+
+			;;gain one random horde unit per this amount of population in this settlement, up to the cap
+			"population to horde units": 300,
+
+			;;minimum number of named characters we should have when we first go horde
+			"min named characters": 4,
+
+			;;maximum percentage of armies horde units can fill
+			"max horde unit army percent": 80,
+
+			;;the amount of horde units to disband every time we get a settlement
+			;;if amount of settlements exceeds the numbers in this array, 100% disband assumed
+			"horde unit disband per settlement": [ 33, 55, 100, ],
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/franks.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       3,
+			"rebel standard index": 21,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       4,
+			"rebel logo index": 22,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_franks.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_barb_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  10,  39,  117, ],
+			"secondary": [  255, 255, 255, ],
+
+			"family tree":
+			{
+				"background":      [  21,  51,  73,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/franks_win.wmv",
+			"defeat": "data/fmv/lose/franks_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"saxons":
+	{
+		;;name and description
+		"string":      "SAXONS",
+		"description": "SAXONS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "barbarian",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battle_temple", "fgroup_viking_temple", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "saxons_men",
+			"women":    "barbarian_women",
+			"surnames": "blank_surnames",
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/saxons.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       7,
+			"rebel standard index": 21,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       5,
+			"rebel logo index": 22,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_saxons.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_barb_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  184, 101, 25,  ],
+			"secondary": [  255, 255, 255, ],
+
+			"family tree":
+			{
+				"background":      [  114, 57,  27,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/saxons_win.wmv",
+			"defeat": "data/fmv/lose/saxons_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": true,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"celts":
+	{
+		;;name and description
+		"string":      "CELTS",
+		"description": "CELTS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "barbarian",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battleforge_temple", "fgroup_ultraviolence_temple", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "celts_men",
+			"women":    "celts_women",
+			"surnames": "celts_surnames",
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/celts.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       10,
+			"rebel standard index": 21,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       6,
+			"rebel logo index": 22,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_celts.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_barb_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  77,  95,  45,  ],
+			"secondary": [  168, 20,  20,  ],
+
+			"family tree":
+			{
+				"background":      [  51,  91,  30,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/celts_win.wmv",
+			"defeat": "data/fmv/lose/celts_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"sassanids":
+	{
+		;;name and description
+		"string":      "SASSANIDS",
+		"description": "SASSANIDS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "eastern",
+		"ethnicity": "arabic",
+
+		;;tags for faction groups
+		"tags": [ ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "sassanids_men",
+			"women":    "sassanids_women",
+			"surnames": "blank_surnames",
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/sassanids.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       6,
+			"rebel standard index": 23,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       7,
+			"rebel logo index": 24,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_sassanids.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_eastern_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  150, 215, 255, ],
+			"secondary": [  255, 75,  2,   ],
+
+			"family tree":
+			{
+				"background":      [  23,  94,  117, ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/sassanids_win.wmv",
+			"defeat": "data/fmv/lose/sassanids_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "zoroastrian",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"roxolani":
+	{
+		;;name and description
+		"string":      "ROXOLANI",
+		"description": "ROXOLANI_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "nomad",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battleforge_temple", "fgroup_healing_temple", "fgroup_horse_temple", "fgroup_sarmatian", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "nomad_men",
+			"women":    "roxolani_women",
+			"surnames": "blank_surnames",
+		},
+
+		;;horde information
+		"horde":
+		{
+			"horde units":
+			[
+				"steppe horde horse",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde chosen warriors",
+				"steppe horde chosen warriors",
+			],
+
+			"min horde units": 60,
+			"max horde units": 100,
+
+			;;remove this amount of horde units from the max every time we re-horde
+			"horde unit reduction per horde": 20,
+
+			;;gain one random horde unit per this amount of population in this settlement, up to the cap
+			"population to horde units": 300,
+
+			;;minimum number of named characters we should have when we first go horde
+			"min named characters": 4,
+
+			;;maximum percentage of armies horde units can fill
+			"max horde unit army percent": 80,
+
+			;;the amount of horde units to disband every time we get a settlement
+			;;if amount of settlements exceeds the numbers in this array, 100% disband assumed
+			"horde unit disband per settlement": [ 33, 55, 100, ],
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/roxolani.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       15,
+			"rebel standard index": 24,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       8,
+			"rebel logo index": 26,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_roxolani.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_nomad_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  51,  53,  194, ],
+			"secondary": [  15,  215, 255, ],
+
+			"family tree":
+			{
+				"background":      [  21,  51,  73,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/roxolani_win.wmv",
+			"defeat": "data/fmv/lose/roxolani_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"ostrogoths":
+	{
+		;;name and description
+		"string":      "OSTROGOTHS",
+		"description": "OSTROGOTHS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "nomad",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battleforge_temple", "fgroup_gothic", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "goth_men",
+			"women":    "barbarian_women",
+			"surnames": "blank_surnames",
+		},
+
+		;;horde information
+		"horde":
+		{
+			"horde units":
+			[
+				"steppe horde horse",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde chosen warriors",
+				"steppe horde chosen warriors",
+			],
+
+			"min horde units": 60,
+			"max horde units": 100,
+
+			;;remove this amount of horde units from the max every time we re-horde
+			"horde unit reduction per horde": 20,
+
+			;;gain one random horde unit per this amount of population in this settlement, up to the cap
+			"population to horde units": 300,
+
+			;;minimum number of named characters we should have when we first go horde
+			"min named characters": 4,
+
+			;;maximum percentage of armies horde units can fill
+			"max horde unit army percent": 80,
+
+			;;the amount of horde units to disband every time we get a settlement
+			;;if amount of settlements exceeds the numbers in this array, 100% disband assumed
+			"horde unit disband per settlement": [ 33, 55, 100, ],
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/ostrogoths.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       12,
+			"rebel standard index": 24,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       9,
+			"rebel logo index": 26,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_ostrogoths.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_nomad_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  248, 183, 29,  ],
+			"secondary": [  0,   0,   0,   ],
+
+			"family tree":
+			{
+				"background":      [  154, 117, 57,  ],
+				"font":            [  0,   0,   0,   ],
+
+				"selected line":   [  0,   0,   0,   ],
+				"unselected line": [  17,  17,  17,  ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/ostrogoths_win.wmv",
+			"defeat": "data/fmv/lose/ostrogoths_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"romano_british":
+	{
+		;;name and description
+		"string":      "ROMANO_BRITISH",
+		"description": "ROMANO_BRITISH_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "roman",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "romano_british_men",
+			"women":    "romano_british_women",
+			"surnames": "romano_british_surnames",
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/romano_british.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       13,
+			"rebel standard index": 20,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       10,
+			"rebel logo index": 21,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_romano_british.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_roman_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  96,  125, 191, ],
+			"secondary": [  255, 255, 141, ],
+
+			"family tree":
+			{
+				"background":      [  28,  111, 138, ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/romano_british_win.wmv",
+			"defeat": "data/fmv/lose/romano_british_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "christianity",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"slavs":
+	{
+		;;name and description
+		"string":      "SLAVS",
+		"description": "SLAVS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "nomad",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battle_temple", "fgroup_leadership_temple", "fgroup_raiders", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "slavs_men",
+			"women":    "barbarian_women",
+			"surnames": "blank_surnames",
+		},
+
+		;;horde information
+		"horde":
+		{
+			"horde units":
+			[
+				"steppe horde chosen warriors",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde spearmen",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde horse",
+				"steppe horde chosen warriors",
+				"steppe horde chosen warriors",
+			],
+
+			"min horde units": 60,
+			"max horde units": 100,
+
+			;;remove this amount of horde units from the max every time we re-horde
+			"horde unit reduction per horde": 20,
+
+			;;gain one random horde unit per this amount of population in this settlement, up to the cap
+			"population to horde units": 300,
+
+			;;minimum number of named characters we should have when we first go horde
+			"min named characters": 4,
+
+			;;maximum percentage of armies horde units can fill
+			"max horde unit army percent": 80,
+
+			;;the amount of horde units to disband every time we get a settlement
+			;;if amount of settlements exceeds the numbers in this array, 100% disband assumed
+			"horde unit disband per settlement": [ 33, 55, 100, ],
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/slavs.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       14,
+			"rebel standard index": 24,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       11,
+			"rebel logo index": 26,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_slavs.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_nomad_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  191, 189, 145, ],
+			"secondary": [  8,   40,  117, ],
+
+			"family tree":
+			{
+				"background":      [  210, 191, 158, ],
+				"font":            [  0,   0,   0,   ],
+
+				"selected line":   [  0,   0,   0,   ],
+				"unselected line": [  17,  17,  17,  ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/slavs_win.wmv",
+			"defeat": "data/fmv/lose/slavs_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"burgundii":
+	{
+		;;name and description
+		"string":      "BURGUNDII",
+		"description": "BURGUNDII_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "barbarian",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battle_temple", "fgroup_farming_temple", "fgroup_viking_temple", "fgroup_germanic", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "burgundii_men",
+			"women":    "barbarian_women",
+			"surnames": "blank_surnames",
+		},
+
+		;;horde information
+		"horde":
+		{
+			"horde units":
+			[
+				"barb horde hunter",
+				"barb horde spearman",
+				"barb horde spearman",
+				"barb horde spearman",
+				"barb horde hunter",
+				"barb horde raider",
+				"barb horde raider",
+				"barb horde chosen swordsmen",
+			],
+
+			"min horde units": 60,
+			"max horde units": 100,
+
+			;;remove this amount of horde units from the max every time we re-horde
+			"horde unit reduction per horde": 20,
+
+			;;gain one random horde unit per this amount of population in this settlement, up to the cap
+			"population to horde units": 300,
+
+			;;minimum number of named characters we should have when we first go horde
+			"min named characters": 4,
+
+			;;maximum percentage of armies horde units can fill
+			"max horde unit army percent": 80,
+
+			;;the amount of horde units to disband every time we get a settlement
+			;;if amount of settlements exceeds the numbers in this array, 100% disband assumed
+			"horde unit disband per settlement": [ 33, 55, 100, ],
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/burgundii.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       18,
+			"rebel standard index": 21,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       12,
+			"rebel logo index": 22,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_burgundii.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_barb_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  132, 22,  74,  ],
+			"secondary": [  255, 255, 255, ],
+
+			"family tree":
+			{
+				"background":      [  66,  16,  26,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/burgundii_win.wmv",
+			"defeat": "data/fmv/lose/burgundii_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"berbers":
+	{
+		;;name and description
+		"string":      "BERBERS",
+		"description": "BERBERS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "carthaginian",
+		"ethnicity": "berber",
+
+		;;tags for faction groups
+		"tags": [ ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "berbers_men",
+			"women":    "berbers_women",
+			"surnames": "blank_surnames",
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/berbers.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       16,
+			"rebel standard index": 22,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       13,
+			"rebel logo index": 23,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_berbers.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_carthage_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  159, 191, 115, ],
+			"secondary": [  255, 255, 255, ],
+
+			"family tree":
+			{
+				"background":      [  106, 135, 72,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/berbers_win.wmv",
+			"defeat": "data/fmv/lose/berbers_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"alemanni":
+	{
+		;;name and description
+		"string":      "ALEMANNI",
+		"description": "ALEMANNI_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "barbarian",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battle_temple", "fgroup_farming_temple", "fgroup_viking_temple", "fgroup_germanic", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "alemanni_men",
+			"women":    "barbarian_women",
+			"surnames": "blank_surnames",
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/alemanni.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       0,
+			"rebel standard index": 21,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       14,
+			"rebel logo index": 22,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_alemanni.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_barb_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  56,  80,  90,  ],
+			"secondary": [  166, 20,  23,  ],
+
+			"family tree":
+			{
+				"background":      [  47,  84,  108, ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/alemanni_win.wmv",
+			"defeat": "data/fmv/lose/alemanni_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"empire_east":
+	{
+		;;name and description
+		"string":      "EMPIRE_EAST",
+		"description": "EMPIRE_EAST_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "roman",
+		"ethnicity": "mediterranean",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_leadership_temple", "roman_empire", "fgroup_ere_romans", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "roman_men",
+			"women":    "roman_women_core",
+			"surnames": "roman_surnames",
+		},
+
+		;;shadow faction (NOTE: shadow factions now have to be explicitly circular,
+		;; if your shadow faction is not shadowing you the revolt order will be you->shadow->rebels instead of you->shadow->you)
+		"shadow faction": "empire_east_rebels",
+
+		;;should the shadow faction take revolts when it's already alive
+		"living shadow takes revolts": true,
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/empire_east.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       1,
+			"rebel standard index": 20,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       15,
+			"rebel logo index": 21,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_empire_east.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_roman_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  120, 48,  150, ],
+			"secondary": [  255, 255, 141, ],
+
+			"family tree":
+			{
+				"background":      [  52,  10,  53,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/empire_east_win.wmv",
+			"defeat": "data/fmv/lose/empire_east_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "christianity",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"empire_west":
+	{
+		;;name and description
+		"string":      "EMPIRE_WEST",
+		"description": "EMPIRE_WEST_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "roman",
+		"ethnicity": "mediterranean",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_leadership_temple", "roman_empire", "fgroup_wre_romans", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "empire_west_men",
+			"women":    "empire_west_women",
+			"surnames": "roman_surnames",
+		},
+
+		;;shadow faction (NOTE: shadow factions now have to be explicitly circular,
+		;; if your shadow faction is not shadowing you the revolt order will be you->shadow->rebels instead of you->shadow->you)
+		"shadow faction": "empire_west_rebels",
+
+		;;should the shadow faction take revolts when it's already alive
+		"living shadow takes revolts": true,
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/empire_west.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       2,
+			"rebel standard index": 20,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       16,
+			"rebel logo index": 21,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_empire_west.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_roman_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  164, 20,  20,  ],
+			"secondary": [  255, 255, 141, ],
+
+			"family tree":
+			{
+				"background":      [  96,  17,  15,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/empire_west_win.wmv",
+			"defeat": "data/fmv/lose/empire_west_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "christianity",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"empire_east_rebels":
+	{
+		;;name and description
+		"string":      "EMPIRE_EAST_REBELS",
+		"description": "EMPIRE_EAST_REBELS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "roman",
+		"ethnicity": "mediterranean",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_leadership_temple", "roman_empire", "fgroup_ere_romans", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "roman_men",
+			"women":    "roman_women_core",
+			"surnames": "roman_surnames",
+		},
+
+		;;shadow faction (NOTE: shadow factions now have to be explicitly circular,
+		;; if your shadow faction is not shadowing you the revolt order will be you->shadow->rebels instead of you->shadow->you)
+		"shadow faction": "empire_east",
+
+		;;should the shadow faction take revolts when it's already alive
+		"living shadow takes revolts": true,
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/empire_east_rebels.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       1,
+			"rebel standard index": 20,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       17,
+			"rebel logo index": 21,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_empire_east_rebels.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_roman_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  52,  139, 129, ],
+			"secondary": [  255, 255, 141, ],
+
+			"family tree":
+			{
+				"background":      [  0,   0,   0,   ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/empire_east_rebels_win.wmv",
+			"defeat": "data/fmv/lose/empire_east_rebels_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "christianity",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"empire_west_rebels":
+	{
+		;;name and description
+		"string":      "EMPIRE_WEST_REBELS",
+		"description": "EMPIRE_WEST_REBELS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "roman",
+		"ethnicity": "mediterranean",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_leadership_temple", "roman_empire", "fgroup_wre_romans", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "empire_west_men",
+			"women":    "empire_west_women",
+			"surnames": "roman_surnames",
+		},
+
+		;;shadow faction (NOTE: shadow factions now have to be explicitly circular,
+		;; if your shadow faction is not shadowing you the revolt order will be you->shadow->rebels instead of you->shadow->you)
+		"shadow faction": "empire_west",
+
+		;;should the shadow faction take revolts when it's already alive
+		"living shadow takes revolts": true,
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/empire_west_rebels.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       2,
+			"rebel standard index": 20,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       18,
+			"rebel logo index": 21,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_empire_west_rebels.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_roman_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  81,  129, 63,  ],
+			"secondary": [  255, 255, 141, ],
+
+			"family tree":
+			{
+				"background":      [  0,   0,   0,   ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/empire_west_rebels_win.wmv",
+			"defeat": "data/fmv/lose/empire_west_rebels_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "christianity",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"slave":
+	{
+		;;name and description
+		"string":      "SLAVE",
+		"description": "SLAVE_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "roman",
+		"ethnicity": "mediterranean",
+
+		;;tags for faction groups
+		"tags": [ ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "alemanni_men",
+			"women":    "barbarian_women",
+			"surnames": "blank_surnames",
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/slave.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       17,
+			"rebel standard index": 17,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       19,
+			"rebel logo index": 19,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_slaves.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_slaves.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  155, 145, 120, ],
+			"secondary": [  90,  75,  40,  ],
+
+			"family tree":
+			{
+				"background":      [  0,   0,   0,   ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/barbarian_outro.wmv",
+			"defeat": "data/fmv/lose/rebels_eliminated.wmv",
+		},
+
+		"available in custom battles": false,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": false,
+	},
+	"lombardi":
+	{
+		;;name and description
+		"string":      "LOMBARDI",
+		"description": "LOMBARDI_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "barbarian",
+		"ethnicity": "caucasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battle_temple", "fgroup_farming_temple", "fgroup_viking_temple", "fgroup_germanic", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "lombardi_men",
+			"women":    "barbarian_women",
+			"surnames": "blank_surnames",
+		},
+
+		;;horde information
+		"horde":
+		{
+			"horde units":
+			[
+				"barb horde hunter",
+				"barb horde hunter",
+				"barb horde spearman",
+				"barb horde spearman",
+				"barb horde hunter",
+				"barb horde raider",
+				"barb horde raider",
+				"barb horde chosen swordsmen",
+			],
+
+			"min horde units": 60,
+			"max horde units": 100,
+
+			;;remove this amount of horde units from the max every time we re-horde
+			"horde unit reduction per horde": 20,
+
+			;;gain one random horde unit per this amount of population in this settlement, up to the cap
+			"population to horde units": 300,
+
+			;;minimum number of named characters we should have when we first go horde
+			"min named characters": 4,
+
+			;;maximum percentage of armies horde units can fill
+			"max horde unit army percent": 80,
+
+			;;the amount of horde units to disband every time we get a settlement
+			;;if amount of settlements exceeds the numbers in this array, 100% disband assumed
+			"horde unit disband per settlement": [ 33, 55, 100, ],
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/lombardi.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       19,
+			"rebel standard index": 21,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       20,
+			"rebel logo index": 22,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_lombardi.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_barb_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  192, 23,  217, ],
+			"secondary": [  0,   0,   0,   ],
+
+			"family tree":
+			{
+				"background":      [  82,  17,  84,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/lombardi_win.wmv",
+			"defeat": "data/fmv/lose/lombardi_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"white_huns":
+	{
+		;;name and description
+		"string":      "WHITE_HUNS",
+		"description": "WHITE_HUNS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "hun",
+		"ethnicity": "eastasian",
+
+		;;tags for faction groups
+		"tags": [ "fgroup_battleforge_temple", ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "huns_men",
+			"women":    "huns_women",
+			"surnames": "blank_surnames",
+		},
+
+		;;horde information
+		"horde":
+		{
+			"horde units":
+			[
+				"hun horde spearmen",
+				"hun horde spearmen",
+				"hun horde horse",
+				"hun horde spearmen",
+				"hun horde spearmen",
+				"hun horde horse",
+				"hun horde horse",
+				"hun horde chosen warriors",
+			],
+
+			"min horde units": 60,
+			"max horde units": 100,
+
+			;;remove this amount of horde units from the max every time we re-horde
+			"horde unit reduction per horde": 20,
+
+			;;gain one random horde unit per this amount of population in this settlement, up to the cap
+			"population to horde units": 300,
+
+			;;minimum number of named characters we should have when we first go horde
+			"min named characters": 4,
+
+			;;maximum percentage of armies horde units can fill
+			"max horde unit army percent": 80,
+
+			;;the amount of horde units to disband every time we get a settlement
+			;;if amount of settlements exceeds the numbers in this array, 100% disband assumed
+			"horde unit disband per settlement": [ 33, 55, 100, ],
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/white_huns.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       27,
+			"rebel standard index": 25,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       28,
+			"rebel logo index": 25,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_huns.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_hun_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  183,  179,  175,  ],
+			"secondary": [  102,  102,  102,  ],
+
+			"family tree":
+			{
+				"background":      [  44,  43,  42,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/huns_win.wmv",
+			"defeat": "data/fmv/lose/huns_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+	"moors":
+	{
+		;;name and description
+		"string":      "MOORS",
+		"description": "MOORS_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "carthaginian",
+		"ethnicity": "berber",
+
+		;;tags for faction groups
+		"tags": [ ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "berbers_men",
+			"women":    "berbers_women",
+			"surnames": "blank_surnames",
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/moors.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       26,
+			"rebel standard index": 22,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       27,
+			"rebel logo index": 23,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_berbers.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_carthage_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  169, 12, 81, ],
+			"secondary": [  0,   0,  0, ],
+
+			"family tree":
+			{
+				"background":      [  106, 135, 72,  ],
+				"font":            [  255, 255, 255, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/berbers_win.wmv",
+			"defeat": "data/fmv/lose/berbers_eliminated.wmv",
+		},
+
+		"available in custom battles": true,
+		"prefer naval invasions": false,
+		"default religion": "pagan",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+],

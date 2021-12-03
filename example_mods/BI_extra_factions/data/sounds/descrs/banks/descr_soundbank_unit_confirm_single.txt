@@ -1,0 +1,191 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 14.902,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.499,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.5,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_unit_confirm_single":
+{
+	"entries":
+	[
+		{
+			"unit":
+			{
+				;;the categories, voice types and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"voices":
+					[ "all", "-female", ],
+
+				"IDs":
+				[
+				],
+			},
+			"cultures":
+				[ "roman", ],
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Confirm_1.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Confirm_1.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Confirm_1.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Confirm_1.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			"unit":
+			{
+				;;the categories, voice types and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"voices":
+					[ "all", "-female", ],
+
+				"IDs":
+				[
+				],
+			},
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Confirm_1.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Confirm_1.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Confirm_1.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Confirm_1.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			"unit":
+			{
+				;;the categories, voice types and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"voices":
+					[ "all", "-female", ],
+
+				"IDs":
+				[
+				],
+			},
+			"cultures":
+				[ "carthaginian", "eastern", ],
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Confirm_1.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Confirm_1.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Confirm_1.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Confirm_1.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			"unit":
+			{
+				;;the categories, voice types and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"voices":
+					[ "female", ],
+
+				"IDs":
+				[
+				],
+			},
+			"cultures":
+				[ "all", ],
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Confirm_3.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Confirm_2.wav",
+						"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Confirm_1.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+	],
+}, ;;soundbank_unit_confirm_single

@@ -1,0 +1,28 @@
+{
+  "huns": 0,
+  "goths": 0,
+  "franks": 0,
+  "white_huns": 0,
+
+  "sarmatians": 1,
+  "vandals": 1,
+  "saxons": 1,
+  "sassanids": 1,
+  "alemanni": 1,
+  "empire_east": 2,
+
+  "celts": 2,
+  "roxolani": 1,
+  "ostrogoths": 2,
+  "romano_british": 3,
+  "slavs": 2,
+  "burgundii": 2,
+  "berbers": 2,
+  "empire_west": 3,
+  "lombardi": 2,
+  "moors": 3,
+
+  "empire_east_rebels": -1,
+  "empire_west_rebels": -1,
+  "slave": -1,
+}

@@ -1,0 +1,965 @@
+;	
+;	This file contains the character profession attributes, the idea being that a 
+;	character has a certain set of skills and a current profession. The character 
+;	is represented by his profession: if he is acting as a general, he will get 
+;	represented as a general of a strat_model dictated by his combat skills.
+;
+;	This file gets parsed on application startup but is not otherwise referred to. 
+;	The data format is thus:
+;
+;	;						indicates a comment ;-)
+;							
+;	type					indicates a new character type
+;
+;								must be followed by id name string (phrase)
+;
+;	faction					indicates one or more factions which use the following
+;								strat_model descriptions, valid entries are these:
+;
+;								alemanni, empire_east, empire_west, huns, 
+;								sarmatians, sassanids, saxons, vandals, goths, celts,  
+;								ostrogoths, romano_british, slavs, berbers,  
+;								scythia, spain, thrace, slave, roxolani, burgundii, lombardi
+;								
+;								if a given faction is not present in a given character 
+;								type listing, that faction cannot use characters of that
+;								type - so not all factions have access to all character 
+;								professions
+;
+;	dictionary				specifies dictionary entry for character type name
+;
+;								note that there is one dictionary entry per type per 
+;								faction set, allowing different names for the same 
+;								character type - ie a diplomat barabarian could be a 
+;								'chieftain', while a roman might be a 'legatus'
+;
+;	strat_model				model to represent the character on the strategy map
+;
+;	battle_model			model to represent the character on the battle map (optional)
+;	battle_equip			equipment character has on the battle field must be followed by a  weapon type,
+;							(not missile weapon type) and armour type
+;
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+starting_action_points	80
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+type			named character
+
+actions			moving_normal, moving_quickmarch, garrison, assault, attack, besiege, entrench, ambush, diplomacy, bribe, exchange, building_fort, building_watchtower
+wage_base		200
+
+faction			alemanni
+dictionary		15
+strat_model		BI_sm_franks_general
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			empire_east
+dictionary		15
+strat_model		BI_sm_roman_general
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			empire_west
+dictionary		15
+strat_model		BI_sm_roman_general
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			empire_east_rebels
+dictionary		15
+strat_model		BI_sm_roman_general
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			empire_west_rebels
+dictionary		15
+strat_model		BI_sm_roman_general
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			franks
+dictionary		15
+strat_model		BI_sm_franks_general
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			huns
+dictionary		2
+strat_model		BI_sm_huns_general
+battle_model		greek_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			sarmatians
+dictionary		2
+strat_model		BI_sm_roman_general
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			roxolani
+dictionary		2
+strat_model		BI_sm_roman_general
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			sassanids
+dictionary		2
+strat_model		BI_sm_sassanids_general
+battle_model		BI_officer_sassanid_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			saxons
+dictionary		1
+strat_model		BI_sm_saxons_general
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			vandals
+dictionary		2
+strat_model		BI_sm_saxons_general
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			goths
+dictionary		2
+strat_model		BI_sm_goth_general
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			celts
+dictionary		2
+strat_model		BI_sm_celt_general
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			lombardi
+dictionary		2
+strat_model		BI_sm_franks_general
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			ostrogoths
+dictionary		2
+strat_model		BI_sm_goth_general
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			romano_british
+dictionary		2
+strat_model		BI_sm_roman_general
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			slavs
+dictionary		2
+strat_model		BI_sm_celt_general
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			burgundii
+dictionary		2
+strat_model		BI_sm_franks_general
+battle_model		franks_warlord
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			berbers
+dictionary		2
+strat_model		BI_sm_desert_general
+battle_model		carthaginian_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			slave
+dictionary		2
+strat_model		BI_sm_rebel_general
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			white_huns
+dictionary		2
+strat_model		BI_sm_huns_general
+battle_model		greek_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			moors
+dictionary		2
+strat_model		BI_sm_desert_general
+battle_model		carthaginian_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+type			general
+
+actions	moving_normal, moving_quickmarch, garrison, assault, attack, besiege, entrench, ambush, exchange
+wage_base		0
+
+faction			alemanni
+dictionary		15
+strat_card		data/ui/roman/portraits/captain_card_julii.tga
+strat_model		BI_sm_captain
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			empire_east
+dictionary		15
+strat_card		data/ui/roman/portraits/captain_card_julii.tga
+strat_model		BI_sm_captain
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			empire_west
+dictionary		15
+strat_card		data/ui/roman/portraits/captain_card_julii.tga
+strat_model		BI_sm_captain
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			empire_east_rebels
+dictionary		15
+strat_card		data/ui/roman/portraits/captain_card_julii.tga
+strat_model		BI_sm_captain
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			empire_west_rebels
+dictionary		15
+strat_card		data/ui/roman/portraits/captain_card_julii.tga
+strat_model		BI_sm_captain
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			franks
+dictionary		15
+strat_card		data/ui/roman/portraits/captain_card_julii.tga
+strat_model		BI_sm_captain
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			huns
+dictionary		2
+strat_card		data/ui/barbarian/portraits/captain_card_gaul.tga
+strat_model		BI_sm_captain
+battle_model		greek_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			sarmatians
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			roxolani
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			sassanids
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		BI_officer_sassanid_captain
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			saxons
+dictionary		1
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			vandals
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			goths
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			celts
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			lombardi
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			ostrogoths
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			romano_british
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			slavs
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		saxon_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			burgundii
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		franks_captain
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			berbers
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		carthaginian_lesser_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			slave
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		roman_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			white_huns
+dictionary		2
+strat_card		data/ui/barbarian/portraits/captain_card_gaul.tga
+strat_model		BI_sm_captain
+battle_model		greek_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+faction			moors
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		BI_sm_captain
+battle_model		carthaginian_lesser_general
+battle_equip		gladius, chainmail shirt helmet and rectangular shield
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			spy
+
+actions			moving_normal, spying
+wage_base		100
+
+faction			alemanni
+dictionary		15
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			empire_east
+dictionary		15
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			empire_west
+dictionary		15
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			empire_east_rebels
+dictionary		15
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			empire_west_rebels
+dictionary		15
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			franks
+dictionary		15
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			huns
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			sarmatians
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			roxolani
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			sassanids
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			saxons
+dictionary		1
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			vandals
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			goths
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			celts
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			lombardi
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			ostrogoths
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			romano_british
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			slavs
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			burgundii
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			berbers
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			slave
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			white_huns
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+faction			moors
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+type			assassin
+
+actions			moving_normal, assassinate, sabotage
+wage_base		200
+
+faction			alemanni
+dictionary		15
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			empire_east
+dictionary		15
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			empire_west
+dictionary		15
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			empire_east_rebels
+dictionary		15
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			empire_west_rebels
+dictionary		15
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			franks
+dictionary		15
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			huns
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			sarmatians
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			roxolani
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			sassanids
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			saxons
+dictionary		1
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			vandals
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			goths
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			celts
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			lombardi
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			ostrogoths
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			romano_british
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			slavs
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			burgundii
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			berbers
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			slave
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			white_huns
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
+faction			moors
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+type			diplomat
+
+actions			moving_normal, diplomacy, bribe 
+wage_base		50
+
+faction			alemanni
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		diplomat
+
+faction			empire_east
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		diplomat
+
+faction			empire_west
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		diplomat
+
+faction			empire_east_rebels
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		diplomat
+
+faction			empire_west_rebels
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		diplomat
+
+faction			franks
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		diplomat
+
+faction			huns
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			sarmatians
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			roxolani
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			sassanids
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			saxons
+dictionary		1
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			vandals
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			goths
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			celts
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			lombardi
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			ostrogoths
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			romano_british
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			slavs
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			burgundii
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			berbers
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			slave
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			white_huns
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			moors
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			merchant
+
+actions			moving_normal
+wage_base		0
+
+faction			alemanni
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		merchant
+
+faction			empire_east
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		merchant
+
+faction			empire_west
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		merchant
+
+faction			empire_east_rebels
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		merchant
+
+faction			empire_west_rebels
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		merchant
+
+faction			franks
+dictionary		15
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		merchant
+
+faction			huns
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			sarmatians
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			roxolani
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			sassanids
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			saxons
+dictionary		1
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			vandals
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			goths
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			celts
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			lombardi
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			ostrogoths
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			romano_british
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			slavs
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			burgundii
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			berbers
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			slave
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			white_huns
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+faction			moors
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			admiral
+
+actions			moving_normal, quick_sail, blockade, disembark, exchange
+wage_base		50
+
+faction			alemanni
+dictionary		15
+strat_card		data/ui/roman/agents/temp_admiral.tga
+strat_model		alemanni_admiral
+
+faction			empire_east
+dictionary		15
+strat_card		data/ui/roman/agents/temp_admiral.tga
+strat_model		empire_east_admiral
+
+faction			empire_west
+dictionary		15
+strat_card		data/ui/roman/agents/temp_admiral.tga
+strat_model		empire_west_admiral
+
+faction			empire_east_rebels
+dictionary		15
+strat_card		data/ui/roman/agents/temp_admiral.tga
+strat_model		empire_east_admiral
+
+faction			empire_west_rebels
+dictionary		15
+strat_card		data/ui/roman/agents/temp_admiral.tga
+strat_model		empire_west_admiral
+
+faction			franks
+dictionary		15
+strat_card		data/ui/roman/agents/temp_admiral.tga
+strat_model		franks_admiral
+
+faction			huns
+dictionary		2
+strat_card		data/ui/greek/agents/temp_admiral.tga
+strat_model		huns_admiral
+
+faction			sarmatians
+dictionary		2
+strat_card		data/ui/egyptian/agents/temp_admiral.tga
+strat_model		sarmatians_admiral
+
+faction			roxolani
+dictionary		2
+strat_card		data/ui/egyptian/agents/temp_admiral.tga
+strat_model		sarmatians_admiral
+
+faction			sassanids
+dictionary		2
+strat_card		data/ui/greek/agents/temp_admiral.tga
+strat_model		sassanids_admiral
+
+faction			saxons
+dictionary		1
+strat_card		data/ui/carthaginian/agents/temp_admiral.tga
+strat_model		saxons_admiral
+
+faction			vandals
+dictionary		2
+strat_card		data/ui/eastern/agents/temp_admiral.tga
+strat_model		vandals_admiral
+
+faction			goths
+dictionary		2
+strat_card		data/ui/eastern/agents/temp_admiral.tga
+strat_model		goths_admiral
+
+faction			celts
+dictionary		2
+strat_card		data/ui/barbarian/agents/temp_admiral.tga
+strat_model		celts_admiral
+
+faction			lombardi
+dictionary		15
+strat_card		data/ui/roman/agents/temp_admiral.tga
+strat_model		alemanni_admiral
+
+faction			ostrogoths
+dictionary		2
+strat_card		data/ui/barbarian/agents/temp_admiral.tga
+strat_model		ostrogoths_admiral
+
+faction			romano_british
+dictionary		2
+strat_card		data/ui/eastern/agents/temp_admiral.tga
+strat_model		romano_british_admiral
+
+faction			slavs
+dictionary		2
+strat_card		data/ui/barbarian/agents/temp_admiral.tga
+strat_model		slavs_admiral
+
+faction			burgundii
+dictionary		15
+strat_card		data/ui/roman/agents/temp_admiral.tga
+strat_model		alemanni_admiral
+
+faction			berbers
+dictionary		2
+strat_card		data/ui/egyptian/agents/temp_admiral.tga
+strat_model		berbers_admiral
+
+faction			slave
+dictionary		2
+strat_card		data/ui/roman/agents/temp_admiral.tga
+strat_model		slave_admiral
+
+faction			moors
+dictionary		2
+strat_card		data/ui/egyptian/agents/temp_admiral.tga
+strat_model		moors_admiral
+
+faction			white_huns
+dictionary		2
+strat_card		data/ui/greek/agents/temp_admiral.tga
+strat_model		huns_admiral

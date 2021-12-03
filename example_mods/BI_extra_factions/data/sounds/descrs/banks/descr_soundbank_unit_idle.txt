@@ -1,0 +1,848 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 7.843,		;;the chance the sound will play when triggered
+	"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 60,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_unit_idle":
+{
+	"entries":
+	[
+		{
+			"unit":
+			{
+				;;the categories, voice types and specific units this sound applies to
+				"categories":
+					[ "all", "-ship", ],
+				"voices":
+					[ "female", ],
+
+				"IDs":
+				[
+				],
+			},
+			"cultures":
+				[ "all", ],
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Cloth_Move_15.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_14.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_13.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_12.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_11.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_10.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_09.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_08.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_07.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_06.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_05.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_04.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_03.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_02.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_01.wav",
+						{
+							"Probability": 2.353,		;;the chance the sound will play when triggered
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+							"Min dist": 0.5,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+						"data/sounds/voice/Human/Generic/Women_Sigh_5.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_4.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_3.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_2.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_1.wav",
+						"data/sounds/voice/Human/Generic/women_sneeze_5.wav",
+						"data/sounds/voice/Human/Generic/Women_sneeze_4.wav",
+						"data/sounds/voice/Human/Generic/Women_sneeze_3.wav",
+						"data/sounds/voice/Human/Generic/Women_sneeze_2.wav",
+						"data/sounds/Voice/Human/Generic/Women_Whistle_3.wav",
+						"data/sounds/Voice/Human/Generic/Women_Whistle_2.wav",
+						"data/sounds/Voice/Human/Generic/Women_Whistle_1.wav",
+						"data/sounds/Voice/Human/Generic/Women_hum_2.wav",
+						"data/sounds/Voice/Human/Generic/Women_hum_1.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_6.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_5.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_4.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_3.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_2.wav",
+						{
+							"Probability": 2.353,		;;the chance the sound will play when triggered
+							"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+							"Min dist": 0.5,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Cloth_Move_15.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_14.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_13.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_12.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_11.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_10.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_09.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_08.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_07.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_06.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_05.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_04.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_03.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_02.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_01.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+						},
+						"data/sounds/voice/Human/Generic/Women_Sigh_5.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_4.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_3.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_2.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_1.wav",
+						"data/sounds/voice/Human/Generic/women_sneeze_5.wav",
+						"data/sounds/voice/Human/Generic/Women_sneeze_4.wav",
+						"data/sounds/voice/Human/Generic/Women_sneeze_3.wav",
+						"data/sounds/voice/Human/Generic/Women_sneeze_2.wav",
+						"data/sounds/voice/Human/Generic/Women_sneeze_1.wav",
+						"data/sounds/Voice/Human/Generic/Women_Whistle_3.wav",
+						"data/sounds/Voice/Human/Generic/Women_Whistle_2.wav",
+						"data/sounds/Voice/Human/Generic/Women_Whistle_1.wav",
+						"data/sounds/Voice/Human/Generic/Women_hum_2.wav",
+						"data/sounds/Voice/Human/Generic/Women_hum_1.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_6.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_5.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_4.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_3.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_2.wav",
+						{
+							"Probability": 3.922,		;;the chance the sound will play when triggered
+							"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Cloth_Move_15.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_14.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_13.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_12.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_11.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_10.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_09.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_08.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_07.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_06.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_05.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_04.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_03.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_02.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_01.wav",
+						{
+							"Probability": 8.235,		;;the chance the sound will play when triggered
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+						},
+						"data/sounds/voice/Human/Generic/women_sneeze_5.wav",
+						"data/sounds/voice/Human/Generic/Women_sneeze_4.wav",
+						"data/sounds/voice/Human/Generic/Women_sneeze_3.wav",
+						"data/sounds/voice/Human/Generic/Women_sneeze_2.wav",
+						"data/sounds/voice/Human/Generic/Women_sneeze_1.wav",
+						"data/sounds/Voice/Human/Generic/Women_Whistle_3.wav",
+						"data/sounds/Voice/Human/Generic/Women_Whistle_2.wav",
+						"data/sounds/Voice/Human/Generic/Women_Whistle_1.wav",
+						"data/sounds/Voice/Human/Generic/Women_hum_2.wav",
+						"data/sounds/Voice/Human/Generic/Women_hum_1.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_6.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_5.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_4.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_3.wav",
+						"data/sounds/Voice/Human/Generic/Women_Cough_2.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+						},
+						"data/sounds/voice/Human/Generic/Women_Sigh_5.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_4.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_3.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_2.wav",
+						"data/sounds/voice/Human/Generic/Women_Sigh_1.wav",
+						{
+							"Probability": 3.922,		;;the chance the sound will play when triggered
+							"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+						},
+					],
+				},
+			],
+		},
+		{
+			"unit":
+			{
+				;;the categories, voice types and specific units this sound applies to
+				"categories":
+					[ "all", "-non_combatant", "-ship", ],
+				"voices":
+					[ "all", "-light", "-female", ],
+
+				"IDs":
+				[
+				],
+			},
+			"cultures":
+				[ "all", ],
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 8.235,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Cloth_Move_15.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_14.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_13.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_12.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_11.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_10.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_09.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_08.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_07.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_06.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_05.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_04.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_03.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_02.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_01.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_02.wav",
+						{
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_16.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_05.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_01.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_01.wav",
+						{
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_09.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_06.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_04.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/voice/human/Generic/Inf_Stretch_04.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_02.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_07.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_09.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_01.wav",
+						{
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_08.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_06.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+							"Probability": 28.235,		;;the chance the sound will play when triggered
+							"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_02.wav",
+						{
+							"Probability": 1.961,		;;the chance the sound will play when triggered
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_16.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_05.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_01.wav",
+						{
+							"Probability": 1.961,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_01.wav",
+						{
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_09.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_06.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_04.wav",
+						{
+							"Probability": 1.961,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/voice/human/Generic/Inf_Stretch_04.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_02.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_07.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_09.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_01.wav",
+						{
+							"Probability": 1.961,		;;the chance the sound will play when triggered
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_08.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_06.wav",
+						{
+							"Probability": 1.961,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Cloth_Move_15.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_14.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_13.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_12.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_11.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_10.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_09.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_08.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_07.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_06.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_05.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_04.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_03.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_02.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_01.wav",
+						{
+							"Probability": 2.353,		;;the chance the sound will play when triggered
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+							"Probability": 40.0,		;;the chance the sound will play when triggered
+							"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 28.235,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_02.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_16.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_05.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_01.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_01.wav",
+						{
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_09.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_06.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_04.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/voice/human/Generic/Inf_Stretch_04.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_02.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_07.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_09.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_01.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_08.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_06.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Cloth_Move_15.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_14.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_13.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_12.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_11.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_10.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_09.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_08.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_07.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_06.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_05.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_04.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_03.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_02.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_01.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+		{
+			"unit":
+			{
+				;;the categories, voice types and specific units this sound applies to
+				"categories":
+					[ "all", "-ship", ],
+				"voices":
+					[ "light", ],
+
+				"IDs":
+				[
+				],
+			},
+			"cultures":
+				[ "all", ],
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_02.wav",
+						{
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_09.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_06.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_16.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_05.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_01.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_01.wav",
+						{
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_08.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_06.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_04.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_02.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_07.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_09.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Cloth_Move_15.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_14.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_13.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_12.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_11.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_10.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_09.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_08.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_07.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_06.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_05.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_04.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_03.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_02.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_01.wav",
+						{
+							"Probability": 8.235,		;;the chance the sound will play when triggered
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_02.wav",
+						{
+							"Probability": 2.353,		;;the chance the sound will play when triggered
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_16.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_05.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_01.wav",
+						{
+							"Probability": 2.353,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_01.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_09.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_06.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_04.wav",
+						{
+							"Probability": 2.353,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_01.wav",
+						{
+							"Probability": 2.353,		;;the chance the sound will play when triggered
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_08.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_06.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_04.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_02.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_07.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_09.wav",
+						{
+							"Probability": 2.353,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Cloth_Move_15.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_14.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_13.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_12.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_11.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_10.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_09.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_08.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_07.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_06.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_05.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_04.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_03.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_02.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_01.wav",
+						{
+							"Probability": 28.235,		;;the chance the sound will play when triggered
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Belch_02.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_16.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_05.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Coughing_01.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_04.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Fart_EM_01.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Scratching_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_09.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_06.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Muttering_04.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_03.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Spitting_01.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_02.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Yawn_01.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_15.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_08.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_07.wav",
+						"data/sounds/Voice/Human/Generic/Infantry_Whistling_06.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_04.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_02.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_07.wav",
+						"data/sounds/voice/human/Generic/Inf_Stretch_09.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Cloth_Move_15.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_14.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_13.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_12.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_11.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_10.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_09.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_08.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_07.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_06.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_05.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_04.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_03.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_02.wav",
+						"data/sounds/SFX/individual/Movement/Cloth_Move_01.wav",
+						{
+							"Probability": 48.235,		;;the chance the sound will play when triggered
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+	],
+}, ;;soundbank_unit_idle

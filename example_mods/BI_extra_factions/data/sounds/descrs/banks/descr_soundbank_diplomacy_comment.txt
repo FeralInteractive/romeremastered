@@ -1,0 +1,5068 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Speech",		;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": false,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 0.0,			;; ???
+},
+
+"soundbank_diplomacy_comment":
+{
+	"entries":
+	[
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "offering protectorate",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_protectorate.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "offering protectorate",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_protectorate.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "offering protectorate",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_protectorate.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "avoid eradication",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_avoid_eradication_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_avoid_eradication_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "avoid eradication",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_avoid_eradication_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_avoid_eradication_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "avoid eradication",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_avoid_eradication_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_avoid_eradication_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "offering alliance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_alliance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "offering alliance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_alliance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "offering alliance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_alliance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "offering ceasefire",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_ceasefire_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_ceasefire_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "offering ceasefire",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_ceasefire_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_ceasefire_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "offering ceasefire",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_ceasefire_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_ceasefire_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "nullify alliance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_nullify_alliance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "nullify alliance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_nullify_alliance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "nullify alliance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_nullify_alliance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "offer trade",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_trade.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "offer trade",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_trade.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "offer trade",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_trade.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "offer access",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_access.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "offer access",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_access.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "offer access",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_access.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "offer attack",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_attack.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "offer attack",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_attack.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "offer attack",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_attack.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "making threat",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_threat.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "making threat",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_threat.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "making threat",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_threat.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "offer bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "offer bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "offer bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "offer gift",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_gift_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_gift_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "offer gift",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_gift_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_gift_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "offer gift",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_gift_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_gift_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "offer info",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_info.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "offer info",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_info.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "offer info",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_info.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "accept gift",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_accept_gift_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_accept_gift_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "accept gift",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_accept_gift_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_accept_gift_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "accept gift",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_accept_gift_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_accept_gift_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "accept bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_accept_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "accept bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_accept_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "accept bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_accept_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "acknowledge acceptance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_acknowledge_acceptance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "acknowledge acceptance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_acknowledge_acceptance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "acknowledge acceptance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_acknowledge_acceptance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "acknowledge rejection",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_acknowledge_rejection.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "acknowledge rejection",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_acknowledge_rejection.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "acknowledge rejection",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_acknowledge_rejection.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "acknowledge declaration",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_acknowledge_declaration.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "acknowledge declaration",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_acknowledge_declaration.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "acknowledge declaration",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_acknowledge_declaration.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "reject not interested",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_reject_not_interested.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "reject not interested",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_reject_not_interested.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "reject not interested",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_reject_not_interested.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "reject too many counters",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_reject_too_many_counters.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "reject too many counters",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_reject_too_many_counters.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "reject too many counters",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_reject_too_many_counters.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "reject bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_reject_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "reject bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_reject_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "reject bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_reject_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline protectorate",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_protectorate.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline protectorate",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_protectorate.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline protectorate",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_protectorate.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline alliance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_alliance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline alliance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_alliance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline alliance",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_alliance.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline ceasefire",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_ceasefire.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline ceasefire",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_ceasefire.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline ceasefire",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_ceasefire.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline nullify",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_nullify.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline nullify",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_nullify.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline nullify",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_nullify.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline access",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_access.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline access",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_access.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline access",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_access.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline region",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_region.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline region",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_region.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline region",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_region.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline attack",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_attack.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline attack",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_attack.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline attack",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_attack.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline threat",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_threat.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline threat",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_threat.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline threat",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_threat.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline gift",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_gift.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline gift",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_gift.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline gift",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_gift.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline demand",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_demand.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline demand",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_demand.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline demand",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_demand.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline yearly payment",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_yearly_payment.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline yearly payment",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_yearly_payment.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline yearly payment",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_yearly_payment.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline payment too high",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_payment_too_high.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline payment too high",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_payment_too_high.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline payment too high",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_payment_too_high.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline payment too low",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_payment_too_low.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline payment too low",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_payment_too_low.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline payment too low",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_payment_too_low.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest region offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_dishonest_region_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest region offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_dishonest_region_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "dishonest region offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_dishonest_region_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest access offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_dishonest_attack_threat.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest access offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_dishonest_attack_threat.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "dishonest access offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_dishonest_attack_threat.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest access demand",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_dishonest_access_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest access demand",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_dishonest_access_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "dishonest access demand",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_dishonest_access_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest attack offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_dishonest_access_demand.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest attack offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_dishonest_access_demand.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "dishonest attack offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_dishonest_access_demand.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest attack threat",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_dishonest_attack_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest attack threat",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_dishonest_attack_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "dishonest attack threat",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_dishonest_attack_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest tribute offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_dishonest_tribute_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "dishonest tribute offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_dishonest_tribute_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "dishonest tribute offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_dishonest_tribute_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "accept proposition",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_accept_proposition.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "accept proposition",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_accept_proposition.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "accept proposition",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_accept_proposition.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "accept counter",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_accept_counter.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "accept counter",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_accept_counter.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "accept counter",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_accept_counter.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "accept declaration",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_accept_declaration.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "accept declaration",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_accept_declaration.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "accept declaration",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_accept_declaration.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "counter offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_counter_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "counter offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_counter_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "counter offer",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_counter_offer.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "counter demand",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_counter_demand.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "counter demand",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_counter_demand.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "counter demand",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_counter_demand.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "counter info",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_counter_info.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "counter info",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_counter_info.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "counter info",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_counter_info.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "counter proposition",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_counter_proposition.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "counter proposition",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_counter_proposition.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "counter proposition",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_counter_proposition.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "counter bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_counter_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "counter bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_counter_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "counter bribe",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_counter_bribe.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "recipient welcome allied",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_recipient_welcome_allied.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "recipient welcome allied",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_recipient_welcome_allied.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "recipient welcome allied",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_recipient_welcome_allied.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "recipient welcome at war",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_recipient_welcome_at_war.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "recipient welcome at war",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_recipient_welcome_at_war.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "recipient welcome at war",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_recipient_welcome_at_war.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "finished",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_finished.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "finished",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_finished.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "finished",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_finished.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "unsure of intentions",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_unsure_of_intentions_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_unsure_of_intentions_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "unsure of intentions",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_unsure_of_intentions_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_unsure_of_intentions_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "unsure of intentions",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_unsure_of_intentions_2.wav",
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_unsure_of_intentions_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "decline protector",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_decline_protectorate.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "decline protector",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_decline_protectorate.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "decline protector",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_decline_protectorate.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;the comment this is for
+			"comment": "offer settle debt",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/arab_offer_settle_debt.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;the comment this is for
+			"comment": "offer settle debt",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/barb_offer_settle_debt.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;the factions that the proposer can be
+			"from factions":
+				[ "all", ],
+
+			;;the factions that the recipient can be
+			"to factions":
+				[ "all", ],
+
+			;;characters that can use this voiceline
+			"characters":
+				[ "all", ],
+
+			;;voice cultures this is valid for
+			"cultures":
+				[ "roman", ],
+
+			;;the comment this is for
+			"comment": "offer settle debt",
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Diplomacy/roman_offer_settle_debt.wav",
+					{
+					},
+				],
+			],
+		},
+	],
+}, ;;soundbank_diplomacy_comment

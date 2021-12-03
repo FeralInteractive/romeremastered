@@ -1,0 +1,67 @@
+;; Last updated by jburnett on 2021/05/25
+;; DESCR file generated via RTW Amber pack editor
+
+"hashes": ;;hashes used to identify if the cultures/factions/climates for this mod are valid for this mod, it's just the 16 byte SHA1 of all the names joined together (no spaces) % (2^32)
+{
+	;;technically as long as you have a unique number (within uint_max, of course) for your mod this will still work, and if you leave this part out your mod will always use that of the previously loaded mod,
+	;;although it might break if you actually use cultures, factions or hashes anywhere
+
+	"culture hash": 29686474,
+	"faction hash": 361179385,
+	"climate hash": 943180804,
+},
+
+"global parameters":
+{
+	"battle rolloff factor": 0.1,			;;rolloff factors for both 3D battle and campaign map
+	"strat rolloff factor": 3.0,
+
+	"doppler factor": 2.0,  				;;doppler factor, idk what this does but I assume it has something to do with the doppler effect
+	"music retrigger": 5,					;;time it takes for the music to restart after it finishes
+	"music fade in": 0, 					;;time the music takes to fade in and out
+	"music fade out": 5,
+
+	"cull group noise": false,				;;disable group sounds when close enough to a unit
+	"group noise cull dist": -6.0,			;;distance at which to cull group noises
+
+	"unit move start delay": 0.5,			;;delay before playing unit movement sounds
+
+	"unit sound merge distance": 50.0,  	;;the minimum distance at which two units can play seperate group sounds
+
+	"unit collide threshold": 10.0, 		;;the minimum percentage of soldiers that need to be colliding to play collision sounds when charging
+
+	"unit under attack timeout": 60.0,		;;the minimum time between "under attack" voicelines
+	"unit warhorns timeout": 15.0,			;;the minimum time between warhorn effects
+
+	"ducking on": true, 					;;should we be using ducking?
+	"ducking fade in": 0.1, 				;;amount of time taken for ducking to reach it's maxium
+	"ducking fade out": 1.0, 				;;amount of time taken for ducking to retreat from maximum
+	"voice ducking amount": -55,			;;ducking percentage when a voice is playing
+	"pause ducking amount": -50.0,			;;ducking amount when the pause menu is opened while the game is unpaused
+
+	"use unit idle probability": true,		;;trigger idle sounds randomly instead of doing so every tick
+	"unit idle probability scale": 3.5, 	;;the chance that a unit will make an idle sound every tick, later scaled by the unit size
+	"unit ambient probability scale": 3.5,	;;same as above but for ambient sounds
+
+	"volume cutoff": 0.1,					;;the cutoff volume used when autocalculating max dist for sounds
+	"priority floor": -1000.0,				;;don't play sounds below this priority
+	"weather pitch offset": 0.2,			;;the minimum pitch difference between two weather effects
+
+
+	;;the contiguous range of voice indexes valid for randomly generated characters of each type for each faction
+	;;these will be ignored if the faction hash doesn't match the topmost mod
+	"random voice indexes":
+	{
+		"all":
+		{
+			"all":
+			{
+				"start index": 0,
+				"num indexes": 1,
+			},
+		},
+	},
+},
+
+include "sounds/descrs/descr_misc_sounds.txt" ;; misc (id) sounds
+include "sounds/descrs/descr_bank_sounds.txt" ;; banked sounds

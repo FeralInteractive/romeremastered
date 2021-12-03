@@ -1,0 +1,97 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 48.235,		;;the chance the sound will play when triggered
+	"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 180,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.233,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.5,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_unit_collide":
+{
+	"entries":
+	[
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "infantry", "cavalry", ],
+				"classes":
+					[ "heavy", "spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Collide/metal_collide_07.wav",
+						"data/sounds/SFX/Group/Collide/metal_collide_06.wav",
+						"data/sounds/SFX/Group/Collide/metal_collide_05.wav",
+						"data/sounds/SFX/Group/Collide/metal_collide_04.wav",
+						"data/sounds/SFX/Group/Collide/metal_collide_03.wav",
+						"data/sounds/SFX/Group/Collide/metal_collide_02.wav",
+						"data/sounds/SFX/Group/Collide/metal_collide_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 4,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Collide/army_collide_02.wav",
+						"data/sounds/SFX/Group/Collide/army_collide_01.wav",
+						{
+							"Probability": 100.0,		;;the chance the sound will play when triggered
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+	],
+}, ;;soundbank_unit_collide

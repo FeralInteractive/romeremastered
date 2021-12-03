@@ -1,0 +1,79 @@
+saxons
+hold_regions Vicus_Saxones Londinium Samarobriva
+take_regions 18
+
+vandals
+hold_regions Corduba Carthage Rome
+take_regions 10
+
+empire_east
+hold_regions Constantinople Alexandria Rome Carthage
+take_regions 34
+
+empire_west
+hold_regions Rome Carthage Tarraco Constantinople
+take_regions 34
+
+huns
+hold_regions Rome Constantinople
+take_regions 15
+
+franks
+hold_regions Lugdunum Burdigala Arles
+take_regions 20
+
+alemanni
+hold_regions Augusta_Treverorum Aquincum Rome
+take_regions 20
+
+sarmatians
+hold_regions Aquincum Salona Kotais
+take_regions 15
+
+goths
+hold_regions Constantinople Rome
+take_regions 16
+
+sassanids
+hold_regions Alexandria Jerusalem Constantinople
+take_regions 20
+
+celts
+hold_regions Londinium Eburacum Lugdunum 
+take_regions 16
+
+romano_british
+hold_regions Londinium Eburacum Lugdunum 
+take_regions 14
+
+slavs
+hold_regions Constantinople
+take_regions 14
+
+ostrogoths
+hold_regions Rome Salona
+take_regions 14
+
+berbers
+hold_regions Carthage Alexandria
+take_regions 10
+
+lombardi
+hold_regions Mediolanium Ravenna
+take_regions 14
+
+burgundii
+hold_regions Massilia Augusta_Vindelicorum Arles
+take_regions 14
+
+roxolani
+hold_regions Aquincum Salona Kotais
+take_regions 10
+
+moors
+hold_regions Carthage Alexandria
+take_regions 10
+
+white_huns
+hold_regions Rome Constantinople
+take_regions 15

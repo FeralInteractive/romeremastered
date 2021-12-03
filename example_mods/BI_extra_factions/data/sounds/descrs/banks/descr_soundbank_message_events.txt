@@ -1,0 +1,157 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 999,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.499,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Interface",	;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": true,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 0.0,			;; ???
+},
+
+"soundbank_message_events":
+{
+	"entries":
+	[
+		{
+			;;message type
+			"message": "city_sacked",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/city_sacked.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "dominant_religion",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/dominant_religion.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "new_barbarian_horde",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/new_barbarian_horde.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "new_eastern_ceasar",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/new_eastern_ceasar.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "new_eastern_emperor",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/new_eastern_emperor.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "new_western_ceasar",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/new_western_ceasar.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "new_western_emperor",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/new_western_emperor.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "emergent_faction_appears",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/emergent_faction_appears.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "eastern_shadow_faction",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/eastern_shadow_faction.opus",
+				{
+				},
+			],
+		},
+	],
+}, ;;soundbank_message_events

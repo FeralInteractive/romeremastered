@@ -1,0 +1,3659 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 48.235,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 50,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.742,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.5,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_unit_anims":
+{
+	"entries":
+	[
+		{
+			;;the ID of this sound event
+			"sound ID": "archer_aim",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Aim/Archer_Aim_11.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Aim/Archer_Aim_10.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Aim/Archer_Aim_09.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Aim/Archer_Aim_08.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Aim/Archer_Aim_07.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Aim/Archer_Aim_06.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Aim/Archer_Aim_05.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Aim/Archer_Aim_04.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Aim/Archer_Aim_03.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Aim/Archer_Aim_02.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Aim/Archer_Aim_01.wav",
+				{
+					"Priority": 40,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "archer_fire",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Fire/Archer_Fire_09b.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Fire/Archer_Fire_08b.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Fire/Archer_Fire_07b.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Fire/Archer_Fire_06b.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Fire/Archer_Fire_05b.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Fire/Archer_Fire_04b.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Fire/Archer_Fire_02b.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Fire/Archer_Fire_01b.wav",
+				{
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 110,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "archer_load",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Load/Archer_Load_06.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Load/Archer_Load_05.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Load/Archer_Load_04.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Load/Archer_Load_03.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Load/Archer_Load_02.wav",
+				"data/sounds/SFX/individual/Missiles/Archers/Archer_Load/Archer_Load_01.wav",
+				{
+					"Priority": 40,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Attack_Grunt_1.wav",
+				{
+					"Probability": 40.0,		;;the chance the sound will play when triggered
+					"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_17.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_15.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_14.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_13.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_01.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Attack_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Attack_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Attack_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Attack_Grunt_1.wav",
+				{
+					"Probability": 40.0,		;;the chance the sound will play when triggered
+					"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "roman", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_17.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_15.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_14.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_13.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_01.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Attack_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Attack_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Attack_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Attack_Grunt_1.wav",
+				{
+					"Probability": 40.0,		;;the chance the sound will play when triggered
+					"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_17.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_15.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_14.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_13.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Grunt_01.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Attack_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Attack_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Attack_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Attack_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Attack_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Attack_Grunt_1.wav",
+				{
+					"Probability": 40.0,		;;the chance the sound will play when triggered
+					"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack scream",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_20.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_19.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_18.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_17.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_16.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_15.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_14.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_13.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_01.wav",
+				"data/sounds/Voice/Human/Generic/Attack_Yell_R_16.wav",
+				"data/sounds/Voice/Human/Generic/Attack_Yell_M_08.wav",
+				"data/sounds/Voice/Human/Generic/Attack_Yell_M_07.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Attack_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Attack_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Attack_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Attack_Scream_1.wav",
+				{
+					"Probability": 24.706,		;;the chance the sound will play when triggered
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack scream",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Attack_Scream_1.wav",
+				{
+					"Probability": 24.706,		;;the chance the sound will play when triggered
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack scream",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "roman", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_20.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_19.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_18.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_17.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_16.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_15.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_14.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_13.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_01.wav",
+				"data/sounds/Voice/Human/Generic/Attack_Yell_R_16.wav",
+				"data/sounds/Voice/Human/Generic/Attack_Yell_M_08.wav",
+				"data/sounds/Voice/Human/Generic/Attack_Yell_M_07.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Attack_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Attack_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Attack_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Attack_Scream_1.wav",
+				{
+					"Probability": 24.706,		;;the chance the sound will play when triggered
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack scream",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_20.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_19.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_18.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_17.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_16.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_15.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_14.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_13.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Attack_Yell_01.wav",
+				"data/sounds/Voice/Human/Generic/Attack_Yell_R_16.wav",
+				"data/sounds/Voice/Human/Generic/Attack_Yell_M_08.wav",
+				"data/sounds/Voice/Human/Generic/Attack_Yell_M_07.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Attack_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Attack_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Attack_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Attack_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Attack_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Attack_Scream_1.wav",
+				{
+					"Probability": 24.706,		;;the chance the sound will play when triggered
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "celebrate",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "roman", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Celebrate_1.wav",
+				{
+					"Probability": 29.804,		;;the chance the sound will play when triggered
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "celebrate",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Celebrate_1.wav",
+				{
+					"Probability": 29.804,		;;the chance the sound will play when triggered
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "celebrate",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Celebrate_1.wav",
+				{
+					"Probability": 29.804,		;;the chance the sound will play when triggered
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "celebrate",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Celebrate_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Celebrate_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Celebrate_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Celebrate_1.wav",
+				{
+					"Probability": 29.804,		;;the chance the sound will play when triggered
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "chant",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/Women_Screech_19.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_18.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_17.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_16.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_15.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_14.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_13.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_12.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_11.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_10.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_09.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_08.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_07.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_06.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_05.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_04.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_03.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_02.wav",
+				"data/sounds/Voice/Human/Generic/Women_Screech_01.wav",
+				{
+					"Probability": 4.706,		;;the chance the sound will play when triggered
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 94.998,		;;the random pitch of the sample (0-200%)
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "chant",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/Chant_Individual_21.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_20.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_19.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_18.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_17.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_16.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_15.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_14.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_13.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_12.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_11.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_10.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_09.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_08.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_07.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_06.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_05.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_04.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_03.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_02.wav",
+				"data/sounds/Voice/Human/Generic/Chant_Individual_01.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "charge",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Charge_1.wav",
+				{
+					"Probability": 30.0,		;;the chance the sound will play when triggered
+					"Priority": 110,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 4.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "charge",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/Yell_Charge_61.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_60.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_58.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_57.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_56.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_55.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_54.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_53.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_52.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_51.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_50.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_49.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_48.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_47.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_45.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_44.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_42.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_41.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_39.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_38.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_37.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_36.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_35.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_34.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_33.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_29.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_27.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_26.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_25.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_23.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_22.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_21.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_20.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_19.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_16.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_15.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_14.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_13.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_12.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_11.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_10.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_09.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_04.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_03.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_02.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_01.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Charge_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Charge_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Charge_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Charge_1.wav",
+				{
+					"Probability": 30.0,		;;the chance the sound will play when triggered
+					"Priority": 110,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 4.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "charge",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "roman", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/Yell_Charge_61.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_60.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_58.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_57.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_56.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_55.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_54.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_53.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_52.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_51.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_50.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_49.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_48.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_47.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_45.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_44.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_42.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_41.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_39.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_38.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_37.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_36.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_35.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_34.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_33.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_29.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_27.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_26.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_25.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_23.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_22.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_21.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_20.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_19.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_16.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_15.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_14.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_13.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_12.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_11.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_10.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_09.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_04.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_03.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_02.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_01.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Charge_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Charge_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Charge_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Charge_1.wav",
+				{
+					"Probability": 30.0,		;;the chance the sound will play when triggered
+					"Priority": 110,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 4.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "charge",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/Yell_Charge_61.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_60.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_58.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_57.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_56.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_55.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_54.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_53.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_52.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_51.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_50.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_49.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_48.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_47.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_45.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_44.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_42.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_41.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_39.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_38.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_37.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_36.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_35.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_34.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_33.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_29.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_27.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_26.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_25.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_23.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_22.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_21.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_20.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_19.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_16.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_15.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_14.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_13.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_12.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_11.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_10.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_09.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_04.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_03.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_02.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Charge_01.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Charge_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Charge_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Charge_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Charge_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Charge_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Charge_1.wav",
+				{
+					"Probability": 30.0,		;;the chance the sound will play when triggered
+					"Priority": 110,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 4.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "clear_throat",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/human/Generic/Infantry_ClearThroat_07.wav",
+				"data/sounds/voice/human/Generic/Infantry_ClearThroat_05.wav",
+				"data/sounds/voice/human/Generic/Infantry_ClearThroat_02.wav",
+				"data/sounds/voice/human/Generic/Infantry_ClearThroat_01.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "clear_throat",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/Human/Generic/women_Clear_Throat_3.wav",
+				"data/sounds/voice/Human/Generic/women_Clear_Throat_2.wav",
+				"data/sounds/voice/Human/Generic/women_Clear_Throat_1.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "death cry",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "roman", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/DeathScream_5_L2.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_08.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_04.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_03.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_02.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_14.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_13.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_09.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE16B.wav",
+				"data/sounds/Voice/Human/Generic/RV_death_a_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_death_a_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_11.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_10.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_09.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S6.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S5.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S4.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_06.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_05.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_01.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT16B.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT16.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_07.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S4.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_01.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_04.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_03.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_02.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_01.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_M_12.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_M_11.wav",
+				"data/sounds/Voice/Human/Generic/ARCHER20.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Death_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Death_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Death_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Death_1.wav",
+				{
+					"Probability": 69.804,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 130,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Start delay": 0.233,		;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "death cry",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/DeathScream_5_L2.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_08.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_04.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_03.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_02.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_14.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_13.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_09.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE16B.wav",
+				"data/sounds/Voice/Human/Generic/RV_death_a_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_death_a_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_11.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_10.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_09.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S6.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S5.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S4.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_06.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_05.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_01.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT16B.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT16.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_07.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S4.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_01.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_04.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_03.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_02.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_01.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_M_12.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_M_11.wav",
+				"data/sounds/Voice/Human/Generic/ARCHER20.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Death_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Death_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Death_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Death_1.wav",
+				{
+					"Probability": 69.804,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 130,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Start delay": 0.233,		;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "death cry",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/DeathScream_5_L2.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_08.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_04.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_03.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_02.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_14.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_13.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_09.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE16B.wav",
+				"data/sounds/Voice/Human/Generic/RV_death_a_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_death_a_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_11.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_10.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_09.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S6.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S5.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S4.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_06.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Death_new_05.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_DeathScream_01.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT16B.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT16.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_07.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S4.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Death_01.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_04.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_03.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_02.wav",
+				"data/sounds/Voice/Human/Generic/G_Death_01.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_M_12.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_M_11.wav",
+				"data/sounds/Voice/Human/Generic/ARCHER20.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Death_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Death_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Death_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Death_1.wav",
+				{
+					"Probability": 69.804,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 130,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Start delay": 0.233,		;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "death cry",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/women_deaths_24.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_23.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_22.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_21.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_20.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_19.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_18.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_17.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_16.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_15.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_14.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_13.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_12.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_11.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_10.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_09.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_08.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_07.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_06.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_05.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_04.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_03.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_02.wav",
+				"data/sounds/Voice/Human/Generic/women_deaths_01.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Death_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Death_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Death_1.wav",
+				{
+					"Probability": 69.804,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 130,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Start delay": 0.243,		;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "exert",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/Human/Generic/Inf_Push_03.wav",
+				"data/sounds/voice/Human/Generic/Inf_Push_02.wav",
+				"data/sounds/voice/Human/Generic/Inf_Push_01.wav",
+				"data/sounds/voice/Human/Generic/Inf_Pull_06.wav",
+				"data/sounds/voice/Human/Generic/Inf_Pull_05.wav",
+				"data/sounds/voice/Human/Generic/Inf_Pull_04.wav",
+				"data/sounds/voice/Human/Generic/Inf_Pull_03.wav",
+				"data/sounds/voice/Human/Generic/Inf_Pull_02.wav",
+				"data/sounds/voice/Human/Generic/Inf_Pull_01.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "exert",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/Human/Generic/Inf_Push_03.wav",
+				"data/sounds/voice/Human/Generic/Inf_Push_02.wav",
+				"data/sounds/voice/Human/Generic/Inf_Pull_05.wav",
+				"data/sounds/voice/Human/Generic/Inf_Pull_02.wav",
+				"data/sounds/voice/Human/Generic/Inf_Pull_01.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "fall grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "roman", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_14.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_13.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/WEAPON14B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17B.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17B.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/LEVIES08.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09B.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17B.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Fall_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Fall_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Fall_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Fall_Grunt_1.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "fall grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_14.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_13.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/WEAPON14B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17B.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17B.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/LEVIES08.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09B.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17B.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Fall_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Fall_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Fall_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Fall_Grunt_1.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "fall grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/women_grunts_15.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_14.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_13.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_12.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_11.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_10.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_09.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_08.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_07.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_06.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_05.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_04.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_03.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_02.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_01.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Fall_Grunt_1.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "fall grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_14.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_13.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/WEAPON14B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17B.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17B.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/LEVIES08.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09B.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17B.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Fall_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Fall_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Fall_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Fall_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Fall_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Fall_Grunt_1.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "fall scream",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/Fallscream_02.wav",
+				"data/sounds/Voice/Human/Generic/Fallscream_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new10.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new09.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_04.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_03.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_02.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_01.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S4.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_01.wav",
+				"data/sounds/Voice/Human/Generic/ARCHER25B.wav",
+				"data/sounds/Voice/Human/Generic/ARCHER25.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Fall_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Fall_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Fall_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Fall_Scream_1.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 160,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade out": 0.499,			
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "fall scream",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/Women_Fallscream_5.wav",
+				"data/sounds/Voice/Human/Generic/Women_Fallscream_4.wav",
+				"data/sounds/Voice/Human/Generic/Women_Fallscream_3.wav",
+				"data/sounds/Voice/Human/Generic/Women_Fallscream_2.wav",
+				"data/sounds/Voice/Human/Generic/Women_Fallscream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Fall_Scream_1.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 160,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade out": 0.499,			
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "fall scream",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "roman", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/Fallscream_02.wav",
+				"data/sounds/Voice/Human/Generic/Fallscream_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new10.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new09.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_04.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_03.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_02.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_01.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S4.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_01.wav",
+				"data/sounds/Voice/Human/Generic/ARCHER25B.wav",
+				"data/sounds/Voice/Human/Generic/ARCHER25.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Fall_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Fall_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Fall_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Fall_Scream_1.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 160,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade out": 0.499,			
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "fall scream",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/Fallscream_02.wav",
+				"data/sounds/Voice/Human/Generic/Fallscream_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new10.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new09.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_new06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_04.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_03.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_02.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_FallScream_01.wav",
+				"data/sounds/Voice/Human/Generic/DeathScream_S4.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_02.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_FallScream_01.wav",
+				"data/sounds/Voice/Human/Generic/ARCHER25B.wav",
+				"data/sounds/Voice/Human/Generic/ARCHER25.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Fall_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Fall_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Fall_Scream_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Fall_Scream_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Fall_Scream_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Fall_Scream_1.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 160,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade out": 0.499,			
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "fall_squash",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Misc/Fall_squash_07.wav",
+				"data/sounds/SFX/individual/Misc/Fall_squash_06.wav",
+				"data/sounds/SFX/individual/Misc/Fall_squash_05.wav",
+				"data/sounds/SFX/individual/Misc/Fall_squash_04.wav",
+				"data/sounds/SFX/individual/Misc/Fall_squash_03.wav",
+				"data/sounds/SFX/individual/Misc/Fall_squash_02.wav",
+				"data/sounds/SFX/individual/Misc/Fall_squash_01.wav",
+				{
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 140,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_14.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_13.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/WEAPON14B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17B.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17B.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/LEVIES08.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09B.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17B.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Grunt_1.wav",
+				{
+					"Probability": 24.706,		;;the chance the sound will play when triggered
+					"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "roman", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_14.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_13.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/WEAPON14B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17B.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17B.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/LEVIES08.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09B.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17B.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Grunt_1.wav",
+				{
+					"Probability": 24.706,		;;the chance the sound will play when triggered
+					"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/women_grunts_15.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_14.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_13.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_12.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_11.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_10.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_09.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_08.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_07.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_06.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_05.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_04.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_03.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_02.wav",
+				"data/sounds/Voice/Human/Generic/women_grunts_01.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Grunt_1.wav",
+				{
+					"Probability": 24.706,		;;the chance the sound will play when triggered
+					"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "grunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Generic/M_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/M_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_14.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_13.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_12.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_11.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/G_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/Yell_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/WEAPON14B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12B.wav",
+				"data/sounds/Voice/Human/Generic/VELITES12.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17B.wav",
+				"data/sounds/Voice/Human/Generic/SAMNITE17.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/RV_Grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/R_roman_grunt_01.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17B.wav",
+				"data/sounds/Voice/Human/Generic/PEASANT17.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_10.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_09.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_08.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_07.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_06.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_05.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_04.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_03.wav",
+				"data/sounds/Voice/Human/Generic/M_Roman_Grunt_02.wav",
+				"data/sounds/Voice/Human/Generic/LEVIES08.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09B.wav",
+				"data/sounds/Voice/Human/Generic/HASTATI09.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17B.wav",
+				"data/sounds/Voice/Human/Generic/EQUITE17.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Grunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Grunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Grunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Grunt_1.wav",
+				{
+					"Probability": 24.706,		;;the chance the sound will play when triggered
+					"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "kill_mount",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Melee/Death_Hits/Death_Hit_02.wav",
+				"data/sounds/SFX/individual/Melee/Death_Hits/Death_Hit_09.wav",
+				"data/sounds/SFX/individual/Melee/Death_Hits/Death_Hit_05.wav",
+				{
+					"Probability": 100.0,		;;the chance the sound will play when triggered
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 90,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "move_cloth",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Movement/Cloth_Move_15.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_14.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_13.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_12.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_11.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_10.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_09.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_08.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_07.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_06.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_05.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_04.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_03.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_02.wav",
+				"data/sounds/SFX/individual/Movement/Cloth_Move_01.wav",
+				{
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "neck_crack",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/human/Generic/Infantry_Neck_Cracking_01.wav",
+				"data/sounds/voice/human/Generic/Infantry_Neck_Cracking_01.wav",
+				{
+					"Probability": 4.706,		;;the chance the sound will play when triggered
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -30,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "neck_crack",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/human/Generic/Infantry_Neck_Cracking_01.wav",
+				"data/sounds/voice/human/Generic/Infantry_Neck_Cracking_01.wav",
+				{
+					"Probability": 4.706,		;;the chance the sound will play when triggered
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+					"Random volume": -30,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "relief",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/Human/Generic/Inf_Relief_05.wav",
+				"data/sounds/voice/Human/Generic/Inf_Relief_04.wav",
+				"data/sounds/voice/Human/Generic/Inf_Relief_03.wav",
+				"data/sounds/voice/Human/Generic/Inf_Relief_02.wav",
+				"data/sounds/voice/Human/Generic/Inf_Relief_01.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "relief",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/Human/Generic/Women_Sigh_5.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_4.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_3.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_2.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_1.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "scrape",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Melee/Scrapes/Scrape_03.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Wood_Shield_01.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Met_Shield_01.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Mace_04.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Mace_03.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Mace_02.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Leather_01.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Flesh_01.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Elephant_Tusk_01.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Dagger_12.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Dagger_11.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Dagger_09.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Dagger_04.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Dagger_02.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Breastplate_01.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Axe_03.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Axe_02.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Axe_01.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/sword_scrape_13.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/sword_scrape_05.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/sword_scrape_02.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Hit_Sword_27.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Hit_Sword_20.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Hit_Sword_18.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Hit_Sword_02.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Hit_Spear_03.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Axe_Scrape_Wooden_Shield_01.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Axe_Scrape_Sword02.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Axe_Scrape_Sword01.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Axe_Hit_Axe02.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Axe_Hit_Axe01.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/sword_slide_01.wav",
+				"data/sounds/SFX/individual/Melee/Scrapes/Sword_Scrape_Wood_Shield_02.wav",
+				{
+					"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 80,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "scratch_head",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/human/Generic/Infantry_Scratch_Head_01.wav",
+				"data/sounds/voice/human/Generic/Infantry_Scratch_Head_02.wav",
+				{
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "scratch_head",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/human/Generic/Infantry_Scratch_Head_01.wav",
+				"data/sounds/voice/human/Generic/Infantry_Scratch_Head_02.wav",
+				{
+					"Probability": 60.0,		;;the chance the sound will play when triggered
+					"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "slinger_fire",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Fire/Slinger_Fire_07.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Fire/Slinger_Fire_06.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Fire/Slinger_Fire_05.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Fire/Slinger_Fire_04.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Fire/Slinger_Fire_03.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Fire/Slinger_Fire_02.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Fire/Slinger_Fire_01.wav",
+				{
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 110,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "slinger_highwhirl",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_23.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_20.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_17.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_14.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_13.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_11.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_09.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_08.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_07.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_02.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_01.wav",
+				{
+					"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 40,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "slinger_lowwhirl",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_23.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_20.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_17.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_14.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_13.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_11.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_09.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_08.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_07.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_02.wav",
+				"data/sounds/SFX/individual/Missiles/Slingers/Slinger_Whirl/High_Whirl/Slinger_Whirl_01.wav",
+				{
+					"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 40,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "sneeze",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/Human/Generic/women_sneeze_5.wav",
+				"data/sounds/voice/Human/Generic/Women_sneeze_4.wav",
+				"data/sounds/voice/Human/Generic/Women_sneeze_3.wav",
+				"data/sounds/voice/Human/Generic/Women_sneeze_2.wav",
+				"data/sounds/voice/Human/Generic/Women_sneeze_1.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "sneeze",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/human/Generic/Infantry_Sneezing_01.wav",
+				"data/sounds/voice/human/Generic/Infantry_Sneezing_03.wav",
+				"data/sounds/voice/human/Generic/Infantry_Sneezing_02.wav",
+				"data/sounds/voice/human/Generic/Infantry_Sneezing_05.wav",
+				{
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "sniff",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/human/Generic/Infantry_Sniff_Nose_02.wav",
+				"data/sounds/voice/human/Generic/Infantry_Sniff_Nose_01.wav",
+				{
+					"Probability": 80.0,		;;the chance the sound will play when triggered
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "spear_fire",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_12.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_12.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_11.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_10.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_09.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_08.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_07.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_06.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_05.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_04.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_03.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_02.wav",
+				"data/sounds/SFX/individual/Missiles/Spearmen/Spear_Throw_01.wav",
+				{
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Priority": 110,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "squash",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Misc/body_squash_03.wav",
+				"data/sounds/SFX/individual/Misc/body_squash_02.wav",
+				"data/sounds/SFX/individual/Misc/body_squash_01.wav",
+				{
+					"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 130,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "stretch_arms",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/Human/Generic/Women_Sigh_5.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_4.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_3.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_2.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_1.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "stretch_arms",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/human/Generic/Inf_Stretch_09.wav",
+				"data/sounds/voice/human/Generic/Inf_Stretch_07.wav",
+				"data/sounds/voice/human/Generic/Inf_Stretch_06.wav",
+				"data/sounds/voice/human/Generic/Inf_Stretch_04.wav",
+				"data/sounds/voice/human/Generic/Inf_Stretch_03.wav",
+				"data/sounds/voice/human/Generic/Inf_Stretch_02.wav",
+				{
+					"Probability": 3.922,		;;the chance the sound will play when triggered
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "stretch_back",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/human/Generic/Inf_Stretch_09.wav",
+				"data/sounds/voice/human/Generic/Inf_Stretch_07.wav",
+				"data/sounds/voice/human/Generic/Inf_Stretch_06.wav",
+				"data/sounds/voice/human/Generic/Inf_Stretch_04.wav",
+				"data/sounds/voice/human/Generic/Inf_Stretch_03.wav",
+				"data/sounds/voice/human/Generic/Inf_Stretch_02.wav",
+				{
+					"Probability": 3.922,		;;the chance the sound will play when triggered
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "stretch_back",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/voice/Human/Generic/Women_Sigh_5.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_4.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_3.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_2.wav",
+				"data/sounds/voice/Human/Generic/Women_Sigh_1.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "swoosh",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Short/Swoosh_Medium_Short_11.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Short/Swoosh_Medium_Short_10.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Short/Swoosh_Medium_Short_09.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Short/Swoosh_Medium_Short_08.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Short/Swoosh_Medium_Short_07.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Short/Swoosh_Medium_Short_06.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Short/Swoosh_Medium_Short_05.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Short/Swoosh_Medium_Short_04.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Short/Swoosh_Medium_Short_03.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Short/Swoosh_Medium_Short_02.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Short/Swoosh_Medium_Short_01.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Long/Swoosh_Med_Long_02.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Medium_Long/Swoosh_Med_Long_01.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Low_Long/Swoosh_Low_Long_04.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Low_Long/Swoosh_Low_Long_03.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Low_Long/Swoosh_Low_Long_02.wav",
+				"data/sounds/SFX/individual/Melee/Swooshes/Swoosh_Low_Long/Swoosh_Low_Long_01.wav",
+				{
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 80,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "taunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Individual_Taunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Individual_Taunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Individual_Taunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Individual_Taunt_1.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "taunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "roman", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Individual_Taunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Individual_Taunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Individual_Taunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Individual_Taunt_1.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "taunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Individual_Taunt_1.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "taunt",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", "-female", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Taunt_5.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Individual_Taunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Taunt_5.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Individual_Taunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Taunt_5.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Individual_Taunt_1.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Taunt_5.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Taunt_4.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Taunt_3.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Taunt_2.wav",
+				"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Individual_Taunt_1.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "taunt_hit",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+				"east infantry",
+				"merc arab cavalry",
+				"numidian camel riders",
+				"numidian desert warriors",
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_09.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_03.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_08.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_06.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_01.wav",
+				{
+					"Probability": 100.0,		;;the chance the sound will play when triggered
+					"Volume": 55,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 0,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -25,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.078,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.2000000476837158,;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "taunt_hit",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Melee/Taunts/Taunt_11.wav",
+				"data/sounds/SFX/individual/Melee/Taunts/Taunt_10.wav",
+				"data/sounds/SFX/individual/Melee/Taunts/Taunt_09.wav",
+				"data/sounds/SFX/individual/Melee/Taunts/Taunt_08.wav",
+				"data/sounds/SFX/individual/Melee/Taunts/Taunt_07.wav",
+				"data/sounds/SFX/individual/Melee/Taunts/Taunt_06.wav",
+				"data/sounds/SFX/individual/Melee/Taunts/Taunt_05.wav",
+				"data/sounds/SFX/individual/Melee/Taunts/Taunt_04.wav",
+				"data/sounds/SFX/individual/Melee/Taunts/Taunt_03.wav",
+				"data/sounds/SFX/individual/Melee/Taunts/Taunt_02.wav",
+				"data/sounds/SFX/individual/Melee/Taunts/Taunt_01.wav",
+				{
+					"Probability": 49.804,		;;the chance the sound will play when triggered
+					"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 0,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -25,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.078,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.7999999523162842,;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+				},
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_08.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_06.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_09.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_03.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_01.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_08.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_06.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_09.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_03.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_01.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_08.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_06.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_09.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_03.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_01.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_08.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_06.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_09.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_03.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_01.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_08.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_06.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_09.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_03.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_01.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_08.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_06.wav",
+				"data/sounds/SFX/individual/Melee/Sword/Sword_Hit_Wooden_Shield/Sword_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_09.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_07.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_05.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_03.wav",
+				"data/sounds/SFX/individual/Melee/Spear/Spear_Hit_Wooden_Shield/Spear_Hit_Wooden_Shield_01.wav",
+				{
+					"Probability": 100.0,		;;the chance the sound will play when triggered
+					"Volume": 55,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Priority": 0,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -25,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.078,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.2000000476837158,;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "taunt_hit",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+				"african peasant",
+				"alemanni onager",
+				"alemanni warhounds",
+				"arian priests",
+				"barb horde hunter",
+				"barb horde peasants",
+				"barbarian civ peasant",
+				"barbarian female peasant",
+				"bucellarii",
+				"carthaginian civ peasant",
+				"carthaginian female peasant",
+				"celtic crossbowmen",
+				"celtish wolfhounds",
+				"chosen archer alemanni",
+				"chosen axemen alemanni",
+				"desert archers african",
+				"desert archers sassanid",
+				"eastern archer",
+				"eastern civ peasant",
+				"eastern female peasant",
+				"egyptian civ peasant",
+				"egyptian female peasant",
+				"frankish ballistae",
+				"frankish onager",
+				"gallowglass",
+				"golden band",
+				"goth raiders",
+				"greek civ peasant",
+				"greek female peasant",
+				"hounds of culann",
+				"kurdish javelinmen",
+				"lombard archers",
+				"lombard berserkers",
+				"merc ballistae",
+				"merc bucellarii",
+				"merc gallowglass",
+				"merc golden band",
+				"merc hounds of culann",
+				"merc onagers",
+				"merc vandal raiders",
+				"merc wolfhounds",
+				"orthodox priest",
+				"peasant gothic",
+				"peasant vandal",
+				"roman ballistae",
+				"roman civ peasant",
+				"roman female peasant",
+				"roman heavy onager",
+				"roman onagers",
+				"roman priest",
+				"roman repeating ballistae",
+				"roman scorpion",
+				"romano british monks",
+				"sarmatian virgin archers foot",
+				"sassanid ballistae",
+				"sassanid heavy onager",
+				"sassanid onagers",
+				"sassanid peasant",
+				"saxon hunters",
+				"steppe horde peasants",
+				"steppe raiders",
+				"western archer",
+				"western peasant",
+				"western peasant alemanni",
+				"western peasant celt",
+				"western peasant frank",
+				"western peasant saxon",
+			],
+
+			"sounds":
+			[
+				;;no sounds assigned
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "testudo_adjust",
+
+			;;which voice cultures is this valid for
+			"cultures":
+				[ "all", ],
+
+			;;which unit voice types is this valid for
+			"voice types":
+				[ "all", ],
+
+			;;the specific IDs of units
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Movement/Testudo_Indiv_08.wav",
+				"data/sounds/SFX/individual/Movement/Testudo_Indiv_07.wav",
+				"data/sounds/SFX/individual/Movement/Testudo_Indiv_06.wav",
+				"data/sounds/SFX/individual/Movement/Testudo_Indiv_05.wav",
+				"data/sounds/SFX/individual/Movement/Testudo_Indiv_04.wav",
+				"data/sounds/SFX/individual/Movement/Testudo_Indiv_03.wav",
+				"data/sounds/SFX/individual/Movement/Testudo_Indiv_02.wav",
+				"data/sounds/SFX/individual/Movement/Testudo_Indiv_01.wav",
+				{
+					"Priority": 150,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+	],
+}, ;;soundbank_unit_anims

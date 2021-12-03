@@ -1,0 +1,30 @@
+;
+;	this file describes the appearance of the strategy map banners
+;
+
+file_scale			0.185f
+file_army_banner	data/banners/strat_flag.cas				; can't have spaces
+file_scale			1.0f
+file_navy_banner	data/banners/navy_banner.cas
+
+banner_star			0,       0.67969, 0.19141, 0.86719
+banner_button		0.19922, 0.67969, 0.38281, 0.86719
+banner_flag			0.58813, 0.01,    0.99,    0.99
+banner_sail			0.01,    0.01,    0.42,    0.41
+banner_horde		0,		 0,		  1,	   1, bi/data/textures/#horde_symbol.tga
+
+factions
+; alemanni, empire_west, empire_east, franks
+symbols				banners/symbols9.tga
+; huns, sarmations, sassanids, saxons
+symbols				banners/symbols10.tga
+; vandals, goths, celts, white huns
+symbols				banners/symbols11.tga
+; ostrogoths, romano-british, slavs, roxolani
+symbols				banners/symbols12.tga
+; berbers, slaves, burgundii, lombardii
+symbols				banners/symbols13.tga
+; roman slave, barb slave, carthage slave, eastern slave
+symbols				banners/symbols14.tga
+; nomad slave, hun slave, moors, white huns (duplicate, whoops)
+symbols				banners/symbols15.tga

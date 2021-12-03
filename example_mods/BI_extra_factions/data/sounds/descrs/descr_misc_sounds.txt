@@ -1,0 +1,844 @@
+;; Last updated by jburnett on 2021/05/25
+;; DESCR file generated via RTW Amber pack editor
+
+
+"misc events":
+[
+	{
+		"ID": "BADON_HILL_SPEECH_01",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Badon_Hill_01.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "BADON_HILL_SPEECH_02",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Badon_Hill_02.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "BADON_HILL_SPEECH_03",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Badon_Hill_03.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "BADON_HILL_SPEECH_04",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Badon_Hill_04.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "BADON_HILL_SPEECH_05",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Badon_Hill_05.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "BADON_HILL_SPEECH_06",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Badon_Hill_06.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "BADON_HILL_SPEECH_07",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Badon_Hill_07.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "BADON_HILL_SPEECH_08",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Badon_Hill_08.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "BADON_HILL_SPEECH_09",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Badon_Hill_09.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "BADON_HILL_SPEECH_10",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Badon_Hill_10.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "BADON_HILL_SPEECH_11",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Badon_Hill_11.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_01",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_01.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_02",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_02.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_03",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_03.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_04",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_04.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_05",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_05.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_06",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_06.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_07",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_07.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_08",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_08.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_09",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_09.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_10",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_10.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_11",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_11.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_12",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_12.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_13",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_13.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_14",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_14.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_15",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_15.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_16",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_16.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_17",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_17.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_SPEECH_18",
+		"sounds":
+		[
+			"data/sounds/Voice/Human/Localized/Narration/Chalons_18.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.01,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Speech",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_MUSIC",
+		"sounds":
+		[
+			"data/sounds/music/Feral_Warrior_March_Chalons.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 0,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Music",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"ID": "CHALONS_MUSIC_INTRO",
+		"sounds":
+		[
+			"data/sounds/music/Feral_GameWin-Barbarian_BI.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 0,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Music",		;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+],

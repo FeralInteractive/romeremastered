@@ -1,0 +1,7108 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 35,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.998,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Speech",		;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": true,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 1.0,			;; ???
+},
+
+"soundbank_prebattle_speech":
+{
+	"entries":
+	[
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "all", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 2.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": true,
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Generic/Cheer02.opus",
+					"data/sounds/Voice/Human/Generic/Cheer01.opus",
+					{
+						"Volume": 87,				;;the volume of the sample as a percentage of the base file's
+						"Pref type": "Interface",	;;the slider the sound should be attached to
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadCommander of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BattleScarred of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BoringSpeaker of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Brave of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Brave of level 4",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_04_4.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Coward of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GloriousFool of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_07_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodCommander of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_08_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID IndecisiveAttacker of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_09_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID InspiringSpeaker of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_10_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID PhilosophySkill of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_11_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID PlainRomanVirtue of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_12_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Rabblerouser of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_13_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Scout of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_14_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Xenophobia of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Intro_15_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_21.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_20.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_19.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_18.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_17.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_16.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Generic_01.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Enemy",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "empire_east_rebels must be an enemy and must be present",
+				},
+				"faction info":
+				{
+					"string": "empire_east_rebels must be an enemy and must not be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_5.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_4.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Enemy",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "empire_west_rebels must be an enemy and must be present",
+				},
+				"faction info":
+				{
+					"string": "empire_west_rebels must be an enemy and must not be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_5.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_4.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Enemy",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "slave must be an enemy and must be present",
+				},
+				"faction info":
+				{
+					"string": "slave must be an enemy and must be hated by our general",
+				},
+				"faction info":
+				{
+					"string": "slave must be an enemy and must not be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Enemy",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "slave must be an enemy and must be present",
+				},
+				"faction info":
+				{
+					"string": "slave must be an enemy and must be neutral to our general",
+				},
+				"faction info":
+				{
+					"string": "slave must be an enemy and must not be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_5.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_4.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_22_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_21_5.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_21_4.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_21_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_21_2.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Enemy allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "empire_east_rebels must be an enemy and must be present",
+				},
+				"faction info":
+				{
+					"string": "empire_east_rebels must be an enemy and must be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_Allies_22_2.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Enemy allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "empire_west_rebels must be an enemy and must be present",
+				},
+				"faction info":
+				{
+					"string": "empire_west_rebels must be an enemy and must be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_Allies_22_2.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Enemy allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "slave must be an enemy and must be present",
+				},
+				"faction info":
+				{
+					"string": "slave must be an enemy and must be neutral to our general",
+				},
+				"faction info":
+				{
+					"string": "slave must be an enemy and must be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_Allies_21_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_Allies_21_2.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Enemy allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "any faction must be an enemy and must be present",
+				},
+				"faction info":
+				{
+					"string": "any faction must be an enemy and must be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_Allies_22_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Enemy allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "slave must be an enemy and must be present",
+				},
+				"faction info":
+				{
+					"string": "slave must be an enemy and must be hated by our general",
+				},
+				"faction info":
+				{
+					"string": "slave must be an enemy and must be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_Allies_21_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_Allies_22_2.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Enemy no allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "any faction must be an enemy and must not be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_Allies_23_1.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Enemy_Allies_23_2.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Our allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "empire_east_rebels must be an ally and must be present",
+				},
+				"faction info":
+				{
+					"string": "empire_east_rebels must be an ally and must be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Player_Allies_22_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Player_Allies_22_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Our allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "slave must be an ally and must be present",
+				},
+				"faction info":
+				{
+					"string": "slave must be an ally and must be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Player_Allies_21_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Player_Allies_21_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Our allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "empire_west_rebels must be an ally and must be present",
+				},
+				"faction info":
+				{
+					"string": "empire_west_rebels must be an ally and must be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Player_Allies_22_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Player_Allies_22_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Our allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "empire_west_rebels must be an ally and must be present",
+				},
+				"faction info":
+				{
+					"string": "empire_west_rebels must be an ally and must not be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Help_Allies_22_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Help_Allies_22_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Our allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "empire_east_rebels must be an ally and must be present",
+				},
+				"faction info":
+				{
+					"string": "empire_east_rebels must be an ally and must not be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Help_Allies_22_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Help_Allies_22_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Our allies",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "slave must be an ally and must be present",
+				},
+				"faction info":
+				{
+					"string": "slave must be an ally and must not be aiding another",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Help_Allies_22_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Help_Allies_22_1.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Help_Allies_21_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Help_Allies_21_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must include major city siege",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_1_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_1_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_1_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must include our city undefended",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_2_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_2_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_2_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must include enemy city undefended",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_3_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_3_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_3_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must include custom battle",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_4_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_4_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_4_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must not include >75% of our forces",
+				},
+				"enum":
+				{
+					"string": "the strategic situation must not include >50% of our forces",
+				},
+				"enum":
+				{
+					"string": "the strategic situation must include >25% of our forces",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_5_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_5_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_5_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must not include >75% of our forces",
+				},
+				"enum":
+				{
+					"string": "the strategic situation must include >50% of our forces",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_6_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_6_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_6_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must include >75% of our forces",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_7_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_7_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_7_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must not include >75% of their forces",
+				},
+				"enum":
+				{
+					"string": "the strategic situation must not include >50% of their forces",
+				},
+				"enum":
+				{
+					"string": "the strategic situation must not include >25% of their forces",
+				},
+				"enum":
+				{
+					"string": "the strategic situation must include >25% of their forces",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_8_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_8_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_8_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must not include >75% of their forces",
+				},
+				"enum":
+				{
+					"string": "the strategic situation must not include >50% of their forces",
+				},
+				"enum":
+				{
+					"string": "the strategic situation must include >50% of their forces",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_9_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_9_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_9_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must not include >75% of their forces",
+				},
+				"enum":
+				{
+					"string": "the strategic situation must include >75% of their forces",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_10_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_10_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_10_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must include our last city",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_11_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_11_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_11_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must include their last city",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_12_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_12_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_12_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must include recovering our eagle",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_13_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_13_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_13_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the strategic situation must include ally's last city",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_14_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_14_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_14_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle type",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the battle type must be field",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_01_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_01_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle type",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the battle type must be field",
+				},
+				"battle info":
+				{
+					"string": "we must not be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_02_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_02_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle type",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the battle type must be siege",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_03_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_03_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle type",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the battle type must be siege",
+				},
+				"battle info":
+				{
+					"string": "we must not be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_04_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_04_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle type",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the battle type must be siege",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_05_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_05_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle type",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the battle type must be ambush",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_06_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_06_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_06_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle type",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the battle type must be river crossing",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_07_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_07_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_07_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle type",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the battle type must be river crossing",
+				},
+				"battle info":
+				{
+					"string": "we must not be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_08_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_08_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Type_08_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Numbers",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the enemy side must be <=3.5",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_01_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_01_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Numbers",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the enemy side must be <=2.0",
+				},
+				"percentage":
+				{
+					"string": "the ratio of numbers on the enemy side must be >3.5",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_02_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_02_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Numbers",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the enemy side must be <=1.6",
+				},
+				"percentage":
+				{
+					"string": "the ratio of numbers on the enemy side must be >2.0",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_03_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_03_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Numbers",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the enemy side must be <=1.2",
+				},
+				"percentage":
+				{
+					"string": "the ratio of numbers on the enemy side must be >1.6",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_04_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_04_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Numbers",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the enemy side must be >1.2",
+				},
+				"percentage":
+				{
+					"string": "the ratio of numbers on the allied side must be >1.2",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_05_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_05_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Numbers",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the allied side must be <=1.2",
+				},
+				"percentage":
+				{
+					"string": "the ratio of numbers on the allied side must be >1.6",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_06_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_06_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_06_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Numbers",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the allied side must be <=1.6",
+				},
+				"percentage":
+				{
+					"string": "the ratio of numbers on the allied side must be >2.0",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_07_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_07_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_07_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Numbers",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the allied side must be <=2.0",
+				},
+				"percentage":
+				{
+					"string": "the ratio of numbers on the allied side must be >3.5",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_08_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_08_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_08_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Numbers",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the allied side must be <=3.5",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_09_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_09_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_1_09_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Strength",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the enemy side must be <=1.2",
+				},
+				"percentage":
+				{
+					"string": "the ratio of strength on the enemy side must be >0.8",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_01_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_01_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Strength",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the allied side must be <=1.2",
+				},
+				"percentage":
+				{
+					"string": "the ratio of strength on the allied side must be >0.8",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_02_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_02_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Strength",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the enemy side must be >1.2",
+				},
+				"percentage":
+				{
+					"string": "the ratio of numbers on the allied side must be >1.2",
+				},
+				"percentage":
+				{
+					"string": "the ratio of strength on the allied side must be <=1.0",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_03_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_03_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Strength",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the ratio of numbers on the enemy side must be >1.2",
+				},
+				"percentage":
+				{
+					"string": "the ratio of numbers on the allied side must be >1.2",
+				},
+				"percentage":
+				{
+					"string": "the ratio of strength on the enemy side must be <=1.0",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_04_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_04_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Odds_2_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the allied deployment zone must include hills",
+				},
+				"battle info":
+				{
+					"string": "we must not be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_01_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_01_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the enemy deployment zone must include hills",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_02_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_02_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the allied deployment zone must include steep hills",
+				},
+				"battle info":
+				{
+					"string": "we must not be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_03_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_03_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the enemy deployment zone must include steep hills",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_04_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_04_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the allied deployment zone must include forest",
+				},
+				"battle info":
+				{
+					"string": "we must not be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_05_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_05_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the enemy deployment zone must include forest",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_06_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_06_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_06_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the allied side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the enemy side must be >0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class spearmen on the enemy side must be >0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_01_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_01_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the allied side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the enemy side must be <=0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_02_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_02_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the allied side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class spearmen on the enemy side must be <=0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_03_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_03_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the enemy side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the allied side must be >0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class spearmen on the allied side must be >0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_04_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_04_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the enemy side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class spearmen on the allied side must be <=0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_05_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_05_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with ID elephant on the allied side must be <=0.01",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class skirmish on the enemy side must be >0.15",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_06_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_06_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_06_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with ID elephant on the allied side must be <=0.01",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class skirmish on the enemy side must be <=0.15",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_07_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_07_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_07_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with ID elephant on the enemy side must be <=0.01",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class skirmish on the allied side must be >0.15",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_08_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_08_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_08_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with ID elephant on the enemy side must be <=0.01",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class skirmish on the allied side must be <=0.15",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_09_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_09_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_09_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with class missile on the allied side must be >0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class missile on the enemy side must be <=0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_10_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_10_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_10_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with class missile on the allied side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class missile on the enemy side must be >0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_11_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_11_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_11_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the enemy side must be <=0.35",
+				},
+				"enum":
+				{
+					"string": "the battle type must be siege",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_12_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_12_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_12_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the allied side must be <=0.35",
+				},
+				"enum":
+				{
+					"string": "the battle type must be siege",
+				},
+				"battle info":
+				{
+					"string": "we must not be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_13_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_13_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_13_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Previous Record",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "our general's previous record must be not fought before",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_01_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_01_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Previous Record",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "our general's previous record must be fought a bit",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_02_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_02_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Previous Record",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "our general's previous record must be fought a lot",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_03_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_03_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Previous Record",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "our general's previous record must be never lost",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_04_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_04_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Previous Record",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "our general's previous record must be lost last time",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_05_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_05_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Previous Record",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "our general's previous record must be never won",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_06_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_06_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Record_06_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Anger of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadAmbusher of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadAttacker of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadCavalryGeneral of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadDefender of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadDisciplinarian of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_06_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadInfantryGeneral of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_07_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadSiegeAttacker of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_08_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadSiegeDefender of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_09_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Disciplinarian of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_10_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodAmbusher of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_11_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodAttacker of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_12_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodAttacker of level 4",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_12_4.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodCavalryGeneral of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_13_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodDefender of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_14_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodDefender of level 4",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_14_4.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodInfantryGeneral of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_15_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodSiegeDefender of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_17_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Omens",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the omens must be fantastic",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_01_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_01_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Omens",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the omens must be good",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_02_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_02_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Omens",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the omens must be neutral",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_03_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_03_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Omens",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the omens must be bad",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_04_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_04_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Omens",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the omens must be awful",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_05_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_05_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Omens_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Reinforcements",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "our reinforcements must be near",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Reinf_01_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Reinf_01_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Reinf_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Reinforcements",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "our reinforcements must be far",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Reinf_02_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Reinf_02_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Reinf_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodSiegeAttacker of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodSiegeDefender of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Berserker of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Bloodthirsty of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Deranged of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Deranged of level 2",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_05_2.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Deranged of level 3",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_05_3.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Drink of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_06_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Drink of level 4",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_06_4.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Drink of level 6",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_06_6.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Insane of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_07_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Insane of level 2",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_07_2.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Insane of level 3",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_07_3.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Pious of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_08_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID PublicAtheism of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_09_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID PublicFaith of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_10_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID ReligiousMania of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_11_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID TouchedByTheGods of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_12_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID VictorOthersVirtue of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_13_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID VictorRomanVirtue of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_14_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Warlord of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extro_15_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Extros_2_01.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Oneliner",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_100.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_099.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_098.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_097.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_096.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_095.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_094.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_093.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_092.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_091.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_090.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_089.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_088.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_087.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_086.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_085.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_084.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_083.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_082.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_081.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_080.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_079.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_078.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_077.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_076.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_075.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_074.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_073.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_072.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_071.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_070.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_069.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_068.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_067.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_066.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_065.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_064.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_063.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_062.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_061.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_060.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_059.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_058.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_057.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_056.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_055.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_054.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_053.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_052.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_051.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_050.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_049.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_048.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_047.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_046.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_045.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_044.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_043.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_042.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_041.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_040.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_039.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_038.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_037.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_036.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_035.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_034.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_033.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_032.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_031.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_030.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_029.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_028.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_027.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_026.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_025.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_024.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_023.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_022.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_021.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_020.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_019.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_018.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_017.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_016.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_015.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_014.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_013.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_012.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_011.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_010.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_009.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_008.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_007.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_006.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_005.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_004.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_003.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_002.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_001.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_21.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_20.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_19.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_18.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_17.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_16.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_01.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_01.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "carthaginian", "eastern", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_21.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_20.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_19.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_18.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_17.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_16.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_01.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "carthaginian", "eastern", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_01.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": true,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Battle context",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"faction info":
+				{
+					"string": "any faction must be an enemy and must be a horde",
+				},
+				"faction info":
+				{
+					"string": "any faction must be an enemy and must have all of their family members present",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_12_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Situation_12_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "roman dummy trigger",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;no sounds assigned
+			],
+		},
+	],
+}, ;;soundbank_prebattle_speech

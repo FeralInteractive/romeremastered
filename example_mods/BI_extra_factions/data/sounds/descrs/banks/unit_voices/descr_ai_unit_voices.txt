@@ -1,0 +1,2098 @@
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 200,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.233,		;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Speech",		;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 2.5,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.5,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_unit_voice":
+{
+	"entries":
+	[
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "group_order_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "group_order_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_halt",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_retreat",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_General_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "group_order_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "group_order_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_halt",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_retreat",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "roman", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Heavy_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Medium_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Roman_Light_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "group_order_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "group_order_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_halt",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_retreat",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_General_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "group_order_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "group_order_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_halt",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_retreat",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Heavy_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Medium_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Light_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "female", ],
+
+			;;which command is this
+			"command": "group_order_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "female", ],
+
+			;;which command is this
+			"command": "group_order_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "female", ],
+
+			;;which command is this
+			"command": "unit_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "female", ],
+
+			;;which command is this
+			"command": "unit_halt",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "female", ],
+
+			;;which command is this
+			"command": "unit_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "female", ],
+
+			;;which command is this
+			"command": "unit_retreat",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Barbarian_Female_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "group_order_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "group_order_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_halt",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "general", ],
+
+			;;which command is this
+			"command": "unit_retreat",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_General_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "group_order_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Group_Order_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Group_Order_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Group_Order_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "group_order_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Group_Order_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Group_Order_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Group_Order_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_attack",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Attack_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Attack_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Attack_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Attack_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_halt",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Halt_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Halt_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Halt_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_move",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Move_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Move_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Move_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Move_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Move_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Move_1.wav",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;which voice types is this for
+			"voice types":
+				[ "all", "-general", "-female", ],
+
+			;;which command is this
+			"command": "unit_retreat",
+
+			;;should the unit give an 'aye' confirmation after this command
+			"confirm": true,
+
+			;;should this line be used by NPC units or player units
+			"npc": true,
+
+			;;which cultures is this for
+			"cultures":
+				[ "carthaginian", "eastern", ],
+
+			;;if any are defined, the unit must be one of these units
+			"unit IDs":
+			[
+			],
+			;;ditto above, but for engines
+			"engine IDs":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Heavy_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+				;;voice index 1
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Medium_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+				;;voice index 2
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Retreat_5.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Retreat_4.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Retreat_3.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Retreat_2.wav",
+					"data/sounds/Voice/Human/Localized/Battle_Map/Arabic_Light_1_Unit_Retreat_1.wav",
+					{
+					},
+				],
+			],
+		},
+	],
+},

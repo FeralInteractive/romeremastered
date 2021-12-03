@@ -1,0 +1,343 @@
+;; Last updated by jburnett on 2021/07/22
+;; DESCR file generated via RTW Amber pack editor
+
+;; (Valid enum names are listed at the bottom of the file)
+
+"enumerated events":
+[
+],
+;; Begin list of valid sound enums:
+;;
+;;	//------------------------------------------
+;;	//General UI sounds used throughout the game
+;;	//------------------------------------------
+;;	
+;;	//Buttons
+;;	SEE_BUTTON_DOWN_LIGHT,
+;;	SEE_BUTTON_DOWN_HEAVY,
+;;	SEE_START_GAME,
+;;	
+;;	//Hover highlights
+;;	SEE_UI_HIGHLIGHT_HEAVY,
+;;	SEE_UI_HIGHLIGHT_LIGHT,
+;;	
+;;	//Dropdown menus
+;;	SEE_UI_DROP_MENUS_DOWN,
+;;	SEE_UI_DROP_MENUS_UP,
+;;	SEE_UI_DROP_MENUS_SELECT,
+;;	
+;;	//Clicking on/writing in a text field
+;;	SEE_UI_TEXT_FIELD_CLICKED,
+;;	SEE_UI_TEXT_FIELD_ENTERED,
+;;	
+;;	//Checkboxes
+;;	SEE_UI_TICK_BOX_ON_HEAVY,
+;;	SEE_UI_TICK_BOX_OFF_HEAVY,
+;;	SEE_UI_TICK_BOX_ON_LIGHT,
+;;	SEE_UI_TICK_BOX_OFF_LIGHT,
+;;	
+;;	//Arrows
+;;	SEE_UI_ARROW_BUTTONS_INCR_LIGHT,
+;;	SEE_UI_ARROW_BUTTONS_DECR_LIGHT,
+;;	SEE_UI_ARROW_BUTTONS_NEUTRAL_LIGHT,
+;;	SEE_UI_ARROW_BUTTONS_INCR_HEAVY,
+;;	SEE_UI_ARROW_BUTTONS_DECR_HEAVY,
+;;	SEE_UI_ARROW_BUTTONS_NEUTRAL_HEAVY,
+;;	
+;;	//Used in some popups (i.e. waiting for players)
+;;	SEE_UI_DIALOG_APPEAR,
+;;	SEE_UI_DIALOG_CHECK,
+;;	SEE_UI_DIALOG_X,
+;;	
+;;	//Tooltips
+;;	SEE_UI_TOOLTIP,
+;;	
+;;	//Sliders
+;;	SEE_UI_SLIDER_ARROWS_INCR,
+;;	SEE_UI_SLIDER_ARROWS_DECR,
+;;	SEE_UI_SLIDER_DROP,
+;;	SEE_UI_SLIDER_SELECT,
+;;	SEE_UI_SLIDER_HOVER,
+;;	
+;;	//Scroll open/close noises
+;;	SEE_UI_SCROLL_OPENS,
+;;	SEE_UI_SCROLL_CLOSES,
+;;	
+;;	//Sliding panel open/close noises
+;;	SEE_UI_SLIDING_PANEL_OPENS,
+;;	SEE_UI_SLIDING_PANEL_CLOSES,
+;;	
+;;	//Pressing the close button on scrolls
+;;	SEE_UI_SCROLL_X_BUTTON,
+;;	
+;;	//Pressing the quit button, specifically
+;;	SEE_UI_QUIT_BUTTON,
+;;	
+;;	//Unit/character cards
+;;	SEE_UI_HOVER_CARD,
+;;	SEE_UI_SELECT_CARD,
+;;	SEE_UI_DESELECT_CARD,
+;;	SEE_UI_PICKUP_CARD,
+;;	SEE_UI_DROP_CARD,
+;;	
+;;	//News panel tabs
+;;	SEE_UI_NOTIFICATION_TAB,
+;;	
+;;	//Unit descriptions and the like
+;;	SEE_UI_MORE_INFO,
+;;	
+;;	//Sort headings
+;;	SEE_UI_SORT,
+;;	
+;;	//Select filter list entry
+;;	SEE_UI_SELECT_LIST_ELEMENT,
+;;	
+;;	//------------------------------------------
+;;	//       Main/Pause menu sounds
+;;	//------------------------------------------
+;;	
+;;	//Main/Pause menu selecting items
+;;	SEE_MENU_FORWARD,
+;;	
+;;	//Main/pause menu back
+;;	SEE_MENU_RETURN,
+;;
+;;	//Custom battle unit variables
+;;	SEE_MENU_CHANGE_ARMOUR_INCR,
+;;	SEE_MENU_CHANGE_ARMOUR_DECR,
+;;	SEE_MENU_CHANGE_EXPERIENCE_INCR,
+;;	SEE_MENU_CHANGE_EXPERIENCE_DECR,
+;;	SEE_MENU_CHANGE_WEAPON_INCR,
+;;	SEE_MENU_CHANGE_WEAPON_DECR,
+;;	
+;;	//Custom battle army options
+;;	SEE_MENU_SELECT_PRESET_ARMY,
+;;	SEE_MENU_PRESET_ARMY_OPTION,
+;;	SEE_MENU_COMPUTER_CHOOSE_ARMY,
+;;	SEE_MENU_CLEAR_CURRENT_ARMY,
+;;	
+;;	SEE_MENU_SELECT_PRESET_BATTLE,
+;;	SEE_MENU_ADD_ARMY,
+;;	
+;;	//Some multiplayer stuff I'm not sure even does anything anymore
+;;	SEE_MENU_MULTIPLAYER_REFRESH_GAME_LIST,
+;;	SEE_MENU_MULTIPLAYER_TOGGLE_RECIEVE_INCOMING,
+;;	SEE_MENU_MULTIPLAYER_TOGGLE_RECIEVE_OUTGOING,
+;;	
+;;	//Keybindings
+;;	SEE_MENU_LOAD_KEY_SETTINGS,
+;;	SEE_MENU_SAVE_KEY_SETTINGS,
+;;	
+;;	//Faction/Team switch buttons that exist somewhere I suppose
+;;	SEE_MENU_NEXT_FACTION,
+;;	SEE_MENU_NEXT_TEAM,
+;;	
+;;	//Pause menu sound
+;;	SEE_MENU_PAUSE,
+;;	
+;;	//Open advanced options
+;;	SEE_MENU_ADVANCED_OPTIONS,
+;;	
+;;	//When a menu heading expands to show more options
+;;	SEE_MENU_OPTION_EXPAND,
+;;	SEE_MENU_OPTION_CONTRACT,
+;;	
+;;	//The gold buttons, you should know them, they're gold
+;;	SEE_MENU_GOLD_BUTTON,
+;;
+;;	//------------------------------------------
+;;	//         Strategy map sounds
+;;	//------------------------------------------
+;;	
+;;	//Item selections
+;;	SEE_STRAT_SELECT_CHARACTER,
+;;	SEE_STRAT_SELECT_CITY,
+;;	SEE_STRAT_SELECT_RALLY_POINT,
+;;	SEE_STRAT_SELECT_FORT,
+;;	
+;;	//This is used in some mobile-exclusive scroll, I think?
+;;	SEE_STRAT_SHOW_INFO_RIGHT_CLICK,
+;;	
+;;	//Change the capital
+;;	SEE_STRAT_CHANGE_CAPITAL,
+;;	
+;;	//Disband/destroy buttons
+;;	SEE_STRAT_DISBAND_UNIT,
+;;	SEE_STRAT_DESTROY_BUILDING,
+;;	
+;;	//Combined overview scroll sounds
+;;	SEE_STRAT_OVERVIEW_FACTION_TAB,
+;;	SEE_STRAT_OVERVIEW_SENATE_TAB,
+;;	SEE_STRAT_OVERVIEW_SENATE_POLICY_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_SENATE_STANDING_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_FACTIONS_TAB,
+;;	SEE_STRAT_OVERVIEW_FACTIONS_RANKING_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_FACTIONS_DIPLO_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_FF_TAB,
+;;	SEE_STRAT_OVERVIEW_FF_FINANCE_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_FF_FAMILY_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_LISTS_TAB,
+;;	SEE_STRAT_OVERVIEW_LISTS_SETTLEMENT_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_LISTS_MILITARY_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_LISTS_AGENT_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_FOLLOWER_TAB,
+;;	SEE_STRAT_OVERVIEW_AGENT_TAB,
+;;	
+;;	//Clicking on the radar
+;;	SEE_STRAT_CLICK_ON_RADAR_TELEPORTS_SCREEN,
+;;	
+;;	//Centre panel buttons
+;;	SEE_STRAT_SHOW_UNITS_IN_GARRISON,
+;;	SEE_STRAT_SHOW_BUILDINGS_IN_SETTLEMENT,
+;;	SEE_STRAT_SHOW_VISITORS_IN_SETTLEMENT,
+;;	SEE_STRAT_SHOW_UNITS_ON_SHIP,
+;;	
+;;	//Stratmap view next settlement/character/whatever in centre panel
+;;	SEE_STRAT_SELECT_NEXT,
+;;	SEE_STRAT_SELECT_PREVIOUS,
+;;	
+;;	//Construction & training panels
+;;	SEE_STRAT_OPEN_CONTRUCTION_PANEL,
+;;	SEE_STRAT_OPEN_TRAINING_PANEL,
+;;	
+;;	//Construction queue
+;;	SEE_STRAT_ADD_BUILDING_TO_QUEUE,
+;;	SEE_STRAT_REMOVE_BUILDING_FROM_QUEUE,
+;;	SEE_STRAT_DRAG_BUILDING_IN_QUEUE,
+;;	SEE_STRAT_DROP_BUILDING_IN_QUEUE,
+;;	
+;;	//Recruitment queue
+;;	SEE_STRAT_ADD_UNIT_TO_QUEUE,
+;;	SEE_STRAT_REMOVE_UNIT_FROM_QUEUE,
+;;	SEE_STRAT_DRAG_UNIT_IN_QUEUE,
+;;	SEE_STRAT_DROP_UNIT_IN_QUEUE,
+;;	
+;;	//Field construction menu
+;;	SEE_STRAT_BUILD_FORT,
+;;	SEE_STRAT_BUILD_WATCHTOWER,
+;;	
+;;	//Family tree sounds
+;;	SEE_STRAT_SET_FACTION_HEIR,
+;;	SEE_STRAT_SELECT_PORTRAIT_MALE,
+;;	SEE_STRAT_SELECT_PORTRAIT_FEMALE,
+;;	
+;;	//Trade summary
+;;	SEE_STRAT_SHOW_TRADE_SUMMARY,
+;;	
+;;	//Advice panel
+;;	SEE_STRAT_ADVICE_PANEL_SLIDING_IN,
+;;	SEE_STRAT_ADVICE_PANEL_SLIDING_OUT,
+;;	SEE_STRAT_ADVICE_BUBBLE_APPEARS,
+;;	SEE_STRAT_ADVICE_BUBBLE_DISAPPEARS,
+;;	SEE_STRAT_ADVICE_MESSAGE_TICK,
+;;	SEE_STRAT_ADVICE_CHANGES,
+;;	
+;;	//This is a moblie-only thing? I Think?
+;;	SEE_STRAT_ASK_FOR_ADVICE,
+;;	
+;;	//Move to button
+;;	SEE_STRAT_ZOOM_TO_ITEM,
+;;	
+;;	//View settlement on battlemap
+;;	SEE_STRAT_VIEW_SETTLEMENT_ON_BATTLEMAP,
+;;	
+;;	//Merge armies dialog open
+;;	SEE_STRAT_MERGE_ARMIES,
+;;	
+;;	//End turn button
+;;	SEE_STRAT_END_TURN,
+;;	SEE_STRAT_END_TURN_FAILED,
+;;	
+;;	//Zoom in to start battle
+;;	SEE_STRAT_BATTLE_ZOOM,
+;;
+;;	//Diplomacy scroll
+;;	SEE_STRAT_DIPLOMACY_AMBIENT,
+;;	SEE_STRAT_DIPLOMACY_SELECT_OFFER,
+;;	SEE_STRAT_DIPLOMACY_SCROLL_OPEN,
+;;	SEE_STRAT_DIPLOMACY_SCROLL_CLOSE,
+;;	
+;;	//------------------------------------------
+;;	//            Battle map sounds
+;;	//------------------------------------------
+;;
+;;	//Header sounds
+;;	SEE_BATTLE_START_DEPLOYMENT,
+;;	SEE_BATTLE_START_BATTLE,
+;;	SEE_BATTLE_WAIT,
+;;	
+;;	//Follow unit sounds
+;;	SEE_BATTLE_FOLLOW_UNIT,
+;;	SEE_BATTLE_STOP_FOLLOWING_UNIT,
+;;	
+;;	//Select all
+;;	SEE_BATTLE_SELECT_ALL,
+;;	SEE_BATTLE_DESELCT_ALL,
+;;	
+;;	//Individual selections
+;;	SEE_BATTLE_SELECT_CAVALRY,
+;;	SEE_BATTLE_SELECT_INFANTRY,
+;;	SEE_BATTLE_SELECT_MELEE,
+;;	SEE_BATTLE_SELECT_MISSILE,
+;;	SEE_BATTLE_SELECT_SIEGE,
+;;	
+;;	//Select groups
+;;	SEE_BATTLE_SELECT_NEXT_GROUP,
+;;	SEE_BATTLE_SELECT_PREVIOUS_GROUP,
+;;	
+;;	//Radar zoom
+;;	SEE_BATTLE_ZOOM_RADAR_IN,
+;;	SEE_BATTLE_ZOOM_RADAR_OUT,
+;;	
+;;	//Speed controls
+;;	SEE_BATTLE_PAUSE,
+;;	SEE_BATTLE_UNPAUSE,
+;;	SEE_BATTLE_HALF_SPEED,
+;;	SEE_BATTLE_DOUBLE_SPEED,
+;;	SEE_BATTLE_TRIPLE_SPEED,
+;;	
+;;	//Zoom to
+;;	SEE_BATTLE_ZOOM_TO_UNIT,
+;;	SEE_BATTLE_ZOOM_GENERAL,
+;;	
+;;	//Group creation
+;;	SEE_BATTLE_GROUP_SELECTED_UNITS,
+;;	SEE_BATTLE_UNGROUP_SELECTED_UNITS,
+;;	
+;;	//Orders
+;;	SEE_BATTLE_HALT_STOP_CURRENT_ORDERS,
+;;	SEE_BATTLE_WITHDRAW,
+;;	SEE_BATTLE_TIGHT_FORMATION,
+;;	SEE_BATTLE_LOOSE_FORMATION,
+;;	SEE_BATTLE_ENABLE_SKIRMISH_MODE,
+;;	SEE_BATTLE_DISABLE_SKIRMISH_MODE,
+;;	SEE_BATTLE_ENABLE_FIRE_AT_WILL,
+;;	SEE_BATTLE_DISABLE_FIRE_AT_WILL,
+;;	SEE_BATTLE_NORMAL_FORMATION,
+;;	SEE_BATTLE_SPECIAL_FORMATION,
+;;	SEE_BATTLE_ENABLE_GUARD_MODE,
+;;	SEE_BATTLE_DISABLE_GUARD_MODE,
+;;	SEE_BATTLE_RUN_MODE,
+;;	SEE_BATTLE_WALK_MODE,
+;;	SEE_BATTLE_ENABLE_FORCE_MELEE,
+;;	SEE_BATTLE_DISABLE_FORCE_MELEE,
+;;	
+;;	//Group formations
+;;	SEE_BATTLE_SHOW_GROUP_FORMATIONS,
+;;	SEE_BATTLE_HIDE_GROUP_FORMATIONS,
+;;	SEE_BATTLE_SELECT_GROUP_FORMATION,
+;;	
+;;	//Battle AI control
+;;	SEE_BATTLE_AI_ASSISTANCE_ON,
+;;	SEE_BATTLE_AI_ASSISTANCE_OFF,
+;;
+;;	//Drag sounds
+;;	SEE_BATTLE_UI_START_DRAG_FORMATION,
+;;	SEE_BATTLE_UI_END_DRAG_FORMATION,
+;;	SEE_BATTLE_UI_START_DRAG_SELECTION,
+;;	SEE_BATTLE_UI_END_DRAG_SELECTION,
+;;	
+;;	//Ping sounds
+;;	SEE_BATTLE_UI_PING_ATTACK,
+;;	SEE_BATTLE_UI_PING_SUPPORT,
+;;	SEE_BATTLE_UI_PING_MOVE,

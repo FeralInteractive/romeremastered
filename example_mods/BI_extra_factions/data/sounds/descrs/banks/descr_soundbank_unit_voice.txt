@@ -1,0 +1,15 @@
+;; Last updated by jburnett on 2021/07/22
+;; DESCR file generated via RTW Amber pack editor
+
+include "sounds/descrs/banks/unit_voices/descr_roman_general_unit_voices.txt" ;;roman
+include "sounds/descrs/banks/unit_voices/descr_roman_unit_voices.txt"
+
+include "sounds/descrs/banks/unit_voices/descr_barbarian_general_unit_voices.txt" ;;barbarian
+include "sounds/descrs/banks/unit_voices/descr_barbarian_unit_voices.txt"
+
+include "sounds/descrs/banks/unit_voices/descr_eastern_general_unit_voices.txt" ;;eastern
+include "sounds/descrs/banks/unit_voices/descr_eastern_unit_voices.txt"
+
+include "sounds/descrs/banks/unit_voices/descr_female_unit_voices.txt" ;;female
+
+include "sounds/descrs/banks/unit_voices/descr_ai_unit_voices.txt" ;;reduced AI lines

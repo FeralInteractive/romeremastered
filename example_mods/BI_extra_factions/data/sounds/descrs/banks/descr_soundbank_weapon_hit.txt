@@ -1,0 +1,2614 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 80.001,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 200,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 2.5,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 14.0,		;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.5,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_weapon_hit":
+{
+	"entries":
+	[
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "carthaginian elephant forest",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carthaginian elephant african",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "east elephant",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "greek elephant small",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "greek elephant african",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc elephants",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "greek elephant cataphract",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carthaginian elephant african cataphract",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "elephants",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "cheat oliphants",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "all", "-ground", "-building", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Melee/Elephant/Swipe_Kick.wav",
+				"data/sounds/SFX/individual/Melee/Elephant/Punch_Body_2.wav",
+				"data/sounds/SFX/individual/Melee/Elephant/Punch_Body_1.wav",
+				"data/sounds/SFX/individual/Melee/Elephant/Kick_Body_Low.wav",
+				{
+					"Probability": 49.804,		;;the chance the sound will play when triggered
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 130,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random delay": 0.243,		;;the maximum random delay added to the constant delay
+					"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "merc ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman repeating ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "Yes",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Missile_Ballista_Arrow_Fly.wav",
+				{
+					"Min pitch": 70.0,			;;the random pitch of the sample (0-200%)
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade in": 0.243,			;;the time, in seconds, for the sound to fade in and out
+					"Fade out": 0.499,			
+					"Random delay": 0.243,		;;the maximum random delay added to the constant delay
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "merc ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman repeating ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "Yes",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Missile_Ballista_Arrow_Fly_Flaming3.wav",
+				{
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 70.0,			;;the random pitch of the sample (0-200%)
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade in": 0.243,			;;the time, in seconds, for the sound to fade in and out
+					"Fade out": 0.499,			
+					"Random delay": 0.243,		;;the maximum random delay added to the constant delay
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "merc ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman repeating ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Either",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "ground", "building", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "rock", "stone_road", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Stone/Ballista_Arrow_Hit_Stone_02.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Stone/Ballista_Arrow_Hit_Stone_01.wav",
+				{
+					"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "merc ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman repeating ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "leather", "flesh", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_04.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_03.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_02.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_01.wav",
+				{
+					"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "merc ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman repeating ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "leather", "flesh", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_Flaming_04.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_Flaming_03.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_Flaming_02.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_Flaming_01.wav",
+				{
+					"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "merc ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman repeating ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Either",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "wood", "ground", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "wood", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wood/Cat_Rock_Hit_Wood_05.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wood/Cat_Rock_Hit_Wood_04.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wood/Cat_Rock_Hit_Wood_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wood/Cat_Rock_Hit_Wood_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wood/Cat_Rock_Hit_Wood_01.wav",
+				{
+					"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "merc ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman repeating ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Either",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "metal", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Chainmail/Cat_Rock_Hit_Chainmail_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Chainmail/Cat_Rock_Hit_Chainmail_01.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_01.wav",
+				{
+					"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "merc ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman repeating ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Either",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "ground", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "water", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Water/Ball_Arrow_Hit_Water_03.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Water/Ball_Arrow_Hit_Water_02.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Water/Ball_Arrow_Hit_Water_01.wav",
+				{
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "merc ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman repeating ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "ground", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "all", "-rock", "-stone_road", "-water", "-wood", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_04.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_03.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_01.wav",
+				{
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "merc ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman ballistae",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman repeating ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "ground", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "all", "-rock", "-stone_road", "-water", "-wood", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_06.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_05.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_04.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_03.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_02.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_01.wav",
+				{
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "roman scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "east scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carriage ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "Yes",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Missile_Scorpion_Fly.wav",
+				{
+					"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade in": 0.243,			;;the time, in seconds, for the sound to fade in and out
+					"Fade out": 0.499,			
+					"Random delay": 0.243,		;;the maximum random delay added to the constant delay
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "roman scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "east scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carriage ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "Yes",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Missile_Scorpion_Fly_Flaming3.wav",
+				{
+					"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 70.0,			;;the random pitch of the sample (0-200%)
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade in": 0.243,			;;the time, in seconds, for the sound to fade in and out
+					"Fade out": 0.499,			
+					"Random delay": 0.243,		;;the maximum random delay added to the constant delay
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "roman scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "east scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carriage ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Either",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "ground", "building", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "rock", "stone_road", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Scorpion/Scorpion_Arrow_Hit_Stone/Scorpion_Arrow_Hit_Stone_05.wav",
+				"data/sounds/SFX/individual/Missiles/Scorpion/Scorpion_Arrow_Hit_Stone/Scorpion_Arrow_Hit_Stone_04.wav",
+				"data/sounds/SFX/individual/Missiles/Scorpion/Scorpion_Arrow_Hit_Stone/Scorpion_Arrow_Hit_Stone_03.wav",
+				"data/sounds/SFX/individual/Missiles/Scorpion/Scorpion_Arrow_Hit_Stone/Scorpion_Arrow_Hit_Stone_02.wav",
+				"data/sounds/SFX/individual/Missiles/Scorpion/Scorpion_Arrow_Hit_Stone/Scorpion_Arrow_Hit_Stone_01.wav",
+				{
+					"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "roman scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "east scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carriage ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "leather", "flesh", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_04.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_03.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_02.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_01.wav",
+				{
+					"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "roman scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "east scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carriage ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "leather", "flesh", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_Flaming_04.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_Flaming_03.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_Flaming_02.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Flesh/Ballista_Arrow_Hit_Flesh_Flaming_01.wav",
+				{
+					"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "roman scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "east scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carriage ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Either",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "wood", "ground", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "wood", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wood/Cat_Rock_Hit_Wood_05.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wood/Cat_Rock_Hit_Wood_04.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wood/Cat_Rock_Hit_Wood_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wood/Cat_Rock_Hit_Wood_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wood/Cat_Rock_Hit_Wood_01.wav",
+				{
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "roman scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "east scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carriage ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Either",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "metal", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Chainmail/Cat_Rock_Hit_Chainmail_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Chainmail/Cat_Rock_Hit_Chainmail_01.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_01.wav",
+				{
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "roman scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "east scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carriage ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Either",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "ground", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "water", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Scorpion/Scorpion_Arrow_Hit_Water/Scorpion_Arrow_Hit_Water_03.wav",
+				"data/sounds/SFX/individual/Missiles/Scorpion/Scorpion_Arrow_Hit_Water/Scorpion_Arrow_Hit_Water_02.wav",
+				"data/sounds/SFX/individual/Missiles/Scorpion/Scorpion_Arrow_Hit_Water/Scorpion_Arrow_Hit_Water_01.wav",
+				{
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "roman scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "east scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carriage ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "ground", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "all", "-rock", "-stone_road", "-water", "-wood", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_04.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_03.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_01.wav",
+				{
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "roman scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "east scorpion",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "carriage ballistae",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "all", "-rock", "-stone_road", "-water", "-wood", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_06.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_05.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_04.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_03.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_02.wav",
+				"data/sounds/SFX/individual/Missiles/Ballista_Arrow/Ballista_Arrow_Hit_Dirt/Ballista_Arrow_Hit_Dirt_Flaming_01.wav",
+				{
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "Yes",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Missile_Catapult_Rock_Fly.wav",
+				{
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade in": 0.339,			;;the time, in seconds, for the sound to fade in and out
+					"Fade out": 0.499,			
+					"Random delay": 0.243,		;;the maximum random delay added to the constant delay
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "Yes",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Missile_Catapult_Rock_Fly_Flaming3.wav",
+				{
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade in": 0.339,			;;the time, in seconds, for the sound to fade in and out
+					"Fade out": 0.499,			
+					"Random delay": 0.243,		;;the maximum random delay added to the constant delay
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "ground", "building", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "rock", "stone_road", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Stone/Cat_Rock_Hit_Stone_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Stone/Cat_Rock_Hit_Stone_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Stone/Cat_Rock_Hit_Stone_01.wav",
+				{
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "ground", "building", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "all", "-water", "-wood", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Stone/Cat_Rock_Hit_Stone_Flaming_04.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Stone/Cat_Rock_Hit_Stone_Flaming_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Stone/Cat_Rock_Hit_Stone_Flaming_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Stone/Cat_Rock_Hit_Stone_Flaming_01.wav",
+				{
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "leather", "flesh", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Flesh/Cat_Rock_Hit_Flesh_Big_04.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Flesh/Cat_Rock_Hit_Flesh_Big_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Flesh/Cat_Rock_Hit_Flesh_Big_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Flesh/Cat_Rock_Hit_Flesh_Big_01.wav",
+				{
+					"Min dist": 5.5,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "leather", "flesh", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Flesh/Cat_Rock_Hit_Flesh_Flaming_04.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Flesh/Cat_Rock_Hit_Flesh_Flaming_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Flesh/Cat_Rock_Hit_Flesh_Flaming_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Flesh/Cat_Rock_Hit_Flesh_Flaming_01.wav",
+				{
+					"Min dist": 5.5,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "wood", "ground", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "wood", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wooden_Shield/Cat_Rock_Hit_Wood_Shield_Big_04.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wooden_Shield/Cat_Rock_Hit_Wood_Shield_Big_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wooden_Shield/Cat_Rock_Hit_Wood_Shield_Big_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wooden_Shield/Cat_Rock_Hit_Wood_Shield_Big_01.wav",
+				{
+					"Min dist": 5.5,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "wood", "ground", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "wood", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wooden_Shield/Cat_Rock_Hit_Wood_Shield_Flaming_04.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wooden_Shield/Cat_Rock_Hit_Wood_Shield_Flaming_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wooden_Shield/Cat_Rock_Hit_Wood_Shield_Flaming_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Wooden_Shield/Cat_Rock_Hit_Wood_Shield_Flaming_01.wav",
+				{
+					"Min dist": 5.5,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "metal", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Metal_Shield/Cat_Rock_Hit_Met_Shield_Big_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Metal_Shield/Cat_Rock_Hit_Met_Shield_Big_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Metal_Shield/Cat_Rock_Hit_Met_Shield_Big_01.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_Big_04.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_Big_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_Big_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_Big_01.wav",
+				{
+					"Min dist": 5.5,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Yes",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "metal", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Metal_Shield/Cat_Rock_Hit_Met_Shield_Flaming_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Metal_Shield/Cat_Rock_Hit_Met_Shield_Flaming_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Metal_Shield/Cat_Rock_Hit_Met_Shield_Flaming_01.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_Flaming_04.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_Flaming_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_Flaming_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Breastplate/Cat_Rock_Hit_Breastplate_Flaming_01.wav",
+				{
+					"Min dist": 5.5,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "Either",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "ground", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "water", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Water/Cat_Rock_Hit_Water_04.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Water/Cat_Rock_Hit_Water_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Water/Cat_Rock_Hit_Water_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Water/Cat_Rock_Hit_Water_01.wav",
+				{
+					"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "alemanni onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "frankish onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "sassanid heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman onagers",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "roman heavy onager",
+						"slot": "Secondary",
+					},
+					{
+						"ID": "merc onagers",
+						"slot": "Secondary",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "No",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "ground", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ "all", "-rock", "-stone_road", "-water", "-wood", ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Dirt/Cat_Rock_Hit_Dirt_04.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Dirt/Cat_Rock_Hit_Dirt_03.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Dirt/Cat_Rock_Hit_Dirt_02.wav",
+				"data/sounds/SFX/individual/Missiles/Catapult_Rock/Cat_Rock_Hit_Dirt/Cat_Rock_Hit_Dirt_01.wav",
+				{
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;information about the weapon
+			"weapon":
+			{
+				;;specific unit weapons that this sound will trigger for, regardless of sounds/weapon/damage type
+				"unit weapons":
+				[
+					{
+						"ID": "scotti chariots",
+						"slot": "Either",
+					},
+				],
+
+				;;information about the weapon itself
+				"sound types":
+					[ "all", ],
+				"weapon types":
+					[ ],
+				"damage types":
+					[ ],
+
+				;;if a projectile, is it flying or flaming?
+				;;(please note that having flying as "Yes" will ignore target options)
+				"flying": "No",
+				"flaming": "No",
+
+				;;are we killing something with this?
+				"death blow": "Either",
+			},
+
+			;;information about the target
+			"target":
+			{
+				;;what are we hitting?
+				"armour types":
+					[ "all", "-ground", "-building", ],
+
+				;;if the armour type is ground, it must be one of these types
+				"ground types":
+					[ ],
+
+				;;if the armour type is building, it must be one of these buildings, if any
+				"building ids":
+				[
+				],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Hit_Flesh_09.wav",
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Hit_Flesh_08.wav",
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Hit_Flesh_07.wav",
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Hit_Flesh_06.wav",
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Hit_Flesh_05.wav",
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Hit_Flesh_04.wav",
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Hit_Flesh_03.wav",
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Hit_Flesh_02.wav",
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Hit_Flesh_01.wav",
+				{
+					"Probability": 49.804,		;;the chance the sound will play when triggered
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 70.0,			;;the random pitch of the sample (0-200%)
+					"Priority": 180,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.243,		;;the maximum random delay added to the constant delay
+					"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+	],
+}, ;;soundbank_weapon_hit

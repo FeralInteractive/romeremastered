@@ -1,0 +1,160 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 170,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.998,			;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 2.994,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.998,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": -1.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.5,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_unit_warcry":
+{
+	"entries":
+	[
+		;;all non-female units
+		{
+			"unit":
+			{
+				;;the categories, voice types and specific units this sound applies to
+				"categories":
+					[ "all", "-ship", ],
+				"voices":
+					[ "all", "-female", ],
+
+				"IDs":
+				[
+				],
+			},
+			"cultures":
+				[ "all", ],
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/Voice/human/generic/Warcry_Group_Small_01.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/Voice/human/generic/Warcry_Group_Medium_01.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/Voice/human/generic/Warcry_Group_Large_02.wav",
+						"data/sounds/Voice/human/generic/Warcry_Group_Large_01.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		
+		;;female units, just re-using the screeching women sound
+		{
+			"unit":
+			{
+				;;the categories, voice types and specific units this sound applies to
+				"categories":
+					[ "all", "-ship", ],
+				"voices":
+					[ "female", ],
+
+				"IDs":
+				[
+				],
+			},
+			"cultures":
+				[ "all", ],
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/Voice/human/generic/Woman_Screecher_Group_Taunt_Small_01.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+							"Max pitch": 89.999,	
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/Voice/human/generic/Woman_Screecher_Group_Taunt_Med_01.wav",
+						{
+							"Min dist": 8.0,
+							"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+							"Max pitch": 89.999,
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/Voice/human/generic/Woman_Screecher_Group_Taunt_Large_01.wav",
+						{
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+							"Max pitch": 89.999,
+						},
+					],
+				},
+			],
+		},
+	],
+}, ;;soundbank_unit_warcry

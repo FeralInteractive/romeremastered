@@ -1,0 +1,2804 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.998,		;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Speech",		;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": true,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 0.0,			;; ???
+},
+
+"soundbank_battle_notifications":
+{
+	"global parameters":
+	{
+		;; how long should we wait before repeating the same message
+		"notification repeat timeout": 20.0,
+	},
+	"entries":
+	[
+		{
+			;;the type of notification sound should play for
+			"notification": "Allied_Army_Leader_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Allied_Army_Leader_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Allied_Army_Leader_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Allied_Army_Leader_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Allied_Army_Routed",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Allied_Army_Routed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Allied_Army_Routed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Allied_Army_Routed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Allied_General_Routed",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Allied_General_Routed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Allied_General_Routed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Allied_General_Routed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Army_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Army_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Army_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Army_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_General_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_General_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_General_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_General_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_General_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_General_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_General_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_General_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_King_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_King_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_King_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_King_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_King_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_King_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_King_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_King_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Ladders_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Ladders_Attacking_Walls_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Ladders_Attacking_Walls_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Ladders_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Reinforcements_Arrive",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Reinforcements_Arrive_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Reinforcements_Arrive_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Reinforcements_Arrive_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Roman_Leader_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Roman_Leader_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Roman_Leader_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Roman_Leader_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Roman_Leader_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Roman_Leader_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Roman_Leader_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Roman_Leader_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Sapping_Damaged",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Sapping_Damaged_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Sapping_Damaged_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Sapping_Damaged_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Siege_Towers_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Siege_Towers_Attacking_Walls_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Siege_Towers_Attacking_Walls_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Siege_Towers_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Siege_Towers_Destroyed",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Siege_Towers_Destroyed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Siege_Towers_Destroyed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Siege_Towers_Destroyed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Walls_Breached_By_Player",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Walls_Breached_By_Player_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Walls_Breached_By_Player_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Walls_Breached_By_Player_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Walls_Captured_By_Player",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Walls_Captured_By_Player_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Walls_Captured_By_Player_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Walls_Undermined_By_Player",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Walls_Undermined_By_Player_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Walls_Undermined_By_Player_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Enemy_Walls_Undermined_By_Player_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Army_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Army_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Army_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Army_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Average_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Defeat_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Draw",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Draw_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Draw_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Draw_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_General_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_General_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_General_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_General_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_General_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_General_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_General_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_General_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ladders_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Ladders_Attacking_Walls_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Ladders_Attacking_Walls_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Ladders_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Leader_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Leader_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Leader_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Leader_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Leader_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Leader_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Leader_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Leader_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Attacking_Gate",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Ram_Attacking_Gate_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Ram_Attacking_Gate_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Ram_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Breached_Gate",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Ram_Breached_Gate_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Ram_Breached_Gate_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Breached_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Ram_Breached_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Reinforcements_Arrive",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Reinforcements_Arrive_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Reinforcements_Arrive_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Reinforcements_Arrive_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Sapping_Begun",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Sapping_Begun_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Sapping_Begun_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Sapping_Begun_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Sapping_Complete",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Sapping_Complete_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Sapping_Damaged",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Sapping_Damaged_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Sapping_Damaged_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Sapping_Damaged_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Sapping_Failed",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Sapping_Failed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Sapping_Failed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Siege_Towers_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Siege_Towers_Attacking_Walls_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Siege_Towers_Attacking_Walls_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Siege_Towers_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Siege_Towers_Destroyed",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Siege_Towers_Destroyed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Siege_Towers_Destroyed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Defeat_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Defeat_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Defeat_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Defeat_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Defeat_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Defeat_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Defeat_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Defeat_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Defeat_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Defeat_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Defeat_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Draw",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Draw_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Draw_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Draw_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Average_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Time_Limit_Expired_Victory_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Average_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Victory_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Walls_Breached_By_Enemy",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Walls_Breached_By_Enemy_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Walls_Breached_By_Enemy_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Walls_Breached_By_Enemy_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Walls_Captured_By_Enemy",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Walls_Captured_By_Enemy_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Walls_Captured_By_Enemy_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Walls_Undermined_By_Enemy",
+
+			;;the factions this should play for
+			"factions":
+				[ "carthaginian", "eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Walls_Undermined_By_Enemy_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Arabic_Player_Walls_Undermined_By_Enemy_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Allied_Army_Leader_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Allied_Army_Leader_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Allied_Army_Leader_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Allied_Army_Leader_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Allied_Army_Routed",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Allied_Army_Routed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Allied_Army_Routed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Allied_Army_Routed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Allied_General_Routed",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Allied_General_Routed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Allied_General_Routed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Allied_General_Routed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Army_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Army_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Army_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Army_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_General_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_General_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_General_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_General_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_General_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_General_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_General_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_General_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_King_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_King_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_King_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_King_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_King_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_King_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_King_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_King_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Ladders_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Ladders_Attacking_Walls_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Ladders_Attacking_Walls_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Ladders_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Reinforcements_Arrive",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Reinforcements_Arrive_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Reinforcements_Arrive_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Reinforcements_Arrive_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Roman_Leader_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Roman_Leader_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Roman_Leader_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Roman_Leader_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Roman_Leader_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Roman_Leader_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Roman_Leader_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Roman_Leader_Routing_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Sapping_Damaged",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Sapping_Damaged_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Sapping_Damaged_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Sapping_Damaged_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Siege_Towers_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Siege_Towers_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Siege_Towers_Destroyed",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Siege_Towers_Destroyed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Siege_Towers_Destroyed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Siege_Towers_Destroyed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Walls_Breached_By_Player",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Walls_Breached_By_Player_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Walls_Breached_By_Player_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Walls_Breached_By_Player_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Walls_Captured_By_Player",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Walls_Captured_By_Player_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Enemy_Walls_Captured_By_Player_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Army_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Army_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Army_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Army_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Average_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Defeat_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Draw",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Draw_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Draw_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Draw_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_General_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_General_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_General_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_General_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_General_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_General_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_General_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_General_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ladders_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Ladders_Attacking_Walls_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Ladders_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Leader_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Leader_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Leader_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Leader_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Leader_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Leader_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Leader_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Leader_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Attacking_Gate",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Ram_Attacking_Gate_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Ram_Attacking_Gate_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Ram_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Breached_Gate",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Ram_Breached_Gate_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Ram_Breached_Gate_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Breached_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Ram_Breached_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Reinforcements_Arrive",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Reinforcements_Arrive_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Reinforcements_Arrive_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Reinforcements_Arrive_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Defeat_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Defeat_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Defeat_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Defeat_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Defeat_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Defeat_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Defeat_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Defeat_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Defeat_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Defeat_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Defeat_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Draw",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Draw_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Draw_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Draw_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Average_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Time_Limit_Expired_Victory_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Average_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Victory_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Walls_Breached_By_Enemy",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Walls_Breached_By_Enemy_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Walls_Breached_By_Enemy_2.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Walls_Captured_By_Enemy",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Walls_Captured_By_Enemy_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Walls_Captured_By_Enemy_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Walls_Undermined_By_Enemy",
+
+			;;the factions this should play for
+			"factions":
+				[ "all", "-roman", "-carthaginian", "-eastern", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Walls_Undermined_By_Enemy_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Barbarian_Player_Walls_Undermined_By_Enemy_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Allied_Army_Leader_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Allied_Army_Leader_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Allied_Army_Leader_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Allied_Army_Leader_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Allied_Army_Routed",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Allied_Army_Routed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Allied_Army_Routed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Allied_Army_Routed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Allied_General_Routed",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Allied_General_Routed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Allied_General_Routed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Allied_General_Routed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Army_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Army_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Army_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Army_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_General_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_General_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_General_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_General_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_General_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_General_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_General_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_General_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_King_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_King_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_King_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_King_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_King_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_King_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_King_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_King_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Ladders_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Ladders_Attacking_Walls_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Ladders_Attacking_Walls_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Ladders_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Reinforcements_Arrive",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Reinforcements_Arrive_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Reinforcements_Arrive_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Reinforcements_Arrive_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Roman_Leader_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Roman_Leader_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Roman_Leader_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Roman_Leader_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Roman_Leader_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Roman_Leader_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Roman_Leader_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Roman_Leader_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Sapping_Damaged",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Sapping_Damaged_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Sapping_Damaged_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Sapping_Damaged_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Siege_Towers_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Siege_Towers_Attacking_Walls_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Siege_Towers_Attacking_Walls_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Siege_Towers_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Siege_Towers_Destroyed",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Siege_Towers_Destroyed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Siege_Towers_Destroyed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Siege_Towers_Destroyed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Walls_Breached_By_Player",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Walls_Breached_By_Player_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Walls_Breached_By_Player_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Walls_Breached_By_Player_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Walls_Captured_By_Player",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Walls_Captured_By_Player_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Walls_Captured_By_Player_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Enemy_Walls_Undermined_By_Player",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Walls_Undermined_By_Player_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Walls_Undermined_By_Player_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Enemy_Walls_Undermined_By_Player_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Army_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Army_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Army_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Army_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Average_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Defeat_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Defeat_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Draw",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Draw_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Draw_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Draw_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_General_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_General_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_General_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_General_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_General_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_General_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_General_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_General_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ladders_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Ladders_Attacking_Walls_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Ladders_Attacking_Walls_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Ladders_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Leader_Killed",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Leader_Killed_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Leader_Killed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Leader_Killed_1.opus",
+				{
+					"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Leader_Routing",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Leader_Routing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Leader_Routing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Leader_Routing_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Attacking_Gate",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Ram_Attacking_Gate_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Ram_Attacking_Gate_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Ram_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Breached_Gate",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Ram_Breached_Gate_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Ram_Breached_Gate_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Ram_Breached_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Ram_Breached_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Reinforcements_Arrive",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Reinforcements_Arrive_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Reinforcements_Arrive_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Reinforcements_Arrive_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Sapping_Begun",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Sapping_Begun_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Sapping_Begun_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Sapping_Begun_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Sapping_Complete",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Sapping_Complete_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Sapping_Damaged",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Sapping_Damaged_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Sapping_Damaged_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Sapping_Damaged_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Sapping_Failed",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Sapping_Failed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Sapping_Failed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Siege_Towers_Attacking_Walls",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Siege_Towers_Attacking_Walls_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Siege_Towers_Attacking_Walls_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Siege_Towers_Attacking_Walls_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Siege_Towers_Destroyed",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Siege_Towers_Destroyed_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Siege_Towers_Destroyed_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Defeat_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Defeat_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Defeat_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Defeat_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Defeat_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Defeat_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Defeat_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Defeat_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Defeat_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Defeat_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Defeat_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Defeat_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Draw",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Draw_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Draw_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Draw_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Average_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Time_Limit_Expired_Victory_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Time_Limit_Expired_Victory_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Average",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Average_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Average_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Average_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Clear",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Clear_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Clear_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Clear_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Close",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Close_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Close_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Close_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Victory_Crushing",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Crushing_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Crushing_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Victory_Crushing_1.opus",
+				{
+					"Ignore pause": true,		;;should this sound ignore being paused?
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Walls_Breached_By_Enemy",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Walls_Breached_By_Enemy_3.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Walls_Breached_By_Enemy_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Walls_Breached_By_Enemy_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Walls_Captured_By_Enemy",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Walls_Captured_By_Enemy_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Walls_Captured_By_Enemy_1.opus",
+				{
+				},
+			],
+		},
+		{
+			;;the type of notification sound should play for
+			"notification": "Player_Walls_Undermined_By_Enemy",
+
+			;;the factions this should play for
+			"factions":
+				[ "roman", ],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Walls_Undermined_By_Enemy_2.opus",
+				"data/sounds/Voice/Human/Localized/Battle_Events/Roman_Player_Walls_Undermined_By_Enemy_1.opus",
+				{
+				},
+			],
+		},
+	],
+}, ;;soundbank_battle_notifications

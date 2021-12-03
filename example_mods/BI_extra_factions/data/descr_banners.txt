@@ -1,0 +1,204 @@
+
+banner      roman
+model       data/models/standard_general_julii.cas          ; generals banner
+skeleton    general_legion_pole
+outline     data/models/standard_battle_glow_general.cas
+model       data/models/standard_julii.cas                  ; standard unit banner
+skeleton    standard_legion_pole
+outline     data/models/standard_battle_glow_units.cas
+model       data/models/standard_general_julii.cas          ; mini banner
+skeleton    standard_legion_pole
+outline     data/models/standard_battle_glow_general.cas
+
+banner      barbarian
+model       data/models/standard_general_gaul.cas
+skeleton    general_legion_pole
+outline     data/models/standard_battle_glow_barb_general.cas
+model       data/models/standard_gaul.cas
+skeleton    standard_legion_pole
+outline     data/models/standard_battle_glow_barb_units.cas
+model       data/models/standard_general_gaul.cas
+skeleton    general_legion_pole
+outline     data/models/standard_battle_glow_barb_general.cas
+
+banner      carthaginian
+model       data/models/standard_general_carthage.cas
+skeleton    general_legion_pole
+outline     data/models/standard_battle_glow_general.cas
+model       data/models/standard_carthage.cas
+skeleton    standard_legion_pole
+outline     data/models/standard_battle_glow_units.cas
+model       data/models/standard_general_carthage.cas
+skeleton    general_legion_pole
+outline     data/models/standard_battle_glow_general.cas
+
+banner      eastern
+model       data/models/standard_general_julii.cas
+skeleton    general_legion_pole
+outline     data/models/standard_battle_glow_eastern.cas
+model       data/models/standard_julii.cas
+skeleton    standard_legion_pole
+outline     data/models/standard_battle_glow_eastern_units.cas
+model       data/models/standard_general_julii.cas
+skeleton    general_legion_pole
+outline     data/models/standard_battle_glow_eastern.cas
+
+banner      nomad
+model       data/models/standard_general_gaul.cas
+skeleton    general_legion_pole
+outline     data/models/standard_battle_glow_barb_general.cas
+model       data/models/standard_gaul.cas
+skeleton    standard_legion_pole
+outline     data/models/standard_battle_glow_barb_units.cas
+model       data/models/standard_general_gaul.cas
+skeleton    general_legion_pole
+outline     data/models/standard_battle_glow_barb_general.cas
+
+banner      hun
+model       data/models/standard_general_gaul.cas
+skeleton    general_legion_pole
+outline     data/models/standard_battle_glow_barb_general.cas
+model       data/models/standard_gaul.cas
+skeleton    standard_legion_pole
+outline     data/models/standard_battle_glow_barb_units.cas
+model       data/models/standard_general_gaul.cas
+skeleton    general_legion_pole
+outline     data/models/standard_battle_glow_barb_general.cas
+
+faction             alemanni
+standard_texture    models/textures/standard_alemanni.tga
+rebels_texture      models/textures/standard_barbarian_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_alemanni_ally.tga
+
+faction             empire_east
+standard_texture    models/textures/standard_empire_east.tga
+rebels_texture      models/textures/standard_roman_rebels.tga
+routing_texture     models/textures/standard_routing.tga
+ally_texture        models/textures/standard_empire_east_ally.tga
+
+faction             empire_west
+standard_texture    models/textures/standard_empire_west.tga
+rebels_texture      models/textures/standard_roman_rebels.tga
+routing_texture     models/textures/standard_routing.tga
+ally_texture        models/textures/standard_empire_west_ally.tga
+
+faction             franks
+standard_texture    models/textures/standard_franks.tga
+rebels_texture      models/textures/standard_barbarian_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_franks_ally.tga
+
+faction             huns
+standard_texture    models/textures/standard_huns.tga
+rebels_texture      models/textures/standard_hun_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_huns_ally.tga
+
+faction             sarmatians
+standard_texture    models/textures/standard_sarmatians.tga
+rebels_texture      models/textures/standard_nomad_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_sarmatians_ally.tga
+
+faction             sassanids
+standard_texture    models/textures/standard_sassanids.tga
+rebels_texture      models/textures/standard_eastern_rebels.tga
+routing_texture     models/textures/standard_routing_eastern.tga
+ally_texture        models/textures/standard_sassanids_ally.tga
+
+faction             saxons
+standard_texture    models/textures/standard_saxons.tga
+rebels_texture      models/textures/standard_barbarian_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_saxons_ally.tga
+
+faction             vandals
+standard_texture    models/textures/standard_vandals.tga
+rebels_texture      models/textures/standard_nomad_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_vandals_ally.tga
+
+faction             goths
+standard_texture    models/textures/standard_goths.tga
+rebels_texture      models/textures/standard_nomad_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_goths_ally.tga
+
+faction             celts
+standard_texture    models/textures/standard_celts.tga
+rebels_texture      models/textures/standard_barbarian_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_celts_ally.tga
+
+faction             ostrogoths
+standard_texture    models/textures/standard_ostrogoths.tga
+rebels_texture      models/textures/standard_nomad_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_ostrogoths_ally.tga
+
+faction             romano_british
+standard_texture    models/textures/standard_romano_british.tga
+rebels_texture      models/textures/standard_roman_rebels.tga
+routing_texture     models/textures/standard_routing.tga
+ally_texture        models/textures/standard_romano_british_ally.tga
+
+faction             slavs
+standard_texture    models/textures/standard_slavs.tga
+rebels_texture      models/textures/standard_nomad_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_slavs_ally.tga
+
+faction             berbers
+standard_texture    models/textures/standard_berbers.tga
+rebels_texture      models/textures/standard_carthaginian_rebels.tga
+routing_texture     models/textures/standard_routing.tga
+ally_texture        models/textures/standard_berbers_ally.tga
+
+faction             slave
+standard_texture    models/textures/standard_slave.tga
+rebels_texture      models/textures/standard_slave.tga
+routing_texture     models/textures/standard_routing.tga
+ally_texture        models/textures/standard_slave_ally.tga
+
+faction             empire_east_rebels
+standard_texture    models/textures/standard_empire_east_rebels.tga
+rebels_texture      ****not used****
+routing_texture     models/textures/standard_routing.tga
+ally_texture        models/textures/standard_empire_east_rebels_ally.tga
+
+faction             empire_west_rebels
+standard_texture    models/textures/standard_empire_west_rebels.tga
+rebels_texture      ****not used****
+routing_texture     models/textures/standard_routing.tga
+ally_texture        models/textures/standard_empire_west_rebels_ally.tga
+
+faction             burgundii
+standard_texture    models/textures/standard_burgundii.tga
+rebels_texture      models/textures/standard_barbarian_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_burgundii_ally.tga
+
+faction             lombardi
+standard_texture    models/textures/standard_lombardi.tga
+rebels_texture      models/textures/standard_barbarian_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_lombardi_ally.tga
+
+faction             roxolani
+standard_texture    models/textures/standard_roxolani.tga
+rebels_texture      models/textures/standard_nomad_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_roxolani_ally.tga
+
+faction             moors
+standard_texture    models/textures/standard_moors.tga
+rebels_texture      models/textures/standard_carthaginian_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_moors.tga
+
+faction             white_huns
+standard_texture    models/textures/standard_white_huns.tga
+rebels_texture      models/textures/standard_hun_rebels.tga
+routing_texture     models/textures/standard_routing_barbarian.tga
+ally_texture        models/textures/standard_white_huns_ally.tga
