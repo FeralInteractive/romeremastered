@@ -1,0 +1,23 @@
+{
+	"Description": "This mod allows you to edit what angle of sun makes units start using torches. This allows more ability to allow units to use torches at sunrise and sunset. In some mods you might want all sunrise and sunset battles to use torches.
+	
+You can refer to the files inside the mod.
+
+set night_control to true to enable this feature
+	
+torches_min_sun_angle - This defines what angle units start to use torches in the morning 
+torches_max_sun_angle - This defines what angle units start to use torches in the afternoon
+
+In this example we have set the values to 0 and 360 meaning the units will use torches all day long.
+
+Refer to the example image inside the mod for more info.
+"
+	"Mod Name": "Torches Anytime",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": true,
+	"Supports BI": true,
+	"Supports Rome": true,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}

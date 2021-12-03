@@ -1,0 +1,7 @@
+{
+  "opaque_black_fow": false,
+  "region_name_in_tags": true,
+  "public_order_bonuses": false,
+  "type_specific_movement_point_modifiers": false,
+  "night_control": true
+}
