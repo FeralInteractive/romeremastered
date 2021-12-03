@@ -3,7 +3,7 @@
 
 Feral have updated & rewritten parts of the game engine to lift limits and add new functionality. The lists and tables below show the original limits and any changes or new features that have now been added to Rome Remastered.
 
-## Table Of Contents
+## Table Of Contents
 
 * [New Features](#new-features)
    * [Custom Campaigns](#custom-campaigns)
@@ -124,9 +124,9 @@ Scripting has been extended in Rome Remastered with logging, modded background s
 
 | Limit Type | Original Rome Limit | Rome Remastered Limit Resolution | Status | Notes |
 |-|:-:|:-:|:-:|-|
-| Number of Factions | 21 | 31 | `Targeted 2.0.3` | Faction limits will be increased from 21 to 31 factions. This matches the maximum number of factions that Medieval 2 supported and is the limit of the existing game engine. This change affects a number of areas of the game engine and so will need extensive testing prior to release.|
-| Cultures | 7 | **TBC** | `To Investigate for 2.0.3` | N/A |
-| Religion count | 3 | **TBC** | `To Investigate for 2.0.3` | Needs investigation to make sure addional religions caorrectly impact settlment balance |
+| Number of Factions | 21 | _Virtually Unlimited*_ | `2.0.4` | |
+| Cultures | 7 | _Virtually Unlimited*_ | `2.0.4` | N/A |
+| Religion count | 3 |_Virtually Unlimited*_ | `2.0.4` |  |
 | Polygon limit | 20,000 faces | 20,000 faces |  | |
 
 </br>
@@ -135,7 +135,7 @@ Scripting has been extended in Rome Remastered with logging, modded background s
 
 | Limit Type | Original Rome Limit | Rome Remastered Limit Resolution | Status | Notes |
 |-|:-:|:-:|:-:|-|
-| ExcludedAncillaries | 3 | **TBC** | `To Investigate for 2.0.3` | |
+| ExcludedAncillaries | 3 | **TBC** | `To Investigate for 2.0.4` | |
 
 </br>
 
@@ -143,10 +143,10 @@ Scripting has been extended in Rome Remastered with logging, modded background s
 
 | Limit Type | Original Rome Limit | Rome Remastered Limit Resolution | Status | Notes |
 |-|:-:|:-:|:-:|-|
-| Overall building tree number | 64 | **TBC** | `Targeted 2.0.3` | |
-| Levels per building tree | 9 | **TBC** | `Targeted 2.0.3` | |
+| Overall building tree number | 64 |_Virtually Unlimited*_| `2.0.4` | |
+| Levels per building tree | 9 | 9 | `2.0.4` | |
 | Hidden resources | 64 | _Virtually Unlimited*_ | `2.0.2` | |
-| Unit buildable per city | 32 | **TBC** | `Targeted 2.0.3` | |
+| Unit buildable per city | 32 | _Virtually Unlimited*_ | `2.0.4` | |
 
 </br>
 
@@ -190,8 +190,8 @@ Scripting has been extended in Rome Remastered with logging, modded background s
 
 | Limit Type | Original Rome Limit | Rome Remastered Limit Resolution | Status | Notes |
 |-|:-:|:-:|:-:|-|
-| Max Width | 510 | 510 | `2.0.0` | |
-| Max Height | 510 | 510 | `2.0.0` | |
+| Max Width | 500 | 500 | `2.0.0` | |
+| Max Height | 500 | 500 | `2.0.0` | |
 
 </br>
 
