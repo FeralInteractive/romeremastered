@@ -1,0 +1,545 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Senate mission description and penalty/reward matrix
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Simple enough:
+; Probability of random mission is a percentage for generating missions if
+;	no other missions are generated
+; The attitude coefficients are as in the algorithm documentation
+; Penalties and rewards are marked next to the difficulty
+; Duration is in turns, so 10 turns is 5 years
+; 0 duration means a yes or a no
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; These durations are part of the penalty/reward scheme, where the player
+; incurs the senate's appreciation or displeasure for a number of turns.
+appreciation_duration			10
+displeasure_duration			10
+
+; Percentage chance of a random mission being issued
+probability_of_random_mission	15
+
+; Coefficients used for calculating senate attitude
+turn_coefficient				200
+strength_coefficient			25
+relative_strength_coefficient	25
+combined_strength_coefficient	25
+
+; Boundaries between attitude ranges.  Will need extensive tweaking - check
+; ai_senate_faction.cpp debug window outputs.
+attitude_boundary_1				30000
+attitude_boundary_2				60000
+attitude_boundary_3				90000
+attitude_boundary_4				120000
+attitude_boundary_5				150000
+attitude_boundary_6				180000
+
+; Offices
+
+;; <OFFICE NAME>
+;; Title <Key in expanded_bi>
+;; Description <Key in expanded_bi>
+;; Rank <number> (unused)
+;; Quantity <number> (amount of these offices to create)
+;; Duration <number> (how many turns should this office be held for)
+;; Sittings <number> (unused)
+;; Restrictions
+;;   not_consecutively (means you can't have two turns concecutively)
+;;   <office name>_tenure (means they must have served in that position)
+;; End_restrictions
+;; Senate_benefits
+;;   quaestor_immunity (faction immunity from queastor investigations)
+;;   censor_immunity (faction immunity from censor investigations)
+;;   no_censor_suicide (censor investigation will not result in your suicide)
+;; End_senate_benefits
+;; End
+
+;; JNF 2021-09-10 - Needs to be set per-faction now
+Begin_Offices romans_senate
+
+Quaestor
+Title							SMT_SENATE_OFFICE_QUAESTOR_TITLE
+Description						SMT_SENATE_OFFICE_QUAESTOR_DESCRIPTION
+
+Rank							10
+Quantity						1
+Duration						8
+Sittings						1
+Restrictions
+End_restrictions
+Senate_benefits ;; JNF 2021-10-04 - Add quaestor immunity
+	quaestor_immunity
+End_senate_benefits
+End
+
+Aedile
+Title							SMT_SENATE_OFFICE_AEDILE_TITLE
+Description						SMT_SENATE_OFFICE_AEDILE_DESCRIPTION
+
+Rank							20
+Quantity						1
+Duration						8
+Sittings						1
+Restrictions
+	Quaestor_tenure
+End_restrictions
+Senate_benefits
+End_senate_benefits
+End
+
+Praetor
+Title							SMT_SENATE_OFFICE_PRAETOR_TITLE
+Description						SMT_SENATE_OFFICE_PRAETOR_DESCRIPTION
+
+Rank							30
+Quantity						1
+Duration						8
+Sittings						1
+Restrictions
+	Aedile_tenure
+End_restrictions
+Senate_benefits
+End_senate_benefits
+End
+
+Consul
+Title							SMT_SENATE_OFFICE_CONSUL_TITLE
+Description						SMT_SENATE_OFFICE_CONSUL_DESCRIPTION
+
+Rank							40
+Quantity						3
+Duration						8
+Sittings						0
+Restrictions
+	not_consecutively
+	Praetor_tenure
+End_restrictions
+Senate_benefits								
+	no_censor_suicide
+End_senate_benefits
+End
+
+Censor
+Title							SMT_SENATE_OFFICE_CENSOR_TITLE
+Description						SMT_SENATE_OFFICE_CENSOR_DESCRIPTION
+
+Rank							50
+Quantity						2
+Duration						8
+Sittings						0
+Restrictions
+	Consul_tenure
+End_restrictions
+Senate_benefits
+	censor_immunity
+End_senate_benefits
+End
+
+PontifexMaximus
+Title							SMT_SENATE_OFFICE_PONTIFEX_MAXIMUS_TITLE
+Description						SMT_SENATE_OFFICE_PONTIFEX_MAXIMUS_DESCRIPTION
+
+Rank							60
+Quantity						4
+Duration						8
+Sittings						0
+Restrictions
+	Praetor_tenure
+End_restrictions
+Senate_benefits
+	no_censor_suicide
+End_senate_benefits
+End
+
+End_Offices
+
+;;units that can be offered as rewards by this faction
+Begin_Unit_Rewards romans_senate
+	minor_exotic_unit
+	{
+		roman velite gladiator
+		merc rhodian slingers
+		merc greek hoplites
+		merc barbarian infantry
+		merc numidian cavalry
+		merc barbarian cavalry
+		roman scorpion
+	}
+	major_exotic_unit
+	{
+		roman arcani
+		roman samnite gladiator
+		roman mirmillo gladiator
+		merc bastarnae
+		merc elephants
+		merc horse archers
+		merc sarmatian cavalry
+		naval deceres
+		roman legionary first cohort i, requires_event marian_reforms
+		roman legionary first cohort ii, requires_event marian_reforms
+	}
+	eagle_units
+	{
+		roman legionary first cohort i, requires_event marian_reforms
+		roman legionary first cohort ii, requires_event marian_reforms
+	}
+	triarii
+	{
+		roman triarii
+	}
+End_Unit_Rewards
+
+; Missions
+
+; Fines are expressed as percentages of current annual income
+major_fine						10
+moderate_fine					5
+minor_fine						1
+
+; Rewards are expressed as direct denari payments
+major_reward					10000
+moderate_reward					5000
+minor_reward					1000
+
+Help_Player
+Duration	0
+1 E			r1
+2 E			r1
+3 E			r2
+End
+
+Demand_Suicide
+Duration	0
+-3 E		Outlaw
+-2 E		Outlaw
+-1 E		p3
+0 E			p2
+1 E			p1
+End
+
+Attack_Outlaw_Faction
+Duration	2
+-3 E		Outlaw
+-2 E		Outlaw
+-1 E		p3
+0 E			p3
+1 E			p2
+2 E			p1
+3 E			p1
+End
+
+Assassinate
+difficulty_boundaries_0		75
+difficulty_boundaries_1		60
+difficulty_boundaries_2		40
+Duration	10
+-3 E		p2
+-3 M		p1
+-3 D		r1
+-2 E		p2
+-2 M		p1
+-2 D		r1
+-1 E		p1
+-1 M		r1
+-1 D		r1
+0 E			r1
+0 M			r1
+0 D			r2
+1 E			r1
+1 M			r2
+1 D			r2
+2 E			r1
+2 M			r2
+2 D			r3
+3 E			r2
+3 M			r2
+3 D			r3
+End
+
+Break_Alliance
+reissue_delay_in_turns		20
+Duration	10
+-3 E		Outlaw
+-2 E		Outlaw
+-1 E		Outlaw
+0 E			Outlaw
+1 E			Outlaw
+2 E			Outlaw
+3 E			Outlaw
+End
+
+Cease_Hostilities
+reissue_delay_in_turns		20
+Duration	10
+-3 E		Outlaw
+-2 E		Outlaw
+-1 E		p3
+0 E			p2
+1 E			p2
+2 E			p1
+3 E			p1
+End
+
+Declare_War
+reissue_delay_in_turns		20
+Duration	10
+-3 E		p3
+-2 E		p3
+-1 E		p2
+0 E			p2
+1 E			p1
+2 E			r1
+3 E			r1
+End
+
+Give_Back_City
+Duration	10
+-3 E		Outlaw
+-2 E		p3
+-1 E		p2
+0 E			p1
+1 E			r1
+2 E			r1
+3 E			r1
+End
+
+Exact_Tribute
+Duration	10
+-3 E		p3
+-3 M		p3
+-2 E		p3
+-2 M		p2
+-1 E		p1
+-1 M		p1
+0 E			r1
+0 M			r1
+1 E			r2
+1 M			r2
+2 E			r2
+2 M			r3
+3 E			r3
+3 M			r3
+End
+
+Subjugate
+Duration	10
+-3 E		p3
+-3 M		r1
+-2 E		r1
+-2 M		r1
+-1 E		r2
+-1 M		r2
+0 E			r2
+0 M			r2
+1 E			r2
+1 M			r3
+2 E			r3
+2 M			r3
+3 E			r3
+3 M			r3
+End
+
+Broker_Peace
+Duration	10
+-3 E		p3
+-2 E		p2
+-1 E		p1
+0 E			r1
+1 E			r1
+2 E			r2
+3 E			r3
+End
+
+Make_Trade_Agreement
+Duration	10
+-3 E		p3
+-3 M		p2
+-2 E		p2
+-2 M		p1
+-1 E		p1
+-1 M		p1
+0 E			r1
+0 M			r1
+1 E			r1
+1 M			r2
+2 E			r2
+2 M			r2
+3 E			r3
+3 M			r3
+End
+
+Get_Map_Info
+Duration	10
+-3 E		p3
+-3 M		p2
+-2 E		p2
+-2 M		p1
+-1 E		p1
+-1 M		p1
+0 E			r1
+0 M			r1
+1 E			r1
+1 M			r2
+2 E			r2
+2 M			r2
+3 E			r3
+3 M			r3
+End
+
+Appease
+Duration	10
+-3 E		p2
+-3 M		p1
+-2 E		p1
+-2 M		r1
+-1 E		r1
+-1 M		r1
+0 E			r2
+0 M			r2
+1 E			r2
+1 M			r2
+2 E			r3
+2 M			r3
+3 E			r3
+3 M			r3
+End
+
+Make_Alliance
+Duration	10
+-3 E		p2
+-3 M		p1
+-2 E		p1
+-2 M		r1
+-1 E		r1
+-1 M		r1
+0 E			r2
+0 M			r2
+1 E			r2
+1 M			r2
+2 E			r3
+2 M			r3
+3 E			r3
+3 M			r3
+End
+
+Give_Cash
+Duration	10
+-3 E		p2
+-3 M		p1
+-2 E		p1
+-2 M		r1
+-1 E		r1
+-1 M		r1
+0 E			r2
+0 M			r2
+1 E			r2
+1 M			r2
+2 E			r3
+2 M			r3
+3 E			r3
+3 M			r3
+End
+
+Annex_City
+Duration	10
+-3 E		p2
+-3 M		p1
+-2 E		p1
+-2 M		r1
+-1 E		r1
+-1 M		r1
+0 E			r2
+0 M			r2
+1 E			r2
+1 M			r2
+2 E			r3
+2 M			r3
+3 E			r3
+3 M			r3
+End
+
+Blockade_Port
+Duration	5
+-3 E		p3
+-2 E		p2
+-1 E		p1
+0 E			r1
+1 E			r1
+2 E			r2
+3 E			r3
+End
+
+Capture_Rebel_City
+Duration	10
+-3 D		r1
+-2 D		r1
+-1 M		r1
+-1 D		r1
+0 E			r1
+0 M			r1
+0 D			r2
+1 E			r1
+1 M			r1
+1 D			r2
+2 E			r1
+2 M			r2
+2 D			r3
+3 E			r2
+3 M			r3
+3 D			r3
+End
+
+Destroy_Rebel_City
+Duration	10
+-3 D		r1
+-2 D		r1
+-1 M		r1
+-1 D		r1
+0 E			r1
+0 M			r1
+0 D			r2
+1 E			r1
+1 M			r1
+1 D			r2
+2 E			r1
+2 M			r2
+2 D			r3
+3 E			r2
+3 M			r3
+3 D			r3
+End
+
+rebel_city_lower_boundary	0.8
+rebel_city_higher_boundary	1.0
+
+Take_City
+max_region_traversal	3
+Duration	10
+-3 E		p3
+-3 M		p2
+-3 D		p2
+-2 E		p3
+-2 M		p2
+-2 D		p1
+-1 E		p2
+-1 M		p1
+-1 D		r1
+0 E			r1
+0 M			r1
+0 D			r1
+1 E			r1
+1 M			r1
+1 D			r2
+2 E			r1
+2 M			r2
+2 D			r3
+3 E			r2
+3 M			r3
+3 D			r3
+End
+
+take_city_lower_boundary	0.6
+take_city_higher_boundary	0.8

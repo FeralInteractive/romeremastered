@@ -1,0 +1,11 @@
+{
+	"Description": "Mod that tests the overflow of UI in the senate faction screens by adding a bunch of factions into the UI.",
+	"Mod Name": "Super Faction Test",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": true,
+	"Supports BI": true,
+	"Supports Rome": true,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
