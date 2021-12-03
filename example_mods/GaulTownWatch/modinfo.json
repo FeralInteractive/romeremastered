@@ -1,0 +1,14 @@
+{
+	"Description": "Adds building_factions to town watch recruitment so it can only be recuited via barracks constructed by the gauls.",
+	"Mod Name": "Restrict Town Watch to Gaul Buildings",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": true,
+	"Supports BI": true,
+	"Supports Rome": true,
+	"Tags": [
+		"Campaign",
+		"Gameplay Logic"
+	],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
