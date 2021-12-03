@@ -1,0 +1,11 @@
+{
+	"Description": "Rome Remastered has increased the maximum number of officers from 3 to 9. This mod enables the Roman Peasants to have 9 officers in their unit as an example.",
+	"Mod Name": "9 Officer Limit",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": false,
+	"Supports BI": false,
+	"Supports Rome": true,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
