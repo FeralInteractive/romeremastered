@@ -1,0 +1,11 @@
+{
+	"Description": "This is a very simple mod that shows how you can disable the region name on settlement tags on the campaign map. This mod works for all three games.",
+	"Mod Name": "No regions on settlement tags",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": true,
+	"Supports BI": true,
+	"Supports Rome": true,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
