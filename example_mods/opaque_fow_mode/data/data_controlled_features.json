@@ -1,0 +1,6 @@
+{
+  "opaque_black_fow": true,
+  "region_name_in_tags": true,
+  "public_order_bonuses": false,
+  "type_specific_movement_point_modifiers": false
+}

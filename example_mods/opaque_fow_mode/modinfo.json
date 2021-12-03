@@ -1,0 +1,11 @@
+{
+	"Description": "This is a very simple mod that shows how you can enable the opaque fog of war (FoW) effect on the campaign map, this means the player will not be able to see any map details of undiscovered areas until they uncover it through character movement or sharing of map information. This mod works for all three games.",
+	"Mod Name": "Opaque FoW mode",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": true,
+	"Supports BI": true,
+	"Supports Rome": true,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
