@@ -23,6 +23,7 @@ This page lists the various example mods that exist for Rome Remastered.
       * [Use'building_factions' condition for recruitment lines](#usebuilding_factions-condition-for-recruitment-lines)
       * [UI Mod Example - Replacing Unit Info with large panel from Campaign](#ui-mod-example---replacing-unit-info-with-large-panel-from-campaign)
       * [Rome Hot-seat Example - Allows you to play hot-seat with in game UI for choosing factions.](#rome-hot-seat-example---allows-you-to-play-hot-seat-with-in-game-ui-for-choosing-factions)
+      * [Localisation Example](#localisation-example)
 
 ### Adding Factions
 
@@ -35,6 +36,8 @@ This mod adds the unused White Huns and Moors factions to BI. The Moors start in
 You can see how to do this by referring to the```BI_extra_factions``` example mod in the example mod area of GitHub.
 
 ![BI_extra_factions](/example_mods/BI_extra_factions/BI_extra_factions.jpg)
+
+[Download BI_extra_factions](/example_mods/BI_extra_factions.zip)
 
 ### Adding Religions
 
@@ -59,6 +62,8 @@ Adds the Pagan, Daharmic, Zoroastrian and Hellenic religions to the Alexander ca
 
 ![alex_extra_religions](/example_mods/alex_extra_religions/alex_extra_religions.jpg)
 
+[Download alex_extra_religions](/example_mods/alex_extra_religions.zip)
+
 ### Unit Variation
 
 You can now specify multiple models that are then used at random by the game when rendering a unit on the battle field. You can also define the model grouping per upgrade level allowing for units to look different as they are upgraded as well. 
@@ -66,6 +71,8 @@ You can now specify multiple models that are then used at random by the game whe
 For more detail on the options review the files inside the```unit_variation``` example mod in the example mod area of GitHub. You can see the results by looking at the Hastati unit inside the game.
 
 ![unit_variation](/example_mods/unit_variation/unit_variation.jpg)
+
+[Download unit_variation](/example_mods/unit_variation.zip)
 
 ### Display an interactable message via scripting
 
@@ -77,6 +84,8 @@ This could be used to allow for the player to choose branching options or add mo
 
 ![script_message](/example_mods/script_message/script_message.jpg)
 
+[Download script_message](/example_mods/script_message.zip)
+
 ### Disable Region Names On Settlement Tags (Campaign Map)
 
 As part of the 2.0.4 update the settlement tags now mention the settlement region below the settlement name. However this can be disabled using the data_controlled_features.json in the root of the game data folder.
@@ -84,6 +93,8 @@ As part of the 2.0.4 update the settlement tags now mention the settlement regio
 You can see how to do this by referring to the```No_regions_on_tags``` example mod in the example mod area of GitHub.
 
 ![No_regions_on_tags](/example_mods/No_regions_on_tags/No_regions_on_tags.jpg)
+
+[Download No_regions_on_tags](/example_mods/No_regions_on_tags.zip)
 
 ### Med 2 Style Opaque FoW
 
@@ -93,6 +104,8 @@ This can be enabled using the data_controlled_features.json in the root of the g
 
 ![opaque_fow_mode](/example_mods/opaque_fow_mode/opaque_fow_mode.jpg)
 
+[Download opaque_fow_mode](/example_mods/opaque_fow_mode.zip)
+
 
 ### Decorative Resources
 
@@ -101,6 +114,8 @@ These are a new type of resources that don't have any functionality and can be u
 For more detail on the options review the files inside the```decorative_resources``` example mod in the example mod area of GitHub. This mod demonstrates the feature by making all resources nonfunctional but still visible as decorative resources only.
 
 ![decorative_resources](/example_mods/decorative_resources/decorative_resources.jpg)
+
+[Download decorative_resources](/example_mods/decorative_resources.zip)
 
 ### Enhanced Tweaks
 
@@ -116,6 +131,8 @@ In this example mod the trees on the campaign map have been made oversized and p
 
 ![EnhancedTweaksExample](/example_mods/EnhancedTweaksExample/EnhancedTweaksExample.jpg)
 
+[Download EnhancedTweaksExample](/example_mods/EnhancedTweaksExample.zip)
+
 ### Units With Multiple Requirements
 
 The UI in the building browser has been updated to support units having multiple requirements and having those requirements exposed to the user.
@@ -125,6 +142,8 @@ This mod adds the requirement of a Wooden Wall to recruit Town Watch. It also ad
 Both of these limitations when triggered will appear in the tooltip and the unit will become greyed out in the Building info panel.
 
 ![EDB_Units_Multiple_Requirements](/example_mods/EDB_Units_Multiple_Requirements/EDB_Units_Multiple_Requirements.jpg)
+
+[Download EDB_Units_Multiple_Requirements](/example_mods/EDB_Units_Multiple_Requirements.zip)
 
 ### Super Factions with extra members and offices.
 
@@ -147,6 +166,8 @@ Adds the following factions to make a new super faction:
 
 ![super_faction](/example_mods/super_faction/super_faction.jpg)
 
+[Download super_faction](/example_mods/super_faction.zip)
+
 ### Unit Attributes - New RR Attributes
 
 This is a very simple mod that shows how you can modify unit attributes using 3 newly added attributes unique to Rome Remastered.
@@ -161,11 +182,15 @@ Load the mod using the Julii faction to see them in game.
 
 ![unit_features](/example_mods/unit_features/unit_features.jpg)
 
+[Download unit_features](/example_mods/unit_features.zip)
+
 ### New Limit of 9 Officers
 
 Rome Remastered has increased the maximum number of officers from 3 to 9. This mod enables the Roman Peasants to have 9 officers in their unit as an example.
 
 ![extra_officers](/example_mods/extra_officers/extra_officers.jpg)
+
+[Download extra_officers](/example_mods/extra_officers.zip)
 
 
 ### Night Torches Anytime
@@ -183,6 +208,8 @@ In this example we have set the values to 0 and 360 meaning the units will use t
 
 ![night_torches](/example_mods/night_torches/night_torches.png)
 
+[Download night_torches](/example_mods/night_torches.zip)
+
 ### Factionwide Building Checks
 
 Example mod with a building that has a faction wide check. With this check you can restrict a building to one per faction instead of one per settlement.
@@ -190,6 +217,8 @@ Example mod with a building that has a faction wide check. With this check you c
 Modifies EDB to prevent a faction building temples when one already exists in any settlment controlled by that faction. Allows for faction wide capabilities for buildings.
 
 ![FactionwideBuildingTest](/example_mods/FactionwideBuildingTest/FactionwideBuildingTest.jpg)
+
+[Download FactionwideBuildingTest](/example_mods/FactionwideBuildingTest.zip)
 
 ### Use'building_factions' condition for recruitment lines
 
@@ -205,6 +234,8 @@ Testing steps:
 
 ![GaulTownWatch](/example_mods/GaulTownWatch/GaulTownWatch.jpg)
 
+[Download GaulTownWatch](/example_mods/GaulTownWatch.zip)
+
 ### UI Mod Example - Replacing Unit Info with large panel from Campaign
 
 This mod demonstrates how UI panels in the Remaster can be rearranged and modified to look different. This is a very simple mod that takes the large unit panel from the Campaign mode and replaces the small battle optimised card with this bigger descriptive one.
@@ -212,6 +243,8 @@ This mod demonstrates how UI panels in the Remaster can be rearranged and modifi
 This mod is also a good example of how UI mods are in most case completely compatible with other mods as long as those mods don't also modify the same UI files. This means if you enable this mod along with most other gameplay mods you can play most mods with a separate mod for the UI edits.
 
 ![UI_Battle_Large_Unit_Info](/example_mods/UI_Battle_Large_Unit_Info/UI_Battle_Large_Unit_Info.jpg)
+
+[Download UI_Battle_Large_Unit_Info](/example_mods/UI_Battle_Large_Unit_Info.zip)
 
 ### Rome Hot-seat Example - Allows you to play hot-seat with in game UI for choosing factions.
 
@@ -225,6 +258,8 @@ This mod is also meant to be a simple demonstation of how you can use the new mo
 	
 ![HotseatFactionSelector](/example_mods/HotseatFactionSelector/HotseatFactionSelector.jpg)
 
+[Download HotseatFactionSelector](/example_mods/HotseatFactionSelector.zip)
+
 ### Localisation Example
 
 This mod demonstrates how mods can be fully localised in the Remaster without needing to have sub mods or replacing the EN strings with localised ones.
@@ -234,3 +269,5 @@ In this mod we have renamed Segesta in all languages to Example_[Language Code].
 Although this example just edits a single strings file all strings files inside the game data have the same naming convention for other languages so the same provess can eb replicated.
 
 ![Localisastion_Test](/example_mods/Localisastion_Test/Localisastion_Test.jpg)
+
+[Download Localisastion_Test](/example_mods/Localisastion_Test.zip)
