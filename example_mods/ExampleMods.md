@@ -37,7 +37,8 @@ You can see how to do this by referring to the```BI_extra_factions``` example mo
 
 ![BI_extra_factions](/example_mods/BI_extra_factions/BI_extra_factions.jpg)
 
-[Download BI_extra_factions](/example_mods/BI_extra_factions.zip)
+[Download BI_extra_factions](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/BI_extra_factions.zip)
+
 
 ### Adding Religions
 
@@ -62,7 +63,7 @@ Adds the Pagan, Daharmic, Zoroastrian and Hellenic religions to the Alexander ca
 
 ![alex_extra_religions](/example_mods/alex_extra_religions/alex_extra_religions.jpg)
 
-[Download alex_extra_religions](/example_mods/alex_extra_religions.zip)
+[Download alex_extra_religions](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/alex_extra_religions.zip)
 
 ### Unit Variation
 
@@ -72,7 +73,7 @@ For more detail on the options review the files inside the```unit_variation``` e
 
 ![unit_variation](/example_mods/unit_variation/unit_variation.jpg)
 
-[Download unit_variation](/example_mods/unit_variation.zip)
+[Download unit_variation](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/unit_variation.zip)
 
 ### Display an interactable message via scripting
 
@@ -84,7 +85,7 @@ This could be used to allow for the player to choose branching options or add mo
 
 ![script_message](/example_mods/script_message/script_message.jpg)
 
-[Download script_message](/example_mods/script_message.zip)
+[Download script_message](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/script_message.zip)
 
 ### Disable Region Names On Settlement Tags (Campaign Map)
 
@@ -94,7 +95,7 @@ You can see how to do this by referring to the```No_regions_on_tags``` example m
 
 ![No_regions_on_tags](/example_mods/No_regions_on_tags/No_regions_on_tags.jpg)
 
-[Download No_regions_on_tags](/example_mods/No_regions_on_tags.zip)
+[Download No_regions_on_tags](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/No_regions_on_tags.zip)
 
 ### Med 2 Style Opaque FoW
 
@@ -104,7 +105,7 @@ This can be enabled using the data_controlled_features.json in the root of the g
 
 ![opaque_fow_mode](/example_mods/opaque_fow_mode/opaque_fow_mode.jpg)
 
-[Download opaque_fow_mode](/example_mods/opaque_fow_mode.zip)
+[Download opaque_fow_mode](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/opaque_fow_mode.zip)
 
 
 ### Decorative Resources
@@ -115,7 +116,7 @@ For more detail on the options review the files inside the```decorative_resource
 
 ![decorative_resources](/example_mods/decorative_resources/decorative_resources.jpg)
 
-[Download decorative_resources](/example_mods/decorative_resources.zip)
+[Download decorative_resources](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/decorative_resources.zip)
 
 ### Enhanced Tweaks
 
@@ -131,7 +132,7 @@ In this example mod the trees on the campaign map have been made oversized and p
 
 ![EnhancedTweaksExample](/example_mods/EnhancedTweaksExample/EnhancedTweaksExample.jpg)
 
-[Download EnhancedTweaksExample](/example_mods/EnhancedTweaksExample.zip)
+[Download EnhancedTweaksExample](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/EnhancedTweaksExample.zip)
 
 ### Units With Multiple Requirements
 
@@ -143,7 +144,7 @@ Both of these limitations when triggered will appear in the tooltip and the unit
 
 ![EDB_Units_Multiple_Requirements](/example_mods/EDB_Units_Multiple_Requirements/EDB_Units_Multiple_Requirements.jpg)
 
-[Download EDB_Units_Multiple_Requirements](/example_mods/EDB_Units_Multiple_Requirements.zip)
+[Download EDB_Units_Multiple_Requirements](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/EDB_Units_Multiple_Requirements.zip)
 
 ### Super Factions with extra members and offices.
 
@@ -166,7 +167,7 @@ Adds the following factions to make a new super faction:
 
 ![super_faction](/example_mods/super_faction/super_faction.jpg)
 
-[Download super_faction](/example_mods/super_faction.zip)
+[Download super_faction](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/super_faction.zip)
 
 ### Unit Attributes - New RR Attributes
 
@@ -182,7 +183,7 @@ Load the mod using the Julii faction to see them in game.
 
 ![unit_features](/example_mods/unit_features/unit_features.jpg)
 
-[Download unit_features](/example_mods/unit_features.zip)
+[Download unit_features](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/unit_features.zip)
 
 ### New Limit of 9 Officers
 
@@ -190,7 +191,7 @@ Rome Remastered has increased the maximum number of officers from 3 to 9. This m
 
 ![extra_officers](/example_mods/extra_officers/extra_officers.jpg)
 
-[Download extra_officers](/example_mods/extra_officers.zip)
+[Download extra_officers](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/extra_officers.zip)
 
 
 ### Night Torches Anytime
@@ -208,7 +209,7 @@ In this example we have set the values to 0 and 360 meaning the units will use t
 
 ![night_torches](/example_mods/night_torches/night_torches.png)
 
-[Download night_torches](/example_mods/night_torches.zip)
+[Download night_torches](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/night_torches.zip)
 
 ### Factionwide Building Checks
 
@@ -218,7 +219,7 @@ Modifies EDB to prevent a faction building temples when one already exists in an
 
 ![FactionwideBuildingTest](/example_mods/FactionwideBuildingTest/FactionwideBuildingTest.jpg)
 
-[Download FactionwideBuildingTest](/example_mods/FactionwideBuildingTest.zip)
+[Download FactionwideBuildingTest](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/FactionwideBuildingTest.zip)
 
 ### Use'building_factions' condition for recruitment lines
 
@@ -234,7 +235,7 @@ Testing steps:
 
 ![GaulTownWatch](/example_mods/GaulTownWatch/GaulTownWatch.jpg)
 
-[Download GaulTownWatch](/example_mods/GaulTownWatch.zip)
+[Download GaulTownWatch](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/GaulTownWatch.zip)
 
 ### UI Mod Example - Replacing Unit Info with large panel from Campaign
 
@@ -244,7 +245,7 @@ This mod is also a good example of how UI mods are in most case completely compa
 
 ![UI_Battle_Large_Unit_Info](/example_mods/UI_Battle_Large_Unit_Info/UI_Battle_Large_Unit_Info.jpg)
 
-[Download UI_Battle_Large_Unit_Info](/example_mods/UI_Battle_Large_Unit_Info.zip)
+[Download UI_Battle_Large_Unit_Info](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/UI_Battle_Large_Unit_Info.zip)
 
 ### Rome Hot-seat Example - Allows you to play hot-seat with in game UI for choosing factions.
 
@@ -258,7 +259,7 @@ This mod is also meant to be a simple demonstation of how you can use the new mo
 	
 ![HotseatFactionSelector](/example_mods/HotseatFactionSelector/HotseatFactionSelector.jpg)
 
-[Download HotseatFactionSelector](/example_mods/HotseatFactionSelector.zip)
+[Download HotseatFactionSelector](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/HotseatFactionSelector.zip)
 
 ### Localisation Example
 
@@ -270,4 +271,4 @@ Although this example just edits a single strings file all strings files inside 
 
 ![Localisastion_Test](/example_mods/Localisastion_Test/Localisastion_Test.jpg)
 
-[Download Localisastion_Test](/example_mods/Localisastion_Test.zip)
+[Download Localisastion_Test](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/Localisastion_Test.zip)
