@@ -30,12 +30,113 @@ We actively encourage modders to update this document with useful information an
 
 | Limit Type | Original Rome Limit | Rome Remastered Limit Resolution | Status | Notes |
 |-|:-:|:-:|:-:|-|
-| Overall building tree number | 64 | **TBC** | `Targeted 2.0.3` | |
-| Levels per building tree | 9 | **TBC** | `Targeted 2.0.3` | |
+| Overall building tree number | 64 | _Virtually Unlimited*_ | `2.0.4` | |
+| Levels per building tree | 9 | _Virtually Unlimited*_ | `2.0.4` | |
 | Hidden resources | 64 | _Virtually Unlimited*_ | `2.0.2` | |
-| Unit buildable per city | 32 | **TBC** | `Targeted 2.0.3` | |
+| Unit buildable per city | 32 | _Virtually Unlimited*_ | `2.0.4` | |
 
  _*'Virtually Unlimited'_ allows for a theoretical value of `4294967296` entries.
+
+## Building Classifiction Options
+
+With the chnages to buildking limits and features in 2.0.4 you can now have custom building classifications. This tells the game which category of the building browser to use.
+
+The can be added inside `building` and before first `levels` and is explained in more detail at the top of the EDB file.
+
+```
+; classification option (inside `building` and before first `levels`)
+; Example:
+;	 classification core|defence|military|trade|water|culture|religious (deprecated, but recognised:fortification|infrastructure|other)
+; This tells the game which category of the building browser to use.
+; RomeHD has subtly different classifications than the original, so note the deprecated classifications, they wont work anymore.
+; If no classification is specified, the game will guess based on the building name, which works for all the unmodded buildings.
+; Automatic classification:
+;   core_building
+;	   core
+;   defenses
+;	   defence
+;   barracks|equestrian|missiles|smith|despotic_law
+;	   military
+;   market|port_buildings|hinterland_*|caravans
+;	   trade
+;   health
+;	   water
+;   academic|amphitheatres|theatres|taverns
+;	   culture
+;   temple_*|christian_acedemic
+;	   religious
+; Explicit classification overrides the automatic classification, so if you don't like the above classifications, you can overule them.
+```
+
+## Building Exclusivity
+
+In the original game some features like temples had a hard coded exclusivity feature so if you built one type of temple the others are no longer avaialble. This has been extracted into the EDB file so any buildings can have exclusivity rules and you can have multiple different groups of exclusivity for diferenmt groups if you so wish.
+
+The temples in the base game now use this feature. Near the top of the EDB you will see this section where you can add in as many custom tags as you want, these form the basis of the groups. You can then use these tags in the conditions using the `no_building_tagged` condition.
+
+```
+;;exclusivity tags, used for the "no_building_tagged" condition
+tags
+{
+	temple
+}
+```
+
+You could then add this check to a temple in the following manner:
+
+```
+building temple_of_battle
+{
+	tag temple
+	icon religion
+	levels temple_of_battle_shrine temple_of_battle_temple temple_of_battle_large_temple temple_of_battle_awesome_temple temple_of_battle_pantheon 
+	{
+		temple_of_battle_shrine requires no_building_tagged temple queued 
+		{
+```
+
+However to make a feature like this clearer for users you'll want to combine it with the feature below (Custom Strings for conditions) that allows you to display custom strings to the player so they get told exactly what the buildoing conditions are. 
+
+## Custom Strings for conditions
+
+This feature allows you to create custom strings that you can then have display in the building info panels and tooltips. You can give multiple conditions a string (or allow conditions with normally no string to display one).
+
+You can define multiple alias' items for multiple buildings without limits. Below contains an example of how the feature is used to display a custom string telling users that they need to destroy and existing temple before they can build one from a different branch.
+
+```
+;;alises, give multiple conditions a string (or allow conditions with normally no string to display one)
+; alias roman_marian_reforms_triggered
+; {
+; 	requires factions { roman, } and major_event "marian_reforms"
+;
+; 	display_string roman_marian_reforms ;;gets a string from expanded_bi
+; 	;; if display_string isn't included it will just display the strings for the events normally
+; }
+
+alias no_other_temple
+{
+	requires no_building_tagged temple queued
+
+	display_string SMT_TECH_TREE_THREAD_REQUIRES_TEMPLE_DESTRUCTION
+}
+```
+
+You then add the `display_string` to the `expanded_bi.txt` file in the `data/text/` file path.
+
+```{SMT_TECH_TREE_THREAD_REQUIRES_TEMPLE_DESTRUCTION}	Building this item requires the destruction of an existing religious building```
+
+You can then use this tag and the alias later in the EDU to make sure not only are temples excluisve so you can only build one but platyers also have a message in the building info and tooltips explaining how it works. This string is hooked into the localisation system so can also be fully localised.
+
+```
+building temple_of_battle
+{
+	tag temple
+	icon religion
+	levels temple_of_battle_shrine temple_of_battle_temple temple_of_battle_large_temple temple_of_battle_awesome_temple temple_of_battle_pantheon 
+	{
+		temple_of_battle_shrine requires factions { dacia, thrace, } and no_other_temple 
+		{
+```
 
 ## Hidden resources (Moved to descr_sm_resources.txt)
 
@@ -55,57 +156,63 @@ Each building tree is made up of nested elements. They are arranged in the folow
      * `settlement_min` (minimum settlment level required to construct)
      * `upgrades` (does it upgrade an existing level or building defined by `levels_specific_building` )
 
-You will then find listed in the EDB file the building tree for each building type complete with a block of code for each building. You may have up to 64 such trees with a maximum of 9 levels (buildings) each though spread over a maximum of 5 settlement levels (though buildings attached to villages will not show up on the building browser).     
+You will then find listed in the EDB file the building tree for each building type complete with a block of code for each building. You may have virtually unlimited trees and levels (buildings) each though spread over a maximum of 5 (see note) settlement levels (though buildings attached to villages will not show up on the building browser).
+
+NOTE: This number can be increased beyond 5 but it will break the visuals in the building browser and is not recommended.     
 
 ## Example format
 
 ```
 building missiles
 {
-    icon ranged
-    levels practice_field archery_range catapult_range siege_engineer
-    {
-        practice_field requires factions { barbarian, carthaginian, eastern, parthia, egyptian, greek, roman, }
-        {
-            capability
-            {
-                recruit "carthaginian peltast"  0  requires factions { spain, }
-                recruit "barb peltast gaul"  0  requires factions { gauls, }
-                recruit "barb peltast german"  0  requires factions { germans, }
-                recruit "barb slinger briton"  0  requires factions { britons, }
-                recruit "barb archer dacian"  0  requires factions { dacia, }
-                recruit "barb archer scythian"  0  requires factions { scythia, }
-                recruit "carthaginian peltast"  0  requires factions { carthage, }
-                recruit "carthaginian archer"  0  requires factions { numidia, }
-                recruit "east peltast"  0  requires factions { armenia, pontus, }
-                recruit "east slinger"  0  requires factions { parthia, }
-                recruit "egyptian peltast"  0  requires factions { egyptian, }
-                recruit "egyptian slingers"  0  requires factions { egyptian, }
-                recruit "greek peltast"  0  requires factions { greek, }
-                recruit "roman velite"  0  requires factions { roman, }  and not marian_reforms
-                recruit "roman light infantry auxillia"  0  requires factions { roman, }  and marian_reforms
-            }
-            construction  3
-            cost  1200
-            settlement_min large_town
-            upgrades
-            {
-                archery_range
-            }
-        }
+	icon ranged
+	levels practice_field archery_range catapult_range siege_engineer 
+	{
+		practice_field requires factions { barbarian, carthaginian, eastern, parthia, egyptian, greek, roman, } 
+		{
+			capability
+			{
+				recruit "carthaginian peltast"  0
+				recruit "barb peltast gaul"  0
+				recruit "barb peltast german"  0
+				recruit "barb slinger briton"  0
+				recruit "barb archer dacian"  0
+				recruit "barb archer scythian"  0
+				recruit "carthaginian peltast"  0
+				recruit "carthaginian archer"  0
+				recruit "east peltast"  0
+				recruit "east slinger"  0
+				recruit "egyptian peltast"  0
+				recruit "egyptian slingers"  0
+				recruit "greek peltast"  0
+				recruit "roman velite"  0  requires not major_event "marian_reforms" 
+				recruit "roman light infantry auxillia"  0  requires major_event "marian_reforms" 
+			}
+			construction  3 
+			cost  1200 
+			settlement_min large_town
+			upgrades
+			{
+				archery_range
+			}
+		}
 ```
 
 ### building
-**building** - This is the building type. In a mod you can give this any custom name you wish as long as you don't include spaces. You can have a maximum of 64 bulding types in total.
+**building** - This is the building type. In a mod you can give this any custom name you wish as long as you don't include spaces. With RR (2.0.4) there is no practical limit on the number of buildings (previously 64).
+
 ```
 building missiles
 {
 ```
 
-**NOTE:** You can designate your own names for the building type should you wish to not make them universally available to all factions/cultures. However, core_buildings (aka government buildings), walls and hinterland buildings (roads, mines, and farms) cannot be factionally or culturally designated (though some of their levels may be excluded from certain cultures/factions).
+**NOTE:** Originally you could only can designate your own names for the building type should you wish to not make them universally available to all factions/cultures. However, core_buildings (aka government buildings), walls and hinterland buildings (roads, mines, and farms) could not be factionally or culturally designated (though some of their levels may be excluded from certain cultures/factions).
+
+With the update to 2.0.4 this has been alters - Additional details and examples will be added in the future. (TODO)
 
 ### icon
 **icon** - This tells the game which category of the building browser to use.
+
 ```
     icon ranged
 ```
@@ -113,82 +220,95 @@ building missiles
 Possible options allowed are:
 
 ```
+; classification option (inside `building` and before first `levels`)
+; Example:
+;	 classification core|defence|military|trade|water|culture|religious (deprecated, but recognised:fortification|infrastructure|other)
 ; This tells the game which category of the building browser to use.
 ; RomeHD has subtly different classifications than the original, so note the deprecated classifications, they wont work anymore.
 ; If no classification is specified, the game will guess based on the building name, which works for all the unmodded buildings.
 ; Automatic classification:
 ;   core_building
-;       core
+;	   core
 ;   defenses
-;       defence
+;	   defence
 ;   barracks|equestrian|missiles|smith|despotic_law
-;       military
+;	   military
 ;   market|port_buildings|hinterland_*|caravans
-;       trade
+;	   trade
 ;   health
-;       water
+;	   water
 ;   academic|amphitheatres|theatres|taverns
-;       culture
+;	   culture
 ;   temple_*|christian_acedemic
-;       religious
+;	   religious
 ; Explicit classification overrides the automatic classification, so if you don't like the above classifications, you can overule them.
 
 ```
 
 ### levels
- Now the levels of the building type are listed (space-delimited & maximum of 9).
+ Now the levels of the building type are listed (space-delimited & as of 2.0.4 unlimited).
 
 ```
     levels practice_field archery_range catapult_range siege_engineer
     {
 ```  
 
-**NOTE:** You can designate your own names for the building type should you wish to not make them universally available to all factions/cultures. However, core_buildings (aka government buildings), walls and hinterland buildings (roads, mines, and farms) cannot be factionally or culturally designated (though some of their levels may be excluded from certain cultures/factions).
-
-For example, you could have:
-
-Code:
-```
-building missiles_roman
-{
-levels practice_field archery_range catapult_range siege_engineer
-{
-```
-Which of course could be used to specify a purely roman tree of such buildings. Remember not to change the names of the levels (though you may choose to not use some or allow only certain roman factions their use).
-
 ### levels_specific_building
 
-The tree then lists a block of code for each building (`practice_field`). Continuing from our example above we will look at the first level of the "building missiles" tree, the practice_field:
+The tree then lists a block of code for each building (`practice_field`). Continuing from our example above we will look at the first level of the "building missiles" tree, the `practice_field`:
+
+**IMPORTANT**: As part of the culture improvements to culture functionality and limits in the 2.0.4 patch the culture previously called `ct_carthage` has been renamed to `carthaginian`. You will need to update any older mods with this new culture when using 2.0.4 or later.
 
 ```
-practice_field requires factions { barbarian, ct_carthage, eastern, parthia, egyptian, greek, roman, }
+practice_field requires factions { barbarian, carthaginian, eastern, parthia, egyptian, greek, roman, }
 {
   ```
-The first line states the requirements necessary to be satisfied in order for the building to be available for construction. All factions reside within the 6 hard-coded cultures, and so this particular building can be built by all factions. Any combination of factions/cultures can be listed. Both visible and hidden resources can be used as requirements as may "building_present_min_level x y" where x is the building type and y the level of that building type. This latter simply requires a certain minimum level of building of a building type to be present in that settlement before the practice_field can become available for construction. The connector "and" can be used to compound requirements, for example:
+  
+The first line states the conditions necessary to be satisfied in order for the building to be available for construction. 
+
+All factions reside within the 6 named cultures (which are now fully moddable), and so this particular building can be built by all factions in the base game. Any combination of factions/cultures can be listed. 
+
+Both visible and hidden resources can be used as requirements as may "building_present_min_level x y" where x is the building type and y the level of that building type. This latter simply requires a certain minimum level of building of a building type to be present in that settlement before the practice_field can become available for construction. The connector "and" can be used to compound requirements, for example:
 
 ```
 practice_field requires factions { barbarian, roman, } and resource iron and hidden_resource woodland and building_present_min_level market trader
 {
 ```
 
-#### Full List of Requirements
+#### Full List of Conditions
 
 * `resource` - See [descr_sm_resources.txt](/documentation/data_file_guides/descr_sm_resources.md) file
 * `hidden_resource` - See [descr_sm_resources.txt](/documentation/data_file_guides/descr_sm_resources.md) file
-* `building_present` - Checks for the existance of ther building type at *any* level.
-* `building_present_min_level` - hecks for the existance of ther building type at the specified level or higher
-* `marian_reforms` - Checks if the marion reforms have triggered
-* `factions { x, }` - Checks for specific factions
-* `port` - This returns true in coastal areas with ports assigned (i.e. in map_regions.tga). It can be used as a condition for buildings and capabilities, including units.
-* `currency_fixed` is tied to the BI debased currency event can be disabled via a classic/remastered toggle
-* `remastered_only` is tied to the "settlement condition" classic/remastered toggle
-* `tavern_bonus` is tied to the "tavern changes" classic/remastered toggle
-* ```is_player``` - Allows you to use the ```requires``` function to state if a building is availble for only the player or only the AI factions. This will allow for the creation of special buildings that mods can use to assist the AI factions, or provide depth to the human player experience without overly complicating the AI build trees.
+* `building_present <building name> [queued] [factionwide]` - checks if a building exists at any level. **2.0.4 Feature**: The game now supports:
+	 * `queued` - will also check the building queue not just constructed buildings
+	 * `factionwide` - will check for the existence of a building across all settlments controlled by the faction allowing for buildings that can only be built once per faction.
+* `building_present_min_level <building name> <level> [queued] [factionwide]` - checks if the building exists at at least the specified level. **2.0.4 Feature**: The game now supports:
+	 * `queued` - will also check the building queue not just constructed buildings
+	 * `factionwide` - will check for the existence of a building across all settlments controlled by the faction allowing for buildings that can only be built once per faction.
+* `marian_reforms` - **FEATURE REMOVED AND REPLACED IN 2.0.4**
+* `major_event "<event name>"` - checks if the given major event has triggered for this faction. As major events are now moddable and you can have multiple events this command replaces the hard coded `marian_reforms` conditions
+* `factions { <all/culture/faction name>, }` - checks if the settlement is controlled by a given faction.  **2.0.4 Feature**: The game now supports:
+	 * `culture` - you can use any custom culture for the checks
+	 * `all` - you can use all if you just want it to be true for all factions 
+* `port` - This returns true in coastal areas with ports assigned (i.e. in `map_regions.tga`). It can be used as a condition for buildings and capabilities, including units.
+* `is_player` **2.0.2 Feature**: Allows you to use the `requires` function to state if a building is availble for only the player or only the AI factions. This will allow for the creation of special buildings that mods can use to assist the AI factions, or provide depth to the human player experience without overly complicating the AI build trees.
+* `is_toggled "<toggle name>"` **2.0.2 Feature**: checks if the given gameplay toggle is turned on. This allows you to unlock items based on any of the classic/remastered toggle settings.
+* diplomacy <allied/protector/protectorate/same_superfaction/at_war> <faction name> - checks the relationship of the settlement's owner with the given faction
+* `building_factions { <all/culture/faction name>, }` **2.0.4 Feature**: checks if the building was built by a given faction. This allows modders to restrict units or building recuitment based on the faction that built the building instead of the faction that controls the building. This will allow factions to have the ability to recuit certain units via conquest only and not via construction.
+* `capability <capability name> <number>` **2.0.4 Feature**: checks if the settlement has a capability of at least that amount. This allows you to conditionalise items being available based on settlment capabilties like public order etc 
+* `resource <resource name> [factionwide]` **2.0.4 Feature**: checks if the settlement has that resource can also use `factionwide` as a check to check if the resource is found withing the empire.
+* `no_building_tagged <tag name> [queued] [factionwide]` **2.0.4 Feature**: As explained in more detail in the prior section (TODO link) this checks that no building with this tag exists (lower levels of this building within the same settlement are not counted). This is used in the base game to restricty temples to only one type. This feature also supports the following optional items:
+	 * `queued` - will also check the building queue not just constructed buildings
+	 * `factionwide` - will check for the existence of a building across all settlments 
+* `religion <religion name> <comparison operator (i.e. >=)> <number>` **2.0.4 Feature**: checks how much influence a religion has in this settlement.
+* `majority_religion <religion name>` **2.0.4 Feature**: checks if the religion is the majority (highest influence) religion in the settlement
+* `official_religion` <religion name> **2.0.4 Feature**: checks if the religion is the official religion in the settlement
+
+
 
 **NOTE:**
 * The connectors "or" and "not" can also be used in addition to "and". X represents a faction, culture, a list of the same - or all ("all,").
-* Not conditionals (even if true) and positive conditionals that result false seem to break the culture/faction for the slave faction if those buildings are placed at game start - see this thread: https://forums.totalwar.org/vb/showthread.php?t=81322
-* All of the above can be used as capability requirements too though the building_present/building_present_min_level should not be used for recruitment lines as it will cause a CTD when the player uses the right-click feature added in later versions of RTW.
+* **2.0.4 Feature**: All of the above can be used as capability requirements too - using the building_present/building_present_min_level for recruitment lines as will no longer cause a CTD when the player uses the right-click feature added in later versions of RTW.
 
 
 ### capability
@@ -218,26 +338,61 @@ recruits_morale_bonus bonus 1 requires factions { dacia, }
 ```
 
 **Note:**
-* If you use the marian_reform requirement then it has been reported that it needs to go at the end.
 * The "0" listed with recruits refers to the level of Experience the unit begins with when first recruited. It can of course be any number between 0 and 9.
 
 #### capability requirements
 
 Full List of Building Effects
 
-* `happiness_bonus` (public order due to happiness) 1-x (5-x%)
-* `population_growth_bonus` (pop. growth) 1-25 (0.5-12.5%)
-* `law_bonus` (public order bonus due to law) 1-x (5-x%)
-* `population_health_bonus` (public health) 1-x (5-x%)
-* `trade_base_income_bonus` (increases trade goods) 1-5 (1-5) [5] - adds 10% to base value of land trade & sea exports
-* `farming_level` (farms) (plus 0.5% pop. growth and plus 80 income (average harvest) per point;equivalent to base farm level in descr_regions.txt) 1-5 (1-5) [5]
-* `population_fire_risk_bonus` (reduces risk of fire) * (might function as "fire_risk", if it works at all)
-* `taxable_income_bonus` (tax income bonus) boosts tax income by stated percentage;1-100 (1%-100%)
-* `trade_level_bonus` (increase in trade) - affects land trade only (not confirmed to work - needs testing)
-* `population_loyalty_bonus` (public order) - does not appear to work
-* `recruits_morale_bonus` (increases morale of units recruited) 1-4 (1-4) (does not seem to work though)
-* `recruits_exp_bonus` (upgrades XP of units recruited) 1-5 (1-5)
-* `armour` (armour upgrade) 1 (1)
+ * `population_growth_bonus`: Pop. growth 1-25 (0.5-12.5%)
+ * `population_loyalty_bonus`: Unused has no functionality
+ * `population_health_bonus`: public health 1-x (5-x%)
+ * `trade_base_income_bonus`: Increases trade goods) 1-5 (1-5) - adds 10% to base value of land trade & sea exports
+ * `trade_level_bonus` **2.0.4 Feature**: Affects land trade only (previously non-functional in original game)
+ * `trade_fleet` - adds additional overseas trade routes
+ * `taxable_income_bonus`: Boosts tax income by stated percentage;1-100 (1%-100%)
+ * `mine_resource` - generates income from mining
+ * `farming_level`: Plus 0.5% pop. growth and plus 80 income (average harvest) per point - equivalent to base farm level in `descr_regions.txt`) 1-5 (1-5)
+ * `road_level` - upgrades roads
+ * `gate_strength` - upgrades gates
+ * `gate_defences` - adds burning oil if >0
+ * `wall_level` - upgrades walls
+ * `tower_level` - ballista towers if >1, arrow towers else
+ * `armour`: Armour upgrade 1 (1)
+ * `stage_games` - allows staging games
+ * `stage_races` - allows staging races
+ * `fire_risk` aka `population_fire_risk_bonus`: Unused has no functionality
+ * `weapon_simple` - provides weapon upgrades
+ * `weapon_missile` - provides weapon upgrades
+ * `weapon_bladed` - provides weapon upgrades
+ * `weapon_siege` - provides weapon upgrades
+ * `weapon_other` - provides weapon upgrades
+ * `upgrade_bodyguard` - unused
+ * `recruits_morale_bonus` **2.0.4 Feature**: Increases morale of units recruited 1-4 (1-4) (previously non-functional in original game)
+ * `recruits_exp_bonus`:  Upgrades XP of units recruited 1-5 (1-5)
+ * `happiness_bonus`: Public order due to happiness 1-x (5-x%)
+ * `law_bonus`: Public order bonus due to law 1-x (5-x%)
+ * `construction_cost_bonus_military` - building cost reduction
+ * `construction_cost_bonus_religious` - building cost reduction
+ * `construction_cost_bonus_defensive` - building cost reduction
+ * `construction_cost_bonus_other` - building cost reduction
+ * `construction_time_bonus_military` - building time reduction
+ * `construction_time_bonus_religious` - building time reduction
+ * `construction_time_bonus_defensive` - building time reduction
+ * `construction_time_bonus_other` - building time reduction
+ * `extra_recruitment_points` - additional recruitment points
+ * `extra_construction_points` - additional construction points
+ * `recruit` - allows recruiting units
+ * `agent` - allows recruiting agents
+ * `religious_belief` - increases religious conversion
+ * `religious_order` - suppresses religious unrest
+ * `agent_limit_settlement` - sets the amount of a given agent type that can be recruited here (bonus does not work with this)
+ * `dummy` - does nothing, but allows specifying a string
+
+
+
+Full List of Building Effects 2.0.2
+
 * `weapon_simple` (upgrades melee (light) weapons) 1 (1)
 * `weapon_bladed` (upgrades bladed (heavy) weapons) 1 (1)
 * `weapon_missile` (upgrades missile weapons) 1-5 (1-5)
@@ -262,8 +417,8 @@ Full List of Building Effects
 * `construction_time_bonus_religious` (percentile time reduction for constructing temples) 1-100 (1-100%)
 * `construction_time_bonus_defensive` (percentile time reduction for constructing walls) 1-100 (1-100%)
 * `construction_time_bonus_other` (percentile time reduction for constructing civil buildings but also seems to apply to all buildings except religious ones) 1-100 (1-100%)
-* ```extra_recruitment_points [bonus]``` - **NEW for RR** Allows you to give addional recuitment points to a settlment via a building modifier. You can define the bonus in terms of turns.
-* ```extra_construction_points [bonus]``` - **NEW for RR** Allows you to give addional construction points to a settlment via a building modifier. You can define the bonus in terms of turns.
+* `extra_recruitment_points [bonus]` - **NEW for RR** Allows you to give addional recuitment points to a settlment via a building modifier. You can define the bonus in terms of turns.
+* `extra_construction_points [bonus]` - **NEW for RR** Allows you to give addional construction points to a settlment via a building modifier. You can define the bonus in terms of turns.
 
 **Notes on above list...**
 
