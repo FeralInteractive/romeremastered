@@ -1,0 +1,374 @@
+[
+	{
+		"filename": "data\/banners\/symbols15.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/descr_banners.txt",
+		"checksum": 1260054526
+	},
+	{
+		"filename": "data\/descr_character.txt",
+		"checksum": 1741309879
+	},
+	{
+		"filename": "data\/descr_sm_faction_logos.txt",
+		"checksum": 1554318995
+	},
+	{
+		"filename": "data\/descr_sm_factions.txt",
+		"checksum": 3124341765
+	},
+	{
+		"filename": "data\/descr_sm_factions_difficulty.json",
+		"checksum": 288540689
+	},
+	{
+		"filename": "data\/descr_sounds.txt",
+		"checksum": 3089394467
+	},
+	{
+		"filename": "data\/descr_standards.txt",
+		"checksum": 3778378702
+	},
+	{
+		"filename": "data\/export_descr_buildings.txt",
+		"checksum": 1610670253
+	},
+	{
+		"filename": "data\/export_descr_unit.txt",
+		"checksum": 1046646882
+	},
+	{
+		"filename": "data\/menu\/symbols\/fe_buttons_feral\/symbol128_moors.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/menu\/symbols\/fe_buttons_feral\/symbol128_moors_grey.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/menu\/symbols\/fe_buttons_feral\/symbol128_moors_roll.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/menu\/symbols\/fe_buttons_feral\/symbol128_moors_select.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/menu\/symbols\/fe_buttons_feral\/symbol128_white_huns.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/menu\/symbols\/fe_buttons_feral\/symbol128_white_huns_grey.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/menu\/symbols\/fe_buttons_feral\/symbol128_white_huns_roll.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/menu\/symbols\/fe_buttons_feral\/symbol128_white_huns_select.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/models\/textures\/standard_moors.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/models\/textures\/standard_moors_ally.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/models\/textures\/standard_white_huns.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/models\/textures\/standard_white_huns_ally.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/models_strat\/symbol_moors.cas",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/models_strat\/symbol_white_huns.cas",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/models_strat\/textures\/#banner_symbol_moors.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/models_strat\/textures\/#banner_symbol_moors_n.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/models_strat\/textures\/#banner_symbol_moors_s.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/models_strat\/textures\/#banner_symbol_white_huns.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/models_strat\/textures\/#banner_symbol_white_huns_n.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_battle_end_music.txt",
+		"checksum": 2964044734
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_battle_music_statemachine.txt",
+		"checksum": 2072005279
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_battle_notifications.txt",
+		"checksum": 3445461002
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_campaign_end.txt",
+		"checksum": 3534147339
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_character_vocal.txt",
+		"checksum": 277939939
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_diplomacy_comment.txt",
+		"checksum": 3011513158
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_message_events.txt",
+		"checksum": 1627288992
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_prebattle_speech.txt",
+		"checksum": 2841100008
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_static_music.txt",
+		"checksum": 2738514690
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_anims.txt",
+		"checksum": 1058930518
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_berserk.txt",
+		"checksum": 3229154338
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_celebrate.txt",
+		"checksum": 611867153
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_charge.txt",
+		"checksum": 914839321
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_collide.txt",
+		"checksum": 867854984
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_confirm.txt",
+		"checksum": 3448601289
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_confirm_single.txt",
+		"checksum": 2010771190
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_druid_chant.txt",
+		"checksum": 784659382
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_fighting.txt",
+		"checksum": 1446737057
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_idle.txt",
+		"checksum": 366722386
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_retreating.txt",
+		"checksum": 838290592
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_routing.txt",
+		"checksum": 2285820824
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_screeching_women.txt",
+		"checksum": 204561153
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_taunting.txt",
+		"checksum": 351660854
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_voice.txt",
+		"checksum": 2542881534
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_unit_warcry.txt",
+		"checksum": 3418077802
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_war_horns.txt",
+		"checksum": 1268831216
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/descr_soundbank_weapon_hit.txt",
+		"checksum": 1190040052
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/unit_voices\/descr_ai_unit_voices.txt",
+		"checksum": 1644625225
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/unit_voices\/descr_barbarian_general_unit_voices.txt",
+		"checksum": 2322107103
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/unit_voices\/descr_barbarian_unit_voices.txt",
+		"checksum": 1386276519
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/unit_voices\/descr_eastern_general_unit_voices.txt",
+		"checksum": 1910732505
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/unit_voices\/descr_eastern_unit_voices.txt",
+		"checksum": 2214218176
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/unit_voices\/descr_female_unit_voices.txt",
+		"checksum": 450038885
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/unit_voices\/descr_roman_general_unit_voices.txt",
+		"checksum": 530095846
+	},
+	{
+		"filename": "data\/sounds\/descrs\/banks\/unit_voices\/descr_roman_unit_voices.txt",
+		"checksum": 44772090
+	},
+	{
+		"filename": "data\/sounds\/descrs\/descr_bank_sounds.txt",
+		"checksum": 2649282544
+	},
+	{
+		"filename": "data\/sounds\/descrs\/descr_enum_sounds.txt",
+		"checksum": 2360993050
+	},
+	{
+		"filename": "data\/sounds\/descrs\/descr_misc_sounds.txt",
+		"checksum": 729225993
+	},
+	{
+		"filename": "data\/sounds\/events.dat",
+		"checksum": 2952220450
+	},
+	{
+		"filename": "data\/sounds\/events.idx",
+		"checksum": 2211741887
+	},
+	{
+		"filename": "data\/text\/campaign_descriptions.txt",
+		"checksum": 4288862888
+	},
+	{
+		"filename": "data\/text\/expanded_bi.txt",
+		"checksum": 2012966216
+	},
+	{
+		"filename": "data\/text\/historic_events.txt",
+		"checksum": 1750683882
+	},
+	{
+		"filename": "data\/ui\/captain banners\/captain_card_moors.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/captain banners\/captain_card_moors_rebel.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/captain banners\/captain_card_white_huns.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/captain banners\/captain_card_white_huns_rebel.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/captain banners\/captain_portrait_moors.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/captain banners\/captain_portrait_moors_rebel.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/captain banners\/captain_portrait_white_huns.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/captain banners\/captain_portrait_white_huns_rebel.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/captain banners\/dead\/captain_card_moors.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/captain banners\/dead\/captain_card_moors_rebel.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/captain banners\/dead\/captain_card_white_huns.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/captain banners\/dead\/captain_card_white_huns_rebel.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/faction_icons\/moors.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/faction_icons\/white_huns.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/barbarian_invasion\/descr_events.txt",
+		"checksum": 4197485854
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/barbarian_invasion\/descr_strat.txt",
+		"checksum": 2645041515
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/barbarian_invasion\/descr_win_conditions.txt",
+		"checksum": 3144852002
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/barbarian_invasion\/ingame_maps\/map_moors.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/barbarian_invasion\/ingame_maps\/map_white_huns.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/barbarian_invasion\/map_moors.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/barbarian_invasion\/map_white_huns.tga",
+		"checksum": "Blacklisted"
+	}
+]

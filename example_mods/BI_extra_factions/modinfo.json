@@ -1,0 +1,16 @@
+{
+	"Description": "This mod demonstrates how to add in additional factions beyond the original ones found in the game, it also demonstrates how to make a faction emergent.
+	
+This mod adds the unused White Huns and Moors factions to BI. The Moors start in Mauretania and the White Huns appear as an emergent faction
+
+This mod is designed to work on BI only but the principle will work with all three games if you use the correct assets for that game.",
+	"Mod Name": "Add Additional factions (including emergent)",
+	"Preview Image": "Image.png",
+	"Supports Alex": false,
+	"Supports BI": true,
+	"Supports Rome": false,
+	"Tags": [
+	],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
