@@ -1,0 +1,13 @@
+{
+	"Description": "This is an example mod for Alexander that will display a message in a similar manner to the Adoption screens but is fully controlable by the modder. You can customise the header string, the content string and the image used. The player can then select Y/N via the check boxes and the decision is then passed back to the script and can be processed.
+	
+	This allows modders to interact with the player and offer them dilemmas which they can then reply to. These screens like with adoptions cannot be ignored so the user will need to make a decision before ending turn.",
+	"Mod Name": "Custom Messages",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": true,
+	"Supports BI": false,
+	"Supports Rome": false,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}

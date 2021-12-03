@@ -1,0 +1,27 @@
+script
+
+	declare_counter output
+	declare_counter flag
+	
+	message_prompt
+	{
+		flag_counter flag
+		result_counter output
+		
+		title SCRIPT_MESSAGE
+		body SCRIPT_MESSAGE_BODY
+		
+		image prebattle_night
+	}
+	
+	;;monitor for our prompt getting a response
+	monitor_event ScriptPromptCallback I_CompareCounter flag == 1
+		if I_CompareCounter output == 1
+			console_command kill_character "Alexander"
+		end_if
+		if I_CompareCounter output == 0
+			console_command kill_character "Parmenion"
+		end_if
+	end_monitor
+
+end_script
