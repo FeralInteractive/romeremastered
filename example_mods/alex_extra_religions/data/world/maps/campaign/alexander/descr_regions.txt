@@ -1,0 +1,293 @@
+;
+; regions list
+;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Illyria
+	Epidamnus
+	germans
+	Gepids
+	232 41 55
+	none
+	5
+	3
+	hellenism 10 paganism 90
+Scythia
+	Tanais
+	scythia
+	Saka
+	58 177 95
+	none
+	5
+	2
+	hellenism 5 paganism 10 tengrism 85
+Sarmatia
+	Azara
+	scythia
+	Sarmatians
+	232 198 41
+	none
+	5
+	4
+	hellenism 5 paganism 10 zoroastrianism 10 tengrism 75
+Dahae
+	Nisa
+	gauls
+	Iazyges
+	33 131 116
+	none
+	5
+	7
+	paganism 10 tengrism 90
+Massagetae
+	Kucha
+	gauls
+	Carpi
+	232 41 135
+	none
+	5
+	7
+	paganism 5 zoroastrianism 5 daharmic 10 tengrism 80
+Thrace
+	Byzantium
+	dacia
+	Venedae
+	58 89 177
+	none
+	5
+	2
+	hellenism 5 paganism 90 tengrism 5
+Macedon
+	Pella
+	macedon
+	Thessalians
+	77 170 58
+	none
+	5
+	3
+	hellenism 90 paganism 10
+Sogdiana
+	Chach
+	parthia
+	Insubres
+	131 61 33
+	none
+	5
+	3
+	paganism 10 zoroastrianism 40 daharmic 20 tengrism 30
+Bactria
+	Bactria
+	parthia
+	Aedui
+	17 74 202
+	none
+	5
+	8
+	paganism 15 zoroastrianism 70 daharmic 5 tengrism 10
+Paphlagonia
+	Sinope
+	parthia
+	Alans
+	177 58 83
+	none
+	5
+	4
+	hellenism 30 paganism 50 zoroastrianism 20
+Armenia
+	Amida
+	parthia
+	Colchians
+	177 78 58
+	none
+	5
+	4
+	paganism 10 zoroastrianism 90
+Cappadocia
+	Issus
+	parthia
+	Cappadocians
+	203 41 232
+	none
+	5
+	7
+	hellenism 10 paganism 10 zoroastrianism 80
+Greece
+	Sparta
+	macedon
+	Athenians
+	58 177 75
+	none
+	5
+	6
+	hellenism 100
+Lydia
+	Halicarnassus
+	parthia
+	Bosphorans
+	212 232 41
+	none
+	5
+	3
+	hellenism 80 paganism 5 zoroastrianism 15
+Phrygia
+	Lampsacus
+	parthia
+	Maeotae
+	41 232 63
+	none
+	0
+	4
+	hellenism 40 zoroastrianism 60
+Parthia
+	Tabae
+	parthia
+	Phoenicians
+	72 177 58
+	none
+	5
+	6
+	zoroastrianism 95 tengrism 5
+Media
+	Ecbatana
+	parthia
+	Medes
+	63 232 41
+	none
+	5
+	5
+	zoroastrianism 100
+India
+	Taxila
+	parthia
+	Paionians
+	199 31 143
+	none
+	5
+	4
+	zoroastrianism 5 daharmic 95
+Syria
+	Tyre
+	parthia
+	Syrians
+	131 33 125
+	none
+	5
+	3
+	hellenism 15 paganism 5 zoroastrianism 80
+Assyria
+	Hatra
+	parthia
+	Palmyrans
+	232 90 41
+	none
+	5
+	7
+	zoroastrianism 100
+Parapamisadale
+	Bannu
+	parthia
+	Volcae
+	68 232 41
+	none
+	5
+	6
+	paganism 10 zoroastrianism 95 daharmic 5
+Aria
+	Balkh
+	parthia
+	Ligurians
+	131 33 38
+	none
+	5
+	5
+	paganism 10 zoroastrianism 90
+Arabia
+	Petra
+	parthia
+	Judaeans
+	232 41 198
+	none
+	5
+	5
+	paganism 80 zoroastrianism 20
+Drangiana
+	Quetta
+	parthia
+	Sithones
+	230 41 232
+	none
+	5
+	4
+	paganism 10 zoroastrianism 90
+Arachosia
+	Multan
+	parthia
+	Edones
+	85 114 141
+	none
+	5
+	7
+	paganism 5 zoroastrianism 85 daharmic 10
+Babylonia
+	Babylon
+	parthia
+	Ionians
+	131 89 33
+	none
+	5
+	9
+	zoroastrianism 100
+Susiana
+	Suza
+	parthia
+	Elamites
+	72 41 232
+	none
+	5
+	6
+	zoroastrianism 100
+Lybia
+	Rhacotis
+	parthia
+	Libyans
+	41 162 232
+	none
+	5
+	6
+	hellenism 10 paganism 75 zoroastrianism 15
+Egypt
+	Memphis
+	parthia
+	Nabataeans
+	232 41 46
+	none
+	5
+	8
+	hellenism 5 paganism 85 zoroastrianism 10
+Gedrosia
+	Pura
+	parthia
+	Bithynians
+	31 75 37
+	none
+	5
+	7
+	zoroastrianism 85 daharmic 15
+Persis
+	Persepolis
+	parthia
+	Gaetuli
+	58 150 177
+	none
+	5
+	5
+	zoroastrianism 100
+Carmania
+	Carmana
+	parthia
+	Achaeans
+	33 100 131
+	none
+	5
+	7
+	zoroastrianism 100

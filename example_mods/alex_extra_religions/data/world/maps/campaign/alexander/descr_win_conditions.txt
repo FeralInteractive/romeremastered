@@ -1,0 +1,29 @@
+macedon
+alexander_lives Macedon Lydia Cappadocia Syria Lybia Egypt Babylonia Media Dahae Bactria
+take_regions 30
+survivor Alexander
+script world/maps/campaign/alexander/Alexander_Campaign_Outro_Script.txt
+
+parthia
+hold_regions Pella Sparta Halicarnassus Sinope Lampsacus Issus Tyre Memphis Rhacotis Amida Hatra Babylon Ecbatana Tabae Suza Persepolis Carmana Pura Balkh Bactria Chach Quetta Bannu Multan Petra
+take_regions 25
+
+gauls
+hold_regions Pella Kucha Nisa
+take_regions 30
+
+germans
+hold_regions Pella Epidamnus
+take_regions 30
+
+scythia
+hold_regions Pella Tanais Azara
+take_regions 30
+
+dacia
+hold_regions Pella Byzantium
+take_regions 30
+
+egypt
+hold_regions Pella Bactria Suza
+take_regions 30

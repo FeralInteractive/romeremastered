@@ -1,0 +1,19 @@
+;; JNF 2021-06-10 - define a new campaign list so people can define new campaigns and enable/disable important features for them individually
+"campaign list":
+[
+	{
+		;;title is the panel header, menu is the menu button test, folder is the folder with data/world/maps/campaign to use
+		"menu": "UI_FERAL_LP_CAMPAIGN_ALEX",
+		"title": "UI_FERAL_CAMPAIGN_ALEX",
+		"folder": "alexander",
+		
+		"features":
+		{
+			;; JNF 2021-06-14 - Loyalty should work, religion is slightly borked pending refactor but it should enable/disable the UI perfectly fine
+			"loyalty":  false,
+			"religion": true,
+			
+			"rebel merchants": false,
+		},
+	},
+],

@@ -1,0 +1,106 @@
+[
+	{
+		"filename": "data\/descr_beliefs.txt",
+		"checksum": 2113431911
+	},
+	{
+		"filename": "data\/descr_campaigns.txt",
+		"checksum": 178024484
+	},
+	{
+		"filename": "data\/descr_sm_factions.txt",
+		"checksum": 1986079292
+	},
+	{
+		"filename": "data\/export_descr_buildings.txt",
+		"checksum": 636556153
+	},
+	{
+		"filename": "data\/new_descr_regions.txt",
+		"checksum": 2507488835
+	},
+	{
+		"filename": "data\/pips\/hellenism.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/pips\/hellenism_unrest.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/pips\/jainism.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/pips\/tengrism.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/pips\/tengrism_unrest.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/text\/expanded_bi.txt",
+		"checksum": 1722778035
+	},
+	{
+		"filename": "data\/text\/export_vnvs.txt",
+		"checksum": 1400545178
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/descr_regions.txt",
+		"checksum": 3830034178
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/descr_strat.txt",
+		"checksum": 1028506107
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/descr_terrain.txt",
+		"checksum": 1077198474
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/descr_win_conditions.txt",
+		"checksum": 3591017056
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/map.rwm",
+		"checksum": 2299325753
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/map_climates.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/map_features.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/map_ground_types.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/map_heights.hgt",
+		"checksum": 1020430450
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/map_heights.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/map_regions.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/map_roughness.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/map_snow.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/alexander\/map_trade_routes.tga",
+		"checksum": "Blacklisted"
+	}
+]

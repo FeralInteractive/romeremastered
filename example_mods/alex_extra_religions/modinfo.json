@@ -1,0 +1,12 @@
+{
+	"Description": "Adds the Pagan, Daharmic, Zoroastrian and Hellenic religions to the Alexander campaign as an example.",
+	"Mod Name": "Add Religions into Alexander",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": true,
+	"Supports BI": false,
+	"Supports Rome": false,
+	"Tags": [
+	],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
