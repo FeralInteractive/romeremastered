@@ -1,0 +1,424 @@
+RomeShell Commands
+==============================================================
+WARNING: Not all of the below commands are stable, and still supported
+Some commands may only work via scripts
+And many will cause game instability
+Use at your own risk
+==============================================================
+
+
+---------------------------------------------------
+Command:            add_expenditure
+Parameters:         <settlement/faction> <string_id> <amount>
+Description:        adds/overwrites an existing custom expenditure
+Help:               add_expenditure <settlement/faction> <string_id> <amount> : adds/overwrites an existing custom expenditure
+---------------------------------------------------
+Command:            add_income
+Parameters:         <settlement/faction_type> <string_id> <amount> <opt:maintained>
+Description:        adds/overwrites an existing custom income
+Help:               add_income <settlement/faction_type> <string_id> <amount> <opt:maintained>: adds/overwrites an existing custom income
+---------------------------------------------------
+Command:            add_money
+Parameters:         <opt:faction_type> <amount>
+Description:        adds an amount of money to a faction's coffers, can be negative, default is player faction
+Help:               add_money <opt:faction_type> <amount> : adds an amount of money to a faction's coffers, can be negative, default is player faction
+---------------------------------------------------
+Command:            add_population
+Parameters:         <settlement_name> <amount>
+Description:        adds an amount of population to a settlement, can be negative
+Help:               add_population <settlement_name> <amount> : adds an amount of population to a settlement, can be negative
+---------------------------------------------------
+Command:            add_soldiers
+Parameters:         <settlement/character_name> <percentage> <max/current> <unit_id> <opt:how_many> <opt:sorting_method>
+Description:        adds/removes soldiers from one or more units of the specified type ("all" can be provided for the unit_id) (Sorting Methods - "exp", "weapons_armour", "soldier_count", "random")
+Help:               add_soldiers <settlement/character_name> <percentage> <max/current> <unit_id> <opt:how_many> <opt:sorting_method>: adds/removes soldiers from one or more units of the specified type ("all" can be provided for the unit_id) (Sorting Methods - "exp", "weapons_armour", "soldier_count", "random")
+---------------------------------------------------
+Command:            all_ai
+Parameters:         
+Description:        sets the users faction to be controlled by ai; may not act correctly as ai faction
+Help:               all_ai : sets the users faction to be controlled by ai; may not act correctly as ai faction
+---------------------------------------------------
+Command:            auto_win
+Parameters:         <attacker/defender>
+Description:        the attacker or defender wins the next autoresolved battle
+Help:               auto_win <attacker/defender>: the attacker or defender wins the next autoresolved battle
+---------------------------------------------------
+Command:            become_protector
+Parameters:         <faction_a> <opt:faction_b>
+Description:        sets faction_b as a protectorate of faction_a
+Help:               become_protector <faction_a> <opt:faction_b> : sets faction_b as a protectorate of faction_a
+---------------------------------------------------
+Command:            bestbuy
+Parameters:         
+Description:        sells units cheaper
+Help:               bestbuy : sells units cheaper
+---------------------------------------------------
+Command:            capture_settlement
+Parameters:         <settlement name> <opt:faction_type>
+Description:        evicts any resident characters and armies and gives the settlement to the specifed faction (defaults to local player)
+Help:               capture_settlement <settlement name> <opt:faction_type> : evicts any resident characters and armies and gives the settlement to the specifed faction (defaults to local player)
+---------------------------------------------------
+Command:            change_character_faction
+Parameters:         <character> <faction>
+Description:        transfers the ownership of the specified character to the specified faction
+Help:               change_character_faction <character> <faction>: transfers the ownership of the specified character to the specified faction
+---------------------------------------------------
+Command:            character_reset
+Parameters:         
+Description:        resets the character back to it's start of turn settings
+Help:               character_reset : resets the character back to it's start of turn settings
+---------------------------------------------------
+Command:            check_persistent_var
+Parameters:         <variable name>
+Description:        displays the value of a persistent counter
+Help:               check_persistent_var <variable name> : displays the value of a persistent counter
+---------------------------------------------------
+Command:            control
+Parameters:         <faction_type>
+Description:        switches player control to specified faction; old faction may not act correctly as ai faction
+Help:               control <faction_type> : switches player control to specified faction; old faction may not act correctly as ai faction
+---------------------------------------------------
+Command:            crash
+Parameters:         
+Description:        Crashes the game. Seriously. Use at your own risk.
+Help:               crash : Crashes the game. Seriously. Use at your own risk.
+---------------------------------------------------
+Command:            create_assassin
+Parameters:         
+Description:        <settlement>
+Help:               create_assassin <settlement>
+---------------------------------------------------
+Command:            create_building
+Parameters:         <settlement_name> <building_level_id>
+Description:        creates a building of the specified type in a settlement; for building level id's see export_descr_building.txt
+Help:               create_building <settlement_name> <building_level_id> : creates a building of the specified type in a settlement; for building level id's see export_descr_building.txt
+---------------------------------------------------
+Command:            create_diplomat
+Parameters:         
+Description:        <settlement>
+Help:               create_diplomat <settlement>
+---------------------------------------------------
+Command:            create_merchant
+Parameters:         
+Description:        <settlement>
+Help:               create_merchant <settlement>
+---------------------------------------------------
+Command:            create_spy
+Parameters:         
+Description:        <settlement>
+Help:               create_spy <settlement>
+---------------------------------------------------
+Command:            create_unit
+Parameters:         <settlement/character_name> <unit_id> <opt:how_many> <opt:exp/armour/weapon>
+Description:        creates one or more units of the specified type
+Help:               create_unit <settlement/character_name> <unit_id> <opt:how_many> <opt:exp/armour/weapon>: creates one or more units of the specified type
+---------------------------------------------------
+Command:            date
+Parameters:         <year>
+Description:        changes the campaign date to the given year
+Help:               date <year> : changes the campaign date to the given year
+---------------------------------------------------
+Command:            destroy_unit
+Parameters:         <settlement/character_name> <unit_id> <opt:how_many> <opt:sorting_method>
+Description:        destroys one or more units of the specified type (Sorting Methods - "exp", "weapons_armour", "soldier_count", "random")
+Help:               destroy_unit <settlement/character_name> <unit_id> <opt:how_many> <opt:sorting_method>: destroys one or more units of the specified type (Sorting Methods - "exp", "weapons_armour", "soldier_count", "random")
+---------------------------------------------------
+Command:            diplomacy_mission
+Parameters:         <ai_faction> <target_faction> <mission_type> <opt:mission_target>
+Description:        creates a diplomacy mission
+Help:               diplomacy_mission <ai_faction> <target_faction> <mission_type> <opt:mission_target> : creates a diplomacy mission
+---------------------------------------------------
+Command:            diplomatic_stance
+Parameters:         <faction_a> <faction_b> <allied/neutral/war>
+Description:        Set the diplomatic stance between the two factions 
+Help:               diplomatic_stance <faction_a> <faction_b> <allied/neutral/war>:  Set the diplomatic stance between the two factions 
+---------------------------------------------------
+Command:            disable_ai
+Parameters:         [opt: tac | sub | dip | name]
+Description:        disables all (default) or part of the ai for all factions
+Help:               disable_ai [opt: tac | sub | dip | name]: disables all (default) or part of the ai for all factions
+---------------------------------------------------
+Command:            dump_diplo_stats
+Parameters:         <opt:faction_a> <opt:faction_b>
+Description:        dumps the current diplomacy stats to file
+Help:               dump_diplo_stats <opt:faction_a> <opt:faction_b> : dumps the current diplomacy stats to file
+---------------------------------------------------
+Command:            dump_proposition_stats
+Parameters:         <opt:faction_a> <opt:faction_b>
+Description:        dumps the current diplomacy proposition stats to file
+Help:               dump_proposition_stats <opt:faction_a> <opt:faction_b> : dumps the current diplomacy proposition stats to file
+---------------------------------------------------
+Command:            force_battle_defeat
+Parameters:         
+Description:        forces the local player's alliance to win the battle, completely destroying the enemy alliance
+Help:               force_battle_defeat : forces the local player's alliance to win the battle, completely destroying the enemy alliance
+---------------------------------------------------
+Command:            force_battle_victory
+Parameters:         
+Description:        forces the local player's alliance to win the battle, completely destroying the enemy alliance
+Help:               force_battle_victory : forces the local player's alliance to win the battle, completely destroying the enemy alliance
+---------------------------------------------------
+Command:            force_diplomacy
+Parameters:         <accept/decline/off>
+Description:        Forces the negotiator to accept or decline a proposition 
+Help:               force_diplomacy <accept/decline/off>:  Forces the negotiator to accept or decline a proposition 
+---------------------------------------------------
+Command:            gesture_para
+Parameters:         <parameter name> <value>
+Description:        Get or set paramters that affect gesture navigation behaviour.
+Help:               gesture_para <parameter name> <value> : Get or set paramters that affect gesture navigation behaviour.
+---------------------------------------------------
+Command:            give_ancillary
+Parameters:         <charactername> <ancillary name>
+Description:        gives the character an ancillary
+Help:               give_ancillary <charactername> <ancillary name> : gives the character an ancillary
+---------------------------------------------------
+Command:            give_everything
+Parameters:         faction_type <opt:faction_type>
+Description:        gives all this faction's regions, characters and armies to the slaves (or the second faction).
+Help:               give_everything faction_type <opt:faction_type> : gives all this faction's regions, characters and armies to the slaves (or the second faction).
+---------------------------------------------------
+Command:            give_trait
+Parameters:         <charactername> <trait name> <opt:level>
+Description:        gives the character a trait at level (default = level 1)
+Help:               give_trait <charactername> <trait name> <opt:level>: gives the character a trait at level (default = level 1)
+---------------------------------------------------
+Command:            give_trait_points
+Parameters:         <charactername> <trait name> <points>
+Description:        gives the character points for trait
+Help:               give_trait_points <charactername> <trait name> <points>: gives the character points for trait
+---------------------------------------------------
+Command:            go_to_capital
+Parameters:         <faction type>
+Description:        moves the cameras target to the factions capital
+Help:               go_to_capital <faction type>: moves the cameras target to the factions capital
+---------------------------------------------------
+Command:            go_to_char
+Parameters:         <character name>
+Description:        moves the cameras target to the specified character
+Help:               go_to_char <character name>: moves the cameras target to the specified character
+---------------------------------------------------
+Command:            go_to_pos
+Parameters:         <x pos> <y pos>
+Description:        moves the cameras target to the specified position
+Help:               go_to_pos <x pos> <y pos>: moves the cameras target to the specified position
+---------------------------------------------------
+Command:            go_to_sett
+Parameters:         <settlement name>
+Description:        moves the cameras target to the specified settlement
+Help:               go_to_sett <settlement name>: moves the cameras target to the specified settlement
+---------------------------------------------------
+Command:            halt_ai
+Parameters:         <opt:factiontypename>
+Description:        halts the turn sequence just before the start of the specified faction's turn, or the current faction if no faction given
+Help:               halt_ai <opt:factiontypename> : halts the turn sequence just before the start of the specified faction's turn, or the current faction if no faction given
+---------------------------------------------------
+Command:            imgui_set
+Parameters:         <name> <variable type> <value(s)>
+Description:        Sets the specified imgui variable to the provided value. (NOTE - name is case sensitive) (Variable types - checkbox, radiobutton, float, colour, int)
+Help:               imgui_set <name> <variable type> <value(s)> : Sets the specified imgui variable to the provided value. (NOTE - name is case sensitive) (Variable types - checkbox, radiobutton, float, colour, int)
+---------------------------------------------------
+Command:            invulnerable_general
+Parameters:         <character_name>
+Description:        makes that named general invulnerable in battle
+Help:               invulnerable_general <character_name> : makes that named general invulnerable in battle
+---------------------------------------------------
+Command:            jericho
+Parameters:         
+Description:        and the walls came a-tumblin' down
+Help:               jericho : and the walls came a-tumblin' down
+---------------------------------------------------
+Command:            kill_army
+Parameters:         <character_name><opt:dont_show_death_anim>
+Description:        kills an army commanded by a character with the given name
+Help:               kill_army <character_name><opt:dont_show_death_anim> : kills an army commanded by a character with the given name
+---------------------------------------------------
+Command:            kill_character
+Parameters:         <character_name>
+Description:        kills a character with the given name
+Help:               kill_character <character_name> : kills a character with the given name
+---------------------------------------------------
+Command:            kill_faction
+Parameters:         <faction_type>
+Description:        removes the faction from the game
+Help:               kill_faction <faction_type> : removes the faction from the game
+---------------------------------------------------
+Command:            list_ancillaries
+Parameters:         
+Description:        lists all the available ancillaries
+Help:               list_ancillaries : lists all the available ancillaries
+---------------------------------------------------
+Command:            list_characters
+Parameters:         <opt:faction_type>
+Description:        lists all the characters in the world or those belonging to a faction
+Help:               list_characters <opt:faction_type> : lists all the characters in the world or those belonging to a faction
+---------------------------------------------------
+Command:            list_traits
+Parameters:         
+Description:        lists all the available traits
+Help:               list_traits : lists all the available traits
+---------------------------------------------------
+Command:            list_units
+Parameters:         <character/settlement name>
+Description:        lists all of the units in an army, with details.
+Help:               list_units <character/settlement name> : lists all of the units in an army, with details.
+---------------------------------------------------
+Command:            move_character
+Parameters:         <name> <x>,<y>
+Description:        moves named character to position on campaign map
+Help:               move_character <name> <x>,<y> : moves named character to position on campaign map
+---------------------------------------------------
+Command:            mp
+Parameters:         <charactername> <amount>
+Description:        gives the character movement points
+Help:               mp <charactername> <amount>: gives the character movement points
+---------------------------------------------------
+Command:            oliphaunt
+Parameters:         
+Description:        the biggest around
+Help:               oliphaunt : the biggest around
+---------------------------------------------------
+Command:            paths_per_tick
+Parameters:         <num>
+Description:        number of paths to process per game tick
+Help:               paths_per_tick <num> : number of paths to process per game tick
+---------------------------------------------------
+Command:            process_cq
+Parameters:         <settlement>
+Description:        Completes all (possible) construction pending in queue 
+Help:               process_cq <settlement>:  Completes all (possible) construction pending in queue 
+---------------------------------------------------
+Command:            process_rq
+Parameters:         <settlement>
+Description:        Completes all (possible) recruitment pending in queue 
+Help:               process_rq <settlement>:  Completes all (possible) recruitment pending in queue 
+---------------------------------------------------
+Command:            puppify_my_love
+Parameters:         
+Description:        ??????
+Help:               ??????
+---------------------------------------------------
+Command:            reload_ui [notch_side] [notch_size%]
+Parameters:         reload_ui
+Description:        Reload the Feral edits to the UI
+Help:               reload_ui: Reload the Feral edits to the UI
+---------------------------------------------------
+Command:            reseed_random
+Parameters:         
+Description:        Reseed the random number generator
+Help:               reseed_random: Reseed the random number generator
+---------------------------------------------------
+Command:            run_ai
+Parameters:         [opt:x]
+Description:        re-starts an ai turn sequence after disableai or haltai has been triggered;  use x to also re-enable all parts of the ai which have been individually disabled
+Help:               run_ai [opt:x]: re-starts an ai turn sequence after disableai or haltai has been triggered;  use x to also re-enable all parts of the ai which have been individually disabled
+---------------------------------------------------
+Command:            season
+Parameters:         <season>
+Description:        changes the campaign season to the given season
+Help:               season <season> : changes the campaign season to the given season
+---------------------------------------------------
+Command:            set_building_health
+Parameters:         <settlement_name> <building_chain> <final health percent>
+Description:        sets health of a building of the specified type (eg core_building)  in a settlement, so that the final health percentage is as specified; for building chains see export_descr_building.txt
+Help:               set_building_health <settlement_name> <building_chain> <final health percent>:  sets health of a building of the specified type (eg core_building)  in a settlement, so that the final health percentage is as specified; for building chains see export_descr_building.txt
+---------------------------------------------------
+Command:            set_fow
+Parameters:         [on|off]
+Description:        Explicitly set the fog of war state
+Help:               set_fow [on|off] : Explicitly set the fog of war state
+---------------------------------------------------
+Command:            set_heir
+Parameters:         <character>
+Description:        sets the specified character as the faction heir
+Help:               set_heir <character> : sets the specified character as the faction heir
+---------------------------------------------------
+Command:            set_leader
+Parameters:         <character>
+Description:        sets the specified character as the faction leader
+Help:               set_leader <character> : sets the specified character as the faction leader
+---------------------------------------------------
+Command:            set_move_points
+Parameters:         <move_points>
+Description:        set the specified characters movement points
+Help:               set_move_points <move_points>: set the specified characters movement points
+---------------------------------------------------
+Command:            show_cursorstat
+Parameters:         
+Description:        shows the cursor position and region id
+Help:               show_cursorstat : shows the cursor position and region id
+---------------------------------------------------
+Command:            show_ui
+Parameters:         
+Description:        Toggles the UI on or off as per the show_ui script command
+Help:               Toggles the UI on or off as per the show_ui script command
+---------------------------------------------------
+Command:            showmethemoney
+Parameters:         
+Description:        Type this to get instantly minted
+Help:               showmethemoney : Type this to get instantly minted
+---------------------------------------------------
+Command:            surrender_regions
+Parameters:         <opt: horde> <opt:faction_type> <opt:faction_type>
+Description:        gives all this faction's regions to the slaves (or the second faction). "horde" surrenders regions for all factions that can be hordes
+Help:               surrender_regions <opt: horde> <opt:faction_type> <opt:faction_type> : gives all this faction's regions to the slaves (or the second faction). "horde" surrenders regions for all factions that can be hordes
+---------------------------------------------------
+Command:            swap_unit
+Parameters:         <settlement/character_name> <unit_id> <unit_id> <opt:how_many> <opt:sorting_method>
+Description:        swaps one or more units of the specified type with a unit of another type (Sorting Methods - "exp", "weapons_armour", "soldier_count", "random")
+Help:               swap_unit <settlement/character_name> <unit_id> <unit_id> <opt:how_many> <opt:sorting_method>: swaps one or more units of the specified type with a unit of another type (Sorting Methods - "exp", "weapons_armour", "soldier_count", "random")
+---------------------------------------------------
+Command:            test_message
+Parameters:         
+Description:        Test the event message specified in descr_event_enums.txt
+Help:               Test the event message specified in descr_event_enums.txt
+---------------------------------------------------
+Command:            test_victory_scroll
+Parameters:         <faction victor> <short campaign (true/false)>
+Description:        Opens up the victory scroll declaring that the given faction is the victor If no faction is declared then the 'timeout' scroll is displayed
+Help:               test_victory_scroll <faction victor> <short campaign (true/false)>:  Opens up the victory scroll declaring that the given faction is the victor If no faction is declared then the 'timeout' scroll is displayed
+---------------------------------------------------
+Command:            toggle_automanage
+Parameters:         <charactername> <optional:state>
+Description:        toggles whether the specified character is automanaged
+Help:               toggle_automanage <charactername> <optional:state>: toggles whether the specified character is automanaged
+---------------------------------------------------
+Command:            toggle_fow
+Parameters:         
+Description:        toggles the fog of war on or off
+Help:               toggle_fow : toggles the fog of war on or off
+---------------------------------------------------
+Command:            toggle_path_draw
+Parameters:         
+Description:        toggles the ability to draw custom movement paths 
+Help:               toggle_path_draw : toggles the ability to draw custom movement paths 
+---------------------------------------------------
+Command:            toggle_perfect_spy
+Parameters:         
+Description:        toggles everyone's spying ability to perfect and infinite range, and off again
+Help:               toggle_perfect_spy : toggles everyone's spying ability to perfect and infinite range, and off again
+---------------------------------------------------
+Command:            toggle_restrictcam
+Parameters:         
+Description:        toggles camera restrictions on or off
+Help:               toggle_restrictcam : toggles camera restrictions on or off
+---------------------------------------------------
+Command:            toggle_terrain
+Parameters:         <opt:region/tiletype/climate/choke/landing/frontier/features/frontier_defend>
+Description:        toggles the terrain to display various data sets, no param resets to normal
+Help:               toggle_terrain <opt:region/tiletype/climate/choke/landing/frontier/features/frontier_defend> : toggles the terrain to display various data sets, no param resets to normal
+---------------------------------------------------
+Command:            victory
+Parameters:         <faction> <short>
+Description:        show victory message for faction for short or long campaign.
+Help:               victory <faction> <short>: show victory message for faction for short or long campaign.
+---------------------------------------------------
+Command:            vulnerable_general
+Parameters:         <character_name>
+Description:        makes that named general vulnerable in battle (turns off invulnerabilty
+Help:               vulnerable_general <character_name> : makes that named general vulnerable in battle (turns off invulnerabilty
+---------------------------------------------------
+Command:            zoom
+Parameters:         
+Description:        zooms to specified aerial map zoom
+Help:               zoom : zooms to specified aerial map zoom
