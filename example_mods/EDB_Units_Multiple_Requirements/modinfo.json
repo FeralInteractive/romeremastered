@@ -1,0 +1,11 @@
+{
+	"Description": "Show how to make a unit that have multiple requirements",
+	"Mod Name": "Units that need multiple requirements",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": true,
+	"Supports BI": true,
+	"Supports Rome": true,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
