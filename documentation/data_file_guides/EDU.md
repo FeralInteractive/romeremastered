@@ -320,28 +320,37 @@ eg. ```ship             light warship```
 The unit's attributes. The complete list is:
 
  * **sea_faring**: unit can board ships
- * **hide_forest, hide_improved_forest, hide_long_grass, hide_anywhere**: defines where the unit can hide. If absent, it means that the unit won't be able to hide at all. "hide_anywhere" includes all the others and "hide_improved_forest" of course includes "hide_forest".
+ * **Stealth Attributes**: defines where the unit can hide. If absent, it means that the unit won't be able to hide at all.
+	 * **hide_forest**: Basic ability to hide in forests
+	 * **hide_improved_forest**: Improved ability to hide in forests
+	 * **hide_long_grass** Can hide in long grass
+	 * **hide_anywhere**:  "hide_anywhere" includes all the above abilities.
  * **can_sap**: unit can dig tunnels under walls during assaults using sap points
-frighten_foot,
- * **frighten_mounted**: unit causes fear to certain nearby units of the specified type. Both combined means the unit frightens all enemy (generals included).
+ * **Frighten Ability** unit causes fear to certain nearby units of the specified type. Both combined means the unit frightens all enemy (generals included)
+ 	* **frighten_foot**: demoralises nearby infantry units (not ones with javelins, though)
+ 	* **frighten_mounted**: frightens nearby cavalry and elephant units
  * **can_run_amok**: unit may go out of control when riders lose control of animals (usually when the unit's casualty ratio is high and the morale low or when being attacked with fire)
  * **general_unit**: unit can be used for a named character's bodyguard (note that this now also sets the bodyguard for recruitable generals of which there can be multiple instances of this attribute in the same faction though the first instance will always be the family-member bodyguard). Note also that the AI will never recruit units with the general_unit attribute.
- * **general_unit_upgrade**: unit can be used as upgraded bodyguard for named characters, after the Marius' reforms are triggered. A unit with this attribute must be listed in the file after the regular bodyguard unit.
+ * **general_unit_upgrade "major_event"**: New for 2.0.4 - Unit can be used as upgraded bodyguard for named characters, after the a major_event (eg Marius' reforms) are triggered. A unit with this attribute must be listed in the file after the regular bodyguard unit. 
  * **cantabrian_circle**: unit has this special ability. It has no coded effects, but they stem naturally from the game's combat engine. The formation reduces accuracy of the unit, but makes it harder to get shot at and also the constant barrage of arrows slightly reduces target's morale.
  * **no_custom**: unit is not available in custom battles
- * **command**: unit carries a legionary eagle, and gives morale bonus to nearby units (not the unit itself)
+ * **command**: unit carries a legionary eagle, and gives morale bonus to nearby units (not the unit itself). Also can trigger lost/captured eagle news events.
  * **screeching_women**: unit has this special ability, which reduces the morale of nearby enemy units.
  * **mercenary_unit**: unit is a mercenary unit available for hire to all factions in certain regions. It also prevents a unit from replenishing losses after battle, forces it to use the 'merc' texture and sprite lines in DMB for all its faction owners and the text-tag 'Varies' instead of the unit recruitment cost on the unit info card. In Alexander mercenaries can be faction-specific (availability set in descr_mercenaries.txt).
- * **hardy, very_hardy**: level of a unit's hardiness. Hardiness reduces the speed at which stamina is depleted and also increases its regeneration rate.
+ * **Hardiness**: reduces the speed at which stamina is depleted and also increases its regeneration rate. **NOTE**: These modifiers can be stacked to make additional levels of hardiness as needed.
+	 * **hardy**: -2 fatigue modifier
+	 * ***very_hardy**: -4 fatigue modifier
+	 * **extremely_hardy** - NEW RR ATTRIBUTE (2.0.4): -8 fatigue modifier
+	* **inexhaustible** - NEW RR ATTRIBUTE (2.0.2): Disables stamina for this unit without going into arcade mode.
  * **warcry**: Gives the unit an attack bonus of 10. The ability takes 10 secs (unit can't move or execute other action) to be activated and remains active for 30 more seconds. If the unit enters melee at some point during that time, the bonus will be applied only for the remaining of those 30 seconds. (eg if the unit warcrys, then runs for 7 secs and then engages in melee, the bonus will be applied for 23 secs only). Also gives a momentary boost to morale, evident in the case of berserkers.
  * **druid**: replaces 'chant' of RTW gives nearby units (not the unit itself) morale bonus.
  * **power_charge**: increases the time during which a unit is 'charging' (as opposed to being 'in melee'), therefore extending the period during which the unit receives its charge-bonus.
- * **can_swim (RR added support to base Rome)**: unit can swim rivers in battle mode (or walk in the case of some units).
- * **is_peasant (RR added support to base Rome)**: halves the effect the unit has in maintaining public order. 120 men will be counted as 60 etc.
- * **can_horde (RR added support to base Rome)**: unit can be part of a horde when one is created.
- * **legionary_name (RR added support to base Rome)**: assign a legionary name (based on region) and number to the recruited unit. The legionary element of the name is hardcoded.
- * **infinite_ammo** - NEW RR ATTRIBUTE: Allows a unit to have infinite ammo without going into arcade mode.
- * **inexhaustible** - NEW RR ATTRIBUTE: Disables stamina for this unit without going into arcade mode.
+ * **can_swim (RR 2.0.2 and later added support to base Rome)**: unit can swim rivers in battle mode (or walk in the case of some units).
+ * **is_peasant (RR 2.0.2 and later added support to base Rome)**: unit counts for half it's size when reducing unrest, and is less likely to be added to rebel garrisons.
+ * **can_horde (RR 2.0.2 and later added support to base Rome)**: unit can be part of a horde when one is created, and may be disbanded if a horde army decides to settle
+ * **legionary_name (RR 2.0.2 and later added support to base Rome)**: assign a legionary name (based on region) and number to the recruited unit. The legionary element of the name is hardcoded.
+ * **infinite_ammo** - NEW RR ATTRIBUTE (2.0.2): Allows a unit to have infinite ammo without going into arcade mode.
+ * **non_scaling** - NEW RR ATTRIBUTE (2.0.4): Unit size unaffected by unit scale, allows creation of fixed number units for example a hero unit or supplies?
 
 **Allowed Variables**
 
@@ -521,6 +530,13 @@ Details of a units recruitment stats.
 * **weapon_upgrade**: Cost to upgrade the unit's weapons (both campaign and custom battles). Affects the retraining cost.
 * **armour_upgrade**: Cost to upgrade the unit's armour (both campaign and custom battles). Affects the retraining cost.
 * **custom_battle_cost**: Cost to include the unit in your army in custom battles.
+
+—-
+### recruit_priority_offset
+
+```Code: recruit_priority_offset [100]```
+
+Newly added in 2.0.4 - In the EDU, you can now put `recruit_priority_offset` followed by a value after `stat_cost`. The value will be the % bias towards recruiting that unit. E.G. `recruit_priority_offset 100` means that unit is twice as likely to be recruited.
 
 ——
 ### ownership
