@@ -1,0 +1,19 @@
+{
+	"Description": "This mod allows you to play Total War: ROME REMASTERED in hot-seat mode. To use the mod just start a new campaign using the Julii faction. When the campaign loads you will get given alerts asking you if you'd like to play as each faction one by one.
+	
+	Once you have gone through all of the factions, the game will save your choices and the hot-seat campaign will begin. Please note due the hot-seat being played on a single machine the following limitations apply.
+	
+	Only the active player can fight battles in 3D so all battles should be auto resolved. Also on end turn the AI will fight players battles for them and make of tactical decisions so ensure any critical choices like completing unit movement is done during your turn.
+	
+	This mod is also meant to be a simple demonstation of how you can use the new modding features provided inside Total War: ROME REMASTERED to allow for customised game experiences. This mod makes use of a number of new features including but not limited to, background script support, persistent counters, custom alerts with user responses, new camera positioning code and new script logging to help test functionality during debugging.
+	
+	If you are a intersted in modding Total War: ROME REMASTERED you can find more information about the available; features and example mods at the [url=https:\/\/github.com\/FeralInteractive\/romeremastered\/]Total War: ROME REMASTERED Modding GitHub[\/url] page.",
+	"Mod Name": "Rome Hotseat",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": false,
+	"Supports BI": false,
+	"Supports Rome": true,
+	"Tags": [ ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}

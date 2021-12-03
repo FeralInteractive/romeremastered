@@ -1,0 +1,879 @@
+script
+
+; persistent counters are a new feature in Rome Remastered. They allow you to declare a 
+; new counter, the contents of the counter can be updated and compared inside scripts.
+; It is also stored inside the players save game file this means when players quit and
+; reload a save game any important information about the state of the players progress
+; is retained.
+
+; This mod only works for Rome Remastered but it could be modified to work on BI, 
+; Alexander or even as a sub-mod for a larger overhaul mod.
+
+
+; first we setup a counter to record if we're doing a first time setup or not. 
+	declare_persistent_counter first_time_setup
+    
+; we then do a check if this is the first time we setup counters to track which factions 
+; will be marked as human or AI players. We then set the initial faction to Julii    
+    if I_CompareCounter first_time_setup = 0
+        declare_persistent_counter romans_julii
+        declare_persistent_counter romans_brutii
+        declare_persistent_counter romans_scipii
+        declare_persistent_counter macedon
+        declare_persistent_counter egypt
+        declare_persistent_counter seleucid
+        declare_persistent_counter carthage
+        declare_persistent_counter parthia
+        declare_persistent_counter pontus
+        declare_persistent_counter gauls
+        declare_persistent_counter germans
+        declare_persistent_counter britons
+        declare_persistent_counter armenia
+        declare_persistent_counter dacia
+        declare_persistent_counter greek_cities
+        declare_persistent_counter numidia
+        declare_persistent_counter scythia
+        declare_persistent_counter spain
+        declare_persistent_counter thrace
+        console_command control romans_julii
+    end_if
+
+; We now setup counters to track the questions for each faction and players replies 
+; unlike the ones above these don't need to be persistant.
+
+	declare_counter plays_julii_question
+    declare_counter julii_asked
+    declare_counter julii_answered
+	declare_counter plays_julii_output
+
+	declare_counter plays_brutii_question
+    declare_counter brutii_asked
+    declare_counter brutii_answered
+	declare_counter plays_brutii_output
+
+	declare_counter plays_scipii_question
+    declare_counter scipii_asked
+    declare_counter scipii_answered
+	declare_counter plays_scipii_output
+
+	declare_counter plays_macedon_question
+    declare_counter macedon_asked
+    declare_counter macedon_answered
+	declare_counter plays_macedon_output
+
+	declare_counter plays_egypt_question
+    declare_counter egypt_asked
+    declare_counter egypt_answered
+	declare_counter plays_egypt_output
+
+	declare_counter plays_seleucid_question
+    declare_counter seleucid_asked
+    declare_counter seleucid_answered
+	declare_counter plays_seleucid_output
+
+	declare_counter plays_carthage_question
+    declare_counter carthage_asked
+    declare_counter carthage_answered
+	declare_counter plays_carthage_output
+
+	declare_counter plays_parthia_question
+    declare_counter parthia_asked
+    declare_counter parthia_answered
+	declare_counter plays_parthia_output
+
+	declare_counter plays_pontus_question
+    declare_counter pontus_asked
+    declare_counter pontus_answered
+	declare_counter plays_pontus_output
+
+	declare_counter plays_gauls_question
+    declare_counter gauls_asked
+    declare_counter gauls_answered
+	declare_counter plays_gauls_output
+
+	declare_counter plays_germans_question
+    declare_counter germans_asked
+    declare_counter germans_answered
+	declare_counter plays_germans_output
+
+	declare_counter plays_britons_question
+    declare_counter britons_asked
+    declare_counter britons_answered
+	declare_counter plays_britons_output
+
+	declare_counter plays_armenia_question
+    declare_counter armenia_asked
+    declare_counter armenia_answered
+	declare_counter plays_armenia_output
+
+	declare_counter plays_dacia_question
+    declare_counter dacia_asked
+    declare_counter dacia_answered
+	declare_counter plays_dacia_output
+
+	declare_counter plays_greek_cities_question
+    declare_counter greek_cities_asked
+    declare_counter greek_cities_answered
+	declare_counter plays_greek_cities_output
+
+	declare_counter plays_numidia_question
+    declare_counter numidia_asked
+    declare_counter numidia_answered
+	declare_counter plays_numidia_output
+
+	declare_counter plays_scythia_question
+    declare_counter scythia_asked
+    declare_counter scythia_answered
+	declare_counter plays_scythia_output
+
+	declare_counter plays_spain_question
+    declare_counter spain_asked
+    declare_counter spain_answered
+	declare_counter plays_spain_output
+
+	declare_counter plays_thrace_question
+    declare_counter thrace_asked
+    declare_counter thrace_answered
+	declare_counter plays_thrace_output
+
+    
+    ;; For scripts running throughout a campaign this could be done through separate 
+    ;; monitors however monitors are not called on turn 0 (initial setup turn), meaning 
+    ;; we have to trigger the questions using the loop method instead.
+
+    while I_CompareCounter first_time_setup = 0
+        ai_active_set off
+
+        if I_CompareCounter julii_asked = 0
+            message_prompt
+            {
+                flag_counter plays_julii_question
+                result_counter plays_julii_output
+                    
+                title PLAYS_JULII_TITLE
+                body PLAYS_JULII_BODY
+                
+                image adoption
+            }	
+            set_counter julii_asked 1
+        end_if
+
+        monitor_event ScriptPromptCallback I_CompareCounter plays_julii_question == 1
+            if I_CompareCounter plays_julii_output == 1
+                set_counter romans_julii 1
+            end_if
+            if I_CompareCounter plays_julii_output == 0
+                set_counter romans_julii 0
+            end_if
+
+            console_command control romans_brutii
+            set_counter plays_julii_question 0
+            set_counter julii_answered 1
+        end_monitor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+        
+        if I_CompareCounter brutii_asked = 0
+        and I_CompareCounter julii_answered = 1
+            message_prompt
+            {
+                flag_counter plays_brutii_question
+                result_counter plays_brutii_output
+                    
+                title PLAYS_BRUTII_TITLE
+                body PLAYS_BRUTII_BODY
+                
+                image adoption
+            }
+            set_counter brutii_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_brutii_question == 1
+			if I_CompareCounter plays_brutii_output == 1
+				set_counter romans_brutii 1
+			end_if
+			if I_CompareCounter plays_brutii_output == 0
+				set_counter romans_brutii 0
+			end_if
+
+			console_command control romans_scipii
+			set_counter plays_brutii_question 0
+			set_counter brutii_answered 1
+		end_monitor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter scipii_asked = 0
+        and I_CompareCounter brutii_answered = 1
+            message_prompt
+            {
+                flag_counter plays_scipii_question
+                result_counter plays_scipii_output
+                    
+                title PLAYS_SCIPII_TITLE
+                body PLAYS_SCIPII_BODY
+                
+                image adoption
+            }
+            set_counter scipii_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_scipii_question == 1
+			if I_CompareCounter plays_scipii_output == 1
+				set_counter romans_scipii 1
+			end_if
+			if I_CompareCounter plays_scipii_output == 0
+				set_counter romans_scipii 0
+			end_if
+
+			console_command control macedon
+			set_counter plays_scipii_question 0
+			set_counter scipii_answered 1
+		end_monitor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter macedon_asked = 0
+        and I_CompareCounter scipii_answered = 1
+            message_prompt
+            {
+                flag_counter plays_macedon_question
+                result_counter plays_macedon_output
+                    
+                title PLAYS_MACEDON_TITLE
+                body PLAYS_MACEDON_BODY
+                
+                image adoption
+            }
+            set_counter macedon_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_macedon_question == 1
+			if I_CompareCounter plays_macedon_output == 1
+				set_counter macedon 1
+			end_if
+			if I_CompareCounter plays_macedon_output == 0
+				set_counter macedon 0
+			end_if
+
+			console_command control egypt
+			set_counter plays_macedon_question 0
+			set_counter macedon_answered 1
+		end_monitor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter egypt_asked = 0
+        and I_CompareCounter macedon_answered = 1
+            message_prompt
+            {
+                flag_counter plays_egypt_question
+                result_counter plays_egypt_output
+                    
+                title PLAYS_EGYPT_TITLE
+                body PLAYS_EGYPT_BODY
+                
+                image adoption
+            }
+            set_counter egypt_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_egypt_question == 1
+			if I_CompareCounter plays_egypt_output == 1
+				set_counter egypt 1
+			end_if
+			if I_CompareCounter plays_egypt_output == 0
+				set_counter egypt 0
+			end_if
+
+			console_command control seleucid
+			set_counter plays_egypt_question 0
+			set_counter egypt_answered 1
+		end_monitor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter seleucid_asked = 0
+        and I_CompareCounter egypt_answered = 1
+            message_prompt
+            {
+                flag_counter plays_seleucid_question
+                result_counter plays_seleucid_output
+                    
+                title PLAYS_SELEUCID_TITLE
+                body PLAYS_SELEUCID_BODY
+                
+                image adoption
+            }
+            set_counter seleucid_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_seleucid_question == 1
+			if I_CompareCounter plays_seleucid_output == 1
+				set_counter seleucid 1
+			end_if
+			if I_CompareCounter plays_seleucid_output == 0
+				set_counter seleucid 0
+			end_if
+
+			console_command control carthage
+			set_counter plays_seleucid_question 0
+			set_counter seleucid_answered 1
+		end_monitor
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter carthage_asked = 0
+        and I_CompareCounter seleucid_answered = 1
+            message_prompt
+            {
+                flag_counter plays_carthage_question
+                result_counter plays_carthage_output
+                    
+                title PLAYS_CARTHAGE_TITLE
+                body PLAYS_CARTHAGE_BODY
+                
+                image adoption
+            }
+            set_counter carthage_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_carthage_question == 1
+			if I_CompareCounter plays_carthage_output == 1
+				set_counter carthage 1
+			end_if
+			if I_CompareCounter plays_carthage_output == 0
+				set_counter carthage 0
+			end_if
+
+			console_command control parthia
+			set_counter plays_carthage_question 0
+			set_counter carthage_answered 1
+		end_monitor
+        
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter parthia_asked = 0
+        and I_CompareCounter carthage_answered = 1
+            message_prompt
+            {
+                flag_counter plays_parthia_question
+                result_counter plays_parthia_output
+                    
+                title PLAYS_PARTHIA_TITLE
+                body PLAYS_PARTHIA_BODY
+                
+                image adoption
+            }
+            set_counter parthia_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_parthia_question == 1
+			if I_CompareCounter plays_parthia_output == 1
+				set_counter parthia 1
+			end_if
+			if I_CompareCounter plays_parthia_output == 0
+				set_counter parthia 0
+			end_if
+
+			console_command control pontus
+			set_counter plays_parthia_question 0
+			set_counter parthia_answered 1
+		end_monitor
+        
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter pontus_asked = 0
+        and I_CompareCounter parthia_answered = 1
+            message_prompt
+            {
+                flag_counter plays_pontus_question
+                result_counter plays_pontus_output
+                    
+                title PLAYS_PONTUS_TITLE
+                body PLAYS_PONTUS_BODY
+                
+                image adoption
+            }
+            set_counter pontus_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_pontus_question == 1
+			if I_CompareCounter plays_pontus_output == 1
+				set_counter pontus 1
+			end_if
+			if I_CompareCounter plays_pontus_output == 0
+				set_counter pontus 0
+			end_if
+
+			console_command control gauls
+			set_counter plays_pontus_question 0
+			set_counter pontus_answered 1
+		end_monitor
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter gauls_asked = 0
+        and I_CompareCounter pontus_answered = 1
+            message_prompt
+            {
+                flag_counter plays_gauls_question
+                result_counter plays_gauls_output
+                    
+                title PLAYS_GAULS_TITLE
+                body PLAYS_GAULS_BODY
+                
+                image adoption
+            }
+            set_counter gauls_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_gauls_question == 1
+			if I_CompareCounter plays_gauls_output == 1
+				set_counter gauls 1
+			end_if
+			if I_CompareCounter plays_gauls_output == 0
+				set_counter gauls 0
+			end_if
+
+			console_command control germans
+			set_counter plays_gauls_question 0
+			set_counter gauls_answered 1
+		end_monitor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter germans_asked = 0
+        and I_CompareCounter gauls_answered = 1
+            message_prompt
+            {
+                flag_counter plays_germans_question
+                result_counter plays_germans_output
+                    
+                title PLAYS_GERMANS_TITLE
+                body PLAYS_GERMANS_BODY
+                
+                image adoption
+            }
+            set_counter germans_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_germans_question == 1
+			if I_CompareCounter plays_germans_output == 1
+				set_counter germans 1
+			end_if
+			if I_CompareCounter plays_germans_output == 0
+				set_counter germans 0
+			end_if
+
+			console_command control britons
+			set_counter plays_germans_question 0
+			set_counter germans_answered 1
+		end_monitor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter britons_asked = 0
+        and I_CompareCounter germans_answered = 1
+            message_prompt
+            {
+                flag_counter plays_britons_question
+                result_counter plays_britons_output
+                    
+                title PLAYS_BRITONS_TITLE
+                body PLAYS_BRITONS_BODY
+                
+                image adoption
+            }
+            set_counter britons_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_britons_question == 1
+			if I_CompareCounter plays_britons_output == 1
+				set_counter britons 1
+			end_if
+			if I_CompareCounter plays_britons_output == 0
+				set_counter britons 0
+			end_if
+
+			console_command control armenia
+			set_counter plays_britons_question 0
+			set_counter britons_answered 1
+		end_monitor
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter armenia_asked = 0
+        and I_CompareCounter britons_answered = 1
+            message_prompt
+            {
+                flag_counter plays_armenia_question
+                result_counter plays_armenia_output
+                    
+                title PLAYS_ARMENIA_TITLE
+                body PLAYS_ARMENIA_BODY
+                
+                image adoption
+            }
+            set_counter armenia_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_armenia_question == 1
+			if I_CompareCounter plays_armenia_output == 1
+				set_counter armenia 1
+			end_if
+			if I_CompareCounter plays_armenia_output == 0
+				set_counter armenia 0
+			end_if
+
+			console_command control dacia
+			set_counter plays_armenia_question 0
+			set_counter armenia_answered 1
+		end_monitor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter dacia_asked = 0
+        and I_CompareCounter armenia_answered = 1
+            message_prompt
+            {
+                flag_counter plays_dacia_question
+                result_counter plays_dacia_output
+                    
+                title PLAYS_DACIA_TITLE
+                body PLAYS_DACIA_BODY
+                
+                image adoption
+            }
+            set_counter dacia_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_dacia_question == 1
+			if I_CompareCounter plays_dacia_output == 1
+				set_counter dacia 1
+			end_if
+			if I_CompareCounter plays_dacia_output == 0
+				set_counter dacia 0
+			end_if
+
+			console_command control greek_cities
+			set_counter plays_dacia_question 0
+			set_counter dacia_answered 1
+		end_monitor
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter greek_cities_asked = 0
+        and I_CompareCounter dacia_answered = 1
+            message_prompt
+            {
+                flag_counter plays_greek_cities_question
+                result_counter plays_greek_cities_output
+                    
+                title PLAYS_GREEK_CITIES_TITLE
+                body PLAYS_GREEK_CITIES_BODY
+                
+                image adoption
+            }
+            set_counter greek_cities_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_greek_cities_question == 1
+			if I_CompareCounter plays_greek_cities_output == 1
+				set_counter greek_cities 1
+			end_if
+			if I_CompareCounter plays_greek_cities_output == 0
+				set_counter greek_cities 0
+			end_if
+
+            console_command control numidia
+			set_counter plays_greek_cities_question 0
+			set_counter greek_cities_answered 1
+		end_monitor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter numidia_asked = 0
+        and I_CompareCounter greek_cities_answered = 1
+            message_prompt
+            {
+                flag_counter plays_numidia_question
+                result_counter plays_numidia_output
+                    
+                title PLAYS_NUMIDIA_TITLE
+                body PLAYS_NUMIDIA_BODY
+                
+                image adoption
+            }
+            set_counter numidia_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_numidia_question == 1
+			if I_CompareCounter plays_numidia_output == 1
+				set_counter numidia 1
+			end_if
+			if I_CompareCounter plays_numidia_output == 0
+				set_counter numidia 0
+			end_if
+
+            console_command control scythia
+			set_counter plays_numidia_question 0
+			set_counter numidia_answered 1
+		end_monitor
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter scythia_asked = 0
+        and I_CompareCounter numidia_answered = 1
+            message_prompt
+            {
+                flag_counter plays_scythia_question
+                result_counter plays_scythia_output
+                    
+                title PLAYS_SCYTHIA_TITLE
+                body PLAYS_SCYTHIA_BODY
+                
+                image adoption
+            }
+            set_counter scythia_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_scythia_question == 1
+			if I_CompareCounter plays_scythia_output == 1
+				set_counter scythia 1
+			end_if
+			if I_CompareCounter plays_scythia_output == 0
+				set_counter scythia 0
+			end_if
+
+			console_command control spain
+			set_counter plays_scythia_question 0
+			set_counter scythia_answered 1
+		end_monitor
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter spain_asked = 0
+        and I_CompareCounter scythia_answered = 1
+            message_prompt
+            {
+                flag_counter plays_spain_question
+                result_counter plays_spain_output
+                    
+                title PLAYS_SPAIN_TITLE
+                body PLAYS_SPAIN_BODY
+                
+                image adoption
+            }
+            set_counter spain_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_spain_question == 1
+			if I_CompareCounter plays_spain_output == 1
+				set_counter spain 1
+			end_if
+			if I_CompareCounter plays_spain_output == 0
+				set_counter spain 0
+			end_if
+
+			console_command control thrace
+			set_counter plays_spain_question 0
+			set_counter spain_answered 1
+		end_monitor
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+        if I_CompareCounter thrace_asked = 0
+        and I_CompareCounter spain_answered = 1
+            message_prompt
+            {
+                flag_counter plays_thrace_question
+                result_counter plays_thrace_output
+                    
+                title PLAYS_THRACE_TITLE
+                body PLAYS_THRACE_BODY
+                
+                image adoption
+            }
+            set_counter thrace_asked 1
+        end_if
+
+		monitor_event ScriptPromptCallback I_CompareCounter plays_thrace_question == 1
+			if I_CompareCounter plays_thrace_output == 1
+				set_counter thrace 1
+			end_if
+			if I_CompareCounter plays_thrace_output == 0
+				set_counter thrace 0
+			end_if
+
+            set_counter first_time_setup 1
+			console_command control romans_julii
+			set_counter plays_thrace_question 0
+			set_counter thrace_answered 1
+		end_monitor
+
+    end_while
+
+    ai_active_set on
+
+;; Below We have Monitors to jump the camera the factions capital when switching factions
+;; The script monitors when a faction turn starts, if the faction is human controlled via
+;; the counter and if both are true it then uses the go_to_capital command to center the
+;; camera on the faction capital on turn end.
+
+    monitor_event FactionTurnStart FactionType romans_julii
+    and I_CompareCounter romans_julii = 1
+        console_command go_to_capital romans_julii
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType romans_brutii
+    and I_CompareCounter romans_brutii = 1
+        console_command go_to_capital romans_brutii
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType romans_scipii
+    and I_CompareCounter romans_scipii = 1
+        console_command go_to_capital romans_scipii
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType macedon
+    and I_CompareCounter macedon = 1
+        console_command go_to_capital macedon
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType egypt
+    and I_CompareCounter egypt = 1
+        console_command go_to_capital egypt
+    end_monitor
+    
+    monitor_event FactionTurnStart FactionType seleucid
+    and I_CompareCounter seleucid = 1
+        console_command go_to_capital seleucid
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType carthage
+    and I_CompareCounter carthage = 1
+        console_command go_to_capital carthage
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType parthia
+    and I_CompareCounter parthia = 1
+        console_command go_to_capital parthia
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType pontus
+    and I_CompareCounter pontus = 1
+        console_command go_to_capital pontus
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType germans
+    and I_CompareCounter germans = 1
+        console_command go_to_capital germans
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType armenia
+    and I_CompareCounter armenia = 1
+        console_command go_to_capital armenia
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType dacia
+    and I_CompareCounter dacia = 1
+        console_command go_to_capital dacia
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType greek_cities
+    and I_CompareCounter greek_cities = 1
+        console_command go_to_capital greek_cities
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType scythia
+    and I_CompareCounter scythia = 1
+        console_command go_to_capital scythia
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType spain
+    and I_CompareCounter spain = 1
+        console_command go_to_capital spain
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType thrace
+    and I_CompareCounter thrace = 1
+        console_command go_to_capital thrace
+    end_monitor
+
+;;
+
+    monitor_event FactionTurnStart FactionType romans_julii
+    and I_CompareCounter romans_julii = 0
+        console_command control romans_brutii
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType romans_brutii
+    and I_CompareCounter romans_brutii = 0
+        console_command control romans_scipii
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType romans_scipii
+    and I_CompareCounter romans_scipii = 0
+        console_command control macedon
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType macedon
+    and I_CompareCounter macedon = 0
+        console_command control egypt
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType egypt
+    and I_CompareCounter egypt = 0
+        console_command control seleucid
+    end_monitor
+    
+    monitor_event FactionTurnStart FactionType seleucid
+    and I_CompareCounter seleucid = 0
+        console_command control carthage
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType carthage
+    and I_CompareCounter carthage = 0
+        console_command control parthia
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType parthia
+    and I_CompareCounter parthia = 0
+        console_command control pontus
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType pontus
+    and I_CompareCounter pontus = 0
+        console_command control gauls
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType germans
+    and I_CompareCounter germans = 0
+        console_command control britons
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType armenia
+    and I_CompareCounter armenia = 0
+        console_command control dacia
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType dacia
+    and I_CompareCounter dacia = 0
+        console_command control greek_cities
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType greek_cities
+    and I_CompareCounter greek_cities = 0
+        console_command control numidia
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType scythia
+    and I_CompareCounter scythia = 0
+        console_command control spain
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType spain
+    and I_CompareCounter spain = 0
+        console_command control thrace
+    end_monitor
+
+    monitor_event FactionTurnStart FactionType thrace
+    and I_CompareCounter thrace = 0
+        console_command control romans_julii
+    end_monitor
+
+end_script
