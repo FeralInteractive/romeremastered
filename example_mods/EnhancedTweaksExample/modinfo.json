@@ -1,0 +1,18 @@
+{
+	"Description": "This is an example mod that shows how to place the enhanced_tweaks .json files after you generate them in game.
+
+To create enhance_tweaks.json files you should enable the command using the command [b][i]enhanced_tweaks[/i][/b] in the Advanced Options text box.
+
+Please note the main menu, campaign map and 3D battles all have unique options so you should save the main menu, campaign map and battle jsons separately with unique names and place them inside the enhanced_tweaks folder of your mod.
+
+The json files are saved in a folder called [b][i]EnhancedTweaks[/i][/b] in the root of the [b][i]Total War ROME REMASTERED[/i][/b] preferences folder.
+	",
+	"Mod Name": "Enhanced Tweaks Example Mod",
+	"Preview Image": "ExampleMod.png",
+	"Supports Alex": false,
+	"Supports BI": false,
+	"Supports Rome": true,
+	"Tags": [],
+	"Visibility": 0,
+	"Workshop ID": 0
+}

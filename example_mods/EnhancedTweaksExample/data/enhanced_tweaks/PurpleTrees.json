@@ -1,0 +1,2896 @@
+{
+	"Ally Betrayal for Protectorate": [
+		{
+			"[ABP] romans_brutii Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] romans_scipii Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] romans_senate Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] macedon Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] egypt Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] seleucid Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] carthage Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] parthia Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] pontus Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] gauls Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] germans Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] britons Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] armenia Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] dacia Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] greek_cities Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] numidia Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] scythia Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] spain Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] thrace Chance Multiplier": [
+				0.8
+			]
+		},
+		{
+			"[ABP] slave Chance Multiplier": [
+				0.8
+			]
+		}
+	],
+	"Antialiased Lines": [
+		{
+			"[AAL] Enable Antialiased Lines": true
+		},
+		{
+			"[AAL] Antialiased Lines Width": [
+				3
+			]
+		},
+		{
+			"[AAL] Antialiased Lines Filter": [
+				-2.7
+			]
+		}
+	],
+	"Bloom": [
+		{
+			"[Bloom] Enabled": true
+		},
+		{
+			"[Bloom] Threshold": [
+				0.75
+			]
+		},
+		{
+			"[Bloom] Scaling": [
+				1.5
+			]
+		},
+		{
+			"[Bloom] Max": [
+				5
+			]
+		},
+		{
+			"[Bloom] Num blur samples": [
+				10
+			]
+		},
+		{
+			"[Bloom] Blur standard deviation": [
+				0.4
+			]
+		},
+		{
+			"[Bloom] Inverse bloom strength": [
+				20
+			]
+		},
+		{
+			"[Bloom] Weighting 0": [
+				3
+			]
+		},
+		{
+			"[Bloom] Weighting 1": [
+				3
+			]
+		},
+		{
+			"[Bloom] Weighting 2": [
+				2
+			]
+		},
+		{
+			"[Bloom] Weighting 3": [
+				1
+			]
+		},
+		{
+			"[Bloom] Weighting 4": [
+				1
+			]
+		},
+		{
+			"[Bloom] Weighting 5": [
+				1
+			]
+		}
+	],
+	"CSM": [
+		{
+			"[CSM] Shadows enabled": true
+		},
+		{
+			"[CSM] Use SDSM": false
+		},
+		{
+			"[CSM] Use compute shader": false
+		},
+		{
+			"[CSM] Use receiver plane depth bias": true
+		},
+		{
+			"[CSM] Max shadow range": [
+				450
+			]
+		},
+		{
+			"[CSM] Shadow cascade count": [
+				3
+			]
+		},
+		{
+			"[CSM] Filter size": [
+				1.5
+			]
+		},
+		{
+			"[CSM] Shadow cascade resolution": [
+				2048
+			]
+		},
+		{
+			"[CSM] Shadow mask downscaling": [
+				0
+			]
+		},
+		{
+			"[CSM] Bias": [
+				0
+			]
+		},
+		{
+			"[CSM] Disc Samples": [
+				16
+			]
+		},
+		{
+			"[CSM] Split lambda": [
+				0.25
+			]
+		},
+		{
+			"[CSM] Minimum Range": [
+				1
+			]
+		},
+		{
+			"[CSM] Blend Threshold": [
+				0.1
+			]
+		},
+		{
+			"[CSM] Far Shadows Enabled": false
+		},
+		{
+			"[CSM] Cull Spears": true
+		},
+		{
+			"[CSM] cascade blend offset": [
+				0.25
+			]
+		},
+		{
+			"[CSM] far shadows blend offset": [
+				0
+			]
+		},
+		{
+			"[CSM] 1st cascade extends shrink": [
+				0.9
+			]
+		},
+		{
+			"[CSM] Enable Debug CSMs Display": false
+		}
+	],
+	"Campaign Buildings": [
+		{
+			"[CBui] Shear forts ratio": [
+				1
+			]
+		},
+		{
+			"[CBui] Raise forts ratio": [
+				0
+			]
+		},
+		{
+			"[CBui] Shear watchtowers ratio": [
+				0
+			]
+		},
+		{
+			"[CBui] Raise watchtowers ratio": [
+				0
+			]
+		},
+		{
+			"[CBui] Shear settlements ratio": [
+				0
+			]
+		},
+		{
+			"[CBui] Raise settlements ratio": [
+				0
+			]
+		},
+		{
+			"[CBui] Shear ports ratio": [
+				0
+			]
+		},
+		{
+			"[CBui] Raise ports ratio": [
+				0
+			]
+		},
+		{
+			"[CBui] Shear docks ratio": [
+				0
+			]
+		},
+		{
+			"[CBui] Raise docks ratio": [
+				0
+			]
+		}
+	],
+	"Campaign Camera": [
+		{
+			"[CCam] Minimum zoom": [
+				0.4
+			]
+		},
+		{
+			"[CCam] Maximum zoom": [
+				1.55
+			]
+		},
+		{
+			"[CCam] Speed": [
+				20
+			]
+		},
+		{
+			"[CCam] Rotation Speed": [
+				40
+			]
+		},
+		{
+			"[CCam] Zoom Speed": [
+				1.1
+			]
+		},
+		{
+			"[CCam] Rate to vertical": [
+				1
+			]
+		},
+		{
+			"[CCam] Max vertical": [
+				0.6
+			]
+		}
+	],
+	"Campaign Camera Config": [
+		{
+			"[CCamConf] Scale": [
+				50
+			]
+		},
+		{
+			"[CCamConf] Offset": [
+				40
+			]
+		}
+	],
+	"Campaign Coast": [
+		{
+			"[CCoast] Wave size": [
+				0.3
+			]
+		},
+		{
+			"[CCoast] Wave travel": [
+				0.225
+			]
+		},
+		{
+			"[CCoast] Wave start": [
+				-0.4
+			]
+		}
+	],
+	"Campaign Fog of War": [
+		{
+			"[FoW] Enable fog of war": true
+		},
+		{
+			"[FoW] Enable Fog of War tracking": false
+		},
+		{
+			"[FoW] Should tracking errors break?": false
+		},
+		{
+			"[FoW] Should state errors break?": false
+		},
+		{
+			"[FoW] Should known active vision sources be reset on load?": false
+		},
+		{
+			"[FoW] Should all active vision be 'auto-fixed' (fully reset and cleared) on load?": false
+		}
+	],
+	"Campaign Map": [
+		{
+			"[CM] Light strength": [
+				1.1
+			]
+		},
+		{
+			"[CM] Ambient strength": [
+				1
+			]
+		},
+		{
+			"[CM] Debug normals": [
+				0
+			]
+		},
+		{
+			"[CM] Debug overlay normals": [
+				0
+			]
+		},
+		{
+			"[CM] Albedo strength": [
+				1
+			]
+		},
+		{
+			"[CM] Normal strength": [
+				0.8
+			]
+		},
+		{
+			"[CM] Geometry normal strength": [
+				0
+			]
+		},
+		{
+			"[CM] AO Map strength": [
+				1
+			]
+		},
+		{
+			"[CM] Overlay albedo strength": [
+				1
+			]
+		},
+		{
+			"[CM] Overlay normal strength": [
+				1
+			]
+		},
+		{
+			"[CM] Overlay geometry normal strength": [
+				1
+			]
+		},
+		{
+			"[CM] Overlay roughness strength": [
+				1
+			]
+		},
+		{
+			"[CM] Fog of war strength": [
+				0.35
+			]
+		},
+		{
+			"[CM] Winter override": false
+		},
+		{
+			"[CM] use values in quadtree": false
+		},
+		{
+			"[CM] use values in heightmap": true
+		},
+		{
+			"[CM] PM algorithm": [
+				1
+			]
+		},
+		{
+			"[CM] PM height map scale": [
+				0.1
+			]
+		},
+		{
+			"[CM] PM min number of samples": [
+				8
+			]
+		},
+		{
+			"[CM] PM max number of samples": [
+				32
+			]
+		},
+		{
+			"[CM] PM number of steps": [
+				32
+			]
+		},
+		{
+			"[CM] PM self-shadowing strength": [
+				0
+			]
+		},
+		{
+			"[CM] Quake depthmap offset": [
+				0,
+				-0.5
+			]
+		},
+		{
+			"[CM] Quake depthmap scale": [
+				0.125,
+				-0.125
+			]
+		}
+	],
+	"Campaign Map Extents": [
+		{
+			"[CME] Extents Strength (Day)": [
+				0.9
+			]
+		},
+		{
+			"[CME] Extents Strength (Night)": [
+				0.3
+			]
+		},
+		{
+			"[CME] Movement extent colour": [
+				0,
+				1,
+				0
+			]
+		},
+		{
+			"[CME] Movement extent opacity": [
+				0.5
+			]
+		},
+		{
+			"[CME] ZoC extent colour": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"[CME] ZoC extent opacity": [
+				0.5
+			]
+		},
+		{
+			"[CME] Ambush extent colour": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[CME] Ambush extent opacity": [
+				0.9
+			]
+		},
+		{
+			"[CME] Enemy movement extent colour": [
+				1,
+				1,
+				0
+			]
+		},
+		{
+			"[CME] Enemy movement extent opacity": [
+				0.5
+			]
+		}
+	],
+	"Campaign Map Overlays": [
+		{
+			"[CMO] Original coastline": false
+		},
+		{
+			"[CMO] Maximum height difference": [
+				0.1
+			]
+		},
+		{
+			"[CMO] Height fade range": [
+				0.05
+			]
+		},
+		{
+			"[CMO] Disable overlay extension": false
+		}
+	],
+	"Campaign Map Tags": [
+		{
+			"[CMT]Dark Background Opacity": [
+				254
+			]
+		},
+		{
+			"[CMT]Gradient Opacity": [
+				254
+			]
+		},
+		{
+			"[CMT]Neutral Colour": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[CMT]Ally Colour": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[CMT]Enemy Colour": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[CMT]Ally of Ally Colour": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[CMT]Ally of Enemy Colour": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[CMT]Icons Opacity": [
+				254
+			]
+		},
+		{
+			"[CMT]Font Opacity": [
+				254
+			]
+		},
+		{
+			"[CMT]Font Colour": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[CMT]Font Colour on Dark background": [
+				1,
+				1,
+				1
+			]
+		},
+		{
+			"[CMT]Font Colour for Region names": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[CMT]Level 1 Zoom (Big/Medium)": [
+				33
+			]
+		},
+		{
+			"[CMT]Level 2 Zoom (Medium/Small)": [
+				66
+			]
+		}
+	],
+	"Campaign Map Trees": [
+		{
+			"[CTree] Min sparse size": [
+				3
+			]
+		},
+		{
+			"[CTree] Max sparse size": [
+				3
+			]
+		},
+		{
+			"[CTree] Min dense size": [
+				3
+			]
+		},
+		{
+			"[CTree] Max dense size": [
+				3
+			]
+		},
+		{
+			"[CTree] Min canopy size": [
+				3
+			]
+		},
+		{
+			"[CTree] Max canopy size": [
+				1.2
+			]
+		},
+		{
+			"[CTree] Hue variation": [
+				-0.08
+			]
+		},
+		{
+			"[CTree] Hue offset": [
+				-0.3
+			]
+		},
+		{
+			"[CTree] Value variation sparse": [
+				0.2
+			]
+		},
+		{
+			"[CTree] Value offset sparse": [
+				-0.2
+			]
+		},
+		{
+			"[CTree] Value variation dense": [
+				0.2
+			]
+		},
+		{
+			"[CTree] Value offset dense": [
+				0.49
+			]
+		},
+		{
+			"[CTree] Sheer scale": [
+				2
+			]
+		},
+		{
+			"[CTree] Alpha coverage": [
+				0.73
+			]
+		},
+		{
+			"[CTree] Two-sided rendering": true
+		},
+		{
+			"[CTree] Invert normals for two-sided rendering": false
+		}
+	],
+	"Campaign Terrain Overlays": [
+		{
+			"[ouch] Terrain Overlays Enabled": true
+		},
+		{
+			"[ouch] scorched UV Scale": [
+				0.203125
+			]
+		},
+		{
+			"[ouch] scorched Opacity": [
+				0.25
+			]
+		},
+		{
+			"[ouch] scorched addition blend mode": false
+		},
+		{
+			"[ouch] scorched texture alpha mid": [
+				0.742
+			]
+		},
+		{
+			"[ouch] scorched texture alpha width": [
+				0.016
+			]
+		},
+		{
+			"[ouch] scorched location alpha mid": [
+				0.07
+			]
+		},
+		{
+			"[ouch] scorched location alpha width": [
+				0.328
+			]
+		},
+		{
+			"[ouch] cultivated UV Scale": [
+				0.0546875
+			]
+		},
+		{
+			"[ouch] cultivated Opacity": [
+				0.3
+			]
+		},
+		{
+			"[ouch] cultivated addition blend mode": true
+		},
+		{
+			"[ouch] cultivated texture alpha mid": [
+				0.5
+			]
+		},
+		{
+			"[ouch] cultivated texture alpha width": [
+				0.01
+			]
+		},
+		{
+			"[ouch] cultivated location alpha mid": [
+				0.2
+			]
+		},
+		{
+			"[ouch] cultivated location alpha width": [
+				0.5
+			]
+		},
+		{
+			"[ouch] quaked UV Scale": [
+				0.0625
+			]
+		},
+		{
+			"[ouch] quaked Opacity": [
+				1
+			]
+		},
+		{
+			"[ouch] quaked Velocity": [
+				5
+			]
+		},
+		{
+			"[ouch] quaked Diffusion": [
+				0.05
+			]
+		},
+		{
+			"[ouch] quaked Restart": [
+				5
+			]
+		},
+		{
+			"[ouch] merchant_home UV Scale": [
+				0.203125
+			]
+		},
+		{
+			"[ouch] merchant_home Opacity": [
+				0
+			]
+		},
+		{
+			"[ouch] merchant_home addition blend mode": false
+		},
+		{
+			"[ouch] merchant_home texture alpha mid": [
+				0.5
+			]
+		},
+		{
+			"[ouch] merchant_home texture alpha width": [
+				1
+			]
+		},
+		{
+			"[ouch] merchant_home location alpha mid": [
+				0.5
+			]
+		},
+		{
+			"[ouch] merchant_home location alpha width": [
+				1
+			]
+		},
+		{
+			"[ouch] merchant_invalid_target UV Scale": [
+				0.203125
+			]
+		},
+		{
+			"[ouch] merchant_invalid_target Opacity": [
+				0
+			]
+		},
+		{
+			"[ouch] merchant_invalid_target addition blend mode": false
+		},
+		{
+			"[ouch] merchant_invalid_target texture alpha mid": [
+				0.5
+			]
+		},
+		{
+			"[ouch] merchant_invalid_target texture alpha width": [
+				1
+			]
+		},
+		{
+			"[ouch] merchant_invalid_target location alpha mid": [
+				0.5
+			]
+		},
+		{
+			"[ouch] merchant_invalid_target location alpha width": [
+				1
+			]
+		},
+		{
+			"[ouch] merchant_low_income_target UV Scale": [
+				0.203125
+			]
+		},
+		{
+			"[ouch] merchant_low_income_target Opacity": [
+				0
+			]
+		},
+		{
+			"[ouch] merchant_low_income_target addition blend mode": false
+		},
+		{
+			"[ouch] merchant_low_income_target texture alpha mid": [
+				0.5
+			]
+		},
+		{
+			"[ouch] merchant_low_income_target texture alpha width": [
+				1
+			]
+		},
+		{
+			"[ouch] merchant_low_income_target location alpha mid": [
+				0.5
+			]
+		},
+		{
+			"[ouch] merchant_low_income_target location alpha width": [
+				1
+			]
+		},
+		{
+			"[ouch] merchant_med_income_target UV Scale": [
+				0.203125
+			]
+		},
+		{
+			"[ouch] merchant_med_income_target Opacity": [
+				0
+			]
+		},
+		{
+			"[ouch] merchant_med_income_target addition blend mode": false
+		},
+		{
+			"[ouch] merchant_med_income_target texture alpha mid": [
+				0.5
+			]
+		},
+		{
+			"[ouch] merchant_med_income_target texture alpha width": [
+				1
+			]
+		},
+		{
+			"[ouch] merchant_med_income_target location alpha mid": [
+				0.5
+			]
+		},
+		{
+			"[ouch] merchant_med_income_target location alpha width": [
+				1
+			]
+		},
+		{
+			"[ouch] merchant_high_income_target UV Scale": [
+				0.203125
+			]
+		},
+		{
+			"[ouch] merchant_high_income_target Opacity": [
+				0
+			]
+		},
+		{
+			"[ouch] merchant_high_income_target addition blend mode": false
+		},
+		{
+			"[ouch] merchant_high_income_target texture alpha mid": [
+				0.5
+			]
+		},
+		{
+			"[ouch] merchant_high_income_target texture alpha width": [
+				1
+			]
+		},
+		{
+			"[ouch] merchant_high_income_target location alpha mid": [
+				0.5
+			]
+		},
+		{
+			"[ouch] merchant_high_income_target location alpha width": [
+				1
+			]
+		}
+	],
+	"Campaign Tiles": [
+		{
+			"[CTile] Clear overlays outside grid": false
+		},
+		{
+			"[CTile] SM Position": [
+				0,
+				0
+			]
+		},
+		{
+			"[CTile] Scorched": false
+		},
+		{
+			"[CTile] Quaked": [
+				0
+			]
+		},
+		{
+			"[CTile] Volcanoed": [
+				0
+			]
+		}
+	],
+	"Campaign Turns": [
+		{
+			"[turn] Frametime range": [
+				0.0825,
+				0.125
+			]
+		},
+		{
+			"[turn] Animation speed range": [
+				10,
+				99
+			]
+		},
+		{
+			"[turn] Preferred animation speed": [
+				5
+			]
+		},
+		{
+			"[turn] Current animation speed": [
+				10
+			]
+		}
+	],
+	"Campaign World": [
+		{
+			"[CW] Marian reforms disable override": false
+		},
+		{
+			"[CW] Marian reforms": false
+		},
+		{
+			"[CW] Rebelling characters": false
+		},
+		{
+			"[CW] Gladiator uprisings disabled": false
+		},
+		{
+			"[CW] Night battles": false
+		},
+		{
+			"[CW] Brigand spawn rate": [
+				10
+			]
+		},
+		{
+			"[CW] Pirate spawn rate": [
+				28
+			]
+		}
+	],
+	"Campaign tooltips": [
+		{
+			"[CTT] Debug tooltips": false
+		},
+		{
+			"[CTT] Enable verbose debug tooltips": false
+		},
+		{
+			"[CTT] Verbose tile debug tooltips": 0
+		},
+		{
+			"[CTT] AI resource debug tooltips": 0
+		},
+		{
+			"[CTT] AI campaign debug tooltips": 0
+		}
+	],
+	"Caustics": [
+		{
+			"[Caust] Caustics Enabled": true
+		},
+		{
+			"[Caust] Caustics Light Strength": [
+				1.25
+			]
+		},
+		{
+			"[Caust] Caustics Scale 1": [
+				-0.02,
+				0.02
+			]
+		},
+		{
+			"[Caust] Caustics Speed 1": [
+				0.02
+			]
+		},
+		{
+			"[Caust] Caustics Scale 2": [
+				0.03,
+				-0.03
+			]
+		},
+		{
+			"[Caust] Caustics2 Speed 2": [
+				0.01
+			]
+		},
+		{
+			"[Caust] Caustics2 blend threshold": [
+				4
+			]
+		}
+	],
+	"Coastline (new)": [
+		{
+			"[CCN] Enable coastlines": true
+		},
+		{
+			"[CCN] Wave speed": [
+				0.05
+			]
+		},
+		{
+			"[CCN] spawnInterval": [
+				10
+			]
+		},
+		{
+			"[CCN] Min spawn distance": [
+				0.1
+			]
+		},
+		{
+			"[CCN] Max spawn distance": [
+				0.2
+			]
+		},
+		{
+			"[CCN] Coverage wave width progress point": [
+				0.2
+			]
+		},
+		{
+			"[CCN] Min wave width (start)": [
+				0.5
+			]
+		},
+		{
+			"[CCN] Max wave width (start)": [
+				1.5
+			]
+		},
+		{
+			"[CCN] Max wave width": [
+				8
+			]
+		},
+		{
+			"[CCN] Min break end": [
+				0.2
+			]
+		},
+		{
+			"[CCN] Max break end": [
+				0.25
+			]
+		},
+		{
+			"[CCN] Minimum wave widening rate": [
+				0.3
+			]
+		},
+		{
+			"[CCN] Maximum wave widening rate": [
+				0.8
+			]
+		},
+		{
+			"[CCN] Rear travel": [
+				0.5
+			]
+		},
+		{
+			"[CCN] Front travel": [
+				0.8
+			]
+		},
+		{
+			"[CCN] Front retreat": [
+				0.5
+			]
+		},
+		{
+			"[CCN] Min travel scale": [
+				0.6
+			]
+		},
+		{
+			"[CCN] Min wave progress": [
+				0.5
+			]
+		},
+		{
+			"[CCN] Wave edge v offset": [
+				0.3
+			]
+		},
+		{
+			"[CCN] Wave edge fade width": [
+				1
+			]
+		},
+		{
+			"[CCN] Wave alpha cutoff": [
+				0.5
+			]
+		},
+		{
+			"[CCN] Wave repetition width": [
+				20
+			]
+		},
+		{
+			"[CCN] wave pivot": [
+				0.75
+			]
+		},
+		{
+			"[CCN] enable coastline foam": true
+		},
+		{
+			"[CCN] foam noise amp": [
+				0.75
+			]
+		},
+		{
+			"[CCN] foam noise freq": [
+				0.75
+			]
+		},
+		{
+			"[CCN] foam noise scale": [
+				0.02
+			]
+		},
+		{
+			"[CCN] foam game speed": [
+				100
+			]
+		},
+		{
+			"[CCN] foam texcoord scale": [
+				2
+			]
+		},
+		{
+			"[CCN] foam fade pivot": [
+				0.5
+			]
+		},
+		{
+			"[CCN] foam fade water": [
+				0
+			]
+		},
+		{
+			"[CCN] foam fade coast": [
+				0.25
+			]
+		},
+		{
+			"[CCN] foam fade power": [
+				1
+			]
+		}
+	],
+	"Color grading": [
+		{
+			"[CG] Color grading enabled": true
+		},
+		{
+			"[CG] Color grading strength": [
+				100
+			]
+		},
+		{
+			"[CG] Override the LUT": false
+		},
+		{
+			"[CG] LUT index": [
+				0
+			]
+		}
+	],
+	"Diplomacy": [
+		{
+			"[D] Protectorate Strength Multiplier (The House of Julii)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (The House of Brutii)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (The House of Scipii)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (S.P.Q.R.)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Macedon)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Egypt)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (The Seleucid Empire)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Carthage)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Parthia)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Pontus)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Gaul)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Germania)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Britannia)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Armenia)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Dacia)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (The Greek Cities)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Numidia)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Scythia)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Spain)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Thrace)": [
+				1.5
+			]
+		},
+		{
+			"[D] Protectorate Strength Multiplier (Rebels)": [
+				1.5
+			]
+		}
+	],
+	"Earthquake effect": [
+		{
+			"[quake] Quake duration": [
+				30
+			]
+		},
+		{
+			"[quake] Camera shake interval": [
+				10
+			]
+		}
+	],
+	"Event Manager": [
+		{
+			"[EVT] Fire ALL THE THINGS": false
+		},
+		{
+			"[EVT] Fire all the dustbowls": false
+		},
+		{
+			"[EVT] Fire all the earthquakes": false
+		},
+		{
+			"[EVT] Fire all the emergent_factions": false
+		},
+		{
+			"[EVT] Fire all the famines": false
+		},
+		{
+			"[EVT] Fire all the fires": false
+		},
+		{
+			"[EVT] Fire all the floods": false
+		},
+		{
+			"[EVT] Fire all the history": false
+		},
+		{
+			"[EVT] Fire all the hordes": false
+		},
+		{
+			"[EVT] Fire all the locusts": false
+		},
+		{
+			"[EVT] Fire all the plagues": false
+		},
+		{
+			"[EVT] Fire all the riots": false
+		},
+		{
+			"[EVT] Fire all the storms": false
+		},
+		{
+			"[EVT] Fire all the volcanos": false
+		},
+		{
+			"[EVT] Suppress random event generation": false
+		}
+	],
+	"FXAA": [
+		{
+			"[FXAA] Sub-pixel amount": [
+				0.75
+			]
+		},
+		{
+			"[FXAA] Edge threshold": [
+				0.166
+			]
+		},
+		{
+			"[FXAA] Edge threshold min": [
+				0.0833
+			]
+		}
+	],
+	"Flood Effect": [
+		{
+			"[FW] Shallow extinction color": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[FW] Shallow extinction strength": [
+				2
+			]
+		},
+		{
+			"[FW] Deep extinction color": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[FW] Deep extinction strength": [
+				8
+			]
+		},
+		{
+			"[FW] Min/Max depth range": [
+				0.15,
+				20
+			]
+		},
+		{
+			"[FW] Min/Max extinction transition range": [
+				0,
+				0.8
+			]
+		},
+		{
+			"[FW] Detail normal tiling": [
+				0.5
+			]
+		},
+		{
+			"[FW] Base normal tiling": [
+				0.1
+			]
+		},
+		{
+			"[FW] Detail normal strength": [
+				0.1
+			]
+		},
+		{
+			"[FW] base normal strength": [
+				0.25
+			]
+		},
+		{
+			"[FW] Sky reflection strength": [
+				0.5
+			]
+		},
+		{
+			"[FW] Specular strength": [
+				0.3
+			]
+		},
+		{
+			"[FW] Ambient strength": [
+				0.5
+			]
+		},
+		{
+			"[FW] SSR strength": [
+				0.5
+			]
+		},
+		{
+			"[FW] Fresnel strength": [
+				0.8
+			]
+		},
+		{
+			"[FW] Ambient backscatter strength": [
+				0.25
+			]
+		},
+		{
+			"[FW] Displacement strength": [
+				10
+			]
+		},
+		{
+			"[FW] Flow speed": [
+				2
+			]
+		},
+		{
+			"[FW] Base normal min weakening distance": [
+				0,
+				200
+			]
+		},
+		{
+			"[FW] Detail normal min weakening distance": [
+				0,
+				75
+			]
+		},
+		{
+			"[FW] Min render (discard) height": [
+				0
+			]
+		},
+		{
+			"[FW] Enable Overrides": false
+		},
+		{
+			"[FW] Location Override": [
+				0,
+				0
+			]
+		},
+		{
+			"[FW] Rainfall density": [
+				25
+			]
+		},
+		{
+			"[FW] Radius Override": [
+				0
+			]
+		}
+	],
+	"Heat map": [
+		{
+			"[HM_DEBUG] Heat map info boxes": false
+		}
+	],
+	"High Relationship War": [
+		{
+			"[HRW] romans_brutii Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] romans_brutii Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] romans_scipii Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] romans_scipii Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] romans_senate Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] romans_senate Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] macedon Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] macedon Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] egypt Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] egypt Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] seleucid Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] seleucid Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] carthage Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] carthage Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] parthia Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] parthia Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] pontus Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] pontus Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] gauls Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] gauls Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] germans Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] germans Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] britons Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] britons Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] armenia Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] armenia Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] dacia Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] dacia Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] greek_cities Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] greek_cities Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] numidia Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] numidia Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] scythia Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] scythia Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] spain Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] spain Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] thrace Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] thrace Want War Relationship Modifier": [
+				20
+			]
+		},
+		{
+			"[HRW] slave Max Relationship For War": [
+				80
+			]
+		},
+		{
+			"[HRW] slave Want War Relationship Modifier": [
+				20
+			]
+		}
+	],
+	"Light Culling": [
+		{
+			"[LC] Debug Light Position": false
+		},
+		{
+			"[LC] Light Position Offset": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[LC] Debug Light Radius": false
+		},
+		{
+			"[LC] Radius override": [
+				0
+			]
+		},
+		{
+			"[LC] Debug Light Color": false
+		},
+		{
+			"[LC] Color override": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"Light Manager": [
+		{
+			"[LM] Max Lights": [
+				512
+			]
+		},
+		{
+			"[LM] Flicker Frequency": [
+				4
+			]
+		},
+		{
+			"[LM] Color Interpolation Factor": [
+				0.02
+			]
+		},
+		{
+			"[LM] Light Fade Range": [
+				0.7
+			]
+		},
+		{
+			"[LM] Light Radius Scale": [
+				1
+			]
+		},
+		{
+			"[LM] Light Brightness Scale": [
+				1
+			]
+		}
+	],
+	"Model": [
+		{
+			"[M] Light strength": [
+				1
+			]
+		},
+		{
+			"[M] Reflectance": [
+				0.5
+			]
+		},
+		{
+			"[M] Roughness": [
+				1
+			]
+		},
+		{
+			"[M] Wetness Enabled": true
+		},
+		{
+			"[M] Wetness Factor": [
+				0.2
+			]
+		},
+		{
+			"[M] Metalness": [
+				1
+			]
+		},
+		{
+			"[M] Normal strength": [
+				1
+			]
+		},
+		{
+			"[M] Ambient strength": [
+				1
+			]
+		}
+	],
+	"News frame": [
+		{
+			"[news] Show message time": false
+		}
+	],
+	"Particles": [
+		{
+			"[P] Enable": true
+		},
+		{
+			"[P] Disable soft particles": false
+		},
+		{
+			"[P] RT scale": [
+				2
+			]
+		},
+		{
+			"[P] Override soft particle values": false
+		},
+		{
+			"[P] Contrast power": [
+				0.88
+			]
+		},
+		{
+			"[P] Particle scale": [
+				0.02
+			]
+		},
+		{
+			"[P] Override light values": false
+		},
+		{
+			"[P] Source strength": [
+				1
+			]
+		},
+		{
+			"[P] Ambient strength": [
+				1
+			]
+		},
+		{
+			"[P] fade distance strength": [
+				2e-06
+			]
+		},
+		{
+			"[P] Depth Aware Upsample": true
+		},
+		{
+			"[P] Upsample depth threshold": [
+				100
+			]
+		}
+	],
+	"Pause menu overlay": [
+		{
+			"[PMO] Vignette x axis distance": [
+				0.25,
+				0.25
+			]
+		},
+		{
+			"[PMO] Vignette function power": [
+				2.3
+			]
+		},
+		{
+			"[PMO] Vignette distance scale percentage": [
+				7.5
+			]
+		},
+		{
+			"[PMO] Vignette inverse strength": [
+				75
+			]
+		},
+		{
+			"[PMO] Gradient base": [
+				0.45
+			]
+		},
+		{
+			"[PMO] Gradient strength": [
+				1.51
+			]
+		},
+		{
+			"[PMO] Gradient color": [
+				1,
+				1,
+				1
+			]
+		}
+	],
+	"Prebattle speech debug": [
+		{
+			"[PBD] Disable restrictions": false
+		}
+	],
+	"Resolution": [
+		{
+			"[Res] Resolution": [
+				2560,
+				1440
+			]
+		}
+	],
+	"SSAO": [
+		{
+			"[SSAO] SSAO UI Setting": [
+				2
+			]
+		},
+		{
+			"[SSAO] Enabled": true
+		},
+		{
+			"[SSAO] Quality": [
+				1
+			]
+		},
+		{
+			"[SSAO] Radius": [
+				0.5
+			]
+		},
+		{
+			"[SSAO] Shadow Multiplier": [
+				1.5
+			]
+		},
+		{
+			"[SSAO] Shadow Power": [
+				0.5
+			]
+		},
+		{
+			"[SSAO] Shadow Clamp": [
+				0.6
+			]
+		},
+		{
+			"[SSAO] Horizon Angle Threshold": [
+				0.1
+			]
+		},
+		{
+			"[SSAO] Fade Out From": [
+				50
+			]
+		},
+		{
+			"[SSAO] Fade Out To": [
+				300
+			]
+		},
+		{
+			"[SSAO] Adaptive Quality Limit": [
+				0.45
+			]
+		},
+		{
+			"[SSAO] Blur Passes": [
+				3
+			]
+		},
+		{
+			"[SSAO] Sharpness": [
+				0.98
+			]
+		},
+		{
+			"[SSAO] Detail Shadow Strength": [
+				0.5
+			]
+		},
+		{
+			"[SSAO] Tree AO Injection": true
+		},
+		{
+			"[SSAO] Tree Occlusion Power Scaling": [
+				1
+			]
+		},
+		{
+			"[SSAO] Tree Occlusion Linear Scaling": [
+				0.3
+			]
+		},
+		{
+			"[SSAO] Tree Occlusion Radius Scaling**": [
+				4
+			]
+		}
+	],
+	"Scene": [
+		{
+			"[S] Camera Fov (experimental - might lead to breakage, default value is 55.0f)": [
+				55
+			]
+		},
+		{
+			"[S] Override sun position": false
+		},
+		{
+			"[S] Sun Position": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[S] Normal directional fade out sharpness": [
+				20
+			]
+		},
+		{
+			"[S] Shadow Depth Bias": [
+				20
+			]
+		},
+		{
+			"[S] Shadow Depth Bias Clamp": [
+				0.02
+			]
+		},
+		{
+			"[S] Shadow Slope Scaled Depth Bias": [
+				1
+			]
+		},
+		{
+			"[S] Far Shadow Depth Bias": [
+				7
+			]
+		},
+		{
+			"[S] Far Shadow Depth Bias Clamp": [
+				0.02
+			]
+		},
+		{
+			"[S] Far Shadow Slope Scaled Depth Bias": [
+				3
+			]
+		},
+		{
+			"[S] Enable Wetness debugging": false
+		},
+		{
+			"[S] Wetness Amount": [
+				0
+			]
+		}
+	],
+	"Sky": [
+		{
+			"[sky] Use calculated direct light colour": true
+		},
+		{
+			"[sky] Use direct light occlusion": true
+		},
+		{
+			"[sky] Direct Sun lighting inverse strength": [
+				22
+			]
+		},
+		{
+			"[sky] Sun Intensity": [
+				22
+			]
+		},
+		{
+			"[sky] Moon Intensity": [
+				3.5
+			]
+		},
+		{
+			"[sky] Rayleigh Scattering Coeff (X,Y,Z)": [
+				5.5,
+				13,
+				22.4
+			]
+		},
+		{
+			"[sky] Rayleigh Scale": [
+				8000
+			]
+		},
+		{
+			"[sky] Mie Coeff": [
+				21
+			]
+		},
+		{
+			"[sky] Mie Scale": [
+				1200
+			]
+		},
+		{
+			"[sky] Mie Direction": [
+				0.76
+			]
+		},
+		{
+			"[sky] Lighting Strength (radiance)": [
+				1
+			]
+		},
+		{
+			"[sky] Convolution Strength (irradiance)": [
+				1
+			]
+		},
+		{
+			"[sky] Direct Light Tail (X,Y)": [
+				0.03,
+				0.026
+			]
+		},
+		{
+			"[sky] Night Sky Color": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[sky] Night Sky Luminance": [
+				0.025
+			]
+		}
+	],
+	"Sound bank debug": [
+		{
+			"[SBD] Percent to play": [
+				0
+			]
+		}
+	],
+	"Sound parameters": [
+		{
+			"[SPR] Battle rolloff": [
+				0.1
+			]
+		},
+		{
+			"[SPR] Campaign rolloff": [
+				3
+			]
+		},
+		{
+			"[SPR] Ducking enabled": true
+		},
+		{
+			"[SPR] Ducking amount": [
+				-55
+			]
+		},
+		{
+			"[SPR] Ducking fade in time": [
+				0.1
+			]
+		},
+		{
+			"[SPR] Ducking fade out time": [
+				1
+			]
+		},
+		{
+			"[SPR] Pause ducking": [
+				-50
+			]
+		}
+	],
+	"Standards": [
+		{
+			"[stds] Light strength": [
+				0.7
+			]
+		},
+		{
+			"[stds] Ambient strength": [
+				1.1
+			]
+		},
+		{
+			"[stds] Enable lights at night-time": true
+		},
+		{
+			"[stds] Override light offset, position and height": [
+				0.75,
+				1
+			]
+		}
+	],
+	"Tone mapping": [
+		{
+			"[TM] Enabled": true
+		},
+		{
+			"[TM] Enable Campaign Tonemapping": true
+		},
+		{
+			"[TM] Brightness": [
+				100
+			]
+		},
+		{
+			"[TM] Gamma": [
+				50
+			]
+		},
+		{
+			"[TM] Exposure bias": [
+				4
+			]
+		},
+		{
+			"[TM] Exposure boost factor": [
+				2
+			]
+		},
+		{
+			"[TM] Exposure boost exponent scale": [
+				11
+			]
+		},
+		{
+			"[TM] Minimum white point factor": [
+				1
+			]
+		},
+		{
+			"[TM] Lower percentage to discard": [
+				0.2
+			]
+		},
+		{
+			"[TM] Upper percentage to discard": [
+				0.998
+			]
+		},
+		{
+			"[TM] Max white point increase speed": [
+				40
+			]
+		},
+		{
+			"[TM] Max white point decrease speed": [
+				20
+			]
+		}
+	],
+	"Tooltips": [
+		{
+			"[TT] Opacity": [
+				200
+			]
+		}
+	],
+	"UI Sprites": [
+		{
+			"[UIS] enable pixel-perfect render": true
+		},
+		{
+			"[UIS] enable wireframe": false
+		},
+		{
+			"[UIS] draw outer wireframe": false
+		},
+		{
+			"[UIS] wireframe color": [
+				0,
+				1,
+				0,
+				1
+			]
+		}
+	],
+	"Unit": [
+		{
+			"[U] Enable Sub-Surface Scattering": true
+		},
+		{
+			"[U] Enable debug output": false
+		},
+		{
+			"[U] Enable forced LOD": false
+		},
+		{
+			"[U] LOD index to force": [
+				0
+			]
+		},
+		{
+			"[U] Shadow LOD Optimisation": false
+		},
+		{
+			"[U] Shadow Depth Bias": [
+				7
+			]
+		},
+		{
+			"[U] Shadow Depth Bias Clamp": [
+				0.02
+			]
+		},
+		{
+			"[U] Shadow Sloped Scaled Depth Bias": [
+				1
+			]
+		},
+		{
+			"[U] Light strength": [
+				0.9
+			]
+		},
+		{
+			"[U] Cloth reflectance": [
+				0.5
+			]
+		},
+		{
+			"[U] Skin reflectance": [
+				0.42
+			]
+		},
+		{
+			"[U] Base roughness": [
+				1
+			]
+		},
+		{
+			"[U] Skin roughness": [
+				0.7
+			]
+		},
+		{
+			"[U] Metal roughness": [
+				0.8
+			]
+		},
+		{
+			"[U] Normal strength": [
+				1
+			]
+		},
+		{
+			"[U] Ambient strength": [
+				1.1
+			]
+		},
+		{
+			"[U] Grunge enabled": true
+		},
+		{
+			"[U] Override grunges' strength": false
+		},
+		{
+			"[U] Dust strength": [
+				0
+			]
+		},
+		{
+			"[U] Mud strength": [
+				0
+			]
+		},
+		{
+			"[U] Additional grunge strength": [
+				0
+			]
+		},
+		{
+			"[U] Wetness enabled": true
+		},
+		{
+			"[U] Wetness Factor": [
+				0.4
+			]
+		},
+		{
+			"[U] Mud Color": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[U] Additional Grunge Color": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[U] Additional Grunge Roughness": [
+				0.15
+			]
+		},
+		{
+			"[U] Additional Grunge Cutoff": [
+				0.8
+			]
+		},
+		{
+			"[U] Fading enabled": true
+		},
+		{
+			"[U] Fading distance": [
+				4.5
+			]
+		},
+		{
+			"[U] Fading speed": [
+				5
+			]
+		},
+		{
+			"[U] Override variations": false
+		},
+		{
+			"[U] Hair color index": [
+				0
+			]
+		},
+		{
+			"[U] Hair style index": [
+				0
+			]
+		},
+		{
+			"[U] Facial hair style index": [
+				0
+			]
+		},
+		{
+			"[U] Face index": [
+				0
+			]
+		},
+		{
+			"[U] Body index": [
+				0
+			]
+		},
+		{
+			"[U] Tattoo index": [
+				0
+			]
+		},
+		{
+			"[U] Face tattoo": false
+		},
+		{
+			"[U] Limbs tattoo": false
+		},
+		{
+			"[U] Torso tattoo": false
+		},
+		{
+			"[U] Ethnicity index": [
+				0
+			]
+		},
+		{
+			"[U] Override angry": false
+		},
+		{
+			"[U] Min Spear SS size for shadows": [
+				0.003
+			]
+		}
+	],
+	"Vignette": [
+		{
+			"[Vig] Vignette enabled": true
+		},
+		{
+			"[Vig] Vignette x axis distance": [
+				1
+			]
+		},
+		{
+			"[Vig] Vignette y axis distance": [
+				1
+			]
+		},
+		{
+			"[Vig] Vignette function power": [
+				3
+			]
+		},
+		{
+			"[Vig] Vignette distance scale percentage": [
+				7.8
+			]
+		},
+		{
+			"[Vig] Vignette inverse strength": [
+				25
+			]
+		}
+	],
+	"War Relationship Penalty": [
+		{
+			"[WRP] At War Agression Penalty": [
+				20
+			]
+		},
+		{
+			"[WRP] At War Agression Cap": [
+				300
+			]
+		}
+	],
+	"Water": [
+		{
+			"[Sea] ssr quality": [
+				2
+			]
+		},
+		{
+			"[Sea] Shallow extinction color": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[Sea] Shallow extinction strength": [
+				2
+			]
+		},
+		{
+			"[Sea] Deep extinction color": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"[Sea] Deep extinction strength": [
+				8
+			]
+		},
+		{
+			"[Sea] Min/Max depth range": [
+				0.15,
+				20
+			]
+		},
+		{
+			"[Sea] Min/Max extinction transition range": [
+				0,
+				0.8
+			]
+		},
+		{
+			"[Sea] Detail normal tiling": [
+				0.2
+			]
+		},
+		{
+			"[Sea] Base normal tiling": [
+				0.06
+			]
+		},
+		{
+			"[Sea] Detail normal strength": [
+				0.3
+			]
+		},
+		{
+			"[Sea] Base normal strength": [
+				0.12
+			]
+		},
+		{
+			"[Sea] Sky reflection strength": [
+				0.5
+			]
+		},
+		{
+			"[Sea] Specular strength": [
+				0.3
+			]
+		},
+		{
+			"[Sea] Ambient strength": [
+				0.5
+			]
+		},
+		{
+			"[Sea] SSR strength": [
+				0.5
+			]
+		},
+		{
+			"[Sea] SSR fade amoount": [
+				0.1
+			]
+		},
+		{
+			"[Sea] SSR height fade scale": [
+				30
+			]
+		},
+		{
+			"[Sea] Shallow fresnel strength": [
+				0.7
+			]
+		},
+		{
+			"[Sea] Deep fresnel strength": [
+				0.4
+			]
+		},
+		{
+			"[Sea] Ambient backscatter strength": [
+				0.25
+			]
+		},
+		{
+			"[Sea] Displacement strength": [
+				10
+			]
+		},
+		{
+			"[Sea] Flow speed": [
+				2
+			]
+		},
+		{
+			"[Sea] Base normal min/max weakening distance": [
+				0,
+				200
+			]
+		},
+		{
+			"[Sea] Detail normal min/max weakening distance": [
+				0,
+				75
+			]
+		}
+	],
+	"Weather Effects": [
+		{
+			"[WE] VOLCANO EFFECT keep erupting": false
+		},
+		{
+			"[WE] MAGMA EFFECT size": [
+				5
+			]
+		},
+		{
+			"[WE] MAGMA EFFECT density": [
+				0.045
+			]
+		},
+		{
+			"[WE] MAGMA offset": [
+				0.05
+			]
+		},
+		{
+			"[WE] MAGMA radius": [
+				0.15
+			]
+		},
+		{
+			"[WE] MAGMA amplitude": [
+				0.025
+			]
+		},
+		{
+			"[WE] MAGMA frequency": [
+				4
+			]
+		},
+		{
+			"[WE] MAGMA colour": [
+				1,
+				1,
+				1,
+				1
+			]
+		},
+		{
+			"[WE] MAGMA SPLASH EFFECT offset": [
+				0.25
+			]
+		},
+		{
+			"[WE] MAGMA SPLASH EFFECT radius": [
+				0.2
+			]
+		},
+		{
+			"[WE] MAGMA SPLASH EFFECT spurt range": [
+				1,
+				2
+			]
+		},
+		{
+			"[WE] MAGMA SPLASH radius": [
+				0.25
+			]
+		},
+		{
+			"[WE] MAGMA SPLASH frame interval": [
+				0.1
+			]
+		},
+		{
+			"[WE] MAGMA SPLASH colour": [
+				1,
+				1,
+				1,
+				1
+			]
+		}
+	]
+}
