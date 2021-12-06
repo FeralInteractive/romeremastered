@@ -257,7 +257,7 @@ eg. ```soldier          barb_peltast_gaul, 40, 0, 0.9```
 
 ```Code: officer          officer_model(s)```
 
-Unit officers' model type as referenced in *descr_model_battle.txt*. Up to three officer lines may exist per unit, but note that officers may not be assigned to elephants or chariots.
+Unit officers' model type as referenced in *descr_model_battle.txt*. Up to nine (**increased from three in 2.0.4**) officer lines may exist per unit, but note that officers may not be assigned to elephants or chariots.
 
 **Allowed Variables**
 
