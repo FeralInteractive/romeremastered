@@ -293,12 +293,12 @@ We now display all the requirements for buildings and units across the UI making
  * Add the ability to mouse wheel scroll the unit list menu
  * Remove income gained from a settlement's merchants from the "merchants" display in the settlement income panel.
  * Always display faction name regardless of if a faction is rebels to keep tooltips consistent.  
- * Remove the "Rebels (<rebel type>)" format from slaves, since in the base game slaves are named in the manner, "Galician rebels" so it is redundant to include that info. We also make sure we properly set surname based origin so we can detect when agents come from rebels 
+ * Remove the `Rebels (<rebel type>)` format from slaves, since in the base game slaves are named in the manner, "Galician rebels" so it is redundant to include that info. We also make sure we properly set surname based origin so we can detect when agents come from rebels 
  * Fix missing dividing line on agent tooltips under certain circumstances
  * Only display the "Move Followers" button when in the "Traits and Followers" tab
  * Update the left UI panel when characters gain/lose trait points
  * Fix gladiator revolts not using the trident banner
- 
+
 ### Factions
  
 #### Line of sight correctly disables when the Roman Civil War starts
@@ -1048,7 +1048,7 @@ Read the [feral_descr_movement_multipliers](/documentation/data_file_guides/fera
  
 #### Add support for unit-specific AI recruitment bias using `recruit_priority_offset`
 
-In the EDU, you can now put `recruit_priority_offset` followed by a value after `stat_cost`. The value will be the % bias towards recruiting that unit. 
+In the EDU, you can now put `recruit_priority_offset` followed by a value on a new line after `stat_cost`. The value will be the % bias towards recruiting that unit. 
 
 E.G. `recruit_priority_offset 100` means that unit is twice as likely to be recruited.
 
@@ -1057,7 +1057,7 @@ The calculation is effectively:
 `base_recruitment * ((100 + recruit_priority_offset) / 100)`
 
 This feature accepts negative values so -100 would effectively prevent the unit from being recruited however blocking the AI from recruiting a unit could perhaps be better done using the `is_player` option.
- 
+
 #### Removed 32 variation cap on AI Personalities
 
 Previous versions of the game made AI Personalities moddable with 2.0.4 the cap of 32 personalities has been lifted.
