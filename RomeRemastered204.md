@@ -870,7 +870,7 @@ Tie overseas income to CAPABILITY_TRADE_FLEET, instead of hardcoding to the port
 
 #### Allow using the "capability" settlement condition on capabilities and recruitment
 
-This would allow you to use items like the level of law in a settlement as a condition of recruitment on a building. You could for example have a unit only recruitable if certain settlement conditions are met.
+This would allow you to use items like the level of law in a settlement as a condition of recruitment on a building. You can see a list of the [Building Capabilties](/documentation/data_file_guides/building_capabilties.md) here.
 
 #### Add the ability to specify custom strings in building capabilities
 
