@@ -82,9 +82,7 @@ diplomatic_priority default
 
 The existing personalties can be found at the bottom of the file.
 
-There are currently 27 different personalities and the number of personalities is limited to a maximum of 32. Adding any addional personalities to this file beyond this number will not work.
-
-**TODO** Potentially incraese the limit of allowed personalities.
+There are currently 27 different personalities and the number of personalities is no longer limited as of the 2.0.4 update.
 
 ### Example of feral_descr_ai_personality.txt
 Below contains a single example of all 4 parts of the personality system.
