@@ -168,7 +168,7 @@ Scripting has been extended in Rome Remastered with logging, modded background s
 | Units per faction | Min: 1 </br> Max: 100 | Min: 1 </br> Max: _Virtually Unlimited*_ | `2.0.2` | |
 | Soldiers per unit | Min: 12 </br> Max: 60 | Added `Extreme` unit size  | `2.0.0` | Extreme allows 300 soldiers per unit vs Original's 240 limit.  |
 | Extras per unit | Min: 2 | Min: 2 | `2.0.0` | 0 is also acceptable if there are none |
-| Officers per unit | Min: 0 </br> Max: 3 | Min: 0 </br> Max: 3 | `2.0.0` | |
+| Officers per unit | Min: 0 </br> Max: 3 | Min: 0 </br> Max: 9 | `2.0.4` | |
 | Collision mass | 100 | 100| `2.0.0` | |
 | Mount effects per units | 3 | 3 | `2.0.0` | |
 | Number of formations | Min: 1 </br> Max: 2 | Min: 1 </br> Max: 2 | `2.0.0` | |
