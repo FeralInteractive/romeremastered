@@ -174,7 +174,7 @@ Scripting has been extended in Rome Remastered with logging, modded background s
 | Number of formations | Min: 1 </br> Max: 2 | Min: 1 </br> Max: 2 | `2.0.0` | |
 | Hitpoints | Min: 1 </br> Max: 15 | Min: 1 </br> Max: 15 | `2.0.0` | Any extra is considered as 15 by the game. |
 | Attack factor | Min: 1 </br> Max: 63 | Min: 1 </br> Max: 63 | `2.0.0` | |
-| Charge bonus | Min: 0 </br> Max: 63 | Min: 0 </br> Max: 6 | `2.0.0` | |
+| Charge bonus | Min: 0 </br> Max: 63 | Min: 0 </br> Max: 63 | `2.0.0` | |
 | Missile range | Min: 20 |  Min: 20 | `2.0.0` | The maximum varies dependng on the projectile type. This maximum range is set by the velocity in `descr_projectile_new.txt`. A higher velocity means further range. |
 | Missile Ammunition | Min: 2 |  Min: 2 | `2.0.0` | If there is no missile, 0 is acceptable. '2.0.2' 'infinite_ammo' |
 | Armour factor | Min: 0 </br> Max: 63 | Min: 0 </br> Max: 63 | `2.0.0`| |
