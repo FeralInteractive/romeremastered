@@ -56,6 +56,7 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * [Image Formats](/documentation/feature_guides/image_formats.md)
 * [UI Modding Format Guide](/documentation/feature_guides/ui_modding_guide.md)
 * [UI Modding Example](/documentation/feature_guides/ui_modding_example.md)
+* [Miscellaneous Tips](/documentation/feature_guides/MiscellaneousTips.md)
 
 ## Asset Creation Guides
 * [Animations](/documentation/techart_guides/Animations.md)
