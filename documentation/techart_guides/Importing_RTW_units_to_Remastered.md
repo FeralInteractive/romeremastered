@@ -1,7 +1,7 @@
 ![Workshop_header_template](/Workshop_header_template.png)
 # Importing Rome Total War units to Total War: ROME REMASTERED
 
-## Table Of Contents
+## Table Of Contents
 
 * [Summary](#summary)
 * [EDU](#edu)
