@@ -21,7 +21,9 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * PGOW = Feral's **P**re **G**ame **O**ption **P**anel
 
 # Documentation
-* [Differences & New Features](/RomeRemasteredDifferences.md)
+* [2.0.0 -> 2.0.3 Differences & New Features](/RomeRemasteredDifferences.md)
+* [2.0.3 -> 2.0.4 Differences & New Features](/RomeRemastered204.md)
+* [2.0.3 -> 2.0.4 File Changes](/RomeRemastered204FileChanges.md)
 
 ## Game Data File Guides
 
