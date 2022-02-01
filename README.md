@@ -10,6 +10,7 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
    * [Feature Guides](#feature-guides)
    * [Asset Creation Guides](#asset-creation-guides)
 * [Tool Guides](#tool-guides)
+* [Example Mod](#example-mod)
 * [Third Party Resources](#third-party-resources)
 * [Rules](#rules)
 
@@ -25,12 +26,19 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 ## Game Data File Guides
 
 
+* [data_controlled_features](/documentation/data_file_guides/data_controlled_features.md)
+* [descr_battle_ai_personalities](/documentation/data_file_guides/descr_battle_ai_personalities.md)
 * [descr_campaigns](/documentation/data_file_guides/descr_campaigns.md)
 * [descr_sm_resources.txt](/documentation/data_file_guides/descr_sm_resources.md)
 * [DMB - descr_model_battle](/documentation/data_file_guides/DMB.md)
 * [EDB - export_descr_buildings](/documentation/data_file_guides/EDB.md)
+	* [EDB - List of valid building capabilities](/documentation/data_file_guides/building_capabilties.md)
+* [List of valid trait and ancillary effects](/documentation/data_file_guides/traits_and_ancillaries.md)
 * [EDU - export_descr_unit](/documentation/data_file_guides/EDU.md)
+	* [EDU - Attributes](https://github.com/FeralInteractive/romeremastered-PRIVATE/blob/main/documentation/data_file_guides/EDU.md#attributes)
+	* [EDU - Unit Capabilities](https://github.com/FeralInteractive/romeremastered-PRIVATE/blob/main/documentation/data_file_guides/unit_capabilties.md)
 * [feral_descr_ai_personality.txt](/documentation/data_file_guides/feral_descr_ai_personality.md)
+* [feral_descr_movement_multipliers.txt](/documentation/data_file_guides/feral_descr_movement_multipliers.md)
 * [feral_descr_reputations_and_relations](/documentation/data_file_guides/feral_descr_reputations_and_relations.md)
 * [string_overrides](/documentation/data_file_guides/string_overrides.md)
 * [toggles](/documentation/data_file_guides/toggles.md)
@@ -43,12 +51,16 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * [Scripting](/documentation/feature_guides/scripts/Scripts.md)
 * [Movie_Cam](/documentation/feature_guides/movie_cam.md)
 * [Logging](/documentation/feature_guides/logging/logging.md)
+* [Image Formats](/documentation/feature_guides/image_formats.md)
+* [UI Modding Format Guide](/documentation/feature_guides/ui_modding_guide.md)
+* [UI Modding Example](/documentation/feature_guides/ui_modding_example.md)
 
 ## Asset Creation Guides
 * [Animations](/documentation/techart_guides/Animations.md)
 * [Buildings](documentation/techart_guides/Buildings.md)
 * [Characters](documentation/techart_guides/Characters.md)
 * [Destruction](documentation/techart_guides/Destruction.md)
+* [Miscellaneous Tips](documentation/techart_guides/MiscellaneousTips.md)
 * [Physical Info Files](documentation/techart_guides/PhysicalInfoFiles.md)
 * [Vegetation](documentation/Vegetation.md)
 * [Importing Rome Total War units to Total War: ROME REMASTERED](documentation/techart_guides/Importing_RTW_units_to_Remastered.md)
@@ -65,6 +77,13 @@ The tools folder is full of scripts and tools that can assist modders in creatin
 * [Campaign Map Tool (Mesh Generation using Blender)](tools/CampaignMapTool/CampaignMapTool.md)
 * [Unpack Characters (.cas files from .pak files)](tools/unpack_characters/unpack_characters.md)
 
+# Example Mod
+
+We have created a number of example mods, these are designed to demonstate as many of the newer modding features as possible so people can use it as a reference when making their own mods or reading the documentation found elsewhere in this GitHub repository.
+
+You can find the mods on the next page, just download the specific folder you want and place it inside the "My mods" folder on your installation to experience the mod.
+
+* [Example Mod Documentation](/example_mods/ExampleMods.md)
 
 # Third Party Resources
 
@@ -74,7 +93,7 @@ Below you will find links to third party resources that can help with modding Ro
   * Create RR Map Mesh & Textures (Beta Feature)
   * Covert from .dae to .cas
   * Bulk decompress Rome Remastered texture directory
-* [Dagovax's Rome Modding Tools & Features](https://github.com/Dagovax/Rome-Total-War-Tools-and-Features) - 3DS-Max scripts & more
+* [Dagovax's Rome Modding Tools & Features](https://github.com/Dagovax/Rome-Total-War-Tools-and-Features) - 3DS-Max scripts & more  
 * [Settlement & Region Name Extractor](https://github.com/zkajo/RTW-Region-Extractor)
 * [TWC Wiki - Rome:Total War & Remastered - Modding Index](https://wiki.twcenter.net/index.php?title=Rome:Total_War_%26_Remastered_-_Modding_Index)
 * [Vercingetorix's xidx packer](https://github.com/AKAfreaky/XIDX) - Useful Packing Tool
