@@ -22,7 +22,6 @@ This page lists the various example mods that exist for Rome Remastered.
       * [Factionwide Building Checks](#factionwide-building-checks)
       * [Use'building_factions' condition for recruitment lines](#usebuilding_factions-condition-for-recruitment-lines)
       * [UI Mod Example - Replacing Unit Info with large panel from Campaign](#ui-mod-example---replacing-unit-info-with-large-panel-from-campaign)
-      * [Rome Hot-seat Example - Allows you to play hot-seat with in game UI for choosing factions.](#rome-hot-seat-example---allows-you-to-play-hot-seat-with-in-game-ui-for-choosing-factions)
       * [Localisation Example](#localisation-example)
 
 ### Adding Factions
@@ -246,20 +245,6 @@ This mod is also a good example of how UI mods are in most case completely compa
 ![UI_Battle_Large_Unit_Info](/example_mods/UI_Battle_Large_Unit_Info/UI_Battle_Large_Unit_Info.jpg)
 
 [Download UI_Battle_Large_Unit_Info](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/UI_Battle_Large_Unit_Info.zip)
-
-### Rome Hot-seat Example - Allows you to play hot-seat with in game UI for choosing factions.
-
-This mod allows you to play Total War: ROME REMASTERED in hot-seat mode. To use the mod just start a new campaign using the Julii faction. When the campaign loads you will get given alerts asking you if you'd like to play as each faction one by one.
-	
-Once you have gone through all of the factions, the game will save your choices and the hot-seat campaign will begin. Please note due the hot-seat being played on a single machine the following limitations apply.
-	
-Only the active player can fight battles in 3D so all battles should be auto resolved. Also on end turn the AI will fight players battles for them and make of tactical decisions so ensure any critical choices like completing unit movement is done during your turn.
-	
-This mod is also meant to be a simple demonstation of how you can use the new modding features provided inside Total War: ROME REMASTERED to allow for customised game experiences. This mod makes use of a number of new features including but not limited to, background script support, persistent counters, custom alerts with user responses, new camera positioning code and new script logging to help test functionality during debugging.
-	
-![HotseatFactionSelector](/example_mods/HotseatFactionSelector/HotseatFactionSelector.jpg)
-
-[Download HotseatFactionSelector](https://github.com/FeralInteractive/romeremastered/raw/main/example_mods/HotseatFactionSelector.zip)
 
 ### Localisation Example
 
