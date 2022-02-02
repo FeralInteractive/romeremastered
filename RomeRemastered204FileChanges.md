@@ -288,7 +288,7 @@ Mods using the old format files will stull work but will put warnings in the log
  * settlement upgrade levels - Population requirements, over crowding values etc
  * custom settlement models per settlement, custom fort and watchtower models as well 
  
-See [descr_cultures.md](/documentation/data_file_guides/descr_cultures.md) for more information.
+See comments inside the _desc_cultures.txt_ file for more details.
  
  ### descr_engines.txt
  
