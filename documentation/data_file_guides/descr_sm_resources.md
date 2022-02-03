@@ -1,7 +1,7 @@
 ![Workshop_header_template](/Workshop_header_template.png)
 # descr_sm_resources
 
-## Table Of Contents
+## Table Of Contents
 
 * [Introduction](#introduction)
 	 * [Example of default descr_sm_resources.txt](#example-of-default-descr_sm_resourcestxt)
