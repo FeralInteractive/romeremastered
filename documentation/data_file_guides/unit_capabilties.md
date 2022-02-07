@@ -1,14 +1,14 @@
 ![Workshop_header_template](/Workshop_header_template.png)
-# Unit Capabilities - List of valid options
+# Unit Attributes - List of valid options
 
 ## Table Of Contents
 
 
 ## Introduction
 
-This is a list of all the existing capabilities you can assign to units.
+This is a list of all the existing attributes you can assign to units. Please note this is just a list of *attributes* there are other options that can impact units that are not capabilities like training, morale etc. All of these are covered in more detail in the main [EDU - export_descr_unit](/documentation/data_file_guides/EDU.md) page.
 
-### List of valid capabilities
+### List of valid attributes
 
  * `can_sap` - allows units to use sapping points
  * `can_withdraw` - unused, I think?
