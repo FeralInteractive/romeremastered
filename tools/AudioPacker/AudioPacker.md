@@ -1,7 +1,7 @@
 ![Workshop_header_template](/Workshop_header_template.png)
 # AudioPacker - Commandline options to unpack & pack audio data
 
-## Table Of Contents
+## Table Of Contents
 
 * [Introduction](#introduction)
 * [Unpacking audio data](#unpacking-audio-data)

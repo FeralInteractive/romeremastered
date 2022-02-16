@@ -1,7 +1,7 @@
 ![Workshop_header_template](/Workshop_header_template.png)
 # descr_battle_ai_personalities
 
-## Table Of Contents
+## Table Of Contents
 
    * [Introduction](#introduction)
    * [Default Battle AI Personality](#default-battle-ai-personality)
