@@ -284,7 +284,7 @@ class Anim_Event:
 
             #translate string ID as needed
             if (self.type == 1): #soundbank
-                self.extra = soundbank_remapping.index(self.id) % 3
+                self.extra = soundbank_remapping.index(self.id)
             if (self.type == 2):
                 self.extra = shockwave_remapping[self.id]
             if (self.type == 3):
