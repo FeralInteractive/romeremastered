@@ -37,7 +37,7 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 	* [EDB - List of valid building capabilities](/documentation/data_file_guides/building_capabilties.md)
 * [List of valid trait and ancillary effects](/documentation/data_file_guides/traits_and_ancillaries.md)
 * [EDU - export_descr_unit](/documentation/data_file_guides/EDU.md)
-	* [EDU - Unit Attributes](https://github.com/FeralInteractive/romeremastered-PRIVATE/blob/main/documentation/data_file_guides/unit_capabilties.md)
+	* [EDU - Unit Attributes](/documentation/data_file_guides/unit_capabilties.md)
 * [feral_descr_ai_personality.txt](/documentation/data_file_guides/feral_descr_ai_personality.md)
 * [feral_descr_movement_multipliers.txt](/documentation/data_file_guides/feral_descr_movement_multipliers.md)
 * [feral_descr_reputations_and_relations](/documentation/data_file_guides/feral_descr_reputations_and_relations.md)
