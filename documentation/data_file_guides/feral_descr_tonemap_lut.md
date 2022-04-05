@@ -1,7 +1,7 @@
 ![Workshop_header_template](/Workshop_header_template.png)
 # feral_descr_tonemap_lut
 
-## Table Of Contents
+## Table Of Contents
 
 * [Introduction](#introduction)
 	 * [Example of feral_descr_tonemap_lut.txt](#example-of-feral_descr_tonemap_luttxt)
