@@ -43,6 +43,8 @@ To pack audio data back up, run Rome as before with: `snd_compile_sounds`
 
 This will read the manifest files and create the appropriate packs. If you’ve added new files or changed the names of existing files, this will need to be reflected in the manifest before packing.
 
+**IMPORTANT**: You also need to update `descr_sounds.txt` the key item to update (beyond any changes you'd like to make to the parameters) are the hashes at the top of the file. You can make this any random value under 2^32. The key is they should be different to the retail hashes. If you use the hashes from the retail game then your chnages will not be detected in your mod. You don't need to chnage this when you update your mod it just needs to be unique to the mod.
+
 Note that you should unpack all the game’s original audio files before repacking them with your new/modified ones.
 
 Once packed, you can delete the loose audio files from your data folder.
