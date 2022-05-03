@@ -78,6 +78,7 @@ The tools folder is full of scripts and tools that can assist modders in creatin
 * [CAS Exporter (This tool will convert fbx files into cas files.)](tools/CasPacker/casconv.md)
 * [Campaign Map Tool (Mesh Generation using Blender)](tools/CampaignMapTool/CampaignMapTool.md)
 * [Unpack Characters (.cas files from .pak files)](tools/unpack_characters/unpack_characters.md)
+* [Unit Card Generation](https://github.com/FeralInteractive/romeremastered-unitcards) - Stand Alone GitHub for generating Unit Card images from models 
 
 # Example Mod
 
