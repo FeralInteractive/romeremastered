@@ -68,7 +68,7 @@ It is possible to add new events to the game following the guidelines in `descr_
 
 ## Additional Commands
 
-`snd_check` - This will allow you to debug sound banks and get addional information in the log files.
-`snd_save_events` - create the events pack this will generate a new 'events.dat' file for your mod.
-`snd_ignore_packs` - Disable loading event packs, useful when debugging issues, you can use this to confirm if your issues are linked to these packs.
+* `snd_check` - This will allow you to debug sound banks and get addional information in the log files.
+* `snd_save_events` - create the events pack this will generate a new 'events.dat' file for your mod.
+* `snd_ignore_packs` - Disable loading event packs, useful when debugging issues, you can use this to confirm if your issues are linked to these packs.
 
