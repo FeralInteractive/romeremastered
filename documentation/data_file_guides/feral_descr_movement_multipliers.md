@@ -4,7 +4,7 @@
 ## Table Of Contents
 
 * [Introduction](#introduction)
-      * [Example of default feral_descr_movement_multipliers.txt](#example-of-default-feral_descr_movement_multiplierstxt)
+* [Example of default feral_descr_movement_multipliers.txt](#example-of-default-feral_descr_movement_multiplierstxt)
 
 ## Introduction
 
