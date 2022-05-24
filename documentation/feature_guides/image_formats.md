@@ -116,14 +116,13 @@ Below you'll find a list of all the major images used throughout the game from i
 
 ## 3D Specialist textures (trees, shrubs etc if applicable)
 
- * **Supports MIPS**Format: .DDS
- * **Supports MIPS**Resolution: 2048x1024
- * **Supports MIPS**Aspect Ratio: 2:1
- * **Supports MIPS**Compression:
+ * Format: .DDS **Supports MIPS**
+ * Resolution: 2048x1024 **Supports MIPS**
+ * Aspect Ratio: 2:1 **Supports MIPS**
+ * Compression: **Supports MIPS**
    * Diffuse + Alpha - BC3 8bpp
    * Normal - BC5 8bpp
    * Roughness - BC4 4bpp
- * **Supports MIPS**
  * Compression completed with Intel Texture Works v1.0.4 plugin for Photoshop CC
  * Notes: Any resolution and ratio supported (as long as rule of 2n is abided by either height or width)
 
@@ -134,7 +133,11 @@ Below you'll find a list of all the major images used throughout the game from i
 
 ## Loading Screens
 
- * Format: .DDS DXT1
- * Aspect Ratio: 64:27
- * 5120 x 2160
- * Notes: Application will **crash** if aspect ratio/resolution is changed. 
+ * Format: .DDS DXT5
+ * **Supports MIPS**
+ * Notes: Aspect ratio should match the map you've generated. 
+
+## Large Overview Map
+
+ * Format: .DDS DXT5
+ * Notes: Any resolution and ratio should work (as long as rule of 2n is abided by either height or width). You should also match the ratio of the actual map so it alligns.
