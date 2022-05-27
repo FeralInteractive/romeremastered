@@ -1,7 +1,7 @@
 ![Workshop_header_template](/Workshop_header_template.png)
 # casconv.exe - Tool for packing cas files
 
-## Table Of Contents
+## Table Of Contents
 
 * [Introduction](#introduction)
 * [Casconv help](#casconv-help)

@@ -409,14 +409,14 @@ Full List of Building Effects 2.0.2
 * `stage_games` (allows gladiatorial games) 1-3 (1-3) [5]
 * `stage_races` (allows races) 1-2 (1-2) [5]
 * `religious_belief` [pagan/zoroastrian/christianity] 1-x (5-x%)
-* `construction_cost_bonus_military` (percentile cost reduction for recruitment buildings but does not seem to work) 1-100 (1-100%)
+* `construction_cost_bonus_military` (percentile cost reduction for recruitment buildings) 1-100 (1-100%)
 * `construction_cost_bonus_religious` (percentile cost reduction for temples) 1-100 (1-100%)
 * `construction_cost_bonus_defensive` (percentile cost reduction for walls) 1-100 (1-100%)
-* `construction_cost_bonus_other` (percentile cost reduction for civil buildings but seems to apply to all buildings except religious ones) 1-100 (1-100%)
+* `construction_cost_bonus_other` (percentile cost reduction for civil buildings but applies to all buildings except religious ones) 1-100 (1-100%)
 * `construction_time_bonus_military` (percentile time reduction for constructing recruitment buildings but does not seem to work) 1-100 (1-100%)
 * `construction_time_bonus_religious` (percentile time reduction for constructing temples) 1-100 (1-100%)
 * `construction_time_bonus_defensive` (percentile time reduction for constructing walls) 1-100 (1-100%)
-* `construction_time_bonus_other` (percentile time reduction for constructing civil buildings but also seems to apply to all buildings except religious ones) 1-100 (1-100%)
+* `construction_time_bonus_other` (percentile time reduction for constructing civil buildings but also applies to all buildings except religious ones) 1-100 (1-100%)
 * `extra_recruitment_points [bonus]` - **NEW for RR** Allows you to give addional recuitment points to a settlment via a building modifier. You can define the bonus in terms of turns.
 * `extra_construction_points [bonus]` - **NEW for RR** Allows you to give addional construction points to a settlment via a building modifier. You can define the bonus in terms of turns.
 

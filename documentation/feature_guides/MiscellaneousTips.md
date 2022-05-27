@@ -4,7 +4,13 @@
 ## Table Of Contents
 
    * [Introduction](#introduction)
-   * [Faction Icons](#faction-icons)
+   * [Disaster Values](#disaster-values)
+   * [read_no_endian error](#read_no_endian-error)
+   * [CA_RAND_MAX Values](#ca_rand_max-values)
+   * [export_descr_character_traits](#export_descr_character_traits)
+   * [descr_quick_battle_locations](#descr_quick_battle_locations)
+   * [Unexpected in condition parsing error](#unexpected-in-condition-parsing-error)
+   * [descr_fog_params](#descr_fog_params)
    
 ## Introduction
 
@@ -30,3 +36,53 @@ By default dragging will reorder units and you can use ctrl and drag to manually
  6. `<value name="CtrlToMerge" type="integer">0</value>`
  7. Save the file and restart the game. You can now merge by default and hold down ctrl if you want to reorder.
 
+## Disaster Values
+
+The maximum values for disasters and disaster events are technically unlimited but the engine will cap the max value to the following limits when triggering them in game.
+
+* Earthquake 9
+* Flood 9
+* Volcano 9
+* Storm 13
+
+## read_no_endian error
+
+```read_no_endian(&data, sizeof(T)) Failed``` 
+
+This error implies that the system that's reading the file has hit EoF (End Of File)  where it wasn't expecting it. i.e. the game was expecting the file to be longer than it actually was. You should check the file for any missing for incorrectly formatted items. In some cases adding an extra empty line at the end of the file can fix some parsing errors.
+
+## CA_RAND_MAX Values
+
+The CA_RAND_MAX value matches the minimum guaranteed value of RAND_MAX by the c++ spec. This is 32767. The random number genertor is using LFSR.
+
+## export_descr_character_traits
+
+Sometimes you can get errors that a token is not recognised in your traits file. This can be caused by a typo in the trait capitalisation.
+
+```Script Error in Q:\Feral\Users\Default\AppData\Local\Mods\My Mods\example_mod/data/export_descr_character_traits.txt, at line 8046, column 15. Condition parser doesn't recognise this token: Battleodds```
+
+Remember that Triggers are CaseSensitive so `BattleOdds` and `Battleodds` are not the same trigger so make sure you don't have differnt capitalisation in different places. That all need to be the same including the case.
+
+## descr_quick_battle_locations
+
+descr_quick_battle_locations.txt has a list of coordinates used in the quick battles option. This was hard coded in the original game but broken out into a text file for RR. The coordinate values have a 1:1 relationship with the pixel location on the ground_types.tga map files for your mod.
+
+## Unexpected in condition parsing error
+
+`Unexpected in condition parsing:` is exclusively used when the game is expecting an "and" or "or" usually on the line listed in the error log.
+
+## descr_fog_params
+
+This allows you to alter the dynamic behavour of fog, some minor items to note.
+
+* `fog`, `static_fog` or `dynamic_fog`, all need to be present
+* `fog_main_layer_height` is also typo'd in the code, you need to use `m_fog_main_layer_height` instead.
+
+Dynamic Fog Default values include:
+
+* `Scaling = 500`
+* `wanted particles = 4`
+* `spawn interval = 0.17`
+* `constrast power = 0.96`
+
+![fog_defaults.png](/documentation/feature_guides/images/fog_defaults.png)

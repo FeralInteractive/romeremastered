@@ -78,6 +78,7 @@ The tools folder is full of scripts and tools that can assist modders in creatin
 * [CAS Exporter (This tool will convert fbx files into cas files.)](tools/CasPacker/casconv.md)
 * [Campaign Map Tool (Mesh Generation using Blender)](tools/CampaignMapTool/CampaignMapTool.md)
 * [Unpack Characters (.cas files from .pak files)](tools/unpack_characters/unpack_characters.md)
+* [Unit Card Generation](https://github.com/FeralInteractive/romeremastered-unitcards) - Stand Alone GitHub for generating Unit Card images from models 
 
 # Example Mod
 
@@ -100,6 +101,7 @@ Below you will find links to third party resources that can help with modding Ro
 * [TWC Wiki - Rome:Total War & Remastered - Modding Index](https://wiki.twcenter.net/index.php?title=Rome:Total_War_%26_Remastered_-_Modding_Index)
 * [Vercingetorix's xidx packer](https://github.com/AKAfreaky/XIDX) - Useful Packing Tool
   * Packs and Repacks various idx files used by Rome Total War & ROME REMASTERED
+* [Swagger's LOD Generator](https://github.com/iamemc/LOD_Generator) - Blender plugin to generate LODs for models. 
 
 # Rules
 
