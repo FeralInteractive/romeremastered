@@ -12,6 +12,7 @@
    * [Unexpected in condition parsing error](#unexpected-in-condition-parsing-error)
    * [descr_fog_params](#descr_fog_params)
    * [ambient_settlements](#ambient_settlements)
+   * [Output Variables To Log](#output-variables-to-log)
    
 ## Introduction
 
@@ -115,3 +116,11 @@ For other ambient items the following addional limitations are present.
 * `monuments` is just straight 0-5 dice roll 
 * `ruins` is just straight 0-5 dice roll 
 * `ancient battlefield` is 1, if the location is the site of a famous battle (has a crossed swords icon on the campaign map)
+
+## Output Variables To Log
+
+If you want to dump a variables values to the log for debugging you can use something in the following format.
+
+`console_command check_persistent_var <variable name>`
+
+You should avoid using the `script_log` command as that dumps to stdout not the log file.
