@@ -9,6 +9,7 @@
    * [CA_RAND_MAX Values](#ca_rand_max-values)
    * [export_descr_character_traits](#export_descr_character_traits)
    * [descr_quick_battle_locations](#descr_quick_battle_locations)
+   * [Unexpected in condition parsing error](#unexpected-in-condition-parsing-error)
    
 ## Introduction
 
@@ -64,3 +65,7 @@ Remember that Triggers are CaseSensitive so `BattleOdds` and `Battleodds` are no
 ## descr_quick_battle_locations
 
 descr_quick_battle_locations.txt has a list of coordinates used in the quick battles option. This was hard coded in the original game but broken out into a text file for RR. The coordinate values have a 1:1 relationship with the pixel location on the ground_types.tga map files for your mod.
+
+## Unexpected in condition parsing error
+
+`Unexpected in condition parsing:` is exclusively used when the game is expecting an "and" or "or" usually on the line listed in the error log.
