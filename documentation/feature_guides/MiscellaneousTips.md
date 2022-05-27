@@ -7,6 +7,7 @@
    * [Disaster Values](#disaster-values)
    * [read_no_endian error](#read_no_endian-error)
    * [CA_RAND_MAX Values](#ca_rand_max-values)
+   * [export_descr_character_traits](#export_descr_character_traits)
    
 ## Introduction
 
@@ -50,3 +51,11 @@ This error implies that the system that's reading the file has hit EoF (End Of F
 ## CA_RAND_MAX Values
 
 The CA_RAND_MAX value matches the minimum guaranteed value of RAND_MAX by the c++ spec. This is 32767. The random number genertor is using LFSR.
+
+## export_descr_character_traits
+
+Sometimes you can get errors that a token is not recognised in your traits file. This can be caused by a typo in the trait capitalisation.
+
+```Script Error in Q:\Feral\Users\Default\AppData\Local\Mods\My Mods\example_mod/data/export_descr_character_traits.txt, at line 8046, column 15. Condition parser doesn't recognise this token: Battleodds```
+
+Remember that Triggers are CaseSensitive so `BattleOdds` and `Battleodds` are not the same trigger so make sure you don't have differnt capitalisation in different places. That all need to be the same including the case.
