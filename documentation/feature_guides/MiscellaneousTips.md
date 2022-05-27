@@ -4,8 +4,8 @@
 ## Table Of Contents
 
    * [Introduction](#introduction)
-   * [Disaster Values](*disaster-values)
-   * [read_no_endian error](*read_no_endian-error)
+   * [Disaster Values](#disaster-values)
+   * [read_no_endian error](#read_no_endian-error)
    
 ## Introduction
 
