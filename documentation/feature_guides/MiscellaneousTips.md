@@ -10,6 +10,7 @@
    * [export_descr_character_traits](#export_descr_character_traits)
    * [descr_quick_battle_locations](#descr_quick_battle_locations)
    * [Unexpected in condition parsing error](#unexpected-in-condition-parsing-error)
+   * [descr_fog_params](#descr_fog_params)
    
 ## Introduction
 
@@ -69,3 +70,19 @@ descr_quick_battle_locations.txt has a list of coordinates used in the quick bat
 ## Unexpected in condition parsing error
 
 `Unexpected in condition parsing:` is exclusively used when the game is expecting an "and" or "or" usually on the line listed in the error log.
+
+## descr_fog_params
+
+This allows you to alter the dynamic behavour of fog, some minor items to note.
+
+* `fog`, `static_fog` or `dynamic_fog`, all need to be present
+* `fog_main_layer_height` is also typo'd in the code, you need to use `m_fog_main_layer_height` instead.
+
+Dynamic Fog Default values include:
+
+* `Scaling = 500`
+* `wanted particles = 4`
+* `spawn interval = 0.17`
+* `constrast power = 0.96`
+
+![fog_defaults.png](/documentation/feature_guides/images/fog_defaults.png)
