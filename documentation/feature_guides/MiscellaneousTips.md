@@ -6,6 +6,7 @@
    * [Introduction](#introduction)
    * [Disaster Values](#disaster-values)
    * [read_no_endian error](#read_no_endian-error)
+   * [CA_RAND_MAX Values](#ca_rand_max-values)
    
 ## Introduction
 
@@ -45,3 +46,7 @@ The maximum values for disasters and disaster events are technically unlimited b
 ```read_no_endian(&data, sizeof(T)) Failed``` 
 
 This error implies that the system that's reading the file has hit EoF (End Of File)  where it wasn't expecting it. i.e. the game was expecting the file to be longer than it actually was. You should check the file for any missing for incorrectly formatted items. In some cases adding an extra empty line at the end of the file can fix some parsing errors.
+
+## CA_RAND_MAX Values
+
+The CA_RAND_MAX value matches the minimum guaranteed value of RAND_MAX by the c++ spec. This is 32767
