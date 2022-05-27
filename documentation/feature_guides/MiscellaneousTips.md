@@ -49,4 +49,4 @@ This error implies that the system that's reading the file has hit EoF (End Of F
 
 ## CA_RAND_MAX Values
 
-The CA_RAND_MAX value matches the minimum guaranteed value of RAND_MAX by the c++ spec. This is 32767
+The CA_RAND_MAX value matches the minimum guaranteed value of RAND_MAX by the c++ spec. This is 32767. The random number genertor is using LFSR.
