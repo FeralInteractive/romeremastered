@@ -13,6 +13,7 @@
    * [descr_fog_params](#descr_fog_params)
    * [ambient_settlements](#ambient_settlements)
    * [Output Variables To Log](#output-variables-to-log)
+   * [Volcano](#volcano)
    
 ## Introduction
 
@@ -124,3 +125,9 @@ If you want to dump a variables values to the log for debugging you can use some
 `console_command check_persistent_var <variable name>`
 
 You should avoid using the `script_log` command as that dumps to stdout not the log file.
+
+## Volcano
+
+You can trigger volcanos inside a script using the command `console_command event volcano <x> <y>`
+
+The volcano will start smoking then the command is triggered then erupt the following turn.
