@@ -11,6 +11,7 @@
    * [descr_quick_battle_locations](#descr_quick_battle_locations)
    * [Unexpected in condition parsing error](#unexpected-in-condition-parsing-error)
    * [descr_fog_params](#descr_fog_params)
+   * [ambient_settlements](#ambient_settlements)
    
 ## Introduction
 
@@ -86,3 +87,31 @@ Dynamic Fog Default values include:
 * `constrast power = 0.96`
 
 ![fog_defaults.png](/documentation/feature_guides/images/fog_defaults.png)
+
+## ambient_settlements
+
+Below is a quick memory dump of some useful information for people wanting to mod this area of the game.
+
+The game will usually attempt to place **up to** 5 randomly selected items from each type (except farms, number of which depends on fertility of the tile). The `always` tage forces the game to always attempt to place a given entry at the end of the placing function.
+
+For farms, the number placed depends on the fertility of the tile and if it is cultivated. In addition when you place a farm, it also places a random number of children too so cultivated mid fertility will try and place 5-10 children aroud the farm using the following logic:
+
+```
+               | Not cultivated          | Cultivated
+---------------+-------------------------+--------------------------
+Low fertility  | no farms                | 1-3 farms, 0-5 children
+---------------+-------------------------+--------------------------
+Mid fertility  | 0-1 farms, 0-2 children | 3-6 farms, 5-10 children
+---------------+-------------------------+--------------------------
+High fertility | 0-2 farms, 0-4 children | 6-10 farms, 10-15 children
+```
+
+For other ambient items the following addional limitations are present.
+
+* `Watchtower` is just 1, (if the tile has a watchtower)
+* `forestry` is unused
+* `mines` is unused
+* `natural` is just straight 0-5 dice roll 
+* `monuments` is just straight 0-5 dice roll 
+* `ruins` is just straight 0-5 dice roll 
+* `ancient battlefield` is 1, if the location is the site of a famous battle (has a crossed swords icon on the campaign map)
