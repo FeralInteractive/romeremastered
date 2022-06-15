@@ -90,14 +90,6 @@ You need to add the string `battle_model_info` to the advanced options (see scre
 
 ![Script Logging](/documentation/feature_guides/scripts/battle_model_info.jpg)
 
-## Enable Battle Mode Building Info
-
-We have added a debug dialog to allow you to **hover over** any building in a 3D battle and get information on what assets the unit is using. This can help debug visual issues when adding in new or modifying existing buildings.
-
-You need to add the string `building_debug_info` to the advanced options (see screenshot). This option can be combined with other options like `enable_logging`. 
-
-![Script Logging](/documentation/feature_guides/scripts/building_debug_info.png)
-
 Now when you are in a 3D battle if you `shift + click` on a unit you will get a dialog appear with the following information:
 
 * Unit: UI String Name
@@ -115,6 +107,14 @@ Now when you are in a 3D battle if you `shift + click` on a unit you will get a 
 ![Dialog](/documentation/feature_guides/logging/model_info_dialog.jpg)  
 
 All this information is related to the offsets and definitions referenced in the [character guide](/documentation/techart_guides/Characters.md) and the [DMB guide](documentation/data_file_guides/DMB.md).
+
+## Enable Battle Mode Building Info
+
+We have added a debug dialog to allow you to **hover over** any building in a 3D battle and get information on what assets the unit is using. This can help debug visual issues when adding in new or modifying existing buildings.
+
+You need to add the string `building_debug_info` to the advanced options (see screenshot). This option can be combined with other options like `enable_logging`. 
+
+![Building Tooltip](/documentation/feature_guides/logging/building_debug_info.png)
 
 ## Enable option to log end-of-turn settlement religious conversion
 
