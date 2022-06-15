@@ -1,5 +1,5 @@
 ![Workshop_header_template](/Workshop_header_template.png)
-# logging
+# Launch Options - Logging & Debugging Tools
 
 ## Table Of Contents
 
@@ -11,6 +11,7 @@
    * [Enable script specific logging](#enable-script-specific-logging)
    * [Enable original error dialog](#enable-original-error-dialog)
    * [Enable Battle Mode Unit Info](#enable-battle-mode-unit-info)
+   * [Enable Battle Mode Building Info](#enable-battle-mode-building-info)
    * [Enable option to log end-of-turn settlement religious conversion](#enable-option-to-log-end-of-turn-settlement-religious-conversion)
       * [Example of log contents](#example-of-log-contents-1)
 
@@ -83,11 +84,19 @@ You need to add the string `-show_err` to the advanced options (see screenshot).
 
 ## Enable Battle Mode Unit Info
 
-We have added a debug dialog to allow you to click on any unit in a 3D battle and get information on what assets the unit is using. This can help debug visual issues when adding in new or modifying existing units.
+We have added a debug dialog to allow you to **shift + left click** on any unit in a 3D battle and get information on what assets the unit is using. This can help debug visual issues when adding in new or modifying existing units.
 
 You need to add the string `battle_model_info` to the advanced options (see screenshot). This option can be combined with other options like `enable_logging`. 
 
 ![Script Logging](/documentation/feature_guides/scripts/battle_model_info.jpg)
+
+## Enable Battle Mode Building Info
+
+We have added a debug dialog to allow you to **hover over** any building in a 3D battle and get information on what assets the unit is using. This can help debug visual issues when adding in new or modifying existing buildings.
+
+You need to add the string `building_debug_info` to the advanced options (see screenshot). This option can be combined with other options like `enable_logging`. 
+
+![Script Logging](/documentation/feature_guides/scripts/building_debug_info.png)
 
 Now when you are in a 3D battle if you `shift + click` on a unit you will get a dialog appear with the following information:
 
@@ -162,4 +171,3 @@ Be warned this will add 300+ lines of mismatches that in most cases aren't alway
 You need to add the string `verbose_skeletons` to the advanced options.
 
 Generates verbose skeleton & animation pack logs only needed when modding skeleton and animations.
-
