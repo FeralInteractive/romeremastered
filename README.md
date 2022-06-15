@@ -48,10 +48,10 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * [feral_descr_grass_usage.txt](/documentation/data_file_guides/feral_descr_grass_usage.md)
 
 ## Feature Guides
+* [Launch Options - Logging & Debugging Tools](/documentation/feature_guides/logging/logging.md)
 * [Hording](/documentation/feature_guides/hording.md)
 * [Scripting](/documentation/feature_guides/scripts/Scripts.md)
 * [Movie_Cam](/documentation/feature_guides/movie_cam.md)
-* [Logging](/documentation/feature_guides/logging/logging.md)
 * [Image Formats](/documentation/feature_guides/image_formats.md)
 * [UI Modding Format Guide](/documentation/feature_guides/ui_modding_guide.md)
 * [UI Modding Example](/documentation/feature_guides/ui_modding_example.md)
