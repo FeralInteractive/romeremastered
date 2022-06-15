@@ -88,7 +88,7 @@ We have added a debug dialog to allow you to **shift + left click** on any unit 
 
 You need to add the string `battle_model_info` to the advanced options (see screenshot). This option can be combined with other options like `enable_logging`. 
 
-![Script Logging](/documentation/feature_guides/scripts/battle_model_info.jpg)
+![Script Logging](/documentation/feature_guides/logging/battle_model_info.jpg)
 
 Now when you are in a 3D battle if you `shift + click` on a unit you will get a dialog appear with the following information:
 
