@@ -7,6 +7,7 @@
    * [Introduction](#introduction)
    * [Enable detailed logging](#enable-detailed-logging)
       * [Example of log contents](#example-of-log-contents)
+      * [Campaign AI Log contents](#campaign-ai-log-contents)
    * [Enable error dialog for detailed logging](#enable-error-dialog-for-detailed-logging)
    * [Enable script specific logging](#enable-script-specific-logging)
    * [Enable original error dialog](#enable-original-error-dialog)
@@ -49,6 +50,31 @@ attaching region Umbria(51) to faction(romans_julii), giving them 10 triumph poi
 New Character - Faction(romans_julii) named character(Flavius Julius)
 Flavius Julius(7ff1ff0bc1d0) has gained a new trait(Factionleader)(level-Faction Leader)
 ```
+
+### Campaign AI Log contents
+
+When you enabled logging a second file alomgside `message_log.txt` will also start to be updated called `campaign_ai_log.txt` this file will contain information about what each faction AI is doing for their turn. It is extremely verbose but will provide information about their decision making process. You can use this to help you balance campaign AI in a little more detail as you can see what their decision makng process is and perhaps how to alter it by changing their AI personalities and other variables like victory conditions & scripting bonuses.
+
+Below is a snippet from a log generated when running the the base game.
+
+```AI: ========================================================================================
+AI: 				start 'egypt' for year -270, season summer
+AI: ========================================================================================
+
+
+AI: ltgd: Update enemies of egypt
+AI: finance: est income 11872, est maintenance 6628, est outgoings 7139 -- spending max 5000, spending norm 2500; balance AFB_EARN_MASSES, state AFS_ROLLING_IN_IT
+AI: ltgd: defend (frontline 1.0, free 10277.999616, product 1.539092) vs fac 'seleucid': not at war, neither at war elsewhere >> ALD_DEFEND_NORMAL.
+AI: ltgd: defend (frontline 89.272728, free 1.233113, product 2.158267) vs fac 'numidia': not at war, neither at war elsewhere >> ALD_DEFEND_NORMAL.
+AI: ltgd: 'egypt' against 'seleucid', his frontline: 1, our frontline: 1
+AI: ltgd: 'egypt' against 'seleucid', frontline balance: 1.0, production balance: 1.539092
+AI: ltgd: 'egypt' invade 'seleucid', not at war, good production against strongest neighbour >> ALI_START_PLAN (200).
+AI: ltgd: 'egypt' against 'numidia', his frontline: 66, our frontline: 5892
+AI: ltgd: 'egypt' against 'numidia', frontline balance: 89.272728, production balance: 2.158267
+AI: ltgd: 'egypt' invade 'numidia', not at war, superior frontline and overall >> ALI_INVADE_IMMEDIATE (500).
+AI: ltgd: 'egypt' invade 'slave', since they have a neighbouring region >> ALI_INVADE_OPPORTUNISTIC (850).
+AI: ltgd: number of invasion targets: 3```
+
 
 ## Enable error dialog for detailed logging
 
