@@ -57,7 +57,8 @@ When you enabled logging a second file alomgside `message_log.txt` will also sta
 
 Below is a snippet from a log generated when running the the base game.
 
-```AI: ========================================================================================
+```
+AI: ========================================================================================
 AI: 				start 'egypt' for year -270, season summer
 AI: ========================================================================================
 
@@ -73,7 +74,8 @@ AI: ltgd: 'egypt' against 'numidia', his frontline: 66, our frontline: 5892
 AI: ltgd: 'egypt' against 'numidia', frontline balance: 89.272728, production balance: 2.158267
 AI: ltgd: 'egypt' invade 'numidia', not at war, superior frontline and overall >> ALI_INVADE_IMMEDIATE (500).
 AI: ltgd: 'egypt' invade 'slave', since they have a neighbouring region >> ALI_INVADE_OPPORTUNISTIC (850).
-AI: ltgd: number of invasion targets: 3```
+AI: ltgd: number of invasion targets: 3
+```
 
 
 ## Enable error dialog for detailed logging
