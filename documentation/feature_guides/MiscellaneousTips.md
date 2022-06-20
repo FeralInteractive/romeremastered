@@ -14,6 +14,7 @@
    * [ambient_settlements](#ambient_settlements)
    * [Output Variables To Log](#output-variables-to-log)
    * [Volcano](#volcano)
+   * [Disable Major Events using descr_strat](#disable-major-events-using-descr_strat)
    
 ## Introduction
 
@@ -131,3 +132,16 @@ You should avoid using the `script_log` command as that dumps to stdout not the 
 You can trigger volcanos inside a script using the command `console_command event volcano <x> <y>`
 
 The volcano will start smoking then the command is triggered then erupt the following turn.
+
+## Disable Major Events using descr_strat
+
+You can have multiple campaigns inside the same mod and manually control them from inside the descr_strat file using the following command. Here is an example of how to disable the marion reforms along with some notes on formatting.
+
+```
+set_major_event_enabled marian_reforms, false
+
+;;major event status can be set for individual factions with:
+;  trigger_status marian_reforms, empire_east, true
+;;or for all factions with:
+;  trigger_status marian_reforms, true
+```
