@@ -18,9 +18,10 @@
    * [Battle Calculations and Bonuses](#battle-calculations-and-bonuses)
 		* [Chanting and Screeching Bonuses](#chanting-and-screeching-bonuses)
 		* [Generals Bodyguard Size](#generals-bodyguard-size)
-		* [Generals Battle Bonuses](#generals-battle-bonuses)   
-
-## Introduction
+		* [Generals Battle Bonuses](#generals-battle-bonuses)
+		* [Battle Difficulty Bonuses](#battle-difficulty-bonuses)
+   * [Campaign Calculations and Bonuses](#campaign-calculations-and-bonuses)
+		* [Campaign Difficulty bonuses](#campaign-difficulty-bonuses)
 
 This page is a collection of hints and tips that don't otherwise fit into their own page but could be useful to players and modders alike.
 
@@ -212,3 +213,95 @@ Extra information about General's influence range:
  * If your unit is chanting and they are within range of an enemy unit screeching your units overall buff is +1 (+6-5) and theirs will be -2 (+3-5).
  * Having two monk units on the same side chanting next to each other will give surrounding units a single buff from chanting but they will also additionally buff each others stats. This means although the bonus doesn't stack you can use multiple units to ensure even the unit chanting has an active buff to morale.
  
+ ### Warcry and Berserk Bonuses
+ 
+ Warcry and Berserk bonuses don't have any bonuses to nearby units and only impact their own stats. Both of these features impact the default recovery time for a unit. 
+ 
+  * The recovery time is stored in the EDU in the `stat_pri` and `stat_sec` values. They are the second to last numbers on those lines.
+  * This stat is randomised by +5/-5
+  * This number represents the number of AI "ticks" before the action will trigger again.
+  * Warcry lasts for 40 seconds
+  * The WarCry effect charges up while the unit is taunting, the longer they taunt before an attack the shorter the time between attacks once they engage. 
+  * The longer you let them taunt before ordering them to do anything else, the higher their warcry meter ticks up
+  * After 2.8 seconds the attack rate bonus becomes active, after 7 seconds you hit the maxmium attack rate increase you can get from the ability (100%), after 40 seconds all the effects of the ability wear off instantly.
+  * Unlike WarCry the Berserk effect reduces the recovery time between attacks to 25% of the default.
+  * WarCry's impact is variable but can theoretically reduce the time between attacks to significantly below the Berserk value.
+  
+### Battle Difficulty Bonuses
+
+When playing on different difficulty settings for battles your units get the following morale modifiers.
+
+```
+Easy:    +6
+Normal:  +0
+Hard:    -4
+Extreme: -7
+```
+ 
+## Campaign Calculations and Bonuses
+
+### Campaign Difficulty bonuses
+
+When playing on different difficulty settings for campaign your units get the following morale modifiers.
+
+**Easy:**
+  *  -1 population growth
+  *  -2 order
+  *  no bonus denarii
+  * AI soldiers gain experience at the normal rate
+  * AI does not hire mercs
+  * AI gets brigands at the normal rate
+  * human gets brigands at the normal rate
+  * human gets 120% tax income
+  * human gets 120% farm income
+  * human can get up to 20 turns of peace
+  * AI gets no bonus to income
+  * AI values human regions 0% more
+  * brigands are not allowed to attack human settlements
+
+**Normal:**
+  *  +0 population growth
+  *  +0 order
+  *  +200 bonus denarii per round
+  * AI soldiers gain experience at the normal rate
+  * AI does not hire mercs
+  * AI gets brigands at the normal rate
+  * human gets brigands at the normal rate
+  * human gets 100% tax income
+  * human gets 100% farm income
+  * human can get up to 10 turns of peace
+  * AI gets a bonus to income up to 120% based on number of regions
+  * AI values human regions 80% more
+  * brigands are not allowed to attack human settlements
+
+**Hard:**
+  *  +2 population growth
+  *  +2 order
+  *  AI soldiers gain experience 2 times faster
+  *  +400 bonus denarii per round
+  * AI can hire mercs
+  * AI gets brigands at the 88% of the normal rate
+  * human gets brigands at 112% of the normal rate
+  * human gets 92% tax income
+  * human gets 92% farm income
+  * human can get up to 4 turns of peace
+  * AI gets a bonus to income up to 120% based on number of regions
+  * AI values human regions 120% more
+  * brigands can attack human settlements
+ 
+**Extreme:**
+  *  +4 population growth
+  *  +6 order
+  *  AI soldiers gain experience 3 times faster
+  *  +700 bonus denarii per round
+  * AI can hire mercs
+  * AI gets brigands at the 80% of the normal rate
+  * human gets brigands at 120% of the normal rate
+  * human gets 85% tax income
+  * human gets 85% farm income
+  * human can get up to 2 turns of peace
+  * AI gets a bonus to income of 120%
+  * AI values human regions 300% more
+  * brigands can attack human settlements
+  
+NOTE: `human can get up to [X] turns of peace` means after the human has been at peace for [X] turns the AI will force someone to attack you. This will appear in the Campaign AI log file as `ltgd: invade '%s' set for forced attack on human`
