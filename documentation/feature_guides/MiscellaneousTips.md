@@ -15,10 +15,10 @@
    * [Output Variables To Log](#output-variables-to-log)
    * [Volcano](#volcano)
    * [Disable Major Events using descr_strat](#disable-major-events-using-descr_strat)
-   * [Battle Calculations and Bonuses](#battle_calculations_and_bonuses)
-		* [Chanting and Screeching Bonuses](#chanting_and_screeching_bonuses)
-		* [Generals Bodyguard Size](#generals_bodyguard_size)
-		* [Generals Battle Bonuses](#generals_battle_bonuses)   
+   * [Battle Calculations and Bonuses](#battle-calculations-and-bonuses)
+		* [Chanting and Screeching Bonuses](#chanting-and-screeching-bonuses)
+		* [Generals Bodyguard Size](#generals-bodyguard-size)
+		* [Generals Battle Bonuses](#generals-battle-bonuses)   
 
 ## Introduction
 
@@ -201,13 +201,13 @@ Extra information about General's influence:
  * Chanting takes priority over screeching if both are active by the same side.
  * You cannot stack multiple bonuses at once, only a single one will count for any specific unit. For example if you trigger 2x Chanting and 1x Screeching units within the range of a 4th unit that unit will only ever get a single buff at once.
  * If both factions have buff's running at once both the positive and negative values are calculated for units in the area of influence.
- * The units doing the chanting/screeching *do not get the bonus from the action* only units around them.
- * Units with chanting or screeching abilities *can still get the bonus from other units* if they are within range they just cannot buff themselves.
+ * The units doing the chanting/screeching **do not get the bonus from the action*** only units around them.
+ * Units with chanting or screeching abilities **can still get the bonus from other units*** if they are within range they just cannot buff themselves.
  * If multiple buffs are within range and one of them runs out the game will switch to the next best buff to apply automatically. 
  * Neither of these bonuses effect anything other than morale.
  
  For example:
  
- * If your unit is chanting and they are within range of a unit screeching your units overall buff is +1 (+6-5) and theirs will be -2 (+3-5).
- * Having two monk units chanting next to each other will give surrounding units a single buff from chanting but they will also additionally buff each others stats. This means although the bonus doesn't stack you can use multiple units to ensure even the unit chanting has an active buff to morale.
+ * If your unit is chanting and they are within range of an enemy unit screeching your units overall buff is +1 (+6-5) and theirs will be -2 (+3-5).
+ * Having two monk units on the same side chanting next to each other will give surrounding units a single buff from chanting but they will also additionally buff each others stats. This means although the bonus doesn't stack you can use multiple units to ensure even the unit chanting has an active buff to morale.
  
