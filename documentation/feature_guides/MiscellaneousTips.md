@@ -181,13 +181,14 @@ NOTE: The General and other officers (i.e. centurions and standard bearers in le
 
 ### Generals Battle Bonuses
 
-Your General will give all your units some bonuses to their morale, the don't impact any of the other stats. These bonuses are as follows:
+Your General will give all your units some bonuses to their morale, they don't impact any of the other stats. These bonuses are as follows:
 
  * The general gives `+12` morale to their bodyguard unit while they're rallying, and `+8` at all other times. 
  * The general gives nearby units `+10` morale when they are rallying and `+4` at all other times.
- * As the general is alive, all units on the field no matter how far from the general get a morale bonus of `2 + command points + half influence` points add to their default TroopMorale stat.
+ * As long as the general is alive, all units on the field no matter how far from the general get a morale bonus of `2 + command points + half influence` points add to their default TroopMorale stat.
+ * The range of influence of a General is calculated using the following formula `6 + (7 * command) + (4 * influence)`. The number is using the internal engine distance this should be assumed to be similar to meters inside the game world.
  
-Extra information about General's influence: 
+Extra information about General's influence range: 
  
  * Being near a general makes a broken unit rally sooner than they would otherwise
 (assuming it's possible for them to rally).
