@@ -14,7 +14,11 @@
    * [ambient_settlements](#ambient_settlements)
    * [Output Variables To Log](#output-variables-to-log)
    * [Volcano](#volcano)
-   
+   * [Battle Calculations and Bonuses](#battle_calculations_and_bonuses)
+		* [Chanting and Screeching Bonuses](#chanting_and_screeching_bonuses)
+		* [Generals Bodyguard Size](#generals_bodyguard_size)
+		* [Generals Battle Bonuses](#generals_battle_bonuses)   
+
 ## Introduction
 
 This page is a collection of hints and tips that don't otherwise fit into their own page but could be useful to players and modders alike.
@@ -131,3 +135,65 @@ You should avoid using the `script_log` command as that dumps to stdout not the 
 You can trigger volcanos inside a script using the command `console_command event volcano <x> <y>`
 
 The volcano will start smoking then the command is triggered then erupt the following turn.
+
+## Battle Calculations and Bonuses
+
+In this subsection we have a number of bits of information on how the game logic calculates bonuses and unit sizes. These cannot be modded but can be useful when modding units to ensure good overall balance.
+
+### Generals Bodyguard Size
+
+The bodyguard calculation gives the size of the unit before the unit scale modifier is applied. All of the values explained below assume playing at `Medium` unit size. If you are playing at a different size they will be scaled up or down accordingly.
+
+ 1. Start with the default bodyguard unit size. This is defined in the EDU, in the example below the starting value will be `12`.
+ 
+```
+type             roman generals guard cavalry early
+dictionary       roman_generals_guard_cavalry_early      ; Roman General
+category         cavalry
+class            heavy
+voice_type       Heavy_1
+voice_indexes    0 1 2
+soldier          roman_medium_cavalry, 12, 0, 1
+mount            generals horse
+```
+
+ 2. Add `+6` if it's the faction leader
+ 3. Add `+4` if it's the faction heir
+ 4. Add half of the character's influence start, rounded down
+ 5. Add the character's `PersonalSecurity` stat
+ 7. Clamp resulting number between `4` and `31`
+
+NOTE: The General and other officers (i.e. centurions and standard bearers in legionary cohorts) aren't counted towards this number.
+
+### Generals Battle Bonuses
+
+Your General will give all your units some bonuses to their morale, the don't impact any of the other stats. These bonuses are as follows:
+
+ * The general gives `+12` morale to their bodyguard unit while they're rallying, and `+8` at all other times. 
+ * The general gives nearby units `+10` morale when they are rallying and `+4` at all other times.
+ * As the general is alive, all units on the field no matter how far from the general get a morale bonus of `2 + command points + half influence` points add to their default TroopMorale stat.
+ 
+Extra information about General's influence: 
+ 
+ * Being near a general makes a broken unit rally sooner than they would otherwise
+(assuming it's possible for them to rally).
+ * Units that can charge without orders won't do so if they're near the general.
+ * A General's rallying buff will be combined with any separate chanting and screeching bonuses that are within the same range. 
+
+### Chanting and Screeching Bonuses
+
+ * Being in range of friendly chanting grants `+6` morale, being in range of enemy chanting gives `-5`.
+ * Being in range of friendly  screeching will grant `+3`  morale, being in range of enemy screeching gives `-5`.
+ * Chanting takes priority over screeching if both are active by the same side.
+ * You cannot stack multiple bonuses at once, only a single one will count for any specific unit. For example if you trigger 2x Chanting and 1x Screeching units within the range of a 4th unit that unit will only ever get a single buff at once.
+ * If both factions have buff's running at once both the positive and negative values are calculated for units in the area of influence.
+ * The units doing the chanting/screeching *do not get the bonus from the action* only units around them.
+ * Units with chanting or screeching abilities *can still get the bonus from other units* if they are within range they just cannot buff themselves.
+ * If multiple buffs are within range and one of them runs out the game will switch to the next best buff to apply automatically. 
+ * Neither of these bonuses effect anything other than morale.
+ 
+ For example:
+ 
+ * If your unit is chanting and they are within range of a unit screeching your units overall buff is +1 (+6-5) and theirs will be -2 (+3-5).
+ * Having two monk units chanting next to each other will give surrounding units a single buff from chanting but they will also additionally buff each others stats. This means although the bonus doesn't stack you can use multiple units to ensure even the unit chanting has an active buff to morale.
+ 
