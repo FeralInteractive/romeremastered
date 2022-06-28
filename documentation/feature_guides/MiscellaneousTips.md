@@ -16,10 +16,14 @@
    * [Volcano](#volcano)
    * [Disable Major Events using descr_strat](#disable-major-events-using-descr_strat)
    * [Battle Calculations and Bonuses](#battle-calculations-and-bonuses)
-		* [Chanting and Screeching Bonuses](#chanting-and-screeching-bonuses)
 		* [Generals Bodyguard Size](#generals-bodyguard-size)
 		* [Generals Battle Bonuses](#generals-battle-bonuses)
+		* [Chanting and Screeching Bonuses](#chanting-and-screeching-bonuses)
+		* [Warcry and Berserk Bonuses](#warcry-and-berserk-bonuses)
 		* [Battle Difficulty Bonuses](#battle-difficulty-bonuses)
+		* [Experience Chevrons](#experience-chevrons)
+		* [Eagle Units](eagle-units)
+		* [Fear Effects](fear-effects)
    * [Campaign Calculations and Bonuses](#campaign-calculations-and-bonuses)
 		* [Campaign Difficulty bonuses](#campaign-difficulty-bonuses)
 
@@ -184,9 +188,9 @@ NOTE: The General and other officers (i.e. centurions and standard bearers in le
 
 Your General will give all your units some bonuses to their morale, they don't impact any of the other stats. These bonuses are as follows:
 
- * The general gives `+12` morale to their bodyguard unit while they're rallying, and `+8` at all other times. 
- * The general gives nearby units `+10` morale when they are rallying and `+4` at all other times.
- * As long as the general is alive, all units on the field no matter how far from the general get a morale bonus of `2 + command points + half influence` points add to their default TroopMorale stat.
+ * The general gives `+12` morale to their bodyguard unit while they're rallying, and `+8` at all other times. This is on top of the base value below.
+ * The general gives nearby units `+10` morale when they are rallying and `+4` at all other times. This is on top of the base value below.
+ * As long as the general is alive, all units on the field no matter how far from the general get a base morale bonus of `2 + command points + half influence` points add to their default TroopMorale stat.
  * The range of influence of a General is calculated using the following formula `6 + (7 * command) + (4 * influence)`. The number is using the internal engine distance this should be assumed to be similar to meters inside the game world.
  
 Extra information about General's influence range: 
@@ -194,7 +198,8 @@ Extra information about General's influence range:
  * Being near a general makes a broken unit rally sooner than they would otherwise
 (assuming it's possible for them to rally).
  * Units that can charge without orders won't do so if they're near the general.
- * A General's rallying buff will be combined with any separate chanting and screeching bonuses that are within the same range. 
+ * A General's rallying buff will be combined with any separate chanting and screeching bonuses that are within the same range.
+ * Only the main General provides bonuses, having two generals in your army will not impact the overall figures.
 
 ### Chanting and Screeching Bonuses
 
@@ -207,6 +212,9 @@ Extra information about General's influence range:
  * Units with chanting or screeching abilities **can still get the bonus from other units*** if they are within range they just cannot buff themselves.
  * If multiple buffs are within range and one of them runs out the game will switch to the next best buff to apply automatically. 
  * Neither of these bonuses effect anything other than morale.
+ * Both effects have a range of 75 using the internal engine distance this should be assumed to be similar to meters inside the game world.
+ * If you have more chanting effecting a unit than the enemy then you get a +2 to hit and vice versa.
+ * If the enemy has more screeching effects on a unit then you then you get a -2 to hit and vice versa.
  
  For example:
  
@@ -226,6 +234,7 @@ Extra information about General's influence range:
   * After 2.8 seconds the attack rate bonus becomes active, after 7 seconds you hit the maxmium attack rate increase you can get from the ability (100%), after 40 seconds all the effects of the ability wear off instantly.
   * Unlike WarCry the Berserk effect reduces the recovery time between attacks to 25% of the default.
   * WarCry's impact is variable but can theoretically reduce the time between attacks to significantly below the Berserk value.
+  * The attack rate modifier for these bonuses just reduce the time between animations, the animations themselves play at the normal rate, they're just triggered more often.
   
 ### Battle Difficulty Bonuses
 
@@ -237,6 +246,52 @@ Normal:  +0
 Hard:    -4
 Extreme: -7
 ```
+
+### Experience Chevrons
+
+Experience effects both the attack strength and the accuracy of the attacks. 
+
+#### Attack Strength
+
+The attack strength is calculated by taking the two units experience levels to calculate their new attack value.
+
+Formula: `9 + (attacker's experience - defender's experience)`
+
+Index: `-6,-5,-4,-4,-3,-3,-2,-2,-1,0,+1,+2,+2,+3,+3,+4,+4,+5,+6`
+
+For example: if you have a 9 chevron unit attacking a unit with no chevrons the calculation would be:
+ 
+`9 + (9-0)` This would give a result of `18` you then look up the value on the index above for position `18` in this case it is the final item in the index `+6`. This means the attacker when attacking will have a +6 to their attack stats. 
+
+Equally when the enemy is attacking back they'd have a calculation of `9 + (0-9)` which is `0` meaning they will use index `0` which means a `-6` modifier to their attack value.
+
+As you can see experience is double edged as it not only improves the units attack strength but also weakens units attacking them in return.
+
+#### Hit Accuracy
+
+ * Hit increases by 0.05 for every bar of experience
+ * There is a maximum offset of 0.45 on accuracy so a unit with 9 chevrons of experience is always 100% accurate with their hits.
+ * 100% accuracy means the attack is on target, it still however needs to have a separate calculation to see if it has any effect on the unit hit.
+ * The hit value is used for melee so this doesn't improve missile accuracy.
+
+### Eagle Units
+
+ * Eagle units have a `+4` morale boost to the all friendly units within the area of influence.
+ * Similar to monks the morale boost is only effective on other units not themselves.
+ * You cannot stack multiple Eagle bonuses at once, only a single one will count for any specific unit. You can however have a unit gain a bonus from an Eagle and Chanting or Screeching at the same time.
+ * The effect has a range of 75 using the internal engine distance this should be assumed to be similar to meters inside the game world.
+ 
+### Fear Effects
+
+When a unit has a modifier that means they are afraid of a certain type of unit this is calculated in the following manner.
+
+ * The fear will impact the units morale value.
+ * The modifier increases depending on the number of units nearby.
+   * 1 unit -4 morale
+   * 2 units -6 morale
+   * 3 or more units -8 morale
+ * Multiple units of the same type can be stacked, you don't need to stack separate types of unit.
+ * The effect has a range of 100 using the internal engine distance this should be assumed to be similar to meters inside the game world.
  
 ## Campaign Calculations and Bonuses
 
