@@ -161,7 +161,7 @@ In this subsection we have a number of bits of information on how the game logic
 
 ### Generals Bodyguard Size
 
-The bodyguard calculation gives the size of the unit before the unit scale modifier is applied. All of the values explained below assume playing at `Medium` unit size. If you are playing at a different size they will be scaled up or down accordingly.
+The bodyguard calculation gives the size of the unit before the unit scale modifier is applied.
 
  1. Start with the default bodyguard unit size. This is defined in the EDU, in the example below the starting value will be `12`.
  
@@ -181,6 +181,7 @@ mount            generals horse
  4. Add half of the character's influence start, rounded down
  5. Add the character's `PersonalSecurity` stat
  7. Clamp resulting number between `4` and `31`
+ 8. Multiply the resulting value by the unit scale factor to get the final unit size
 
 NOTE: The General and other officers (i.e. centurions and standard bearers in legionary cohorts) aren't counted towards this number.
 
@@ -190,8 +191,9 @@ Your General will give all your units some bonuses to their morale, they don't i
 
  * The general gives `+12` morale to their bodyguard unit while they're rallying, and `+8` at all other times. This is on top of the base value below.
  * The general gives nearby units `+10` morale when they are rallying and `+4` at all other times. This is on top of the base value below.
- * As long as the general is alive, all units on the field no matter how far from the general get a base morale bonus of `2 + command points + half influence` points add to their default TroopMorale stat.
+ * As long as the general is alive, all units on the field no matter how far from the general get a base morale bonus of `2 + command points + half influence + TroopMorale stat`.
  * The range of influence of a General is calculated using the following formula `6 + (7 * command) + (4 * influence)`. The number is using the internal engine distance this should be assumed to be similar to meters inside the game world.
+ * Units can only be influenced by the general that is in command of their army. Killing any secondary generals or generals in reinforcing armies will have no effect on the main army beyond removing the +8 morale bonus given to bodyguard units at all time listed above
  
 Extra information about General's influence range: 
  
@@ -199,9 +201,9 @@ Extra information about General's influence range:
 (assuming it's possible for them to rally).
  * Units that can charge without orders won't do so if they're near the general.
  * A General's rallying buff will be combined with any separate chanting and screeching bonuses that are within the same range.
- * Only the main General provides bonuses, having two generals in your army will not impact the overall figures.
 
 ### Chanting and Screeching Bonuses
+
 
  * Being in range of friendly chanting grants `+6` morale, being in range of enemy chanting gives `-5`.
  * Being in range of friendly  screeching will grant `+3`  morale, being in range of enemy screeching gives `-5`.
@@ -213,32 +215,36 @@ Extra information about General's influence range:
  * If multiple buffs are within range and one of them runs out the game will switch to the next best buff to apply automatically. 
  * Neither of these bonuses effect anything other than morale.
  * Both effects have a range of 75 using the internal engine distance this should be assumed to be similar to meters inside the game world.
- * If you have more chanting effecting a unit than the enemy then you get a +2 to hit and vice versa.
- * If the enemy has more screeching effects on a unit then you then you get a -2 to hit and vice versa.
+ 
+ * If a unit has more friendly chanting units influencing it than enemy chanting units, it gains a +2 to hit
+ * If a unit has more enemy screeching units influencing it than friendly screeching units, it gains a -2 to hit
  
  For example:
  
  * If your unit is chanting and they are within range of an enemy unit screeching your units overall buff is +1 (+6-5) and theirs will be -2 (+3-5).
  * Having two monk units on the same side chanting next to each other will give surrounding units a single buff from chanting but they will also additionally buff each others stats. This means although the bonus doesn't stack you can use multiple units to ensure even the unit chanting has an active buff to morale.
+ * If a unit is within range of 3 friendly screeching units, and 2 enemy screeching units, it's chance to hit will not suffer the -2 debuff due to having more friendly screeching units than enemies
  
  ### Warcry and Berserk Bonuses
  
  Warcry and Berserk bonuses don't have any bonuses to nearby units and only impact their own stats. Both of these features impact the default recovery time for a unit. 
  
   * The recovery time is stored in the EDU in the `stat_pri` and `stat_sec` values. They are the second to last numbers on those lines.
-  * This stat is randomised by +5/-5
-  * This number represents the number of AI "ticks" before the action will trigger again.
-  * Warcry lasts for 40 seconds
-  * The WarCry effect charges up while the unit is taunting, the longer they taunt before an attack the shorter the time between attacks once they engage. 
-  * The longer you let them taunt before ordering them to do anything else, the higher their warcry meter ticks up
-  * After 2.8 seconds the attack rate bonus becomes active, after 7 seconds you hit the maxmium attack rate increase you can get from the ability (100%), after 40 seconds all the effects of the ability wear off instantly.
-  * Unlike WarCry the Berserk effect reduces the recovery time between attacks to 25% of the default.
-  * WarCry's impact is variable but can theoretically reduce the time between attacks to significantly below the Berserk value.
-  * The attack rate modifier for these bonuses just reduce the time between animations, the animations themselves play at the normal rate, they're just triggered more often.
+  * This represents the number of deciseconds (10ths of a second) that units will take, on average, between attacks.
+  * When a soldier makes an attack, they will add a random number between -5 to +5 to the base stat and wait that long before making another attack
+  
+  * If a unit is berserk, the stat is reduced to 25% of it's original value
+  
+  * Warcry can reduce the stat by between 40% to 100% depending on how long the warcry is allowed to charge up
+  * After starting a unit's warcry ability, they will begin to taunt and a counter will begin to increment in the background
+  * If a unit is attacked, ordered to move, or otherwise have their taunting interrupted, the counter will remain frozen at wherever it was
+  * After 2.8 seconds of charging the attack rate bonus will become active at a 40% reduction in the base stat
+  * Between 2.8 seconds and 7 seconds the bonus will ramp up to 100%, and will remained capped there. Any additional charge time will have no effect
+  * After 40 seconds the effects of warcry will end immediately
   
 ### Battle Difficulty Bonuses
 
-When playing on different difficulty settings for battles your units get the following morale modifiers.
+When playing on different difficulty settings for battles your units get the following additional chance to hit when attacking another unit
 
 ```
 Easy:    +6
@@ -247,32 +253,34 @@ Hard:    -4
 Extreme: -7
 ```
 
+This means on higher difficulties your units will have a harder time hitting and dealing damage to enemies
+
 ### Experience Chevrons
 
 Experience effects both the attack strength and the accuracy of the attacks. 
 
-#### Attack Strength
+#### Chance to hit bonus
 
-The attack strength is calculated by taking the two units experience levels to calculate their new attack value.
+When a unit receives an attack, the change of the attack to hit and deal damage is calculated based on the difference in experience between the two units
+
+The modifier is calculated by using the following formula and looking up the result in the table below
 
 Formula: `9 + (attacker's experience - defender's experience)`
 
-Index: `-6,-5,-4,-4,-3,-3,-2,-2,-1,0,+1,+2,+2,+3,+3,+4,+4,+5,+6`
+| -9 | -8 | -7 | -6 | -5 | -4 | -3 | -2 | -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|----|----|----|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|---|
+| -6 | -5 | -4 | -4 | -3 | -3 | -2 | -2 | -1 | 0 | 1 | 2 | 2 | 3 | 3 | 4 | 4 | 5 | 6 |
 
-For example: if you have a 9 chevron unit attacking a unit with no chevrons the calculation would be:
- 
-`9 + (9-0)` This would give a result of `18` you then look up the value on the index above for position `18` in this case it is the final item in the index `+6`. This means the attacker when attacking will have a +6 to their attack stats. 
+Having more experience will therefore not only increase the chance to hit of a unit, but also lessen the bonus that more experienced units get against that unit
 
-Equally when the enemy is attacking back they'd have a calculation of `9 + (0-9)` which is `0` meaning they will use index `0` which means a `-6` modifier to their attack value.
+Note that if the attack is made by a non-unit entity (i.e. a gatehouse pouring boiling oil or a tower shooting an arrow) the experience of the attacker is assumed to be 0
 
-As you can see experience is double edged as it not only improves the units attack strength but also weakens units attacking them in return.
+#### Missile Accuracy
 
-#### Hit Accuracy
-
- * Hit increases by 0.05 for every bar of experience
- * There is a maximum offset of 0.45 on accuracy so a unit with 9 chevrons of experience is always 100% accurate with their hits.
- * 100% accuracy means the attack is on target, it still however needs to have a separate calculation to see if it has any effect on the unit hit.
- * The hit value is used for melee so this doesn't improve missile accuracy.
+ * When calculating the angle to fire at for ranged units, the game applies an offset of up to 0.45 to the desired angle
+ * For every bar of experience, this offset is reduced by 0.05
+ * This means that units with 9 chevrons of experience will be able to perfectly hit what they're aiming at
+ * Note that the above chance to hit table still applies when a missile hits something (except in the case of seige engine projectiles i.e. onagers), so ranged units with more experience are not only more likely to hit what they're aiming at, but also more likely to actually deal damage to whatever they hit
 
 ### Eagle Units
 
@@ -287,10 +295,10 @@ When a unit has a modifier that means they are afraid of a certain type of unit 
 
  * The fear will impact the units morale value.
  * The modifier increases depending on the number of units nearby.
-   * 1 unit -4 morale
-   * 2 units -6 morale
-   * 3 or more units -8 morale
- * Multiple units of the same type can be stacked, you don't need to stack separate types of unit.
+   * 1 unit:          -4 morale
+   * 2 units:         -6 morale
+   * 3 or more units: -8 morale
+ * Multiple units of the same type can be stacked, you don't need to use separate types of unit to increase the bonus.
  * The effect has a range of 100 using the internal engine distance this should be assumed to be similar to meters inside the game world.
  
 ## Campaign Calculations and Bonuses
