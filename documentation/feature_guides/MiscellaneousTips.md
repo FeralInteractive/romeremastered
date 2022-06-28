@@ -244,16 +244,16 @@ Extra information about General's influence range:
   
 ### Battle Difficulty Bonuses
 
-When playing on different difficulty settings for battles your units get the following additional chance to hit when attacking another unit
+When playing on different difficulty settings for battles **enemy** units get the following additional chance to hit when attacking another unit
 
 ```
-Easy:    +6
+Easy:    -6
 Normal:  +0
-Hard:    -4
-Extreme: -7
+Hard:    +4
+Extreme: +7
 ```
 
-This means on higher difficulties your units will have a harder time hitting and dealing damage to enemies
+This means on higher difficulties enemy units will have an easier time hitting and dealing damage to enemies
 
 ### Experience Chevrons
 
