@@ -24,6 +24,7 @@
 		* [Experience Chevrons](#experience-chevrons)
 		* [Eagle Units](eagle-units)
 		* [Fear Effects](fear-effects)
+		* [Formation Bonuses](formation-bonuses)
    * [Campaign Calculations and Bonuses](#campaign-calculations-and-bonuses)
 		* [Campaign Difficulty bonuses](#campaign-difficulty-bonuses)
 
@@ -300,7 +301,24 @@ When a unit has a modifier that means they are afraid of a certain type of unit 
    * 3 or more units: -8 morale
  * Multiple units of the same type can be stacked, you don't need to use separate types of unit to increase the bonus.
  * The effect has a range of 100 using the internal engine distance this should be assumed to be similar to meters inside the game world.
- 
+
+### Formation Bonuses
+
+|-------------|--------|---------|
+| Formation   | Attack | Defence |
+| Horde       |        |         |
+| Column      |        |         |
+| Square      |        |         |
+| Wedge       |  +10   |   -5    |
+| Testudo     |  -10   |   +5    |
+| Phalanx     |        |         |
+| Wall        |        |         |
+| Schiltrom   |        |         |
+| Shield Wall |        |   +10   |
+|-------------|--------|---------|
+
+Cantabrian Circle provides +3 to missile attacks
+
 ## Campaign Calculations and Bonuses
 
 ### Campaign Difficulty bonuses
