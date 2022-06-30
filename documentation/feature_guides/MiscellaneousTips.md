@@ -304,20 +304,14 @@ When a unit has a modifier that means they are afraid of a certain type of unit 
 
 ### Formation Bonuses
 
-|-------------|--------|---------|
-| Formation   | Attack | Defence |
-| Horde       |        |         |
-| Column      |        |         |
-| Square      |        |         |
-| Wedge       |  +10   |   -5    |
-| Testudo     |  -10   |   +5    |
-| Phalanx     |        |         |
-| Wall        |        |         |
-| Schiltrom   |        |         |
-| Shield Wall |        |   +10   |
-|-------------|--------|---------|
+Some formations have some bonuses, these are:
 
-Cantabrian Circle provides +3 to missile attacks
+Wedge: +10 Attack & -5 Defence
+Testudo: -10 Attack & +5 Defence
+Shield Wall: -10 Defence
+Cantabrian Circle: +3 to missile attacks
+
+Horde, Column, Square, Phalanx, Wall and Schiltrom have no Attack or Defence bonuses. 
 
 ## Campaign Calculations and Bonuses
 
