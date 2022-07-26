@@ -34,6 +34,7 @@ Below are some images and settings used to upscale textures for Rome Remastered.
    * Chain Two Models
    * `1x_BCGone-DetailedV2_40-60_115000_G` (Cleans DXT1 compression artefacts)
    * `4xUniversalUpscaler-Detailed_155000_G` (Detailed 4x Upscale)
+   * **Make sure you have transparency check box enabled in the ESRGAN settings (see screenshot)**
 3. Check preview image and preview info
 4. Set saving options
    * Override mode `No - Add Suffix`
