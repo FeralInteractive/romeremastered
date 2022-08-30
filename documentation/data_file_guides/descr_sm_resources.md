@@ -63,6 +63,20 @@ This is a an updated file for Rome Remastered. This file now allows you to:
 	"default model": "data/models_strat/resource_gold_03.CAS",
 },
 ```
+
+### Optional attributes
+
+Some resources may have additional attributes set to give them additional properties beyond trade value
+
+| Attribute name  | Explanation                                                                                                                                                                                                                                                                           | Example usage                                  |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| growth modifier | Gives a growth boost to regions with this resource, equivalent to having a governor with an equivalent bonus to the "Health" attribute                                                                                                                                                | "growth modifier": 1,                          |
+| base turns      | [Only applies to slave resources] After enslaving a settlement, this determines the minimum number of turns that the resource will become active for                                                                                                                                  | "base turns": 20,                              |
+| pop impact      | [Only applies to slave resources] After enslaving a settlement, the resource will remain active for an additional number of turns equivalent to (population / pop impact) (i.e. if pop impact is 1000, a settlement of 3100 will keep this resource active for an additional 3 turns) | "pop impact": 1000,                            |
+| single tooltip  | If a resource only has 1 turn left before it becomes inactive, it will use this tooltip instead of the normal one                                                                                                                                                                     | "single tooltip": "TMT_SLAVES_TOOLTIP_SINGLE", |
+| mining tooltip  | [Only applies to mineable resources] If the settlement for the region has a "mine_resource" stat greater than 1 the resource will use this tooltip instead of the normal one  (the single tooltip will take priority over this if applicable)                                         | "mining tooltip": "TMT_SILVER_MINE_TOOLTIP",   |
+| mine model      | [Only applies to mineable resources] If the settlement for the region has a "mine_resource" stat greater than 1 the resource will have this model applied over the top of the base model                                                                                              | "mine model": "data/path/to/model.cas",        |
+
 ### Scripting (New Feature)
 
 You can now use hidden resources in scripting, you can add & remove hidden resources and then check for the existence of them in a specific region. These are exposed in the [scripting commands](/documentation/feature_guides/scripts/Scripts.md) but repeated here for clarity.
