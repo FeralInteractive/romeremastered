@@ -1,7 +1,7 @@
 ![Workshop_header_template](/Workshop_header_template.png)
 # data_controlled_features
 
-## Table Of Contents
+## Table Of Contents
 
    * [Introduction](#introduction)
    * [opaque_black_fow](#opaque_black_fow)
