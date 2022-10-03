@@ -75,8 +75,8 @@ The CA_RAND_MAX value matches the minimum guaranteed value of RAND_MAX by the c+
 
 When making new units you can see the following error:
 
-```defender->battle_combo_get().defense.m_is_valid Failed
-An attack is being performed on something which does not have a valid defense. Why?```
+`defender->battle_combo_get().defense.m_is_valid Failed
+An attack is being performed on something which does not have a valid defense. Why?`
 
 This means the second value in `stat_pri_armour` or `stat_sec_armour` has been set to zero. The miniumum value allowed is 1.
 
