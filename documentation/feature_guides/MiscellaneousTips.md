@@ -7,6 +7,7 @@
    * [Disaster Values](#disaster-values)
    * [read_no_endian error](#read_no_endian-error)
    * [CA_RAND_MAX Values](#ca_rand_max-values)
+   * [defender->battle_combo_get().defense error](defender->battle_combo_get\(\).defense_error)
    * [export_descr_character_traits](#export_descr_character_traits)
    * [descr_quick_battle_locations](#descr_quick_battle_locations)
    * [Unexpected in condition parsing error](#unexpected-in-condition-parsing-error)
@@ -68,6 +69,17 @@ This error implies that the system that's reading the file has hit EoF (End Of F
 ## CA_RAND_MAX Values
 
 The CA_RAND_MAX value matches the minimum guaranteed value of RAND_MAX by the c++ spec. This is 32767. The random number genertor is using LFSR.
+
+
+## defender->battle_combo_get().defense error
+
+When making new units you can see the following error:
+
+```defender->battle_combo_get().defense.m_is_valid Failed
+An attack is being performed on something which does not have a valid defense. Why?```
+
+This means the second value in `stat_pri_armour` or `stat_sec_armour` has been set to zero. The miniumum value allowed is 1.
+
 
 ## export_descr_character_traits
 
