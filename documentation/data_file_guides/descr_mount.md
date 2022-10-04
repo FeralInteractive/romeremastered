@@ -105,7 +105,7 @@ This is the class of the mount. These classes are hardcoded so you have to choos
 * **scorpion_cart**
 
 Each class has its own unique properties. For example, if you choose the elephant class you can have multiple *riders*. Elephants can also attack gate and walls, while other classes are not able to do that.
-A *scorpion_cart* is a chariot with an artillery piece. This is only used in barbarian invasion afaik.
+A *scorpion_cart* is a chariot with an artillery piece. This is only used in barbarian invasion. Mods can use *scorpion_cart* in the base game or the two expansions if they want.
 
 ### model
 
