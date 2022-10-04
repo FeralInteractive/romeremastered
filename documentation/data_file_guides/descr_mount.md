@@ -252,8 +252,8 @@ The following breakdown lines are for scorpion carts only.
 Height of the scorpion's hitbox
 
 ### scorpion_forward_length
-? > No idea what this is for
+Defines how far forward the projectile appears from the scorpion when it's fired
 
 ### scorpion_reload_ticks
-? > No idea what this is for
+This is self explanatory, it's the time between attacks
 
