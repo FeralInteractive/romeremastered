@@ -3,7 +3,7 @@
 
 ### Author: Dagovax
 
-## Table Of Contents
+## Table Of Contents
 
 * [Introduction](#introduction)
 * [Mount breakdown](#mount-breakdown)

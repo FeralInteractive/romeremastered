@@ -1,7 +1,7 @@
 ![Workshop_header_template](/Workshop_header_template.png)
 # descr_model_battle
 
-## Table Of Contents
+## Table Of Contents
 
 * [Introduction](#introduction)
 * [DMB Breakdown](#dmb-breakdown)
