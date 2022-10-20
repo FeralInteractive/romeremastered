@@ -276,9 +276,11 @@ practice_field requires factions { barbarian, roman, } and resource iron and hid
 ```
 **NOTE** If you are wanting to make more complex requirements the parsing logic is as follows:
 
-```Negation binds to the nearest term, the binary ops bind right-associative, so 'not A and B or not C and D' is '(not A) and (B or ((not C) and D))'.
+```
+Negation binds to the nearest term, the binary ops bind right-associative, so 'not A and B or not C and D' is '(not A) and (B or ((not C) and D))'.
 
-No parenthesis is supported - probably won't be needed, such terms can just be expanded anyway.```
+No parenthesis is supported - probably won't be needed, such terms can just be expanded anyway.
+```
 
 #### Full List of Conditions
 
