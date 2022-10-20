@@ -274,6 +274,11 @@ Both visible and hidden resources can be used as requirements as may "building_p
 practice_field requires factions { barbarian, roman, } and resource iron and hidden_resource woodland and building_present_min_level market trader
 {
 ```
+**NOTE** If you are wanting to make more complex requirements the parsing logic is as follows:
+
+```Negation binds to the nearest term, the binary ops bind right-associative, so 'not A and B or not C and D' is '(not A) and (B or ((not C) and D))'.
+
+No parenthesis is supported - probably won't be needed, such terms can just be expanded anyway.```
 
 #### Full List of Conditions
 
