@@ -1097,8 +1097,8 @@ Class:              SCRIPT
 Implemented:        Yes
 ---------------------------------------------------
 Identifier:         include_script
-Parameters:         
-Description:        terminate a script
+Parameters:         Path the the script, relative to this one
+Description:        include a script file into this one, allowing large scripts to be broken into smaller ones
 Sample use:         include_script
 Class:              INCLUDE_SCRIPT
 Implemented:        Yes
@@ -1136,6 +1136,13 @@ Parameters:         conditions to satisfy to execute the scope
 Description:        conditional execution
 Sample use:         if_not TimerElapsed < 1000
 Class:              IF_NOT
+Implemented:        Yes
+---------------------------------------------------
+Identifier:         holding_while
+Parameters:         conditions to satisfy to execute this while
+Description:        start a while loop and don't exit or process any other commands outside the loop until the condition isn't met
+Sample use:         holding_while NumLoops < 1000
+Class:              HOLDING_WHILE
 Implemented:        Yes
 ---------------------------------------------------
 Identifier:         while
@@ -1356,9 +1363,9 @@ Class:              SUSPEND_DURING_BATTLE
 Implemented:        Yes
 ---------------------------------------------------
 Identifier:         set_music_state
-Parameters:         tension, mobilize, battle or custom
-Description:        Sets the music state in the battle
-Sample use:         set_music_state mobilize
+Parameters:         music state name, battle music state/misc sound ID if battle or custom, [no_fade]
+Description:        Sets the music state of the game. Battle states only work if in battle
+Sample use:         set_music_state battle mobilize
 Class:              SET_MUSIC_STATE
 Implemented:        Yes
 ---------------------------------------------------
