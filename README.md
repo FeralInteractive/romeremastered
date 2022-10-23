@@ -33,6 +33,7 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * [descr_campaigns](/documentation/data_file_guides/descr_campaigns.md)
 * [descr_sm_resources.txt](/documentation/data_file_guides/descr_sm_resources.md)
 * [DMB - descr_model_battle](/documentation/data_file_guides/DMB.md)
+* [descr_mount.txt](/documentation/data_file_guides/descr_mount.md)
 * [EDB - export_descr_buildings](/documentation/data_file_guides/EDB.md)
 	* [EDB - List of valid building capabilities](/documentation/data_file_guides/building_capabilties.md)
 * [List of valid trait and ancillary effects](/documentation/data_file_guides/traits_and_ancillaries.md)
