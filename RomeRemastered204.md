@@ -629,6 +629,10 @@ You can now define the maximum number of provinces a shadow faction can have bef
 
 ##### All factions can now be emergent or re_emergent
 
+Factions should now go into a dormant state instead of dying under if BOTH following conditions are TRUE:
+* They are flagged as re-emergent
+* They are shadowing another faction, and that faction is still alive
+
 ##### Detailed control of emergent factions via new sub-script
 
  * Implementation is very simple: at the end of the descr_strat (but before the main script), declare the name of the script like so:
