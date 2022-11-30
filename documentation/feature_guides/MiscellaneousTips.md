@@ -28,6 +28,7 @@
 		* [Formation Bonuses](formation-bonuses)
    * [Campaign Calculations and Bonuses](#campaign-calculations-and-bonuses)
 		* [Campaign Difficulty bonuses](#campaign-difficulty-bonuses)
+   * [Siege Turn Calculations](#siege-turn-calculations)
 
 This page is a collection of hints and tips that don't otherwise fit into their own page but could be useful to players and modders alike.
 
@@ -392,3 +393,28 @@ When playing on different difficulty settings for campaign your units get the fo
   * brigands can attack human settlements
   
 NOTE: `human can get up to [X] turns of peace` means after the human has been at peace for [X] turns the AI will force someone to attack you. This will appear in the Campaign AI log file as `ltgd: invade '%s' set for forced attack on human`
+
+## Siege Turn Calculations
+
+Below is the calculation to work how how long a settlement can hold out. 
+
+First, take the settlement type to get the base number of turns:
+
+  * Village - 2 Turns
+  * Town - 3 Turns
+  * Large town - 4 Turns
+  * Minor city - 4 Turns
+  * Large city - 5 Turns
+  * Huge city - 5 Turns
+
+Now take the `wall_level` value then add `+1` then add the result to the value above. 
+
+Finally add governor's management level divided by 3 (rounded down to nearest number)
+
+
+**NOTE:**
+
+  * If you have no wall the wall_level value is technically  `-1` so the calculation will be `-1 + 1 = 0` so you add nothing to the value.
+  * Add -4 if the settlement has plague
+  * Forts are hardcoded to have 3 turns when an army is in them
+  
