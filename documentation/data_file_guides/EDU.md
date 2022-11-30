@@ -33,6 +33,7 @@
    * [stat_fire_delay](#stat_fire_delay)
    * [stat_food](#stat_food)
    * [stat_cost](#stat_cost)
+   * [recruit_priority_offset (New for RR)](#recruit_priority_offset)
    * [ownership](#ownership)
 * [Useful Formulae](#useful-formulae)
    * [Chance_to_kill (melee):](#chance_to_kill-melee)
