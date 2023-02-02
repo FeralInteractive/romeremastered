@@ -28,6 +28,7 @@
 		* [Formation Bonuses](formation-bonuses)
    * [Campaign Calculations and Bonuses](#campaign-calculations-and-bonuses)
 		* [Campaign Difficulty bonuses](#campaign-difficulty-bonuses)
+		* [Religious Inheritance Logic](#religious-inheritance-logic)
    * [Siege Turn Calculations](#siege-turn-calculations)
 
 This page is a collection of hints and tips that don't otherwise fit into their own page but could be useful to players and modders alike.
@@ -394,11 +395,23 @@ When playing on different difficulty settings for campaign your units get the fo
   
 NOTE: `human can get up to [X] turns of peace` means after the human has been at peace for [X] turns the AI will force someone to attack you. This will appear in the Campaign AI log file as `ltgd: invade '%s' set for forced attack on human`
 
+### Religious Inheritance Logic
+
+Bribing another factions character doesn't effect anything. The character's religion is simply whatever the one with the highest conversion in their traits. If a character has 0 conversion in any religion they're automatically given, in order of preference:
+1) the faction leader's religion (not applicable to slaves)
+2) the religion of the settlement they're in
+3) the default religion of the faction
+4) the first religion in the list
+
+So what happens when a child is being born without any traits they'll then taking the religion of the faction leader using the logic above.
+
+You can use the Inherit_chance trait attribute to make children inherit their parent's religions
+
 ## Siege Turn Calculations
 
 Below is the calculation to work how how long a settlement can hold out. 
 
-First, take the settlement type to get the base number of turns:
+First, take the settlement type to get the minimum number of turns:
 
   * Village - 2 Turns
   * Town - 3 Turns
@@ -417,4 +430,5 @@ Finally add governor's management level divided by 3 (rounded down to nearest nu
   * If you have no wall the wall_level value is technically  `-1` so the calculation will be `-1 + 1 = 0` so you add nothing to the value.
   * Add -4 if the settlement has plague
   * Forts are hardcoded to have 3 turns when an army is in them
+  * No matter the other modifers the settlement cannot go below the minimum number of turns based on it's settlement level. 
   
