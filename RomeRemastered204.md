@@ -1363,7 +1363,6 @@ Unless specified the command will take "local" as an argument to get the settlem
  * set_leader
  * set_heir
  * give_ancillary
- * give_trait
  * process_cq
  * process_rq
  * character_reset
