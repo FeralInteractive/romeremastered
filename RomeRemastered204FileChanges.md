@@ -342,7 +342,7 @@ This file is no longer used by the game and has been superseded by `descr_nameli
 
 Updated the senate file as this needs to be set per-faction now as we can now have multiple senate files.
 
-See [descr_senate.md](/documentation/data_file_guides/descr_senate.md) for more information.
+See [descr_senate.txt](/example_mods/super_faction/data/descr_senate.txt) example mod for more information.
 
 ### descr_settlement_plan.txt
 
