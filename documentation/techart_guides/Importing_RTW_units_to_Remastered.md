@@ -121,7 +121,7 @@ You can use the Example texture [here](/documentation/techart_guides/images/gene
 
 **NOTE 1:** If you have higher resolution version of the assets from your original creation process you'll get a better results than upscaling. The example used on this page benefitted from higher quality assets that help teke advantage of ROME REMASTERED's improved renderer.
 
-**NOTE 2:** To speed up the importing process you can use a mid grey (RGB 128, 128, 128) texture file for the PBR file. This smooths the shading on the model surfaces when importing original game units. Feel free to use the texture [here](/documentation/techart_guides/images/generic_pbr.tga.dds).
+**NOTE 2:** To speed up the importing process you can use a mid grey (RGB 128, 128, 128) texture file for the PBR file. This smooths the shading on the model surfaces when importing original game units. Feel free to use the texture [here](/documentation/techart_guides/images/generic_pbr.tga.dds) and newer alternative version that might work better depending on the units you are importing can be found [here](/documentation/techart_guides/images/alternative_pbr/generic_pbr.tga.dds).
 
 ## Acknowledgements & Thanks
 
