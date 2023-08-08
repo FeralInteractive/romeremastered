@@ -14,6 +14,7 @@
 		* [Eagle Units](#eagle-units)
 		* [Fear Effects](#fear-effects)
 		* [Hiding Bonuses](#hiding_bonuses)
+		* [Battle Difficulty Bonuses](#battle-difficulty-bonuses)
    * [Campaign Calculations and Bonuses](#campaign-calculations-and-bonuses)
 		* [Campaign Difficulty bonuses](#campaign-difficulty-bonuses)
 		* [Distance To Capital Penalty](#distance_to_capital_penalty)
@@ -178,14 +179,35 @@ When a unit has a modifier that means they are afraid of a certain type of unit 
 
 ### Formation Bonuses
 
-Some formations have some bonuses, these are:
+Some formations have bonuses to attack, defence, and/or morale:
 
-Wedge: +10 Attack & -5 Defence
-Testudo: -10 Attack & +5 Defence
-Shield Wall: -10 Defence
-Cantabrian Circle: +3 to missile attacks
+| Formation   | Attack | Defence | Morale |
+| ----------- | ------ | ------- | ------ |
+| Horde       |        |         |        |
+| Column      |        |         |        |
+| Square      |        |         |        |
+| Wedge       | +10    | -5      |        |
+| Testudo     | -10    | +5      | +4     |
+| Phalanx     |        |         | +2     |
+| Wall        |        |         |        |
+| Schiltrom   |        |         | +3     |
+| Shield Wall |        | +10     |        |
 
-Horde, Column, Square, Phalanx, Wall and Schiltrom have no Attack or Defence bonuses.
+Cantabrian Circle provides +3 to missile attacks.
+
+#### Loose Formation
+
+Loose formation provides -2 morale. If there are elephants nearby, it provides +2 instead.
+
+#### Missile Penalty
+
+There's a reduced chance to hit for missiles based on defender formation:
+
+| Formation | Received Missile Attack |
+| --------- | ----------------------- |
+| Testudo   | -10                     |
+| Phalanx   | -4                      |
+| Schiltrom | -1                      |
  
 ## Campaign Calculations and Bonuses
 
