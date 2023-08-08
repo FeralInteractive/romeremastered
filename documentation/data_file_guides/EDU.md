@@ -347,7 +347,7 @@ The unit's attributes. The complete list is:
  * **druid**: replaces 'chant' of RTW gives nearby units (not the unit itself) morale bonus.
  * **power_charge**: increases the time during which a unit is 'charging' (as opposed to being 'in melee'), therefore extending the period during which the unit receives its charge-bonus.
  * **can_swim (RR 2.0.2 and later added support to base Rome)**: unit can swim rivers in battle mode (or walk in the case of some units).
- * **is_peasant (RR 2.0.2 and later added support to base Rome)**: unit counts for half it's size when reducing unrest, and is less likely to be added to rebel garrisons.
+ * **is_peasant (RR 2.0.2 and later added support to base Rome)**: 80% chance that it will be dropped from the selection list when generating a rebel garrison and they also count for half their numbers when suppressing unrest when garrisoned.
  * **can_horde (RR 2.0.2 and later added support to base Rome)**: unit can be part of a horde when one is created, and may be disbanded if a horde army decides to settle
  * **legionary_name (RR 2.0.2 and later added support to base Rome)**: assign a legionary name (based on region) and number to the recruited unit. The legionary element of the name is hardcoded.
  * **infinite_ammo** - NEW RR ATTRIBUTE (2.0.2): Allows a unit to have infinite ammo without going into arcade mode.
