@@ -19,6 +19,7 @@
    * [Campaign Calculations and Bonuses](#campaign-calculations-and-bonuses)
 		* [Campaign Difficulty bonuses](#campaign-difficulty-bonuses)
 		* [Distance To Capital Penalty](#distance_to_capital_penalty)
+   		* [Siege Turn Calculations](#siege-turn-calculations)	
 
 
 This page is a collection of information about battle and campaign formulae used inside the battle and campaign engine. 
