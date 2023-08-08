@@ -9,6 +9,7 @@
 		* [Generals Battle Bonuses](#generals-battle-bonuses)
 		* [Chanting and Screeching Bonuses](#chanting-and-screeching-bonuses)
 		* [Warcry and Berserk Bonuses](#warcry-and-berserk-bonuses)
+  		* [Hiding Bonuses](#hiding-bonuses)	
 		* [Battle Difficulty Bonuses](#battle-difficulty-bonuses)
 		* [Experience Chevrons](#experience-chevrons)
 		* [Eagle Units](#eagle-units)
@@ -109,7 +110,7 @@ Extra information about General's influence range:
   * Between 2.8 seconds and 7 seconds the bonus will ramp up to 100%, and will remained capped there. Any additional charge time will have no effect
   * After 40 seconds the effects of warcry will end immediately
 
-### Hiding Bonuses
+### Hiding Bonuses
 
 Some units have the ability to hide in woods or long grass. Those units (beyond not being visible to enemy units until they get close) have the following modifers on morale.
 
