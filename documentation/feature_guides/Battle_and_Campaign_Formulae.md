@@ -18,8 +18,9 @@
 		* [Battle Difficulty Bonuses](#battle-difficulty-bonuses)
    * [Campaign Calculations and Bonuses](#campaign-calculations-and-bonuses)
 		* [Campaign Difficulty bonuses](#campaign-difficulty-bonuses)
+		* [Plagues Historical and Random Behaviour](#plagues-historical-and-random-behaviour)
 		* [Distance To Capital Penalty](#distance_to_capital_penalty)
-   		* [Siege Turn Calculations](#siege-turn-calculations)	
+		* [Siege Turn Calculations](#siege-turn-calculations)	
 
 
 This page is a collection of information about battle and campaign formulae used inside the battle and campaign engine. 
@@ -278,6 +279,16 @@ When playing on different difficulty settings for campaign your units get the fo
   * brigands can attack human settlements
   
 NOTE: `human can get up to [X] turns of peace` means after the human has been at peace for [X] turns the AI will force someone to attack you. This will appear in the Campaign AI log file as `ltgd: invade '%s' set for forced attack on human`
+
+### Plagues Historical and Random Behaviour
+
+There are two types of plague, historical and random. 
+
+Historical plagues are defined in the `descr_events.txt` file for the map. 
+
+Random plagues happen in settlements with more than 3 squalor pips, and has a chance equal to ``((squalor - 3) - (health * 2)) / 20` to start a plague every turn. 
+
+Population has **no effect** except indirectly via increasing squalor due to overcrowding, the rate of which is moddable. 
 
 ### Distance To Capital Penalty
 
