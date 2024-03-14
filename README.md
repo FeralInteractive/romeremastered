@@ -80,6 +80,7 @@ The tools folder is full of scripts and tools that can assist modders in creatin
 * [Campaign Map Tool (Mesh Generation using Blender)](tools/CampaignMapTool/CampaignMapTool.md)
 * [Unpack Characters (.cas files from .pak files)](tools/unpack_characters/unpack_characters.md)
 * [Unit Card Generation](https://github.com/FeralInteractive/romeremastered-unitcards) - Stand Alone GitHub for generating Unit Card images from models 
+* [RSD Packer (Used to unpack/pack `.rsd` ui textures to and from raw files)](tools/RSDPacker/rsd_packer.md)
 
 # Example Mod
 
