@@ -15,7 +15,7 @@
 		* [Eagle Units](#eagle-units)
 		* [Fear Effects](#fear-effects)
 		* [Hiding Bonuses](#hiding_bonuses)
-		* [Battle Difficulty Bonuses](#battle-difficulty-bonuses)
+		* [Formation Bonuses](#formation-bonuses)
    * [Campaign Calculations and Bonuses](#campaign-calculations-and-bonuses)
 		* [Campaign Difficulty bonuses](#campaign-difficulty-bonuses)
 		* [Plagues Historical and Random Behaviour](#plagues-historical-and-random-behaviour)
