@@ -133,6 +133,19 @@ Class:                   SETTLEMENT_LEVEL_IS
 Implemented:             Yes
 ```
 
+```
+---------------------------------------------------
+Identifier:              character_age
+Trigger requirements:    character
+Parameters:              logic token, age
+Sample use:              character_age >= 60
+Description:             Checks the age of a character
+Battle or Strat:         Strat
+Class:                   CHARACTER_IS_AGE
+Implemented:             Yes
+---------------------------------------------------
+```
+
 ## New 2.0.0 -> 2.0.3 Events
 
 The following new conditions have been added to the dictionary for the Remaster:
