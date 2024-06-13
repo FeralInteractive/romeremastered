@@ -135,7 +135,7 @@ Below you'll find a list of all the major images used throughout the game from i
 
  * Format: .DDS DXT5
  * **Supports MIPS**
- * Notes: Aspect ratio should match the map you've generated. 
+ * Notes: Aspect ratio is reccomended to be 16:9 or 64:27 ratios. Other none standard ratios can cause the game to crash.
 
 ## Large Overview Map
 
