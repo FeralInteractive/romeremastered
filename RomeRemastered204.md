@@ -938,7 +938,21 @@ Added after `AntiTraits` as `MaxAllowed 6`
 
 #### Add `Inherit_chance` to traits to allow them to be inherited by a character's children 
 
-Has a range between 0-1
+Has a range between 0-1.
+
+Example usage in traits file:
+
+``` 
+Trait Drink
+    Characters family
+    NoGoingBackLevel  5 
+    AntiTraits Sobriety
+    InheritChance 1
+
+    Level Social_Drinker
+```
+**NOTE** This trigger is inherited at birth (not coming of age) so if the child is already alive on turn 0 then the traits of the father will not be inherited. For adding traits to day 0 children you can instead add traits when defining a `character_record` in `descr_strat`. 
+
 
 ### General Gameplay
 
