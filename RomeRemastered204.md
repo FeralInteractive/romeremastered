@@ -141,8 +141,6 @@ This page focuses on the key updates and features added with the 2.0.4 patch.
          * [Add MaxAllowed variable to traits](#add-maxallowed-variable-to-traits)
          * [Add Inherit_chance to traits to allow them to be inherited by a character's children](#add-inherit_chance-to-traits-to-allow-them-to-be-inherited-by-a-characters-children)
       * [General Gameplay](#general-gameplay-1)
-         * [Added mod accessible toggle for garrisons effecting revolt chance](#added-mod-accessible-toggle-for-garrisons-effecting-revolt-chance)
-         * [Add scorch effects to campaign toggle](#add-scorch-effects-to-campaign-toggle)
          * [Add extremely_hardy attribute option to units](#add-extremely_hardy-attribute-option-to-units)
          * [Add unit specific move speeds](#add-unit-specific-move-speeds)
          * [LOD rendering distance of mounts respects DMB defaults](#lod-rendering-distance-of-mounts-respects-dmb-defaults)
@@ -955,10 +953,6 @@ Trait Drink
 
 
 ### General Gameplay
-
-#### Added mod accessible toggle for garrisons effecting revolt chance
-
-#### Add scorch effects to campaign toggle
 
 #### Add `extremely_hardy` attribute option to units
 
