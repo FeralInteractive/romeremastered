@@ -108,7 +108,8 @@ Below you will find links to third party resources that can help with modding Ro
 * [TWC Wiki - Rome:Total War & Remastered - Modding Index](https://wiki.twcenter.net/index.php?title=Rome:Total_War_%26_Remastered_-_Modding_Index)
 * [Vercingetorix's xidx packer](https://github.com/AKAfreaky/XIDX) - Useful Packing Tool
   * Packs and Repacks various idx files used by Rome Total War & ROME REMASTERED
-* [Swagger's LOD Generator](https://github.com/iamemc/LOD_Generator) - Blender plugin to generate LODs for models. 
+* [Swagger's LOD Generator](https://github.com/iamemc/LOD_Generator) - Blender plugin to generate LODs for models.
+* [Rome Total War Community (Discord)](https://discord.com/invite/6Mhnnb5HCT) - A popular modding community dedicated to Rome Total War and Total War: Rome Remastered with over 3000 members.
 
 # Rules
 
