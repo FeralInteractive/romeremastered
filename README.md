@@ -73,6 +73,7 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * [UI Modding Format Guide](/documentation/feature_guides/ui_modding_guide.md)
 * [UI Modding Example](/documentation/feature_guides/ui_modding_example.md)
 * [Battle and Campaign Formulae](/documentation/feature_guides/Battle_and_Campaign_Formulae.md)
+* [Campaign Maps and AI Pathfinding](/documentation/feature_guides/Campaign_Map_Pathfinding.md)
 * [Miscellaneous Tips](/documentation/feature_guides/MiscellaneousTips.md)
 
 ## Asset Creation Guides
