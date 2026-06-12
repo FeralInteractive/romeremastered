@@ -61,7 +61,7 @@ You can now modify the reputational bonuses your faction gains or loses due to t
 
 ### Scripting - Expanded functionality and support for running in background
 
-You can now setup your mod to automatically load a background script when your mod loads, allowing you to add more immersion to your mod and avoid users having to manually trigger scripts using workarounds like the `show me how` button. We also added the abilitiy to store persistent variables inside the save game so that you can track script progression between play sessions, plus the ability destroy buildings and rename settlments inside a script. You can find a quick guide to scripting [here](/documentation/scripts/Scripts.md).
+You can now setup your mod to automatically load a background script when your mod loads, allowing you to add more immersion to your mod and avoid users having to manually trigger scripts using workarounds like the `show me how` button. We also added the abilitiy to store persistent variables inside the save game so that you can track script progression between play sessions, plus the ability destroy buildings and rename settlments inside a script. You can find a quick guide to scripting [here](/documentation/feature_guides/scripts/Scripts.md).
 
 ### Expanded Logging
 
@@ -114,7 +114,7 @@ Some of the text displayed in game isn't read from data/text folders but uses th
 You can find out more about toggles [here](/documentation/data_file_guides/toggles.md).
 
 ### Scripting
-Scripting has been extended in Rome Remastered with logging, modded background support, persistent counters, plus addional commands, conditions and events. You can find out more about this feature [here](/documentation/scripts/Scripts.md).
+Scripting has been extended in Rome Remastered with logging, modded background support, persistent counters, plus addional commands, conditions and events. You can find out more about this feature [here](/documentation/feature_guides/scripts/Scripts.md).
 
 </br>
 

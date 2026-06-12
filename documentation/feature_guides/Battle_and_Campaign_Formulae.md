@@ -20,7 +20,8 @@
 		* [Campaign Difficulty bonuses](#campaign-difficulty-bonuses)
 		* [Plagues Historical and Random Behaviour](#plagues-historical-and-random-behaviour)
 		* [Distance To Capital Penalty](#distance_to_capital_penalty)
-		* [Siege Turn Calculations](#siege-turn-calculations)	
+		* [Siege Turn Calculations](#siege-turn-calculations)
+		* [Trade Calculations](#trade-calculations)
 
 
 This page is a collection of information about battle and campaign formulae used inside the battle and campaign engine. 
@@ -333,4 +334,42 @@ Finally add governor's management level divided by 3 (rounded down to nearest nu
   * If you have no wall the wall_level value is technically  `-1` so the calculation will be `-1 + 1 = 0` so you add nothing to the value.
   * Add -4 if the settlement has plague
   * Forts are hardcoded to have 3 turns when an army is in them
+
+### Trade Calculations
+
+This explains how a settlement's trade income is generated. Useful when modding economies and resources.
+
+#### Trade Bonus Percent Multiplier
+
+* Get the governor's `Trading` stat (a trait some governors have)
+* Multiply the `trade_base_income_bonus` stat for the settlement by 10 and add to the value above
+
+#### Land Trade Income
+
+For each region with a land border:
+* Discard immediately if the adjoining settlement has plague, is under siege, or belongs to a faction you have an embargo or war with
+* For each resource in the region (each physical model on the map):
+  * If the resource does not occur in the main region, multiply its quantity by the resource's trade value × 2 and add to the base trade value
+* Add the population of both the main and border settlements, take the square root, multiply by `0.13`, and add to base trade value
+* If you don't have trade rights with the owner, multiply the trade value by `0.33`
+* Road multiplier:
+  * If the road has no enemy army standing on it, add the minimum of the two road levels (e.g. if main settlement has paved roads but the border settlement has none, use road level `0`)
+  * Add the main settlement's `trade_level_bonus` stat + 1; clamp to zero if negative
+* Multiply the road multiplier by the base trade income for this region
+* Multiply by the trade bonus percent (or zero, whichever is higher) to get final income from this border region
+
+Sum the above for all bordering regions to get total land trade income.
+
+#### Sea Trade Income
+
+Sea trade uses the same calculation as land trade with the following differences:
+
+* The governor's `Trading` stat and `trade_base_income_bonus` **do** apply
+* Road level is hardcoded to `8`
+* If enemy armies are present in the region, income is reduced to `66%`
+* If the port is blockaded, income is zero
+* Final income is scaled by `(trade income * 100) / mp` to get the value flowing from one port to the other
+* The game automatically sets up port trade links based on the number of available trade fleets; if a trading partner's value drops, the game switches to a better partner automatically
+
+`trade_fleet` is a moddable value in the EDB, allowing you to define the number of trade fleets per port level.
 

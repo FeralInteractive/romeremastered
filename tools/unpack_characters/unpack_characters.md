@@ -74,7 +74,7 @@ Once extracted you might want to convert them into FBX format so you can edit th
 
 Whenever you run this command the game will save out a log file (message_log.txt) containing all extract attempts and if they are successful or not.
 
-You can find more info on the location of log files on the [logging feature page](documentation/features/logging.md).
+You can find more info on the location of log files on the [logging feature page](/documentation/feature_guides/logging/logging.md).
 
 #### Example of Extraction starting
 

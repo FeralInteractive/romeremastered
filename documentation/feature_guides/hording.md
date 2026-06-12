@@ -16,4 +16,4 @@ This works very much like the original game. We reccomend using the guide found 
 
 [Hording and Emergent Factions - RTW/BI](https://wiki.twcenter.net/index.php?title=Hording_and_Emergent_Factions_-_RTW/BI)
 
-You can also find an example of hording in the [Example_Mod](/My%20Mods/ExampleMod/ExampleMod.md) page.
+You can also find an example of hording in the [Example Mods](/example_mods/ExampleMods.md) page.

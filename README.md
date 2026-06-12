@@ -7,6 +7,12 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * [List of acronyms](#list-of-acronyms)
 * [Documentation](#documentation)
    * [Game Data File Guides](#game-data-file-guides)
+      * [Units & Combat](#units--combat)
+      * [Buildings](#buildings)
+      * [Campaign & Factions](#campaign--factions)
+      * [AI](#ai)
+      * [Graphics & Environment](#graphics--environment)
+      * [Game Rules & Text](#game-rules--text)
    * [Feature Guides](#feature-guides)
    * [Asset Creation Guides](#asset-creation-guides)
 * [Tool Guides](#tool-guides)
@@ -27,26 +33,36 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 
 ## Game Data File Guides
 
-
-* [data_controlled_features](/documentation/data_file_guides/data_controlled_features.md)
-* [descr_battle_ai_personalities](/documentation/data_file_guides/descr_battle_ai_personalities.md)
-* [descr_campaigns](/documentation/data_file_guides/descr_campaigns.md)
-* [descr_sm_resources.txt](/documentation/data_file_guides/descr_sm_resources.md)
+### Units & Combat
+* [EDU - export_descr_unit](/documentation/data_file_guides/EDU.md)
+	* [EDU - Unit Attributes](/documentation/data_file_guides/unit_capabilities.md)
+	* [List of valid trait and ancillary effects](/documentation/data_file_guides/traits_and_ancillaries.md)
 * [DMB - descr_model_battle](/documentation/data_file_guides/DMB.md)
 * [descr_mount.txt](/documentation/data_file_guides/descr_mount.md)
+
+### Buildings
 * [EDB - export_descr_buildings](/documentation/data_file_guides/EDB.md)
-	* [EDB - List of valid building capabilities](/documentation/data_file_guides/building_capabilties.md)
-* [List of valid trait and ancillary effects](/documentation/data_file_guides/traits_and_ancillaries.md)
-* [EDU - export_descr_unit](/documentation/data_file_guides/EDU.md)
-	* [EDU - Unit Attributes](/documentation/data_file_guides/unit_capabilties.md)
-* [feral_descr_ai_personality.txt](/documentation/data_file_guides/feral_descr_ai_personality.md)
+	* [EDB - List of valid building capabilities](/documentation/data_file_guides/building_capabilities.md)
+
+### Campaign & Factions
+* [descr_campaigns](/documentation/data_file_guides/descr_campaigns.md)
+* [descr_sm_resources.txt](/documentation/data_file_guides/descr_sm_resources.md)
 * [feral_descr_movement_multipliers.txt](/documentation/data_file_guides/feral_descr_movement_multipliers.md)
 * [feral_descr_reputations_and_relations](/documentation/data_file_guides/feral_descr_reputations_and_relations.md)
-* [string_overrides](/documentation/data_file_guides/string_overrides.md)
-* [toggles](/documentation/data_file_guides/toggles.md)
+
+### AI
+* [descr_battle_ai_personalities](/documentation/data_file_guides/descr_battle_ai_personalities.md)
+* [feral_descr_ai_personality.txt](/documentation/data_file_guides/feral_descr_ai_personality.md)
+
+### Graphics & Environment
 * [feral_descr_tonemap_lut.txt](/documentation/data_file_guides/feral_descr_tonemap_lut.md)
 * [feral_descr_grass_textures.txt](/documentation/data_file_guides/feral_descr_grass_textures.md)
 * [feral_descr_grass_usage.txt](/documentation/data_file_guides/feral_descr_grass_usage.md)
+
+### Game Rules & Text
+* [data_controlled_features](/documentation/data_file_guides/data_controlled_features.md)
+* [toggles](/documentation/data_file_guides/toggles.md)
+* [string_overrides](/documentation/data_file_guides/string_overrides.md)
 
 ## Feature Guides
 * [Launch Options - Logging & Debugging Tools](/documentation/feature_guides/logging/logging.md)
@@ -61,15 +77,16 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 
 ## Asset Creation Guides
 * [Animations](/documentation/techart_guides/Animations.md)
-* [Buildings](documentation/techart_guides/Buildings.md)
-* [Characters](documentation/techart_guides/Characters.md)
-* [Destruction](documentation/techart_guides/Destruction.md)
-* [Miscellaneous Tips](documentation/techart_guides/MiscellaneousTips.md)
-* [Physical Info Files](documentation/techart_guides/PhysicalInfoFiles.md)
-* [Vegetation](documentation/Vegetation.md)
-* [Importing Rome Total War units to Total War: ROME REMASTERED](documentation/techart_guides/Importing_RTW_units_to_Remastered.md)
-* [Upscaling Rome Total War textures to Total War: ROME REMASTERED](documentation/techart_guides/Upscaling_RTW_Textures_to_Remastered.md)
-* [Settlement Overlay](documentation/techart_guides/Settlement_Overlay.md)
+* [Buildings](/documentation/techart_guides/Buildings.md)
+* [Characters](/documentation/techart_guides/Characters.md)
+* [Destruction](/documentation/techart_guides/Destruction.md)
+* [Physical Info Files](/documentation/techart_guides/PhysicalInfoFiles.md)
+* [Textures](/documentation/techart_guides/Textures.md)
+* [Unit Cards](/documentation/techart_guides/UnitCards.md)
+* [Vegetation](/documentation/techart_guides/Vegetation.md)
+* [Importing Rome Total War units to Total War: ROME REMASTERED](/documentation/techart_guides/Importing_RTW_units_to_Remastered.md)
+* [Upscaling Rome Total War textures to Total War: ROME REMASTERED](/documentation/techart_guides/Upscaling_RTW_Textures_to_Remastered.md)
+* [Settlement Overlay](/documentation/techart_guides/Settlement_Overlay.md)
 
 # Tool Guides
 
