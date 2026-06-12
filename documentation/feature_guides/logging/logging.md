@@ -3,7 +3,6 @@
 
 ## Table Of Contents
 
-   * [Table Of Contents](#table-of-contents)
    * [Introduction](#introduction)
    * [Enable detailed logging](#enable-detailed-logging)
       * [Example of log contents](#example-of-log-contents)

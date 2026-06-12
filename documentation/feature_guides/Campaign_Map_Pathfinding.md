@@ -1,4 +1,16 @@
+![Workshop_header_template](/Workshop_header_template.png)
 # Designing Campaign Maps the AI Can Navigate
+
+## Table Of Contents
+
+* [1. The two layers of campaign navigation](#1-the-two-layers-of-campaign-navigation)
+* [2. What makes a tile impassable](#2-what-makes-a-tile-impassable)
+* [3. Settlements, ports and forts must sit on reachable ground](#3-settlements-ports-and-forts-must-sit-on-reachable-ground)
+* [4. Movement cost, roads and fog of war](#4-movement-cost-roads-and-fog-of-war)
+* [5. Why the AI gets stuck: the iteration budget](#5-why-the-ai-gets-stuck-the-iteration-budget)
+* [6. Zones of control (ZOC)](#6-zones-of-control-zoc)
+* [7. Map-maker's checklist for AI-friendly campaign maps](#7-map-makers-checklist-for-ai-friendly-campaign-maps)
+* [8. Quick diagnosis table](#8-quick-diagnosis-table)
 
 This guide explains, in plain terms, how the game works out where armies, agents and other characters can walk on the campaign map, why the AI sometimes gets "stuck", and what the pathfinding-related messages in your logs are trying to tell you. It deals **only with the campaign (strategy) map** — battle-map navigation is a completely separate system and is not covered here.
 

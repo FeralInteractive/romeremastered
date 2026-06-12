@@ -8,7 +8,7 @@
    * [read_no_endian error](#read_no_endian-error)
    * [CA_RAND_MAX Values](#ca_rand_max-values)
    * [num_stations < MAX_ENGINE_STATIONS](#num_stations-MAX_ENGINE_STATIONS)
-   * [defender->battle_combo_get().defense error](defender-battle_combo_getdefense-error)
+   * [defender->battle_combo_get().defense error](#defender-battle_combo_getdefense-error)
    * [export_descr_character_traits](#export_descr_character_traits)
    * [descr_quick_battle_locations](#descr_quick_battle_locations)
    * [Unexpected in condition parsing error](#unexpected-in-condition-parsing-error)

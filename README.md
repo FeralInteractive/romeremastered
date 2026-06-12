@@ -83,7 +83,6 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * [Characters](/documentation/techart_guides/Characters.md)
 * [Destruction](/documentation/techart_guides/Destruction.md)
 * [Physical Info Files](/documentation/techart_guides/PhysicalInfoFiles.md)
-* [Textures](/documentation/techart_guides/Textures.md)
 * [Unit Cards](/documentation/techart_guides/UnitCards.md)
 * [Vegetation](/documentation/techart_guides/Vegetation.md)
 * [Importing Rome Total War units to Total War: ROME REMASTERED](/documentation/techart_guides/Importing_RTW_units_to_Remastered.md)

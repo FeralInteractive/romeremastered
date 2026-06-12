@@ -1,4 +1,19 @@
+![Workshop_header_template](/Workshop_header_template.png)
 # How the AI Conducts Diplomacy
+
+## Table Of Contents
+
+* [1. The AI's "diplomatic department"](#1-the-ais-diplomatic-department)
+* [2. Missions: what the AI is trying to achieve](#2-missions-what-the-ai-is-trying-to-achieve)
+* [3. Putting a price on a deal](#3-putting-a-price-on-a-deal)
+* [4. Trust and reputation — the master levers](#4-trust-and-reputation--the-master-levers)
+* [5. Diplomatic stance](#5-diplomatic-stance)
+* [6. Haggling: how counter-offers play out](#6-haggling-how-counter-offers-play-out)
+* [7. Personality shapes everything upstream](#7-personality-shapes-everything-upstream)
+* [8. Protectorates and breaking away](#8-protectorates-and-breaking-away)
+* [9. Modder's checklist for diplomacy](#9-modders-checklist-for-diplomacy)
+* [10. Quick diagnosis table](#10-quick-diagnosis-table)
+* [Related data-file guides](#related-data-file-guides)
 
 This guide explains, in plain terms, how an AI faction decides what diplomatic deals to seek, how it puts a price on what's on the table, and why it accepts, refuses or haggles over an offer. The aim is to help modders understand *why* the AI behaves the way it does at the diplomacy table, and which data files to reach for when you want to change that behaviour.
 
