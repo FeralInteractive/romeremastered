@@ -11,6 +11,7 @@
 * [6. Zones of control (ZOC)](#6-zones-of-control-zoc)
 * [7. Map-maker's checklist for AI-friendly campaign maps](#7-map-makers-checklist-for-ai-friendly-campaign-maps)
 * [8. Quick diagnosis table](#8-quick-diagnosis-table)
+* [What changed from original Rome (OG)](#what-changed-from-original-rome-og)
 
 This guide explains, in plain terms, how the game works out where armies, agents and other characters can walk on the campaign map, why the AI sometimes gets "stuck", and what the pathfinding-related messages in your logs are trying to tell you. It deals **only with the campaign (strategy) map** — battle-map navigation is a completely separate system and is not covered here.
 
@@ -94,7 +95,7 @@ Finding *a* path is not enough — the game looks for the **cheapest** path, mea
 - For the **human player only**, tiles hidden in unexplored fog of war carry a heavy extra cost. This nudges the player's suggested routes toward ground they've actually scouted. It does not apply to the AI's own strategic reasoning or to road-building.
 
 ### A note on costs going wrong
-Movement costs must always be **zero or positive**. If a map's terrain or road data somehow produces a **negative** step cost, the planner's maths breaks down and it can fail to find a route it should easily find. If you are editing terrain-cost or road data and start seeing the `The g value has gone negative` message (see [Section 6](#6-log-messages-and-what-they-mean)), that is the cause — a movement cost has come out below zero.
+Movement costs must always be **zero or positive**. If a map's terrain or road data somehow produces a **negative** step cost, the planner's maths breaks down and it can fail to find a route it should easily find. If routes go haywire shortly after you've edited terrain-cost or road data, a movement cost coming out below zero is the likely cause — re-check the values you changed.
 
 ---
 
@@ -151,10 +152,26 @@ Run through this before shipping a map:
 |---|---|---|
 | An AI faction never expands or moves its main army | Its capital/region is sealed off by impassable terrain, or its only frontier is blocked | [§3](#3-settlements-ports-and-forts-must-sit-on-reachable-ground), [§7](#7-map-makers-checklist-for-ai-friendly-campaign-maps) |
 | Armies refuse to take an obvious-looking route | Corridor too long/narrow/winding for the search budget, or a cliff/diagonal block | [§5](#5-why-the-ai-gets-stuck-the-iteration-budget), [§2](#2-what-makes-a-tile-impassable) |
-| `too many iterations to handle` in the log | Search budget exhausted — unreachable or over-convoluted route | [§5](#5-why-the-ai-gets-stuck-the-iteration-budget) |
-| `A_STAR_SEARCH no open nodes` in the log | Destination genuinely unreachable | [§8](#8-log-messages-and-what-they-mean) |
-| `...region is a sea` in the log | Land/sea region mis-flagged in region data | [§1](#1-the-two-layers-of-campaign-navigation), [§8](#8-log-messages-and-what-they-mean) |
-| `The g value has gone negative` in the log | Negative movement cost in edited terrain/road data | [§4](#4-movement-cost-roads-and-fog-of-war) |
+| Army won't take a route that clearly exists | Search budget exhausted — route too long or over-convoluted | [§5](#5-why-the-ai-gets-stuck-the-iteration-budget) |
+| Destination genuinely unreachable (army won't move at all) | Target walled off from the start point | [§5](#5-why-the-ai-gets-stuck-the-iteration-budget) |
+| Land/sea region behaving wrongly for pathing | Region mis-flagged as land or sea in region data | [§1](#1-the-two-layers-of-campaign-navigation) |
+| Movement costs behaving oddly after editing terrain/road data | A negative or malformed movement cost | [§4](#4-movement-cost-roads-and-fog-of-war) |
 | Units can't cross what looks like a passable river | River has no bridge (road) or ford | [§2](#2-what-makes-a-tile-impassable) |
 | Movement-range overlay stops short for no clear reason | A hidden barrier (cliff, directional block, dense forest) in the way | [§1](#1-the-two-layers-of-campaign-navigation), [§2](#2-what-makes-a-tile-impassable) |
+
+---
+
+## What changed from original Rome (OG)
+
+Unlike the senate or diplomacy systems, campaign-map navigation is **largely unchanged** from the original game. The rules in this guide — the two-layer tile/region search, what makes a tile impassable, region frontiers, zones of control, movement cost, and the search "budget" that causes stuck-AI symptoms — behave essentially as they did in original Rome. If a map worked for the AI in the original game, the same design principles apply here.
+
+The differences that are worth knowing:
+
+| Aspect | Original Rome (OG) | ROME REMASTERED (RR) |
+|---|---|---|
+| **Length of drawn player routes** | The route preview when you drag a character was capped fairly short. | RR allows a **much longer movement path to be drawn** when a human player plots a move across the map, so long cross-map orders display properly. This does **not** change how far a character can actually travel in a turn — only how far ahead the path is calculated and shown. |
+| **Under-the-hood performance** | — | The pathfinder was optimised internally (faster searching for the same results). This is invisible to modders and does not change which routes are found. |
+| **Map-design rules** | The impassable-terrain, region-frontier, ZOC and reachability rules in this guide. | **Unchanged** — design maps the same way. |
+
+In short: there is no new map-data format or behaviour to learn here versus OG. The value of this guide is explaining rules that were always present but never well documented.
 

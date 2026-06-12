@@ -49,6 +49,7 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * [descr_sm_resources.txt](/documentation/data_file_guides/descr_sm_resources.md)
 * [feral_descr_movement_multipliers.txt](/documentation/data_file_guides/feral_descr_movement_multipliers.md)
 * [feral_descr_reputations_and_relations](/documentation/data_file_guides/feral_descr_reputations_and_relations.md)
+* [descr_senate.txt](/documentation/data_file_guides/descr_senate.md)
 
 ### AI
 * [descr_battle_ai_personalities](/documentation/data_file_guides/descr_battle_ai_personalities.md)
@@ -75,6 +76,7 @@ Welcome! This is the home of the Total War: ROME REMASTERED modding tools and do
 * [Battle and Campaign Formulae](/documentation/feature_guides/Battle_and_Campaign_Formulae.md)
 * [Campaign Maps and AI Pathfinding](/documentation/feature_guides/Campaign_Map_Pathfinding.md)
 * [How the AI Conducts Diplomacy](/documentation/feature_guides/AI_Diplomacy.md)
+* [Senate Offices: Adding Offices and Senators](/documentation/feature_guides/Senate_Offices.md)
 * [Miscellaneous Tips](/documentation/feature_guides/MiscellaneousTips.md)
 
 ## Asset Creation Guides

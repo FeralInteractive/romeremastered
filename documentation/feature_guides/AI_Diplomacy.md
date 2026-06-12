@@ -13,6 +13,7 @@
 * [8. Protectorates and breaking away](#8-protectorates-and-breaking-away)
 * [9. Modder's checklist for diplomacy](#9-modders-checklist-for-diplomacy)
 * [10. Quick diagnosis table](#10-quick-diagnosis-table)
+* [What changed from original Rome (OG)](#what-changed-from-original-rome-og)
 * [Related data-file guides](#related-data-file-guides)
 
 This guide explains, in plain terms, how an AI faction decides what diplomatic deals to seek, how it puts a price on what's on the table, and why it accepts, refuses or haggles over an offer. The aim is to help modders understand *why* the AI behaves the way it does at the diplomacy table, and which data files to reach for when you want to change that behaviour.
@@ -169,6 +170,22 @@ When the AI's diplomacy isn't behaving the way you intended, work down this list
 | A protectorate keeps trying to break away | It has grown strong relative to its protector | [§8](#8-protectorates-and-breaking-away) |
 | Same offer gives different answers on repeat tests | Deliberate randomness in evaluation and patience | [§6](#6-haggling-how-counter-offers-play-out) |
 | AI accepts something it never seemed to pursue | A **hidden mission** it was willing to accept but not chase | [§2](#2-missions-what-the-ai-is-trying-to-achieve) |
+
+---
+
+## What changed from original Rome (OG)
+
+The core of diplomacy — missions, valuing each item in denarii, trust, stance, and the accept/decline/counter loop — works as it did in the original game. ROME REMASTERED layers several additions on top, most of which give modders more control or smooth out long-standing rough edges:
+
+| Aspect | Original Rome (OG) | ROME REMASTERED (RR) |
+|---|---|---|
+| **Reputation drift** | Trust leaned heavily on **bilateral** aggression, and global reputation could drift to extremes, leaving factions permanently un-dealable. | Trust uses a **global-reputation-weighted** measure designed to curb that drift, so a faction's worldwide standing is judged more fairly. |
+| **Tuning reputation** | Limited, mostly hard-coded. | The new [`feral_descr_reputations_and_relations.txt`](/documentation/data_file_guides/feral_descr_reputations_and_relations.md) lets you set exactly how each action moves reputation, **and add rewards for positive behaviour**. |
+| **Deal items** | Alliance, ceasefire, trade rights, military access, map info, cede region, tribute, joint attack, protectorate, threat. | All of those **plus settle-debt / compensation** offers (and trade embargoes where modern trade is enabled). |
+| **AI goals** | A core set of missions. | Adds **survival- and relationship-driven** missions — avoiding eradication, redirecting a stronger neighbour's aggression, leaning on a trusted protector, reacting to encirclement, and protectorate funding / independence — plus **hidden missions** the AI will accept but not actively chase. |
+| **Protectorates** | Basic client-kingdom behaviour. | Weighs **relative military strength** when a protectorate seeks independence, and may risk war to hold one in line; won't take on a protectorate that is the enemy of a trusted ally. |
+
+The practical upshot for modders: the biggest *new* lever is the reputation/relations data file, and the AI is generally more willing to reach sensible deals than the OG AI was, provided reputations aren't left to drift.
 
 ---
 
