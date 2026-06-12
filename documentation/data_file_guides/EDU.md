@@ -333,18 +333,18 @@ The unit's attributes. The complete list is:
  * **can_run_amok**: unit may go out of control when riders lose control of animals (usually when the unit's casualty ratio is high and the morale low or when being attacked with fire)
  * **general_unit**: unit can be used for a named character's bodyguard (note that this now also sets the bodyguard for recruitable generals of which there can be multiple instances of this attribute in the same faction though the first instance will always be the family-member bodyguard). Note also that the AI will never recruit units with the general_unit attribute.
  * **general_unit_upgrade "major_event"**: New for 2.0.4 - Unit can be used as upgraded bodyguard for named characters, after the a major_event (eg Marius' reforms) are triggered. A unit with this attribute must be listed in the file after the regular bodyguard unit. 
- * **cantabrian_circle**: unit has this special ability. It has no coded effects, but they stem naturally from the game's combat engine. The formation reduces accuracy of the unit, but makes it harder to get shot at and also the constant barrage of arrows slightly reduces target's morale.
+ * **cantabrian_circle**: unit has this special ability. More information about the feature can be found on the [Battle and Campaign Formulae](/documentation/feature_guides/Battle_and_Campaign_Formulae.md) page.
  * **no_custom**: unit is not available in custom battles
- * **command**: unit carries a legionary eagle, and gives morale bonus to nearby units (not the unit itself). Also can trigger lost/captured eagle news events.
- * **screeching_women**: unit has this special ability, which reduces the morale of nearby enemy units.
+ * **command**: unit carries a legionary eagle, and gives morale bonus to nearby units (not the unit itself). Also can trigger lost/captured eagle news events. More information about the feature can be found on the [Battle and Campaign Formulae](/documentation/feature_guides/Battle_and_Campaign_Formulae.md) page.
+ * **screeching_women**: unit has this special ability, which reduces the morale of nearby enemy units. More information about the feature can be found on the [Battle and Campaign Formulae](/documentation/feature_guides/Battle_and_Campaign_Formulae.md) page.
  * **mercenary_unit**: unit is a mercenary unit available for hire to all factions in certain regions. It also prevents a unit from replenishing losses after battle, forces it to use the 'merc' texture and sprite lines in DMB for all its faction owners and the text-tag 'Varies' instead of the unit recruitment cost on the unit info card. In Alexander mercenaries can be faction-specific (availability set in descr_mercenaries.txt).
  * **Hardiness**: reduces the speed at which stamina is depleted and also increases its regeneration rate. **NOTE**: These modifiers can be stacked to make additional levels of hardiness as needed.
 	 * **hardy**: -2 fatigue modifier
 	 * ***very_hardy**: -4 fatigue modifier
 	 * **extremely_hardy** - NEW RR ATTRIBUTE (2.0.4): -8 fatigue modifier
 	* **inexhaustible** - NEW RR ATTRIBUTE (2.0.2): Disables stamina for this unit without going into arcade mode.
- * **warcry**: Gives the unit an attack bonus of 10. The ability takes 10 secs (unit can't move or execute other action) to be activated and remains active for 30 more seconds. If the unit enters melee at some point during that time, the bonus will be applied only for the remaining of those 30 seconds. (eg if the unit warcrys, then runs for 7 secs and then engages in melee, the bonus will be applied for 23 secs only). Also gives a momentary boost to morale, evident in the case of berserkers.
- * **druid**: replaces 'chant' of RTW gives nearby units (not the unit itself) morale bonus.
+ * **warcry**: More information about the feature can be found on the [Battle and Campaign Formulae](/documentation/feature_guides/Battle_and_Campaign_Formulae.md) page.
+ * **druid**: More information about the feature can be found on the [Battle and Campaign Formulae](/documentation/feature_guides/Battle_and_Campaign_Formulae.md) page.
  * **power_charge**: increases the time during which a unit is 'charging' (as opposed to being 'in melee'), therefore extending the period during which the unit receives its charge-bonus.
  * **can_swim (RR 2.0.2 and later added support to base Rome)**: unit can swim rivers in battle mode (or walk in the case of some units).
  * **is_peasant (RR 2.0.2 and later added support to base Rome)**: 80% chance that it will be dropped from the selection list when generating a rebel garrison and they also count for half their numbers when suppressing unrest when garrisoned.
@@ -545,28 +545,5 @@ Newly added in 2.0.4 - In the EDU, you can now put `recruit_priority_offset` fol
 ```Code: ownership        faction(s)```
 
 Factions that can recruit the unit in custom battles (assuming no_custom attribute absent) and in campaign (assuming a recruitment line exists in export_descr_buildings.txt). Also allows for unit to be open to bribery to the specific factions.
-
-—-
-
-## Useful Formulae
-
-
-### Chance_to_kill (melee):
-
-```Code: DLF * const1 * lethality * 1.1 ^ ( ATK - DEF + MDF )```
-
-**TODO** Need to check logic to confirm
-
-### Chance_to_kill (missile):
-
-**TODO** Not 100% thoroughly tested, but a very good approximation]
-
-```Code: const2 * (ATK - DEF - RNG/10 + MDF + DLF*10)```
-
-* **ATK** is (missile)attack
-* **DEF** is the sum of all applicable defences
-* **MDF** is the sum of all applicable bonuses and penalties
-* **RNG** is firing range.
-* **DLF** is the difficulty lever factor. It's 0.7 for Easy, 1 for Medium, 1.5 for Hard and 2 for Very Hard. This factor is what produces the AI combat bonuses for Hard/Very Hard and the AI combat penalty for Easy.
 
 —-
