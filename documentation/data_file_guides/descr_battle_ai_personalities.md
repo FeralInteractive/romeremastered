@@ -1,22 +1,381 @@
 ![Workshop_header_template](/Workshop_header_template.png)
-# descr_battle_ai_personalities
+# Battle AI Personalities — descr_battle_ai_personalities.txt
 
 ## Table Of Contents
 
-   * [Introduction](#introduction)
-   * [Default Battle AI Personality](#default-battle-ai-personality)
+* [1. Introduction](#1-introduction)
+* [2. How the Battle AI Hierarchy Works](#2-how-the-battle-ai-hierarchy-works)
+* [3. Priority Arrays — How They Work](#3-priority-arrays--how-they-work)
+* [4. Tactics Constants](#4-tactics-constants)
+* [5. Detachment Constants](#5-detachment-constants)
+* [6. Objective Constants](#6-objective-constants)
+* [7. Melee Manager Constants](#7-melee-manager-constants)
+* [8. Miscellaneous Constants](#8-miscellaneous-constants)
+* [9. Practical Tuning Guide](#9-practical-tuning-guide)
+* [10. The Default Personality (full reference)](#10-the-default-personality-full-reference)
+* [Related guides](#related-guides)
 
-## Introduction
+---
 
-With the introduction of this file the AI personalities inside 3D battles are now moddable. These constants can be assigned on a per-faction basis in `descr_sm_factions.txt`.
+## 1. Introduction
 
-This file contains all constants used by the AI. These values affect which orders the units are given, but **not the pathfinding/way the orders are carried out**. Descriptions are from the perspective of the AI, so the "enemy" is likely the player, and "us" refers to the AI.
+`descr_battle_ai_personalities.txt` defines sets of constants that control how the AI behaves in 3D battles. Each named personality can be assigned to a faction in `descr_sm_factions.txt`.
 
-The file is fully documented and should be self explanatory. See below for a copy of the files contents including comments.
+All constants in this file were added in Rome Remastered 2.0.4 and do not exist in the original game.
 
-All of these features are new to Rome Remastered as of 2.0.4.
+> **Important:** These constants control which **orders** AI units are given — not how the pathfinding or movement is carried out. A unit given the same order will move the same way regardless of personality; only the decision to give that order changes.
 
-## Default Battle AI Personality
+> **What these constants do NOT affect:** Campaign map movement, diplomatic decisions, city construction, or recruitment. Those are controlled by `feral_descr_ai_personality.txt`.
+
+---
+
+## 2. How the Battle AI Hierarchy Works
+
+The battle AI operates in a three-level hierarchy:
+
+```
+Objectives  →  Detachments  →  Tactics  →  Units
+                                    ↓
+                            Melee Manager (takes over once in combat)
+```
+
+**Objectives** are the highest-level battle goals. Examples: "attack the enemy", "defend this settlement", "scout", "sally out". Only objectives appropriate to the current battle type are active — an open-field battle will never activate siege objectives no matter how high their priority is set.
+
+**Detachments** are created by objectives to carry out specific tasks. A single objective may create several detachments.
+
+**Tactics** are created by detachments to issue orders to individual units. Tactics choose which units they want using an **auction system** (see Section 3).
+
+**Melee Manager** operates separately from the hierarchy. Once units enter close combat, the Melee Manager seizes control and manages unit-vs-unit fighting, flanking, use of special abilities, and retreat decisions.
+
+> The hierarchy means that tuning a tactic priority to zero will disable it globally, but many tactics are already only active in specific battle types. Verify the inline comment on each tactic before concluding it has no effect.
+
+---
+
+## 3. Priority Arrays — How They Work
+
+Both the Tactics and the Melee Manager sections contain a `priority` array. These work differently depending on where they appear:
+
+**Tactics `priority` array:** Values are used as **linear multipliers** on a dynamically calculated base priority. The AI selects tactics in priority order; higher-priority tactics get **first choice** of available units. A value of `0.0` disables the tactic entirely for all battle types. A value of `2.0` doubles the effective priority relative to a tactic at `1.0`.
+
+**Objectives `priority` array:** Also linear multipliers, but objectives participate in an **auction** where each objective bids for units based on opportunity cost (the difference between its best and second-best unit option wins the auction). Scaling an objective to `0.0` disables it.
+
+**Melee Manager `priority` array:** Multiplies calculated priorities for each micro-combat analyser. All are `1.0` by default, meaning no analyser is artificially preferred.
+
+> Values in tactics priorities do **not** represent an absolute number of units. A high priority means the tactic gets first pick, not that more units will be devoted to it — the tactic itself decides how many units it needs.
+
+> The `;;(unused)` comments in the file indicate tactics that exist in code but are never activated by the current battle AI. Setting their priority above `0.0` has no effect because they are never selected regardless of priority value.
+
+---
+
+## 4. Tactics Constants
+
+These constants control distances, thresholds, and probabilities for specific tactical decisions.
+
+### Engagement Distances
+
+* `ai_threat_dist` — distance (metres) at which line defenders notice approaching enemies and begin reacting. Reducing this gives defenders less warning time; increasing it causes them to react to threats sooner.
+
+### Siege Attack Tactics
+
+* `assault_min_dock_distance` — minimum distance siege engines deploy from their target before firing.
+* `assault_gate_distance` — distance in front of a gate where AI units form up before assaulting.
+* `assault_wall_missile_penalty` — added to the score used to select which units assault gates and walls. **Higher values = missile units are less likely to be selected as assault troops.** At the default `1000.0`, missile units are strongly penalised and melee units are preferred.
+
+### Attacking Battlegroups
+
+* `atk_battlegroup_tracking_tolerance_sq` — distance (squared, metres²) an enemy must move before the AI recalculates unit positions. Default `900` = approximately 30 metres.
+* `atk_battlegroup_outflank_distance` — how far from the target unit outflankers aim (metres). Default `150` = aim 150 metres to the side of the enemy unit.
+* `atk_battlegroup_missile_react_dist` — how close an enemy must be before the AI reacts to missile fire by adjusting position.
+* `atk_battlegroup_outflank_near_dist` — if the enemy is closer than this distance, the AI considers them too close to outflank.
+* `atk_battlegroup_outflank_far_dist` — if the enemy is further than this distance, the AI considers them too far to outflank.
+* `atk_battlegroup_outflank_prob` — probability (0–100) of attempting an outflanking manoeuvre per update cycle. Default `25` = 25% chance.
+
+### Building Attack
+
+* `atk_building_max_units` — maximum number of units simultaneously assigned to attacking buildings during siege.
+* `atk_building_wall_bonus`, `atk_building_tower_bonus`, `atk_building_gate_house_bonus` — score bonuses added when selecting which structures to prioritise during siege attack. Higher = more likely to target that structure type.
+
+### Settlement Capture
+
+* `capt_plaza_link_defender_range` — how close enemies must be to gates or breaches before the AI tries to route around them rather than through them.
+* `capt_plaza_gate_preference` — preference for reaching the plaza via a gate vs. breached walls. Higher = more likely to use gates.
+
+### Crossing Defence
+
+* `def_crossing_distance` — how far from the crossing the defensive line is formed.
+* `def_crossing_block_distance` — how far back from the crossing a blocking unit stands when holding the exit.
+* `def_crossing_formation_block` — formation block index used as the centre of the crossing defence (see formations text file).
+* `def_crossing_cavalry_bonus`, `def_crossing_square_bonus`, `def_crossing_missile_bonus`, `def_crossing_phalanx_bonus` — score bonuses for selecting which unit type blocks the crossing. Higher = more likely to assign that unit type. Default preference order: phalanx > missile > square formation > cavalry.
+
+### Junction Defence (Settlement)
+
+* `def_junct_seperation` — distance between junction-defending units in a settlement.
+* `def_junct_near_dist` — if a unit is already within this distance of its assigned junction, it is not ordered to move there.
+* `def_junct_num_sectors` — the map is divided into this many equal-angle sectors centred on the plaza. The AI falls back on a sector-by-sector basis as enemies advance. Default `8` sectors.
+
+### Breach Defence
+
+* `def_breach_angle_thresh` — angle threshold (radians) before the AI orders units to face the breach again after being knocked aside.
+
+### Line Defence
+
+* `def_line_unformed_thresh_sq` — if a unit is further than this distance² from the defensive line, it moves in formation rather than unformed.
+* `def_line_update_tick_time` — number of AI updates before flanking threats are re-evaluated.
+* `def_line_threat_merge_dist` — how close enemy units need to be before they are considered a single threat group.
+* `def_line_turn_thresh_rad` — how far the defensive line must rotate before units are repositioned.
+* `def_line_power_thresh` — how much enemy group strength must change before a new target is chosen.
+
+### Plaza Defence
+
+* `def_plaza_wall_height` — units on walls are treated as being this many metres further from the plaza than units on the ground (for threat priority calculations).
+* `def_plaza_order_tolerance` — a unit within this distance of its ordered destination is considered to have arrived.
+* `def_plaza_min_size` — plazas smaller than this are treated as "small" and use different assignment logic.
+* `def_plaza_minimum_assigned` — minimum number of units assigned to defend the plaza at all times. Note: this floor may not be reached if other tactics claim units first.
+* `def_plaza_emergency_thresh` — if enemy strength in the plaza exceeds friendly strength by this ratio, all available units are recalled to the plaza. Default `8.0` = 8:1 enemy:friendly triggers emergency recall.
+
+### Wall Defence
+
+* `def_walls_refresh_time` — seconds between re-evaluation of enemy threats to the walls.
+* `def_walls_group_merge_dist` — how close enemy units must be to be considered a single threat group.
+* `def_walls_close_dist` — if two threats are within this distance, they are merged as the same threat.
+
+### Outflanking
+
+* `outflank_tolerance_sq` — distance² tolerance before an individual outflanker is ordered to a new position.
+
+### Sally Out
+
+* `sally_out_border` — distance from the settlement border that units aim for when queueing to leave.
+* `sally_out_queue_spacing` — spacing between units in the queue to exit the settlement.
+
+### Skirmishing
+
+* `skirmish_ticks_to_shoot` — number of AI ticks missile troops will skirmish before being recalled. Default `1200` = approximately 2 minutes.
+
+### Legacy Values
+
+These are marked `[Legacy]` in the file. They exist for compatibility but are not used by the current AI:
+
+* `atk_crossing_scan_range`, `atk_crossing_force_centre_formation_block`, `atk_crossing_assault_force_centre_formation_block`, `atk_crossing_reform_dist`
+
+---
+
+## 5. Detachment Constants
+
+These constants define the thresholds used to classify how far a battle has progressed. The AI changes its behaviour as the battle advances through phases.
+
+### Contact Thresholds
+
+* `contact_dist` — distance (metres) within which units are considered "in contact".
+* `close_approach_dist` — distance within which units are "close approach".
+* `distant_approach_dist` — distance within which units are "distant approach".
+
+### Battle Phase Thresholds
+
+The AI tracks what phase the battle is in. Phase affects how freely units are committed:
+
+* `engage_percent_general_melee` — percentage of units that must be in engaged/contact state before the battle is considered "general melee". At this phase the AI no longer holds units back. Default `80%`.
+* `engage_percent_initial_assault` — percentage for "initial assault" phase (just before general melee). Default `30%`.
+* `contact_percent_contact` — percentage for "contact" phase (units close but mostly not fighting). Default `50%`.
+
+### Enemy Distance Classification
+
+* `enemy_far_dist` — distance at which the enemy is "far away".
+* `enemy_near_dist` — distance at which the enemy is "near".
+
+### Formation Cohesion
+
+* `in_position_radius` — units within this radius of their target position are considered to have arrived.
+* `in_position_percent` — percentage of a formation that must be in position for the formation to be considered "in position". Default `85%`.
+
+### Miscellaneous Detachment
+
+* `reform_timeout` — AI ticks allowed for reforming before giving up. Default `300` ticks ≈ 30 seconds.
+* `atk_battlegroup_multi_prob` — probability (0–100) of attacking from multiple sides simultaneously. Default `50` = 50% chance.
+* `atk_settlement_give_up_time` — seconds of idling before the AI gives up on attacking a settlement.
+* `def_settlement_assign_tick_period` — ticks between tactic reassignment when defending a settlement. Default `100` ≈ 10 seconds.
+
+### Terrain Defence
+
+* `def_terrain_threat_freq` — ticks between threat re-evaluation for terrain defence.
+* `def_terrain_merge_dist` — distance within which enemy units are merged into a single threat group.
+* `def_terrain_theat_radius_mult` — [Legacy] enemies within this multiplier × terrain radius are ignored.
+* `def_terrain_merge_thresh_sq` — further merging threshold (distance²) for identified enemy groups.
+* `def_terrain_mid_point_deviation` — how far a defensive line centre must move before repositioning.
+* `def_terrain_length_deviation` — how much a defensive line must change in length before repositioning.
+* `def_terrain_angle_deviation` — how much a defensive line must rotate (radians) before repositioning.
+
+### Siege Coordination
+
+* `settlement_link_exclude_range` — any building within this distance of a currently bombarded building is excluded from simultaneous attack.
+
+---
+
+## 6. Objective Constants
+
+Objectives are the highest-level goals. The `priority` array (one entry per objective type) multiplies the dynamically calculated priority for each objective. All are `1.0` by default — a linear scale with no favouritism.
+
+Other constants in this section:
+
+* `high_priority`, `medium_priority`, `low_priority` — named priority tiers used when objectives calculate their bids. These are additive modifiers, not multipliers. Default values: 60, 40, 20.
+* `backup_modifier` — extra priority added to objectives that need backup from other units.
+* `minimum_priority`, `maximum_priority` — absolute bounds on any calculated priority value.
+* `far_range`, `near_range` — distance thresholds used by objectives when estimating threat proximity.
+
+**The 17 objective types** (in priority array order):
+
+| Index | Objective | Notes |
+|-------|-----------|-------|
+| 0 | Invalid | (unused) |
+| 1 | Move to point | General advance or initial deployment |
+| 2 | Attack enemy battlegroup | Attack enemies outside settlement or past river defences |
+| 3 | Defend terrain hill | May be an ambush if hidden |
+| 4 | Defend terrain forest | May be an ambush if hidden |
+| 5 | Defend terrain area | May be an ambush if hidden |
+| 6 | Defend crossing | Defend each bridge before the attacker has crossed |
+| 7 | Defend line | Defend a line |
+| 8 | Scout | Move to improve visibility of enemy, or (AI cheat) advance toward hidden enemies |
+| 9 | Withdraw | Move off the map when outnumbered |
+| 10 | Defend settlement | One per settlement |
+| 11 | Support defend settlement | Move reinforcements into a settlement |
+| 12 | Attack settlement | One or more depending on simultaneous assault capacity |
+| 13 | Skirmish | Against a specific enemy battlegroup |
+| 14 | Bombard | Artillery only — attack a building |
+| 15 | Attack model | Attack a specific model (gate, wall segment) |
+| 16 | Sally out | Sally out from settlement |
+
+---
+
+## 7. Melee Manager Constants
+
+The Melee Manager operates independently of the objective hierarchy. Once units enter close combat, it takes direct control of micro decisions.
+
+### Timing and Proximity
+
+* `update_time` — seconds between Melee Manager updates.
+* `engagement_min_proximity_count` — minimum number of nearby enemy soldiers for the situation to be considered a real engagement (not just near-misses).
+* `inner_threat_zone_dist_sq` — distance² within which any enemy is an immediate threat and will be attacked. Default `1600` = 40-metre radius.
+* `max_engage_dist` — enemies beyond this distance are not considered valid targets. Default `180` metres.
+
+### Strength Modifiers
+
+When calculating whether a unit has enough strength to engage, different unit types have their effective strength adjusted:
+
+* `melee_str_mod` — melee unit strength multiplier. Default `0.7`.
+* `missile_str_mod` — missile unit strength multiplier. Default `0.3` (missile units are assumed weaker in melee).
+* `rout_str_mod` — routing/fleeing unit strength multiplier. Default `0.25`.
+
+### Fulfilment (Commitment Thresholds)
+
+"Fulfilment" is the theoretical ratio of enemy deaths to friendly deaths. A value of `1.7` means the AI expects to kill 1.7 enemy soldiers for every one of its own lost.
+
+The AI only commits to an attack when it estimates the fulfilment will meet the minimum threshold. It stops requesting more units once the ideal threshold is reached.
+
+* `melee_atk_min_fulfillment` — minimum fulfilment before the AI will begin an attack. Default `0.75`.
+* `melee_atk_max_fulfillment` — if fulfilment exceeds this, no more units are added. Default `2.5`.
+* `melee_atk_ideal_fulfillment` — target fulfilment the AI aims for when assigning units. Default `1.7`.
+* `missile_ideal_fulfillment` — target fulfilment for missile engagements. Default `1.0`.
+* `outflank_ideal_fulfillment` — target fulfilment for outflanking actions. Default `1.0`.
+* `street_atk_ideal_fulfillment` — target for street-fighting in settlements. Default `1.7`.
+* `wall_atk_ideal_fulfillment` — target for attacking walls. Default `1.7`.
+* `wall_def_ideal_fulfillment` — target for defending walls. Default `1.7`.
+
+> To make the AI more aggressive and willing to attack at a disadvantage, reduce `melee_atk_min_fulfillment`. To make it more cautious and wait for better odds, raise it toward `1.0` or above.
+
+### Warcry
+
+* `melee_atk_warcry_dist` — distance before attacking units trigger a warcry. Default `60` metres.
+
+### Outflanking (Melee Manager)
+
+* `outflank_close_dist` — if the outflank target is closer than this, outflank priority is reduced.
+* `outflank_dist` — distance from the target that outflankers aim for.
+* `outflank_waypoint_dist` — distance of the waypoint used when a direct route is blocked.
+
+### Special Abilities
+
+* `special_ability_enter_dist` — distance at which the AI activates formation abilities such as schiltrom.
+
+### Override Levels
+
+When multiple Melee Manager objectives want to force a unit into an action simultaneously, the one with the higher override level wins. In the event of a tie, the objective listed earlier in the array wins.
+
+Default override levels (higher = wins ties):
+
+| Index | Analyser | Override Level |
+|-------|----------|---------------|
+| 0 | Attack | 1 |
+| 1 | Rolling attack | 0 |
+| 2 | Outflank | 0 |
+| 3 | Missile | 0 |
+| 4 | Retreat | 2 |
+| 5 | Attack brace | 3 |
+| 6 | Special ability | 4 |
+| 7 | Collect artillery | 0 |
+| 8 | Wall attack | 0 |
+| 9 | Wall defend | 0 |
+| 10 | Street attack | 0 |
+
+Special ability (override 4) beats all others by default. Retreat (2) and attack brace (3) override basic attack (1). All other analysers are equal-priority and resolved by list order.
+
+---
+
+## 8. Miscellaneous Constants
+
+These constants control skirmisher group behaviour — missile units that harass enemies at range and withdraw when threatened.
+
+* `skirmish_grp_move_thresh_sq` — distance² tolerance before the skirmisher group is ordered to move.
+* `skirmish_grp_orientation_thresh` — angle tolerance (radians) before the skirmisher group turns.
+* `skirmish_grp_by_pass_dist` — distance at which the skirmisher group stops moving and begins shooting.
+* `skirmish_grp_hover_range_sq` — range² that skirmishers maintain from the enemy while hovering.
+* `skirmish_grp_shoot_range` — effective shooting range (metres) for skirmisher groups.
+
+---
+
+## 9. Practical Tuning Guide
+
+### Making the AI more aggressive in open-field battles
+
+* Raise `atk_battlegroup_outflank_prob` (try `50`) to make flanking more frequent.
+* Raise `atk_battlegroup_multi_prob` (try `70`) for more multi-angle attacks.
+* Lower `melee_atk_min_fulfillment` (try `0.5`) so the AI commits at a relative disadvantage.
+* Lower `engage_percent_general_melee` (try `50`) so the AI transitions to all-out attack sooner.
+
+### Making the AI more aggressive in sieges
+
+* Increase the `Assault gate` and `Assault wall ladders` priorities in the tactics `priority` array relative to `Sap`. Sap is passive (waiting for tunnel completion); raising gate assault makes the AI prefer direct attacks.
+* Increase `atk_building_gate_house_bonus` to make the AI prioritise gatehouse capture.
+* Reduce `def_plaza_emergency_thresh` to make defending garrisons retreat to the plaza later (and fight harder at walls).
+
+### Making wall defenders more responsive
+
+* Lower `def_walls_refresh_time` (try `5.0`) so the AI reassesses wall threats more often.
+* Lower `def_line_update_tick_time` (try `3`) for faster flank threat reassessment.
+
+### Making the AI hold positions longer before retreating
+
+* Raise `melee_atk_min_fulfillment` — the AI will not start fighting until it has more favourable odds.
+* Raise `engage_percent_general_melee` (try `90`) so the AI continues holding back units even late into the battle.
+
+### Increasing skirmisher effectiveness
+
+* Increase `skirmish_ticks_to_shoot` to keep missile units skirmishing longer.
+* Increase `skirmish_grp_hover_range_sq` to keep skirmishers at a safer distance.
+* Raise the `Skirmish` tactic priority (default `100.0`) relative to other tactics.
+
+### Tuning siege defender behaviour
+
+* `def_plaza_minimum_assigned` — increase to always keep more units at the plaza.
+* `def_plaza_emergency_thresh` — lower (e.g. `4.0`) so emergency recall triggers sooner.
+* `def_junct_num_sectors` — reduce to consolidate defence at fewer points.
+
+> **Note on priority values:** Tactic priorities are relative to each other within each group. The absolute values matter less than the ratios. `Skirmish : 100` and `Attack enemy battlegroup : 1` means the AI strongly prefers skirmishing. If you set `Attack enemy battlegroup : 50`, the ratio is now 2:1, making the AI much more willing to commit to direct attack.
+
+---
+
+## 10. The Default Personality (full reference)
+
+The complete default personality as shipped with Rome Remastered. All other named personalities in the file override only the values they need to change; unspecified values inherit these defaults.
 
 ```
 "battle personalities":
@@ -315,4 +674,12 @@ All of these features are new to Rome Remastered as of 2.0.4.
 			"skirmish_grp_shoot_range" : 120.0,								;;Shooting range
 		},
 	},
-],```
+],
+```
+
+---
+
+## Related guides
+
+* [feral_descr_ai_personality.txt](/documentation/data_file_guides/feral_descr_ai_personality.md) — campaign AI: recruitment priorities, building priorities, diplomatic behaviour, and faction personality assignment
+* [How the AI Conducts Diplomacy](/documentation/feature_guides/AI_Diplomacy.md) — how diplomatic personality values translate to AI decision-making

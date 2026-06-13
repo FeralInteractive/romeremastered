@@ -354,15 +354,93 @@ How likely it is for this faction to invade regions. (0-4)
 Allocating a larger army to attack will mean leaving your own settlments less defended. It also means the AI will go for sudden overwhelming attacks instead of wearing down enemies with multiple smaller attacks.
 
 #### subterfuge_risk_taker
-How likely the AI will be to take risks when assigning subterfuge missions. (0-7)
+How willing the AI is to risk agents on low-probability missions. Range: 0–7 (stored as a 3-bit value).
+
+**Higher value = more risk-tolerant.** The value is used as a `risk_comfort` parameter that lowers the minimum success-chance floor required before the AI will attempt a spy or assassin mission:
+
+* Spy missions: `risk_floor = spy_risk_base - (risk_comfort × 5)`
+* Assassin missions: `risk_floor = assassin_risk_base - (risk_comfort × 2)`
+
+A lower `risk_floor` means the AI will send agents on missions with a lower chance of success. At `0`, only very high-confidence missions are attempted. At `7`, the AI will attempt missions that have quite low odds of success.
+
+Default: `1` (slightly risk-averse).
+
+> **Note:** When an AI faction has more agents than it considers optimal, the risk_comfort value is automatically amplified by the surplus ratio. A faction with twice the ideal number of spies will accept approximately twice the normal level of risk regardless of this setting.
 
 ### Diplomatic Priorities
-Below you can find an explaination of what all the different variables do inside the building priorties personality.
+
+These control how the AI faction approaches diplomacy and political relationships.
 
 #### diplomatic_priority
-default
+Name of the diplomatic priority profile to use for this personality.
+
+Inside the default file you'll find the following personalities. There is currently 1 default diplomatic personality:
+
+* default
+
+#### dogmatism
+How strongly faction leaders mirror the base faction personality traits. Range: 0–100.
+
+* `0` — each new leader's diplomatic personality is rolled randomly with high variance, making leaders unpredictable.
+* `100` — each new leader's personality closely matches the faction base values, making the faction consistently behave the same way.
+
+Default if omitted: `0`. Note: this field must appear before the other diplomatic fields if included.
+
+#### openness
+How likely the AI is to engage in diplomacy at all. Range: 0–100.
+
+* `0` — the faction rarely initiates or responds to diplomatic proposals.
+* `100` — the faction actively engages in diplomacy and responds readily to offers.
+
+Default if omitted: `50`.
+
+#### flexibility
+How willing the AI is to accept compromise in negotiations. Range: 0–100.
+
+* `0` — the AI will not accept any compromise; all-or-nothing approach.
+* `100` — the AI readily accepts partial deals and middle-ground proposals.
+
+Default if omitted: `50`.
 
 #### aggresiveness
 How likely the AI will be to want war. This has a small effect and is mostly driven by all the other factors in the AI chain. There are 4 possible levels of modifier, these are triggered at 25, 50 & 75. By default all the factions have a value of 100 (maximum aggresiveness)
 
 **NOTE** The `aggresiveness` variable has a typo that you should keep when modding!
+
+Default if omitted: `50`.
+
+#### nationalism
+How likely the AI is to engage diplomatically with factions from different cultures. Range: 0–100.
+
+* `0` — the AI will engage with any faction regardless of cultural background.
+* `100` — the AI strongly avoids diplomatic engagement with culturally different factions.
+
+Default if omitted: `50`.
+
+#### stability
+How likely the AI is to maintain and renew existing treaties. Range: 0–100.
+
+* `0` — the AI will backstab allies and break treaties opportunistically.
+* `100` — the AI is deeply committed to honouring existing agreements and rarely breaks them.
+
+Default if omitted: `100`.
+
+#### independence
+How strongly faction leaders resist becoming a protectorate or value breaking free from a protector. Range: 0–100.
+
+* `0` — faction leaders have little preference for independence; they are comfortable seeking or maintaining protectorate status.
+* `100` — faction leaders strongly prefer independence and are more likely to seek to break free from a protector when possible.
+
+This value seeds the leader personality `independence` trait at each new leader succession. Leaders with higher independence will scale up the probability of the faction seeking independence from a protector when conditions favour it (military strength approaching or exceeding the protector's).
+
+Default if omitted: `50`.
+
+> **Parser order note:** The diplomatic fields must appear in this order: `dogmatism` (optional), `openness`, `flexibility`, `aggresiveness`, `nationalism`, `stability`, `independence`. If any field is omitted the parser uses its default and moves on — but the remaining fields must still follow in order.
+
+---
+
+### Dynamic AI Changes
+
+There is **no runtime script command** to modify any `feral_descr_ai_personality.txt` values during gameplay. All personality values are loaded once at campaign start and remain fixed for that session.
+
+The only per-unit hook is `recruit_priority_offset` in the EDU file (documented in the [EDU guide](/documentation/data_file_guides/EDU.md)), which applies a static percentage bias to the AI recruitment priority for that specific unit type. A value of `100` doubles the priority; `-50` halves it; `-100` is the minimum (prevents recruitment). This is a data-file-only change, not a script command.
