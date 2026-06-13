@@ -17,6 +17,7 @@
    * [Output Variables To Log](#output-variables-to-log)
    * [Volcano](#volcano)
    * [Disable Major Events using descr_strat](#disable-major-events-using-descr_strat)
+   * [map_trade_routes.tga](#map_trade_routestga)
    * [Battle And Campaign Calculations and Bonuses](#battle-and-campaign-calculations-and-bonuses)
 
 This page is a collection of hints and tips that don't otherwise fit into their own page but could be useful to players and modders alike.
@@ -162,6 +163,12 @@ set_major_event_enabled marian_reforms, false
 ;;or for all factions with:
 ;  trigger_status marian_reforms, true
 ```
+
+## map_trade_routes.tga
+
+`map_trade_routes.tga` is loaded by the game — white (255,255,255) pixels mark tiles as carrying a "trade route", which is then rolled up into a per-region flag. However, that flag is **not consumed by anything that affects gameplay**: it does not change movement cost, it is not read by any campaign pathfinding, and the AI's trade-route logic works from **roads**, not from this map. The flag is only written out again when saving the map and shown in the editor/debug tooltips.
+
+In short, in Rome Remastered this file is effectively a **legacy/vestigial layer**. A missing or empty `map_trade_routes.tga` is handled gracefully (no flags are set, loading continues) and will **not** affect AI pathing or behaviour. You don't need to worry about authoring it for a new map.
 
 ## Battle And Campaign Calculations and Bonuses
 
