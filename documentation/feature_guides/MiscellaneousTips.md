@@ -18,6 +18,7 @@
    * [Volcano](#volcano)
    * [Disable Major Events using descr_strat](#disable-major-events-using-descr_strat)
    * [map_trade_routes.tga](#map_trade_routestga)
+   * [chokepoint_heatmap.tga](#chokepoint_heatmaptga)
    * [Battle And Campaign Calculations and Bonuses](#battle-and-campaign-calculations-and-bonuses)
 
 This page is a collection of hints and tips that don't otherwise fit into their own page but could be useful to players and modders alike.
@@ -169,6 +170,14 @@ set_major_event_enabled marian_reforms, false
 `map_trade_routes.tga` is loaded by the game — white (255,255,255) pixels mark tiles as carrying a "trade route", which is then rolled up into a per-region flag. However, that flag is **not consumed by anything that affects gameplay**: it does not change movement cost, it is not read by any campaign pathfinding, and the AI's trade-route logic works from **roads**, not from this map. The flag is only written out again when saving the map and shown in the editor/debug tooltips.
 
 In short, in Rome Remastered this file is effectively a **legacy/vestigial layer**. A missing or empty `map_trade_routes.tga` is handled gracefully (no flags are set, loading continues) and will **not** affect AI pathing or behaviour. You don't need to worry about authoring it for a new map.
+
+## chokepoint_heatmap.tga
+
+`chokepoint_heatmap.tga` is the **opposite** of `map_trade_routes.tga`: it is a file the game **writes out**, not one it reads in. On map load the engine works out where the natural chokepoints and dead-ends are (from the shape of your regions — narrow passages, fords, coastlines) and saves a greyscale picture of the result as `chokepoint_heatmap.tga`, where brighter tiles are stronger chokepoints.
+
+Because it is **generated output**, editing or deleting it has no effect — the game simply recreates it. You can't feed the AI a custom heatmap through this file.
+
+The chokepoint information itself **is** used by the AI: chokepoints (along with ocean borders and ambush tiles) make a region count as more **defensible** in the AI's assessment. But that calculation reads your **map geometry**, not this image. So to change how the AI sees chokepoints, change the map (region shapes, passages, fords) — and use `chokepoint_heatmap.tga` as a handy way to **see** where the engine currently thinks the chokepoints are.
 
 ## Battle And Campaign Calculations and Bonuses
 
